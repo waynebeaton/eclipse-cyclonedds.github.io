@@ -1,0 +1,13 @@
+.. _exhale_define_TimeHelper_8hpp_1a06c201f90533d5b49cd039c960327968:
+
+Define NS
+=========
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_TimeHelper.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: NS

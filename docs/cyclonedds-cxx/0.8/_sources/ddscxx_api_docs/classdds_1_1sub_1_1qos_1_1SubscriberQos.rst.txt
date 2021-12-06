@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1sub_1_1qos_1_1SubscriberQos:
+
+Class SubscriberQos
+===================
+
+- Defined in :ref:`file_dds_sub_qos_SubscriberQos.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::EntityQos< org::eclipse::cyclonedds::sub::qos::SubscriberQosDelegate >`` (:ref:`exhale_class_classdds_1_1core_1_1EntityQos`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::qos::SubscriberQos
+   :members:
+   :protected-members:
+   :undoc-members:

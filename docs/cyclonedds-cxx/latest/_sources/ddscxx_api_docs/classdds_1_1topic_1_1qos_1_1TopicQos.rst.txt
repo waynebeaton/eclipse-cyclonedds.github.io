@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1topic_1_1qos_1_1TopicQos:
+
+Class TopicQos
+==============
+
+- Defined in :ref:`file_dds_topic_qos_TopicQos.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::EntityQos< org::eclipse::cyclonedds::topic::qos::TopicQosDelegate >`` (:ref:`exhale_class_classdds_1_1core_1_1EntityQos`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::qos::TopicQos
+   :members:
+   :protected-members:
+   :undoc-members:

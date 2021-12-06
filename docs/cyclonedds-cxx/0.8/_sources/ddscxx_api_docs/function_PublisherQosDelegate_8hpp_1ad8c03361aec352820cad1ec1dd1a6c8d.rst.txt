@@ -1,0 +1,13 @@
+.. _exhale_function_PublisherQosDelegate_8hpp_1ad8c03361aec352820cad1ec1dd1a6c8d:
+
+Function org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy< dds::core::policy::GroupData >
+=========================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_pub_qos_PublisherQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy< dds::core::policy::GroupData >()

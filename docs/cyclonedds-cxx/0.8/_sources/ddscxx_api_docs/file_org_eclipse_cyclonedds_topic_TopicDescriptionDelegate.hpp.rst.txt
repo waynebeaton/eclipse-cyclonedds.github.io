@@ -1,0 +1,71 @@
+
+.. _file_org_eclipse_cyclonedds_topic_TopicDescriptionDelegate.hpp:
+
+File TopicDescriptionDelegate.hpp
+=================================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_topic>` (``org/eclipse/cyclonedds/topic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/topic/TopicDescriptionDelegate.hpp``)
+--------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_topic_TopicDescriptionDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/domain/DomainParticipant.hpp`` (:ref:`file_dds_domain_DomainParticipant.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ObjectDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ObjectDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_topic_detail_ContentFilteredTopic.hpp`
+
+- :ref:`file_dds_topic_detail_Topic.hpp`
+
+- :ref:`file_dds_topic_detail_TopicDescription.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_AnyTopicDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__topic`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1TopicDescriptionDelegate`
+

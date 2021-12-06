@@ -1,0 +1,13 @@
+.. _exhale_function_ListenerDispatcher_8hpp_1abc7f8196e28612f82b825b673fd964e9:
+
+Function callback_on_offered_incompatible_qos
+=============================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: callback_on_offered_incompatible_qos(dds_entity_t, dds_offered_incompatible_qos_status_t, void *)

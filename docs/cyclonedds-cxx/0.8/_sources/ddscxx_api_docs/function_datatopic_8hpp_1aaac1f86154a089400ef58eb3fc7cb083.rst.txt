@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1aaac1f86154a089400ef58eb3fc7cb083:
+
+Function calc_offset(void \*, ptrdiff_t)
+========================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: calc_offset(void *, ptrdiff_t)

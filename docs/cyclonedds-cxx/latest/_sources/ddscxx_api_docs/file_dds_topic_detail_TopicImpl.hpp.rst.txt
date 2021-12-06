@@ -1,0 +1,79 @@
+
+.. _file_dds_topic_detail_TopicImpl.hpp:
+
+File TopicImpl.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic_detail>` (``dds/topic/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/topic/detail/TopicImpl.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_topic_detail_TopicImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/dds.h`` (:ref:`file_dds_dds.hpp`)
+
+- ``dds/ddsi/ddsi_sertype.h``
+
+- ``dds/topic/AnyTopic.hpp`` (:ref:`file_dds_topic_AnyTopic.hpp`)
+
+- ``dds/topic/Topic.hpp`` (:ref:`file_dds_topic_Topic.hpp`)
+
+- ``dds/topic/TopicListener.hpp`` (:ref:`file_dds_topic_TopicListener.hpp`)
+
+- ``dds/topic/detail/Topic.hpp`` (:ref:`file_dds_topic_detail_Topic.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ListenerDispatcher.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ScopedLock.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ScopedLock.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/TopicListener.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_TopicListener.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/TopicTraits.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_TopicTraits.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_topic_detail_BuiltinTopic.hpp`
+
+- :ref:`file_dds_topic_detail_ddstopic.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__topic`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_TopicImpl_8hpp_1a8c89328e0ab6a28193eda41da3cc8a87`
+

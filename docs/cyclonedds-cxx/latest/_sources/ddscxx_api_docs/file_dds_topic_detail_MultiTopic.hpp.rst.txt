@@ -1,0 +1,47 @@
+
+.. _file_dds_topic_detail_MultiTopic.hpp:
+
+File MultiTopic.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic_detail>` (``dds/topic/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/topic/detail/MultiTopic.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_topic_detail_MultiTopic.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Query.hpp``
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+- ``dds/domain/DomainParticipant.hpp`` (:ref:`file_dds_domain_DomainParticipant.hpp`)
+
+- ``dds/topic/detail/TopicDescription.hpp`` (:ref:`file_dds_topic_detail_TopicDescription.hpp`)
+
+- ``string``
+
+- ``vector``
+
+
+
+
+

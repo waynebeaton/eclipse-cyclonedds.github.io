@@ -1,0 +1,52 @@
+
+.. _file_dds_core_cond_detail_StatusConditionImpl.hpp:
+
+File StatusConditionImpl.hpp
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_cond_detail>` (``dds/core/cond/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/cond/detail/StatusConditionImpl.hpp``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_cond_detail_StatusConditionImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/cond/StatusCondition.hpp`` (:ref:`file_dds_core_cond_StatusCondition.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ReportUtils.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`)
+
+- ``org/eclipse/cyclonedds/core/cond/StatusConditionDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_cond_StatusConditionDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__cond`
+

@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderImpl_8hpp_1a16e03ba42cb0185fa54f9ad8161eb835:
+
+Function dds::sub::content
+==========================
+
+- Defined in :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::content(const dds::sub::Query&)

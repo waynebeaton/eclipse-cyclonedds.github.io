@@ -1,0 +1,16 @@
+.. _exhale_struct_structorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1finder_3_01dds_1_1topic_1_1TopicDescription_00_01b41a5d709e166031e21c872bd9127380:
+
+Template Struct finder< dds::topic::TopicDescription, org::eclipse::cyclonedds::topic::TopicDescriptionDelegate >
+=================================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_find.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: org::eclipse::cyclonedds::topic::finder< dds::topic::TopicDescription, org::eclipse::cyclonedds::topic::TopicDescriptionDelegate >
+   :members:
+   :protected-members:
+   :undoc-members:

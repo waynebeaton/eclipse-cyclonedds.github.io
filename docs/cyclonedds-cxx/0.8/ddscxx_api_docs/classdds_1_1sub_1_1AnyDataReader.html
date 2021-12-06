@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class AnyDataReader &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class AnyDataReader</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classdds_1_1sub_1_1AnyDataReader.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-anydatareader">
+<span id="exhale-class-classdds-1-1sub-1-1anydatareader"></span><h1>Class AnyDataReader<a class="headerlink" href="#class-anydatareader" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds_sub_AnyDataReader.hpp.html#file-dds-sub-anydatareader-hpp"><span class="std std-ref">File AnyDataReader.hpp</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
+<section id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">dds::core::Entity</span></code> (<a class="reference internal" href="classdds_1_1core_1_1Entity.html#exhale-class-classdds-1-1core-1-1entity"><span class="std std-ref">Class Entity</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReaderE">
+<span id="_CPPv3N3dds3sub13AnyDataReaderE"></span><span id="_CPPv2N3dds3sub13AnyDataReaderE"></span><span id="dds::sub::AnyDataReader"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">AnyDataReader</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6EntityE" title="dds::core::Entity"><span class="n"><span class="pre">Entity</span></span></a><br /></dt>
+<dd><p>Typeless base class for the typed <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>. </p>
+<p>DataReaders are created type specific (fi DataReader&lt;Foo::Bar&gt; reader). However, there are many places in the API (and possibly application) where the type can not be known while still some <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a><p>has to be passed around, stored or even typeless functionality called.</p>
+<p>Main examples in the API that need typeless</p>
+<a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> are: <a class="reference internal" href="classdds_1_1sub_1_1Subscriber.html#classdds_1_1sub_1_1Subscriber"><span class="std std-ref">Subscriber</span></a>, <a class="reference internal" href="classdds_1_1sub_1_1SubscriberListener.html#classdds_1_1sub_1_1SubscriberListener"><span class="std std-ref">SubscriberListener</span></a> and DomainParticipantListener.</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">dds::sub::DataReader</span></a> </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3dds3sub13AnyDataReader13AnyDataReaderERK3H__">
+<span id="_CPPv3I0EN3dds3sub13AnyDataReader13AnyDataReaderERK3H__"></span><span id="_CPPv2I0EN3dds3sub13AnyDataReader13AnyDataReaderERK3H__"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">H__</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a8f0025e8fec0f327c0c076b80d5c44a8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AnyDataReader</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13AnyDataReader13AnyDataReaderERK3H__" title="dds::sub::AnyDataReader::AnyDataReader::H__"><span class="n"><span class="pre">H__</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">h</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3dds3sub13AnyDataReaderaSER13AnyDataReaderRK3T__">
+<span id="_CPPv3I0EN3dds3sub13AnyDataReaderaSERK3T__"></span><span id="_CPPv2I0EN3dds3sub13AnyDataReaderaSERK3T__"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T__</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1acb9648f2a0f99507cecd097d2e20c399"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub13AnyDataReaderE" title="dds::sub::AnyDataReader"><span class="n"><span class="pre">AnyDataReader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13AnyDataReaderaSER13AnyDataReaderRK3T__" title="dds::sub::AnyDataReader::operator=::T__"><span class="n"><span class="pre">T__</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub13AnyDataReader10subscriberEv">
+<span id="_CPPv3NK3dds3sub13AnyDataReader10subscriberEv"></span><span id="_CPPv2NK3dds3sub13AnyDataReader10subscriberEv"></span><span id="dds::sub::AnyDataReader::subscriberC"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a4494caac0d4e1d94b880b7a0790cc903"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub10SubscriberE" title="dds::sub::Subscriber"><span class="n"><span class="pre">Subscriber</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">subscriber</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get the <a class="reference internal" href="classdds_1_1sub_1_1Subscriber.html#classdds_1_1sub_1_1Subscriber"><span class="std std-ref">Subscriber</span></a> that owns this <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the <a class="reference internal" href="classdds_1_1sub_1_1Subscriber.html#classdds_1_1sub_1_1Subscriber"><span class="std std-ref">Subscriber</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub13AnyDataReader17topic_descriptionEv">
+<span id="_CPPv3NK3dds3sub13AnyDataReader17topic_descriptionEv"></span><span id="_CPPv2NK3dds3sub13AnyDataReader17topic_descriptionEv"></span><span id="dds::sub::AnyDataReader::topic_descriptionC"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1ae8d3805283c822eaf7ae7501080b7fa6"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic16TopicDescriptionE" title="dds::topic::TopicDescription"><span class="n"><span class="pre">TopicDescription</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">topic_description</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get the TopicDescription associated with this <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the TopicDescription </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader24wait_for_historical_dataERKN3dds4core8DurationE">
+<span id="_CPPv3N3dds3sub13AnyDataReader24wait_for_historical_dataERKN3dds4core8DurationE"></span><span id="_CPPv2N3dds3sub13AnyDataReader24wait_for_historical_dataERKN3dds4core8DurationE"></span><span id="dds::sub::AnyDataReader::wait_for_historical_data__dds::core::DurationCR"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a9a1103b3d49c9014b0e1a1f9bc376b6f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wait_for_historical_data</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">timeout</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation will block the application thread until all “historical” data is received.</p>
+<p>This operation behaves differently for <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> objects which have a non-VOLATILE <a class="reference internal" href="classdds_1_1core_1_1policy_1_1Durability.html#classdds_1_1core_1_1policy_1_1Durability"><span class="std std-ref">dds::core::policy::Durability</span></a> QosPolicy and for <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> objects which have a VOLATILE <a class="reference internal" href="classdds_1_1core_1_1policy_1_1Durability.html#classdds_1_1core_1_1policy_1_1Durability"><span class="std std-ref">dds::core::policy::Durability</span></a> QosPolicy.</p>
+<p>As soon as an application enables a non-VOLATILE <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> it will start receiving both “historical” data, i.e. the data that was written prior to the time the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> joined the domain, as well as any new data written by the DataWriter objects. There are situations where the application logic may require the application to wait until all “historical” data is received. This is the purpose of the wait_for_historical_data operation.</p>
+<p>As soon as an application enables a VOLATILE <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> it will not start receiving “historical” data but only new data written by the DataWriter objects. By calling wait_for_historical_data the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> explicitly requests the Data Distribution Service to start receiving also the “historical” data and to wait until either all “historical” data is received, or the duration specified by the max_wait parameter has elapsed, whichever happens first.</p>
+<p><em>Thread Blocking</em>
+ The operation wait_for_historical_data blocks the calling thread until either all “historical” data is received, or the duration specified by the max_wait parameter elapses, whichever happens first. When the function returns normally, indicates that all the “historical” data was received. If the function throws TimeoutError, it indicates that max_wait elapsed before all the data was received.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timeout</strong> – the time to wait for historical data (can be <a class="reference internal" href="classdds_1_1core_1_1Duration.html#classdds_1_1core_1_1Duration_1a5a1d1924d04f70d5bc3bab5b1de521b2"><span class="std std-ref">dds::core::Duration::infinite()</span></a>) </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core15NotEnabledErrorE" title="dds::core::NotEnabledError"><span class="n">NotEnabledError</span></a></span></span> – The entity has not yet been enabled. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core12TimeoutErrorE" title="dds::core::TimeoutError"><span class="n">TimeoutError</span></a></span></span> – Not all data is received before timeout elapsed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub13AnyDataReader3qosEv">
+<span id="_CPPv3NK3dds3sub13AnyDataReader3qosEv"></span><span id="_CPPv2NK3dds3sub13AnyDataReader3qosEv"></span><span id="dds::sub::AnyDataReader::qosC"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a475afa159a694fbb73f9b333350b3fb8"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qosE" title="dds::sub::qos"><span class="n"><span class="pre">qos</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qos13DataReaderQosE" title="dds::sub::qos::DataReaderQos"><span class="n"><span class="pre">DataReaderQos</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">qos</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Gets the DataReaderQos setting for this instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the qos </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader3qosERKN3dds3sub3qos13DataReaderQosE">
+<span id="_CPPv3N3dds3sub13AnyDataReader3qosERKN3dds3sub3qos13DataReaderQosE"></span><span id="_CPPv2N3dds3sub13AnyDataReader3qosERKN3dds3sub3qos13DataReaderQosE"></span><span id="dds::sub::AnyDataReader::qos__dds::sub::qos::DataReaderQosCR"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1afcca3f0058740e79320e55404c9ec878"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">qos</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qosE" title="dds::sub::qos"><span class="n"><span class="pre">qos</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qos13DataReaderQosE" title="dds::sub::qos::DataReaderQos"><span class="n"><span class="pre">DataReaderQos</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation replaces the existing set of QosPolicy settings for a <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>The parameter qos contains the object with the QosPolicy settings which is checked for self-consistency and mutability.</p>
+<p>When the application tries to change a QosPolicy setting for an enabled <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>, which can only be set before the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> is enabled, the operation will fail and a ImmutablePolicyError is thrown. In other words, the application must provide the presently set QosPolicy settings in case of the immutable QosPolicy settings. Only the mutable QosPolicy settings can be changed.</p>
+<p>When the qos contains conflicting QosPolicy settings (not self-consistent), the operation will fail and an InconsistentPolicyError is thrown.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>qos</strong> – the qos </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core20ImmutablePolicyErrorE" title="dds::core::ImmutablePolicyError"><span class="n">ImmutablePolicyError</span></a></span></span> – The parameter qos contains an immutable QosPolicy setting with a different value than set during enabling of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23InconsistentPolicyErrorE" title="dds::core::InconsistentPolicyError"><span class="n">InconsistentPolicyError</span></a></span></span> – The parameter qos contains conflicting QosPolicy settings, </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReaderlsERKN3dds3sub3qos13DataReaderQosE">
+<span id="_CPPv3N3dds3sub13AnyDataReaderlsERKN3dds3sub3qos13DataReaderQosE"></span><span id="_CPPv2N3dds3sub13AnyDataReaderlsERKN3dds3sub3qos13DataReaderQosE"></span><span id="dds::sub::AnyDataReader::lshift-operator__dds::sub::qos::DataReaderQosCR"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a3365d09d6e7d87acef2d7178cb0003a6"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub13AnyDataReaderE" title="dds::sub::AnyDataReader"><span class="n"><span class="pre">AnyDataReader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;&lt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qosE" title="dds::sub::qos"><span class="n"><span class="pre">qos</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qos13DataReaderQosE" title="dds::sub::qos::DataReaderQos"><span class="n"><span class="pre">DataReaderQos</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation replaces the existing set of QosPolicy settings for a <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>The parameter qos contains the object with the QosPolicy settings which is checked for self-consistency and mutability.</p>
+<p>When the application tries to change a QosPolicy setting for an enabled <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>, which can only be set before the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> is enabled, the operation will fail and a ImmutablePolicyError is thrown. In other words, the application must provide the presently set QosPolicy settings in case of the immutable QosPolicy settings. Only the mutable QosPolicy settings can be changed.</p>
+<p>When the qos contains conflicting QosPolicy settings (not self-consistent), the operation will fail and an InconsistentPolicyError is thrown.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>qos</strong> – the qos </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core20ImmutablePolicyErrorE" title="dds::core::ImmutablePolicyError"><span class="n">ImmutablePolicyError</span></a></span></span> – The parameter qos contains an immutable QosPolicy setting with a different value than set during enabling of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23InconsistentPolicyErrorE" title="dds::core::InconsistentPolicyError"><span class="n">InconsistentPolicyError</span></a></span></span> – The parameter qos contains conflicting QosPolicy settings, </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub13AnyDataReaderrsERN3dds3sub3qos13DataReaderQosE">
+<span id="_CPPv3NK3dds3sub13AnyDataReaderrsERN3dds3sub3qos13DataReaderQosE"></span><span id="_CPPv2NK3dds3sub13AnyDataReaderrsERN3dds3sub3qos13DataReaderQosE"></span><span id="dds::sub::AnyDataReader::rshift-operator__dds::sub::qos::DataReaderQosRC"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a09f2aa0208b4b1634a33d62af51d721f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub13AnyDataReaderE" title="dds::sub::AnyDataReader"><span class="n"><span class="pre">AnyDataReader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;&gt;</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qosE" title="dds::sub::qos"><span class="n"><span class="pre">qos</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub3qos13DataReaderQosE" title="dds::sub::qos::DataReaderQos"><span class="n"><span class="pre">DataReaderQos</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Gets the DataReaderQos setting for this instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the qos </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader25liveliness_changed_statusEv">
+<span id="_CPPv3N3dds3sub13AnyDataReader25liveliness_changed_statusEv"></span><span id="_CPPv2N3dds3sub13AnyDataReader25liveliness_changed_statusEv"></span><span id="dds::sub::AnyDataReader::liveliness_changed_status"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a80013accf21923e2836c2d07ae7739f6"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status23LivelinessChangedStatusE" title="dds::core::status::LivelinessChangedStatus"><span class="n"><span class="pre">LivelinessChangedStatus</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">liveliness_changed_status</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation obtains the LivelinessChangedStatus object of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>This object contains the information whether the liveliness of one or more DataWriter objects that were writing instances read by the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> has changed. In other words, some DataWriter have become “alive” or “not alive”.</p>
+<p>The LivelinessChangedStatus can also be monitored using a <a class="reference internal" href="classdds_1_1sub_1_1DataReaderListener.html#classdds_1_1sub_1_1DataReaderListener"><span class="std std-ref">DataReaderListener</span></a> or by using the associated StatusCondition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the LivelinessChangedStatus </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader22sample_rejected_statusEv">
+<span id="_CPPv3N3dds3sub13AnyDataReader22sample_rejected_statusEv"></span><span id="_CPPv2N3dds3sub13AnyDataReader22sample_rejected_statusEv"></span><span id="dds::sub::AnyDataReader::sample_rejected_status"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a8546be3e17e1051df43a6ab6be124f14"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status20SampleRejectedStatusE" title="dds::core::status::SampleRejectedStatus"><span class="n"><span class="pre">SampleRejectedStatus</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sample_rejected_status</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation obtains the SampleRejectedStatus object of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>This object contains the information whether a received sample has been rejected. Samples may be rejected by the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> when it runs out of resource_limits to store incoming samples. Usually this means that old samples need to be “onsumed” (for example by “taking” them instead of “reading” them) to make room for newly incoming samples.</p>
+<p>The SampleRejectedStatus can also be monitored using a <a class="reference internal" href="classdds_1_1sub_1_1DataReaderListener.html#classdds_1_1sub_1_1DataReaderListener"><span class="std std-ref">DataReaderListener</span></a> or by using the associated StatusCondition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the SampleRejectedStatus </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader18sample_lost_statusEv">
+<span id="_CPPv3N3dds3sub13AnyDataReader18sample_lost_statusEv"></span><span id="_CPPv2N3dds3sub13AnyDataReader18sample_lost_statusEv"></span><span id="dds::sub::AnyDataReader::sample_lost_status"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a68856534bb98d112bfc716a1d214cf5c"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status16SampleLostStatusE" title="dds::core::status::SampleLostStatus"><span class="n"><span class="pre">SampleLostStatus</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sample_lost_status</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation obtains the SampleLostStatus object of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>This object contains information whether samples have been lost. This only applies when the <a class="reference internal" href="classdds_1_1core_1_1policy_1_1Reliability.html#classdds_1_1core_1_1policy_1_1Reliability"><span class="std std-ref">dds::core::policy::Reliability</span></a> QosPolicy is set to RELIABLE. If the ReliabilityQos Policy is set to BEST_EFFORT, the Data Distribution Service will not report the loss of samples.</p>
+<p>The SampleLostStatus can also be monitored using a <a class="reference internal" href="classdds_1_1sub_1_1DataReaderListener.html#classdds_1_1sub_1_1DataReaderListener"><span class="std std-ref">DataReaderListener</span></a> or by using the associated StatusCondition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the SampleLostStatus </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader32requested_deadline_missed_statusEv">
+<span id="_CPPv3N3dds3sub13AnyDataReader32requested_deadline_missed_statusEv"></span><span id="_CPPv2N3dds3sub13AnyDataReader32requested_deadline_missed_statusEv"></span><span id="dds::sub::AnyDataReader::requested_deadline_missed_status"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1a5a1641faabfbb1abd35d7de2dad666c0"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status29RequestedDeadlineMissedStatusE" title="dds::core::status::RequestedDeadlineMissedStatus"><span class="n"><span class="pre">RequestedDeadlineMissedStatus</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">requested_deadline_missed_status</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation obtains the RequestedDeadlineMissedStatus object of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>This object contains the information whether the deadline that the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> was expecting through its <a class="reference internal" href="classdds_1_1core_1_1policy_1_1Deadline.html#classdds_1_1core_1_1policy_1_1Deadline"><span class="std std-ref">dds::core::policy::Deadline</span></a> QosPolicy was not respected for a specific instance.</p>
+<p>The RequestedDeadlineMissedStatus can also be monitored using a <a class="reference internal" href="classdds_1_1sub_1_1DataReaderListener.html#classdds_1_1sub_1_1DataReaderListener"><span class="std std-ref">DataReaderListener</span></a> or by using the associated StatusCondition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the RequestedDeadlineMissedStatus </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader33requested_incompatible_qos_statusEv">
+<span id="_CPPv3N3dds3sub13AnyDataReader33requested_incompatible_qos_statusEv"></span><span id="_CPPv2N3dds3sub13AnyDataReader33requested_incompatible_qos_statusEv"></span><span id="dds::sub::AnyDataReader::requested_incompatible_qos_status"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1ae30d1437a8feb13a679871b204d10cd3"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status30RequestedIncompatibleQosStatusE" title="dds::core::status::RequestedIncompatibleQosStatus"><span class="n"><span class="pre">RequestedIncompatibleQosStatus</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">requested_incompatible_qos_status</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation obtains the RequestedIncompatibleQosStatus object of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>This object contains the information whether a QosPolicy setting was incompatible with the offered QosPolicy setting.</p>
+<p>The Request/Offering mechanism is applicable between the DataWriter and the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>. If the QosPolicy settings between DataWriter and <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> are inconsistent, no communication between them is established. In addition the DataWriter will be informed via a REQUESTED_INCOMPATIBLE_QOS status change and the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> will be informed via an OFFERED_INCOMPATIBLE_QOS status change.</p>
+<p>The RequestedIncompatibleQosStatus can also be monitored using a <a class="reference internal" href="classdds_1_1sub_1_1DataReaderListener.html#classdds_1_1sub_1_1DataReaderListener"><span class="std std-ref">DataReaderListener</span></a> or by using the associated StatusCondition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the RequestedIncompatibleQosStatus </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13AnyDataReader27subscription_matched_statusEv">
+<span id="_CPPv3N3dds3sub13AnyDataReader27subscription_matched_statusEv"></span><span id="_CPPv2N3dds3sub13AnyDataReader27subscription_matched_statusEv"></span><span id="dds::sub::AnyDataReader::subscription_matched_status"></span><span class="target" id="classdds_1_1sub_1_1AnyDataReader_1acce90b11c4744308ff07d5da2ca3515a"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status25SubscriptionMatchedStatusE" title="dds::core::status::SubscriptionMatchedStatus"><span class="n"><span class="pre">SubscriptionMatchedStatus</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">subscription_matched_status</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation obtains the SubscriptionMatchedStatus object of the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>.</p>
+<p>This object contains the information whether a new match has been discovered for the current subscription, or whether an existing match has ceased to exist.</p>
+<p>This means that the status represents that either a DataWriter object has been discovered by the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> with the same Topic and a compatible Qos, or that a previously discovered DataWriter has ceased to be matched to the current <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>. A DataWriter may cease to match when it gets deleted, when it changes its Qos to a value that is incompatible with the current <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> or when either the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> or the DataWriter has chosen to put its matching counterpart on its ignore-list using the dds::sub::ignore or dds::pub::ignore operations on the DomainParticipant.</p>
+<p>The operation may fail if the infrastructure does not hold the information necessary to fill in the SubscriptionMatchedStatus. This is the case when OpenSplice is configured not to maintain discovery information in the Networking Service. (See the description for the NetworkingService/Discovery/enabled property in the Deployment Manual for more information about this subject.) In this case the operation will throw UnsupportedError.</p>
+<p>The SubscriptionMatchedStatus can also be monitored using a <a class="reference internal" href="classdds_1_1sub_1_1DataReaderListener.html#classdds_1_1sub_1_1DataReaderListener"><span class="std std-ref">DataReaderListener</span></a> or by using the associated StatusCondition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core16UnsupportedErrorE" title="dds::core::UnsupportedError"><span class="n">UnsupportedError</span></a></span></span> – OpenSplice is configured not to maintain the information about “associated” publications. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the SubscriptionMatchedStatus </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

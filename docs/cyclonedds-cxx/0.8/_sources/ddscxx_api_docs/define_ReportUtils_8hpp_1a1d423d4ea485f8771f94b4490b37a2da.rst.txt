@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a1d423d4ea485f8771f94b4490b37a2da:
+
+Define ISOCPP_NULL_REFERENCE_ERROR
+==================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_NULL_REFERENCE_ERROR

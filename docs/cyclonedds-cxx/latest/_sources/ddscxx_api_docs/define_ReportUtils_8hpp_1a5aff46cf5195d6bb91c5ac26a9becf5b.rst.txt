@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a5aff46cf5195d6bb91c5ac26a9becf5b:
+
+Define ISOCPP_THROW_EXCEPTION
+=============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_THROW_EXCEPTION

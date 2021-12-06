@@ -1,0 +1,86 @@
+
+.. _file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp:
+
+File DomainParticipantDelegate.hpp
+==================================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_domain>` (``org/eclipse/cyclonedds/domain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/domain/DomainParticipantDelegate.hpp``)
+----------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Entity.hpp`` (:ref:`file_dds_core_Entity.hpp`)
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/core/Time.hpp`` (:ref:`file_dds_core_Time.hpp`)
+
+- ``dds/core/detail/WeakReferenceImpl.hpp`` (:ref:`file_dds_core_detail_WeakReferenceImpl.hpp`)
+
+- ``dds/core/ref_traits.hpp`` (:ref:`file_dds_core_ref_traits.hpp`)
+
+- ``dds/core/status/State.hpp`` (:ref:`file_dds_core_status_State.hpp`)
+
+- ``dds/domain/qos/DomainParticipantQos.hpp`` (:ref:`file_dds_domain_qos_DomainParticipantQos.hpp`)
+
+- ``dds/pub/qos/PublisherQos.hpp`` (:ref:`file_dds_pub_qos_PublisherQos.hpp`)
+
+- ``dds/sub/qos/SubscriberQos.hpp`` (:ref:`file_dds_sub_qos_SubscriberQos.hpp`)
+
+- ``dds/topic/qos/TopicQos.hpp`` (:ref:`file_dds_topic_qos_TopicQos.hpp`)
+
+- ``org/eclipse/cyclonedds/ForwardDeclarations.hpp`` (:ref:`file_org_eclipse_cyclonedds_ForwardDeclarations.hpp`)
+
+- ``org/eclipse/cyclonedds/core/EntityDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`)
+
+- ``org/eclipse/cyclonedds/core/EntitySet.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_EntitySet.hpp`)
+
+- ``org/eclipse/cyclonedds/core/Mutex.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_Mutex.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ObjectSet.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ObjectSet.hpp`)
+
+- ``org/eclipse/cyclonedds/domain/Domain.hpp`` (:ref:`file_org_eclipse_cyclonedds_domain_Domain.hpp`)
+
+- ``org/eclipse/cyclonedds/domain/DomainWrap.hpp`` (:ref:`file_org_eclipse_cyclonedds_domain_DomainWrap.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/DataRepresentation.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_DataRepresentation.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_domain_detail_DomainParticipantImpl.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantRegistry.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1domain_1_1DomainParticipantDelegate`
+

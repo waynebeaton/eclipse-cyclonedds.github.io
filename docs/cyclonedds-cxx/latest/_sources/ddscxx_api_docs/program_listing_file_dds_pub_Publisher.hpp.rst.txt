@@ -1,0 +1,104 @@
+
+.. _program_listing_file_dds_pub_Publisher.hpp:
+
+Program Listing for File Publisher.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_pub_Publisher.hpp>` (``dds/pub/Publisher.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_PUB_PUBLISHER_HPP_
+   #define OMG_TDDS_PUB_PUBLISHER_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/types.hpp>
+   #include <dds/core/Entity.hpp>
+   #include <dds/pub/qos/DataWriterQos.hpp>
+   #include <dds/pub/qos/PublisherQos.hpp>
+   #include <dds/domain/DomainParticipant.hpp>
+   
+   
+   
+   namespace dds
+   {
+   namespace pub
+   {
+   
+   class Publisher;
+   
+   class PublisherListener;
+   }
+   }
+   
+   class dds::pub::Publisher : public dds::core::Entity
+   {
+   public:
+       typedef dds::pub::PublisherListener                 Listener;
+   
+   public:
+       OMG_DDS_REF_TYPE_PROTECTED_DC(Publisher, dds::core::Entity)
+       OMG_DDS_IMPLICIT_REF_BASE(Publisher)
+       OMG_DDS_COMPLETE_RULE_OF_FIVE_VIRTUAL_DEFAULT(Publisher)
+   
+       
+       Publisher(const dds::domain::DomainParticipant& dp);
+   
+       Publisher(const dds::domain::DomainParticipant& dp,
+                  const dds::pub::qos::PublisherQos& qos,
+                  dds::pub::PublisherListener* listener = NULL,
+                  const dds::core::status::StatusMask& mask = dds::core::status::StatusMask::none());
+   
+       //==========================================================================
+   
+       const dds::pub::qos::PublisherQos& qos() const;
+   
+   
+       void qos(const dds::pub::qos::PublisherQos& qos);
+   
+       Publisher& operator <<(const dds::pub::qos::PublisherQos& qos);
+   
+       Publisher& operator >> (dds::pub::qos::PublisherQos& qos);
+   
+       Publisher& default_datawriter_qos(const dds::pub::qos::DataWriterQos& qos);
+   
+       dds::pub::qos::DataWriterQos default_datawriter_qos() const;
+   
+       //==========================================================================
+   
+       void listener(Listener* plistener,
+                     const dds::core::status::StatusMask& mask);
+   
+       Listener* listener() const;
+   
+       //==========================================================================
+   
+       void wait_for_acknowledgments(const dds::core::Duration& timeout);
+   
+       //==========================================================================
+   
+       const dds::domain::DomainParticipant& participant() const;
+   
+   };
+   
+   
+   #endif /* OMG_TDDS_PUB_PUBLISHER_HPP_ */

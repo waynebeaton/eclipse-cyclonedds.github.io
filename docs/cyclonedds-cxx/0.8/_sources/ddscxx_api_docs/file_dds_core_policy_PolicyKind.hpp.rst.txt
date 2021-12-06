@@ -1,0 +1,79 @@
+
+.. _file_dds_core_policy_PolicyKind.hpp:
+
+File PolicyKind.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_policy>` (``dds/core/policy``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/policy/PolicyKind.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_policy_PolicyKind.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/SafeEnumeration.hpp`` (:ref:`file_dds_core_SafeEnumeration.hpp`)
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_policy_CorePolicy.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__policy`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1DestinationOrderKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1DurabilityKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1HistoryKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1LivelinessKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1OwnershipKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1PresentationAccessScopeKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1ReliabilityKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1policy_1_1TypeConsistencyEnforcementKind`
+

@@ -1,0 +1,31 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1DataReader_1_1ManipulatorSelector:
+
+Class DataReader::ManipulatorSelector
+=====================================
+
+- Defined in :ref:`file_dds_sub_detail_DataReader.hpp`
+
+
+Nested Relationships
+--------------------
+
+This class is a nested type of :ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader`.
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::sub::detail::DataReader< T >::Selector`` (:ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader_1_1Selector`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::DataReader::ManipulatorSelector
+   :members:
+   :protected-members:
+   :undoc-members:

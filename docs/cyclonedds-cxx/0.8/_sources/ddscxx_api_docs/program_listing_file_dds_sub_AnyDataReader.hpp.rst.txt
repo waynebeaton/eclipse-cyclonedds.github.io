@@ -1,0 +1,143 @@
+
+.. _program_listing_file_dds_sub_AnyDataReader.hpp:
+
+Program Listing for File AnyDataReader.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_sub_AnyDataReader.hpp>` (``dds/sub/AnyDataReader.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_SUB_ANY_DATA_READER_HPP_
+   #define OMG_TDDS_SUB_ANY_DATA_READER_HPP_
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/Entity.hpp>
+   #include <dds/sub/Subscriber.hpp>
+   #include <dds/sub/qos/DataReaderQos.hpp>
+   #include <dds/topic/TopicDescription.hpp>
+   #include <dds/core/macros.hpp>
+   
+   namespace dds
+   {
+   namespace sub
+   {
+   
+   class AnyDataReader;
+   
+   }
+   }
+   
+   class dds::sub::AnyDataReader : public dds::core::Entity
+   {
+   public:
+       OMG_DDS_REF_TYPE_PROTECTED_DC(AnyDataReader, dds::core::Entity)
+   #if 0
+       OMG_DDS_IMPLICIT_REF_BASE(AnyDataReader)
+   #else
+   public:
+   template <typename H__>
+   AnyDataReader(const H__& h)
+   {
+       if (h.is_nil()) {
+           /* We got a null object and are not really able to do a typecheck here. */
+           /* So, just set a null object. */
+           *this = dds::core::null;
+       } else {
+           this->::dds::core::Reference< DELEGATE_T >::impl_ = ::std::dynamic_pointer_cast< DELEGATE_T >(h.delegate());
+           if (h.delegate() != this->::dds::core::Reference< DELEGATE_T >::impl_) {
+               throw dds::core::IllegalOperationError(std::string("Attempted invalid cast: ") + typeid(h).name() + " to " + typeid(*this).name());
+           }
+       }
+   }
+   
+   template <typename T__>
+   AnyDataReader&
+   operator=(const T__& rhs) {
+       const AnyDataReader &t = rhs;
+       if (this != &t) {
+           if (rhs.is_nil()) {
+               /* We got a null object and are not really able to do a typecheck here. */
+               /* So, just set a null object. */
+               *this = dds::core::null;
+           } else {
+               AnyDataReader other(rhs);
+               /* Dont have to copy when the delegate impl is the same. */
+               if (other.delegate() != this->::dds::core::Reference< DELEGATE_T >::impl_) {
+                   *this = other;
+               }
+           }
+       }
+       return *this;
+   }
+   #endif
+       OMG_DDS_COMPLETE_RULE_OF_FIVE_VIRTUAL_DEFAULT(AnyDataReader)
+   
+       //==========================================================================
+       // -- Entity Navigation API
+   
+       
+       const dds::sub::Subscriber& subscriber() const;
+   
+       const dds::topic::TopicDescription& topic_description() const;
+   
+   
+   
+       void wait_for_historical_data(const dds::core::Duration& timeout);
+   
+   
+       //==========================================================================
+       // -- QoS Management
+   
+       dds::sub::qos::DataReaderQos
+       qos() const;
+   
+       void qos(const dds::sub::qos::DataReaderQos& qos);
+   
+       AnyDataReader& operator << (const dds::sub::qos::DataReaderQos& qos);
+   
+       const AnyDataReader& operator >> (dds::sub::qos::DataReaderQos& qos) const;
+   
+   
+       //========================================================================
+       // -- Status API
+       dds::core::status::LivelinessChangedStatus
+       liveliness_changed_status();
+   
+       dds::core::status::SampleRejectedStatus
+       sample_rejected_status();
+   
+       dds::core::status::SampleLostStatus
+       sample_lost_status();
+   
+       dds::core::status::RequestedDeadlineMissedStatus
+       requested_deadline_missed_status();
+   
+       dds::core::status::RequestedIncompatibleQosStatus
+       requested_incompatible_qos_status();
+   
+       dds::core::status::SubscriptionMatchedStatus
+       subscription_matched_status();
+   
+   };
+   
+   
+   #endif /* OMG_TDDS_SUB_ANY_DATA_READER_HPP_ */

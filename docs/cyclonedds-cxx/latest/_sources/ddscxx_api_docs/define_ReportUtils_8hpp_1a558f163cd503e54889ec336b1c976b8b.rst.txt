@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a558f163cd503e54889ec336b1c976b8b:
+
+Define ISOCPP_OUT_OF_RESOURCES_ERROR
+====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_OUT_OF_RESOURCES_ERROR

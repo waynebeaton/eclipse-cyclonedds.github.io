@@ -1,0 +1,32 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1cond_1_1ReadConditionDelegate:
+
+Class ReadConditionDelegate
+===========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_cond_ReadConditionDelegate.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public org::eclipse::cyclonedds::core::cond::ConditionDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cond_1_1ConditionDelegate`)
+- ``public org::eclipse::cyclonedds::sub::QueryDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1QueryDelegate`)
+
+
+Derived Type
+************
+
+- ``public org::eclipse::cyclonedds::sub::cond::QueryConditionDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1cond_1_1QueryConditionDelegate`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::sub::cond::ReadConditionDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

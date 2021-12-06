@@ -1,0 +1,63 @@
+
+.. _file_dds_core_cond_GuardCondition.hpp:
+
+File GuardCondition.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_cond>` (``dds/core/cond``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/cond/GuardCondition.hpp``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_cond_GuardCondition.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/cond/Condition.hpp`` (:ref:`file_dds_core_cond_Condition.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_cond_detail_GuardConditionImpl.hpp`
+
+- :ref:`file_dds_core_ddscore.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__cond`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1cond_1_1GuardCondition`
+

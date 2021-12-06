@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2CorePolicy_8hpp_1aca35722c815131d97a43bd114e320de2:
+
+Typedef dds::core::policy::detail::ResourceLimits
+=================================================
+
+- Defined in :ref:`file_dds_core_policy_detail_CorePolicy.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::policy::detail::ResourceLimits

@@ -1,0 +1,38 @@
+.. _exhale_class_classdds_1_1core_1_1Exception:
+
+Class Exception
+===============
+
+- Defined in :ref:`file_dds_core_Exception.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public dds::core::AlreadyClosedError`` (:ref:`exhale_class_classdds_1_1core_1_1AlreadyClosedError`)
+- ``public dds::core::Error`` (:ref:`exhale_class_classdds_1_1core_1_1Error`)
+- ``public dds::core::IllegalOperationError`` (:ref:`exhale_class_classdds_1_1core_1_1IllegalOperationError`)
+- ``public dds::core::ImmutablePolicyError`` (:ref:`exhale_class_classdds_1_1core_1_1ImmutablePolicyError`)
+- ``public dds::core::InconsistentPolicyError`` (:ref:`exhale_class_classdds_1_1core_1_1InconsistentPolicyError`)
+- ``public dds::core::InvalidArgumentError`` (:ref:`exhale_class_classdds_1_1core_1_1InvalidArgumentError`)
+- ``public dds::core::InvalidDataError`` (:ref:`exhale_class_classdds_1_1core_1_1InvalidDataError`)
+- ``public dds::core::InvalidDowncastError`` (:ref:`exhale_class_classdds_1_1core_1_1InvalidDowncastError`)
+- ``public dds::core::NotEnabledError`` (:ref:`exhale_class_classdds_1_1core_1_1NotEnabledError`)
+- ``public dds::core::NullReferenceError`` (:ref:`exhale_class_classdds_1_1core_1_1NullReferenceError`)
+- ``public dds::core::OutOfResourcesError`` (:ref:`exhale_class_classdds_1_1core_1_1OutOfResourcesError`)
+- ``public dds::core::PreconditionNotMetError`` (:ref:`exhale_class_classdds_1_1core_1_1PreconditionNotMetError`)
+- ``public dds::core::TimeoutError`` (:ref:`exhale_class_classdds_1_1core_1_1TimeoutError`)
+- ``public dds::core::UnsupportedError`` (:ref:`exhale_class_classdds_1_1core_1_1UnsupportedError`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::Exception
+   :members:
+   :protected-members:
+   :undoc-members:

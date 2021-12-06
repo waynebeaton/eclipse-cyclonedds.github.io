@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2StatusCondition_8hpp_1a9ba52b274b3c9674efad9d735fd8f461:
+
+Typedef dds::core::cond::detail::StatusCondition
+================================================
+
+- Defined in :ref:`file_dds_core_cond_detail_StatusCondition.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::cond::detail::StatusCondition

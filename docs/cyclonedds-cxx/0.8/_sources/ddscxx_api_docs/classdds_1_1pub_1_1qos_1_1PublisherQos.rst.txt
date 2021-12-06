@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1pub_1_1qos_1_1PublisherQos:
+
+Class PublisherQos
+==================
+
+- Defined in :ref:`file_dds_pub_qos_PublisherQos.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::EntityQos< org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate >`` (:ref:`exhale_class_classdds_1_1core_1_1EntityQos`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::pub::qos::PublisherQos
+   :members:
+   :protected-members:
+   :undoc-members:

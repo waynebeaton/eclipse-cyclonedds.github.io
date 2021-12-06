@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1xtypes_1_1DynamicData:
+
+Class DynamicData
+=================
+
+- Defined in :ref:`file_dds_core_xtypes_DynamicData.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``private dds::core::Reference`` (:ref:`exhale_class_classdds_1_1core_1_1Reference`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::xtypes::DynamicData
+   :members:
+   :protected-members:
+   :undoc-members:

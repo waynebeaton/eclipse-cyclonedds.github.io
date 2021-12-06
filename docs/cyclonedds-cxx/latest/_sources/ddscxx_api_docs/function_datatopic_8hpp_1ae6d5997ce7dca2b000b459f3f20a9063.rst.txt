@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1ae6d5997ce7dca2b000b459f3f20a9063:
+
+Template Function serdata_to_untyped
+====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_to_untyped(const ddsi_serdata *)

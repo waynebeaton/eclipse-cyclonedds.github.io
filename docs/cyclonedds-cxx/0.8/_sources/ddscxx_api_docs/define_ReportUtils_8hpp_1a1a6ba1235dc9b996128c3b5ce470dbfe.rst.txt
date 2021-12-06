@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a1a6ba1235dc9b996128c3b5ce470dbfe:
+
+Define ISOCPP_TIMEOUT_ERROR
+===========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_TIMEOUT_ERROR

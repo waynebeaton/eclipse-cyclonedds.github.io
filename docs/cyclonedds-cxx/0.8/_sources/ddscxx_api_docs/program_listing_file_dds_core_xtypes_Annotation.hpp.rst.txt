@@ -1,0 +1,189 @@
+
+.. _program_listing_file_dds_core_xtypes_Annotation.hpp:
+
+Program Listing for File Annotation.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_xtypes_Annotation.hpp>` (``dds/core/xtypes/Annotation.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /* Copyright 2010, Object Management Group, Inc.
+   * Copyright 2010, PrismTech, Corp.
+   * Copyright 2010, Real-Time Innovations, Inc.
+   * All rights reserved.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   *     http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   */
+   #ifndef OMG_DDS_CORE_XTYPES_TANNOTATIONS_HPP_
+   #define OMG_DDS_CORE_XTYPES_TANNOTATIONS_HPP_
+   
+   #include <dds/core/Reference.hpp>
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace xtypes
+   {
+   
+   struct AnnotationKind
+   {
+       enum type
+       {
+           ID_ANNOTATION_TYPE,
+           OPTIONAL_ANNOTATION_TYPE,
+           KEY_ANNOTATION_TYPE,
+           SHARED_ANNOTATION_TYPE,
+           NESTED_ANNOTATION_TYPE,
+           EXTENSIBILITY_ANNOTATION_TYPE,
+           MUST_UNDERSTAND_ANNOTATION_TYPE,
+           VERBATIM_ANNOTATION_TYPE,
+           BITSET_ANNOTATION_TYPE
+       };
+   };
+   
+   
+   
+   struct ExtensibilityKind
+   {
+       enum type
+       {
+           FINAL,
+           EXTENSIBLE,
+           MUTABLE
+       };
+   };
+   
+   
+   
+   
+   class Annotation;
+   
+   
+   class IdAnnotation;
+   
+   
+   class KeyAnnotation;
+   
+   
+   class SharedAnnotation;
+   
+   
+   class NestedAnnotation;
+   
+   
+   class ExtensibilityAnnotation;
+   
+   
+   class MustUnderstandAnnotation;
+   
+   
+   class VerbatimAnnotation;
+   
+   
+   class BitsetAnnotation;
+   
+   
+   class BitBoundAnnotation;
+   
+   }
+   }
+   }
+   
+   
+   class dds::core::xtypes::Annotation : public dds::core::Reference
+   {
+   public:
+       OMG_DDS_REF_TYPE(Annotation, dds::core::Reference)
+   
+   public:
+       Annotation();
+   protected:
+       Annotation(const TypeKind& kind);
+   public:
+       TypeKind kind() const;
+   };
+   
+   class dds::core::xtypes::IdAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       IdAnnotation(uint32_t id);
+   public:
+       uint32_t id() const;
+   };
+   
+   class dds::core::xtypes::KeyAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       KeyAnnotation();
+   };
+   
+   class dds::core::xtypes::SharedAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       SharedAnnotation();
+   };
+   
+   class dds::core::xtypes::NestedAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       NestedAnnotation();
+   };
+   
+   
+   class dds::core::xtypes::ExtensibilityAnnotation : public dds::core::xtypes::Annotation
+   {
+   
+   public:
+       ExtensibilityAnnotation(ExtensibilityKind xkind);
+   
+   public:
+       ExtensibilityKind extensibility_kind() const;
+   };
+   
+   
+   class dds::core::xtypes::MustUnderstandAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       MustUnderstandAnnotation();
+   };
+   
+   
+   class dds::core::xtypes::VerbatimAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       VerbatimAnnotation(const std::string& text);
+   public:
+       const std::string& verbatim_text() const;
+   };
+   
+   
+   class dds::core::xtypes::BitsetAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       BitsetAnnotation();
+   
+   };
+   
+   
+   class  dds::core::xtypes::BitBoundAnnotation : public dds::core::xtypes::Annotation
+   {
+   public:
+       BitBoundAnnotation(uint32_t bound);
+   };
+   
+   
+   #endif /* OMG_DDS_CORE_XTYPES_TANNOTATIONS_HPP_ */

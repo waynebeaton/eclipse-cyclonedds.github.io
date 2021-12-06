@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1ad459af404e53d314cbebe17cccf23882:
+
+Define ISOCPP_DDSC_RESULT_CHECK_AND_THROW
+=========================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_DDSC_RESULT_CHECK_AND_THROW

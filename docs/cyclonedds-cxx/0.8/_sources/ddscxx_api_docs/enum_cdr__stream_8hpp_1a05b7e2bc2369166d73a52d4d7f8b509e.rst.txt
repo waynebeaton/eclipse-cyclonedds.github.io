@@ -1,0 +1,13 @@
+.. _exhale_enum_cdr__stream_8hpp_1a05b7e2bc2369166d73a52d4d7f8b509e:
+
+Enum endianness
+===============
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: org::eclipse::cyclonedds::core::cdr::endianness

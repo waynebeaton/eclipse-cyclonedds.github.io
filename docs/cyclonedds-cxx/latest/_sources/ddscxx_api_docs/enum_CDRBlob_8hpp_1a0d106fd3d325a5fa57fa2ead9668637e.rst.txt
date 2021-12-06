@@ -1,0 +1,13 @@
+.. _exhale_enum_CDRBlob_8hpp_1a0d106fd3d325a5fa57fa2ead9668637e:
+
+Enum BlobKind
+=============
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_CDRBlob.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: org::eclipse::cyclonedds::topic::BlobKind

@@ -1,0 +1,33 @@
+
+.. _namespace_dds__pub__detail:
+
+Namespace dds::pub::detail
+==========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1pub_1_1detail_1_1DataWriter`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2AnyDataWriter_8hpp_1ab311d7c7ce147b8e997654685f3cc6fa`
+
+- :ref:`exhale_typedef_detail_2CoherentSet_8hpp_1a336966fa413668560b630fcb4536bad0`
+
+- :ref:`exhale_typedef_detail_2Publisher_8hpp_1a85cf171dedbae36d36969cb53dc244bd`
+
+- :ref:`exhale_typedef_detail_2SuspendedPublication_8hpp_1ac5bd022b2d2f8fbb640bed2a7fb532f5`

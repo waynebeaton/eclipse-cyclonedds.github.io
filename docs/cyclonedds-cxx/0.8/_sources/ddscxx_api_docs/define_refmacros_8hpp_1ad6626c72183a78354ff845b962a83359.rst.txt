@@ -1,0 +1,13 @@
+.. _exhale_define_refmacros_8hpp_1ad6626c72183a78354ff845b962a83359:
+
+Define OMG_DDS_REF_TYPE_BASE
+============================
+
+- Defined in :ref:`file_dds_core_refmacros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_REF_TYPE_BASE

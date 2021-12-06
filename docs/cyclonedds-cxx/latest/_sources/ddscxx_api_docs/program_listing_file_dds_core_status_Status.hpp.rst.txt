@@ -1,0 +1,214 @@
+
+.. _program_listing_file_dds_core_status_Status.hpp:
+
+Program Listing for File Status.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_status_Status.hpp>` (``dds/core/status/Status.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_CORE_STATUS_STATUS_HPP_
+   #define OMG_TDDS_CORE_STATUS_STATUS_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/Value.hpp>
+   #include <dds/core/InstanceHandle.hpp>
+   #include <dds/core/policy/CorePolicy.hpp>
+   #include <dds/core/policy/QosPolicyCount.hpp>
+   #include <dds/core/status/State.hpp>
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace status
+   {
+   
+   class InconsistentTopicStatus : public dds::core::Value
+   {
+   public:
+       InconsistentTopicStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   };
+   
+   class SampleLostStatus : public dds::core::Value
+   {
+   public:
+       SampleLostStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   };
+   
+   
+   class SampleRejectedStatus : public dds::core::Value
+   {
+   public:
+       SampleRejectedStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   
+       const dds::core::status::SampleRejectedState last_reason() const;
+   
+       const dds::core::InstanceHandle last_instance_handle() const;
+   };
+   
+   class LivelinessLostStatus : public dds::core::Value
+   {
+   public:
+       LivelinessLostStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   };
+   
+   class LivelinessChangedStatus : public dds::core::Value
+   {
+   public:
+       LivelinessChangedStatus();
+   
+   public:
+       int32_t alive_count() const;
+   
+       int32_t not_alive_count() const;
+   
+       int32_t alive_count_change() const;
+   
+       int32_t not_alive_count_change() const;
+   
+       const dds::core::InstanceHandle last_publication_handle() const;
+   };
+   
+   class OfferedDeadlineMissedStatus : public dds::core::Value
+   {
+   public:
+       OfferedDeadlineMissedStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   
+       const dds::core::InstanceHandle last_instance_handle() const;
+   };
+   
+   class RequestedDeadlineMissedStatus : public dds::core::Value
+   {
+   public:
+       RequestedDeadlineMissedStatus();
+   public:
+   
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   
+       const dds::core::InstanceHandle last_instance_handle() const;
+   };
+   
+   
+   class OfferedIncompatibleQosStatus : public dds::core::Value
+   {
+   public:
+       OfferedIncompatibleQosStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   
+       dds::core::policy::QosPolicyId last_policy_id() const;
+   
+       const dds::core::policy::QosPolicyCountSeq policies() const;
+   
+       const dds::core::policy::QosPolicyCountSeq&
+       policies(dds::core::policy::QosPolicyCountSeq& dst) const;
+   };
+   
+   class RequestedIncompatibleQosStatus : public dds::core::Value
+   {
+   public:
+       RequestedIncompatibleQosStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   
+       dds::core::policy::QosPolicyId last_policy_id() const;
+   
+       const dds::core::policy::QosPolicyCountSeq policies() const;
+   
+       const dds::core::policy::QosPolicyCountSeq&
+       policies(dds::core::policy::QosPolicyCountSeq& dst) const;
+   };
+   
+   class PublicationMatchedStatus : public dds::core::Value
+   {
+   public:
+       PublicationMatchedStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   
+       int32_t current_count() const;
+   
+       int32_t current_count_change() const;
+   
+       const dds::core::InstanceHandle last_subscription_handle() const;
+   };
+   
+   class SubscriptionMatchedStatus : public dds::core::Value
+   {
+   public:
+       SubscriptionMatchedStatus();
+   
+   public:
+       int32_t total_count() const;
+   
+       int32_t total_count_change() const;
+   
+       int32_t current_count() const;
+   
+       int32_t current_count_change() const;
+   
+       const dds::core::InstanceHandle last_publication_handle() const;
+   };
+   
+   }
+   }
+   }/* namespace dds::core::status */
+   
+   #endif /* OMG_TDDS_CORE_STATUS_STATUS_HPP_ */

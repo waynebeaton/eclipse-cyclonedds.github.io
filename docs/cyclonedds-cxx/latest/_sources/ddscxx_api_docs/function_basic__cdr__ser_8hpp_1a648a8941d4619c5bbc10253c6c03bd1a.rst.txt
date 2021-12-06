@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1a648a8941d4619c5bbc10253c6c03bd1a:
+
+Template Function org::eclipse::cyclonedds::core::cdr::move_string
+==================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::move_string(basic_cdr_stream&, const T&, size_t)

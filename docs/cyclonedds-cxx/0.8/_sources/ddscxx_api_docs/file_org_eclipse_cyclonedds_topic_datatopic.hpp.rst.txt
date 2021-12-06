@@ -1,0 +1,133 @@
+
+.. _file_org_eclipse_cyclonedds_topic_datatopic.hpp:
+
+File datatopic.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_topic>` (``org/eclipse/cyclonedds/topic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/topic/datatopic.hpp``)
+-----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_topic_datatopic.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``atomic``
+
+- ``cstring``
+
+- ``dds/ddsi/ddsi_keyhash.h``
+
+- ``dds/ddsi/ddsi_serdata.h``
+
+- ``dds/ddsi/q_radmin.h``
+
+- ``dds/ddsi/q_xmsg.h``
+
+- ``dds/ddsrt/endian.h``
+
+- ``dds/ddsrt/md5.h``
+
+- ``dds/features.hpp``
+
+- ``memory``
+
+- ``org/eclipse/cyclonedds/core/cdr/basic_cdr_ser.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/hash.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_hash.hpp`)
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_detail_SampleRef.hpp`
+
+- :ref:`file_dds_sub_detail_SamplesHolder.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classddscxx__serdata`
+
+- :ref:`exhale_class_classddscxx__sertype`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_datatopic_8hpp_1a299431c2a41765ca967ab0d9a427234d`
+
+- :ref:`exhale_function_datatopic_8hpp_1aaac1f86154a089400ef58eb3fc7cb083`
+
+- :ref:`exhale_function_datatopic_8hpp_1a8bce0b9bc179d96f488d9535da260a67`
+
+- :ref:`exhale_function_datatopic_8hpp_1aee821632e2e1cb00d82bca6e9838a493`
+
+- :ref:`exhale_function_datatopic_8hpp_1a801fd3b0fce59eb6b7b3f73a4418e4f0`
+
+- :ref:`exhale_function_datatopic_8hpp_1a82f97658bb5d1c1d3657e340b847b999`
+
+- :ref:`exhale_function_datatopic_8hpp_1a052df288377050467fb7815e8bd18361`
+
+- :ref:`exhale_function_datatopic_8hpp_1a63285b8f19a5c42c6c91edf6665ea09a`
+
+- :ref:`exhale_function_datatopic_8hpp_1acc2389f8a5e2b01fc28257a531d55760`
+
+- :ref:`exhale_function_datatopic_8hpp_1a8bd5a57ff5d42b9627b6c9fb818c0a77`
+
+- :ref:`exhale_function_datatopic_8hpp_1a2d2cd3744588d10fcb07d57934c56ab3`
+
+- :ref:`exhale_function_datatopic_8hpp_1aa9a0234644917bfef65aef8991ffae64`
+
+- :ref:`exhale_function_datatopic_8hpp_1a6afcecc9800ddd432d5067848b4933b2`
+
+- :ref:`exhale_function_datatopic_8hpp_1a3cf2b43c0277abad45e16a5dd21bfed8`
+
+- :ref:`exhale_function_datatopic_8hpp_1ad027eddef4c62db22136a294dba85fdd`
+
+- :ref:`exhale_function_datatopic_8hpp_1ae6d5997ce7dca2b000b459f3f20a9063`
+
+- :ref:`exhale_function_datatopic_8hpp_1ae9eb3612cffd97a7b81b43cca88769ec`
+
+- :ref:`exhale_function_datatopic_8hpp_1a9be0d0c74745a4ab7764b9ced8cead99`
+
+- :ref:`exhale_function_datatopic_8hpp_1a3af6b1817131709338c11bc9abf063ad`
+
+- :ref:`exhale_function_datatopic_8hpp_1a807409590d42deb9260f41700886ea31`
+
+- :ref:`exhale_function_datatopic_8hpp_1aa3f1c7bf8b5287d48931b2d58054ea92`
+
+- :ref:`exhale_function_datatopic_8hpp_1a926244736be9aaa7729e8c4bfe18ffe0`
+
+- :ref:`exhale_function_datatopic_8hpp_1a902a95c6c09a502fbf0db3215222d61d`
+
+- :ref:`exhale_function_datatopic_8hpp_1ae54a93ead2aa5f2f7a435327b0fe0878`
+

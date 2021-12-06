@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1aeda8a8fb6e3e770fdeaca548ab72e245:
+
+Function dds::core::xtypes::annotation::Verbatim
+================================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::Verbatim(const std::string&)

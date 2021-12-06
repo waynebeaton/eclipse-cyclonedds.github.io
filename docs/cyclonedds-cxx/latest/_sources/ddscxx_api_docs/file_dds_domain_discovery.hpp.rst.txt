@@ -1,0 +1,63 @@
+
+.. _file_dds_domain_discovery.hpp:
+
+File discovery.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_domain>` (``dds/domain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/domain/discovery.hpp``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_domain_discovery.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/domain/DomainParticipant.hpp`` (:ref:`file_dds_domain_DomainParticipant.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_domain_ddsdomain.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__domain`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_dds_2domain_2discovery_8hpp_1a96040476be3d1132a5e2380764b524dd`
+
+- :ref:`exhale_function_dds_2domain_2discovery_8hpp_1a69ab317ccdf0912e89b22681d94e7c05`
+

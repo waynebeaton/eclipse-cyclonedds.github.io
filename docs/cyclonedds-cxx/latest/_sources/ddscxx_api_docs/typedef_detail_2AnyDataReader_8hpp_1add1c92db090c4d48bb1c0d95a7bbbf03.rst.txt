@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2AnyDataReader_8hpp_1add1c92db090c4d48bb1c0d95a7bbbf03:
+
+Typedef dds::sub::detail::AnyDataReader
+=======================================
+
+- Defined in :ref:`file_dds_sub_detail_AnyDataReader.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::AnyDataReader

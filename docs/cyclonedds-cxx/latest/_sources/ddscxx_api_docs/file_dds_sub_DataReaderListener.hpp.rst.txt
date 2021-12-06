@@ -1,0 +1,63 @@
+
+.. _file_dds_sub_DataReaderListener.hpp:
+
+File DataReaderListener.hpp
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/DataReaderListener.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_DataReaderListener.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/status/Status.hpp`` (:ref:`file_dds_core_status_Status.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReaderListener`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1NoOpDataReaderListener`
+

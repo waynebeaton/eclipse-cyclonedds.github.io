@@ -1,0 +1,21 @@
+.. _dir_dds_pub_qos:
+
+
+Directory qos
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub>` (``dds/pub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/pub/qos``
+
+
+Files
+-----
+
+- :ref:`file_dds_pub_qos_DataWriterQos.hpp`
+- :ref:`file_dds_pub_qos_PublisherQos.hpp`
+
+

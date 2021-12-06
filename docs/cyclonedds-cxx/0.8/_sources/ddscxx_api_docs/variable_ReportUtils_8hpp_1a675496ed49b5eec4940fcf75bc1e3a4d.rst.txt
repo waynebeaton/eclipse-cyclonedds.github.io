@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1a675496ed49b5eec4940fcf75bc1e3a4d:
+
+Variable org::eclipse::cyclonedds::core::utils::timeout_error_code
+==================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::timeout_error_code

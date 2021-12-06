@@ -1,0 +1,141 @@
+
+.. _file_dds_core_types.hpp:
+
+File types.hpp
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/types.hpp``)
+-----------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_types.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``dds/core/detail/inttypes.hpp`` (:ref:`file_dds_core_detail_inttypes.hpp`)
+
+- ``dds/core/macros.hpp`` (:ref:`file_dds_core_macros.hpp`)
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_Duration.hpp`
+
+- :ref:`file_dds_core_Reference.hpp`
+
+- :ref:`file_dds_core_InstanceHandle.hpp`
+
+- :ref:`file_dds_core_Time.hpp`
+
+- :ref:`file_dds_core_cond_WaitSet.hpp`
+
+- :ref:`file_dds_core_ddscore.hpp`
+
+- :ref:`file_dds_core_detail_ref_traits.hpp`
+
+- :ref:`file_dds_core_status_State.hpp`
+
+- :ref:`file_dds_domain_DomainParticipant.hpp`
+
+- :ref:`file_dds_pub_Publisher.hpp`
+
+- :ref:`file_dds_sub_Query.hpp`
+
+- :ref:`file_dds_sub_status_DataState.hpp`
+
+- :ref:`file_dds_topic_AnyTopic.hpp`
+
+- :ref:`file_dds_topic_ContentFilteredTopic.hpp`
+
+- :ref:`file_dds_topic_Filter.hpp`
+
+- :ref:`file_dds_topic_MultiTopic.hpp`
+
+- :ref:`file_dds_topic_Topic.hpp`
+
+- :ref:`file_dds_topic_detail_ContentFilteredTopic.hpp`
+
+- :ref:`file_dds_topic_detail_MultiTopic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_InstanceHandleDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_config.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_policy_QosPolicyCountDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_Domain.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_AnyDataWriterDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_BuiltinSubscriberDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_SubscriberDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_AnyTopicDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1null__type`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_types_8hpp_1af64219b65f7ff337e91052779680aef9`
+
+- :ref:`exhale_typedef_types_8hpp_1af41924828eff7595b676d2196b993482`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_types_8hpp_1a22c3217bb51dfe3db2887417da74d917`
+

@@ -1,0 +1,72 @@
+
+.. _program_listing_file_dds_core_cond_StatusCondition.hpp:
+
+Program Listing for File StatusCondition.hpp
+============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_cond_StatusCondition.hpp>` (``dds/core/cond/StatusCondition.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_DDS_CORE_T_STATUS_CONDITION_HPP_
+   #define OMG_DDS_CORE_T_STATUS_CONDITION_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/status/State.hpp>
+   #include <dds/core/cond/Condition.hpp>
+   #include <dds/core/cond/detail/StatusCondition.hpp>
+   #include <dds/core/Entity.hpp>
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace cond
+   {
+   
+   class StatusCondition;
+   }
+   }
+   }
+   
+   class dds::core::cond::StatusCondition : public dds::core::cond::Condition
+   {
+   public:
+       OMG_DDS_REF_TYPE_DELEGATE_C(StatusCondition, dds::core::cond::Condition)
+       OMG_DDS_EXPLICIT_REF_BASE(StatusCondition, dds::core::cond::Condition)
+   
+       
+       StatusCondition(const dds::core::Entity& e);
+   
+       template <typename FUN>
+       StatusCondition(const dds::core::Entity& e, FUN functor);
+   
+   public:
+       void
+       enabled_statuses(const ::dds::core::status::StatusMask& status) const;
+   
+       const ::dds::core::status::StatusMask enabled_statuses() const;
+   
+       const dds::core::Entity& entity() const;
+   };
+   
+   #endif  /* OMG_DDS_CORE_T_STATUS_CONDITION_HPP_ */

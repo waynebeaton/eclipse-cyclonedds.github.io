@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a902a95c6c09a502fbf0db3215222d61d:
+
+Template Function sertype_zero_samples
+======================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: sertype_zero_samples(const ddsi_sertype *, void *, size_t)

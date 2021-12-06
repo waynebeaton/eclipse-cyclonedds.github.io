@@ -1,0 +1,34 @@
+.. _exhale_class_classdds_1_1core_1_1Reference:
+
+Class Reference
+===============
+
+- Defined in :ref:`file_dds_core_Reference.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public dds::core::cond::Condition`` (:ref:`exhale_class_classdds_1_1core_1_1cond_1_1Condition`)
+- ``public dds::core::cond::WaitSet`` (:ref:`exhale_class_classdds_1_1core_1_1cond_1_1WaitSet`)
+- ``public dds::core::Entity`` (:ref:`exhale_class_classdds_1_1core_1_1Entity`)
+- ``public dds::core::QosProvider`` (:ref:`exhale_class_classdds_1_1core_1_1QosProvider`)
+- ``public dds::core::xtypes::Annotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1Annotation`)
+- ``private dds::core::xtypes::DynamicData`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1DynamicData`)
+- ``public dds::core::xtypes::MemberType`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1MemberType`)
+- ``public dds::core::xtypes::UnionCase< T >`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1UnionCase`)
+- ``public dds::sub::Query`` (:ref:`exhale_class_classdds_1_1sub_1_1Query`)
+- ``public dds::topic::TopicDescription`` (:ref:`exhale_class_classdds_1_1topic_1_1TopicDescription`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::Reference
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,25 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1NoOpTopicListener:
+
+Template Class NoOpTopicListener
+================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_TopicListener.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public org::eclipse::cyclonedds::topic::TopicListener< T >`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1TopicListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::topic::NoOpTopicListener
+   :members:
+   :protected-members:
+   :undoc-members:

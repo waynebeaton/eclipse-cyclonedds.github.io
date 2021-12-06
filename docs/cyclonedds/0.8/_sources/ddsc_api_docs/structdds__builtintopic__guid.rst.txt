@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds__builtintopic__guid:
+
+Struct dds_builtintopic_guid
+============================
+
+- Defined in :ref:`file_dds.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds_builtintopic_guid
+   :members:
+   :protected-members:
+   :undoc-members:

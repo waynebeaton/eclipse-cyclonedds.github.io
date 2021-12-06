@@ -1,0 +1,26 @@
+.. _exhale_class_classdds_1_1sub_1_1AnyDataReaderListener:
+
+Class AnyDataReaderListener
+===========================
+
+- Defined in :ref:`file_dds_sub_AnyDataReaderListener.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public dds::sub::NoOpAnyDataReaderListener`` (:ref:`exhale_class_classdds_1_1sub_1_1NoOpAnyDataReaderListener`)
+- ``public dds::sub::SubscriberListener`` (:ref:`exhale_class_classdds_1_1sub_1_1SubscriberListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::AnyDataReaderListener
+   :members:
+   :protected-members:
+   :undoc-members:

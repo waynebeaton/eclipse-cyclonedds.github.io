@@ -1,0 +1,86 @@
+
+.. _program_listing_file_dds_sub_detail_SampleInfoImpl.hpp:
+
+Program Listing for File SampleInfoImpl.hpp
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_sub_detail_SampleInfoImpl.hpp>` (``dds/sub/detail/SampleInfoImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_SUB_DETAIL_TSAMPLEINFO_IMPL_HPP_
+   #define CYCLONEDDS_DDS_SUB_DETAIL_TSAMPLEINFO_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/sub/SampleInfo.hpp>
+   
+   // Implementation
+   namespace dds
+   {
+   namespace sub
+   {
+   
+   
+   SampleInfo::SampleInfo() { }
+   
+   
+   const dds::core::Time SampleInfo::timestamp() const
+   {
+       return this->delegate().timestamp();
+   }
+   
+   
+   const dds::sub::status::DataState SampleInfo::state() const
+   {
+       return this->delegate().state();
+   }
+   
+   
+   dds::sub::GenerationCount SampleInfo::generation_count() const
+   {
+       return this->delegate().generation_count();
+   }
+   
+   
+   dds::sub::Rank SampleInfo::rank() const
+   {
+       return this->delegate().rank();
+   }
+   
+   
+   bool SampleInfo::valid() const
+   {
+       return this->delegate().valid();
+   }
+   
+   
+   dds::core::InstanceHandle SampleInfo::instance_handle() const
+   {
+       return this->delegate().instance_handle();
+   }
+   
+   
+   dds::core::InstanceHandle SampleInfo::publication_handle() const
+   {
+       return this->delegate().publication_handle();
+   }
+   }
+   }
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_SUB_DETAIL_TSAMPLEINFO_IMPL_HPP_ */

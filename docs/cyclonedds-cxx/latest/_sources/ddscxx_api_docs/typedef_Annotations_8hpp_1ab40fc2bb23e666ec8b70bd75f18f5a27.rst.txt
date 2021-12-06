@@ -1,0 +1,13 @@
+.. _exhale_typedef_Annotations_8hpp_1ab40fc2bb23e666ec8b70bd75f18f5a27:
+
+Typedef dds::core::xtypes::NestedAnnotation
+===========================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::xtypes::NestedAnnotation

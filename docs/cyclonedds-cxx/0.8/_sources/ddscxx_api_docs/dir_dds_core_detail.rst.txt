@@ -1,0 +1,37 @@
+.. _dir_dds_core_detail:
+
+
+Directory detail
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/core/detail``
+
+
+Files
+-----
+
+- :ref:`file_dds_core_detail_array.hpp`
+- :ref:`file_dds_core_detail_BuiltinTopicTypes.hpp`
+- :ref:`file_dds_core_detail_conformance.hpp`
+- :ref:`file_dds_core_detail_ddscore.hpp`
+- :ref:`file_dds_core_detail_Entity.hpp`
+- :ref:`file_dds_core_detail_EntityImpl.hpp`
+- :ref:`file_dds_core_detail_EntityQosImpl.hpp`
+- :ref:`file_dds_core_detail_InstanceHandle.hpp`
+- :ref:`file_dds_core_detail_InstanceHandleImpl.hpp`
+- :ref:`file_dds_core_detail_inttypes.hpp`
+- :ref:`file_dds_core_detail_macros.hpp`
+- :ref:`file_dds_core_detail_module_docs.hpp`
+- :ref:`file_dds_core_detail_QosProvider.hpp`
+- :ref:`file_dds_core_detail_QosProviderImpl.hpp`
+- :ref:`file_dds_core_detail_ref_traits.hpp`
+- :ref:`file_dds_core_detail_ReferenceImpl.hpp`
+- :ref:`file_dds_core_detail_Value.hpp`
+- :ref:`file_dds_core_detail_WeakReferenceImpl.hpp`
+
+

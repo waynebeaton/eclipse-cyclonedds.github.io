@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1ReadersCopy:
+
+Template Class ReadersCopy
+==========================
+
+- Defined in :ref:`file_dds_sub_detail_find.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::ReadersCopy
+   :members:
+   :protected-members:
+   :undoc-members:

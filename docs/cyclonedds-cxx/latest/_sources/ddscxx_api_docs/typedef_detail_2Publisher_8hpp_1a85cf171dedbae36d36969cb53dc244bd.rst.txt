@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Publisher_8hpp_1a85cf171dedbae36d36969cb53dc244bd:
+
+Typedef dds::pub::detail::Publisher
+===================================
+
+- Defined in :ref:`file_dds_pub_detail_Publisher.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::pub::detail::Publisher

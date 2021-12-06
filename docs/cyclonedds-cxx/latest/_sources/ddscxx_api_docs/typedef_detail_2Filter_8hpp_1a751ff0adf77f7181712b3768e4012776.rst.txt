@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Filter_8hpp_1a751ff0adf77f7181712b3768e4012776:
+
+Typedef dds::topic::detail::Filter
+==================================
+
+- Defined in :ref:`file_dds_topic_detail_Filter.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::topic::detail::Filter

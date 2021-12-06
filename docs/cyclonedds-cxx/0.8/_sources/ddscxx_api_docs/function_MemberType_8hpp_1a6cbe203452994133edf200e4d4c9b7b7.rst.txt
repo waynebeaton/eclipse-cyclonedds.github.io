@@ -1,0 +1,13 @@
+.. _exhale_function_MemberType_8hpp_1a6cbe203452994133edf200e4d4c9b7b7:
+
+Template Function dds::core::xtypes::isMustUnderstand
+=====================================================
+
+- Defined in :ref:`file_dds_core_xtypes_MemberType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::isMustUnderstand(const MemberType<T>&)

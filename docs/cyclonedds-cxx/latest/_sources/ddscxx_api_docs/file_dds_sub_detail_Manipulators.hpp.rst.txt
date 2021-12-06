@@ -1,0 +1,71 @@
+
+.. _file_dds_sub_detail_Manipulators.hpp:
+
+File Manipulators.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/Manipulators.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_Manipulators.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/Query.hpp`` (:ref:`file_dds_sub_Query.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_detail_DataReader.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+- :ref:`namespace_dds__sub__functors`
+
+- :ref:`namespace_dds__sub__functors__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1ContentFilterManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1InstanceManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1MaxSamplesManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1NextInstanceManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1StateFilterManipulatorFunctor`
+

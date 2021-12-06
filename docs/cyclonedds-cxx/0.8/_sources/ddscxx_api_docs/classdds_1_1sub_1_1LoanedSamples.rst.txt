@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1LoanedSamples:
+
+Template Class LoanedSamples
+============================
+
+- Defined in :ref:`file_dds_sub_LoanedSamples.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::LoanedSamples
+   :members:
+   :protected-members:
+   :undoc-members:

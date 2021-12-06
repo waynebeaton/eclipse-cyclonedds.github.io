@@ -1,0 +1,25 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cond_1_1FunctorHolderBase:
+
+Class FunctorHolderBase
+=======================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cond_FunctorHolder.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public org::eclipse::cyclonedds::core::cond::FunctorHolder< FUN >`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cond_1_1FunctorHolder`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::core::cond::FunctorHolderBase
+   :members:
+   :protected-members:
+   :undoc-members:

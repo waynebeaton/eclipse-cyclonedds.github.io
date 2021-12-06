@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2pub_2detail_2discovery_8hpp_1aaac9d4df31c7fd643586f3cd58e20484:
+
+Template Function dds::pub::matched_subscriptions(const dds::pub::DataWriter<T>&)
+=================================================================================
+
+- Defined in :ref:`file_dds_pub_detail_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::pub::matched_subscriptions(const dds::pub::DataWriter<T>&)

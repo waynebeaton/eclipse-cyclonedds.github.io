@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Status_8hpp_1aa4d23251bbed62d553935a63ad124fb8:
+
+Typedef dds::core::status::detail::RequestedDeadlineMissedStatus
+================================================================
+
+- Defined in :ref:`file_dds_core_status_detail_Status.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::status::detail::RequestedDeadlineMissedStatus

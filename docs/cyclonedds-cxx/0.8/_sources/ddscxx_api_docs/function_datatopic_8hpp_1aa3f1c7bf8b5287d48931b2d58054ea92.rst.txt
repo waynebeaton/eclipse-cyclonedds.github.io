@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1aa3f1c7bf8b5287d48931b2d58054ea92:
+
+Template Function sertype_hash
+==============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: sertype_hash(const ddsi_sertype *)

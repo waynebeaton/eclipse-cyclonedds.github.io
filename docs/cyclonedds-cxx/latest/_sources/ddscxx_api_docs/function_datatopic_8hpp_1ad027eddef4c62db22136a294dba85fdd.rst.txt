@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1ad027eddef4c62db22136a294dba85fdd:
+
+Template Function serdata_to_ser_unref
+======================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_to_ser_unref(ddsi_serdata *, const ddsrt_iovec_t *)

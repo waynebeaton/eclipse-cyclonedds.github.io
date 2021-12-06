@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2GuardCondition_8hpp_1a9be5088b207af0c8822d176294c08286:
+
+Typedef dds::core::cond::detail::GuardCondition
+===============================================
+
+- Defined in :ref:`file_dds_core_cond_detail_GuardCondition.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::cond::detail::GuardCondition

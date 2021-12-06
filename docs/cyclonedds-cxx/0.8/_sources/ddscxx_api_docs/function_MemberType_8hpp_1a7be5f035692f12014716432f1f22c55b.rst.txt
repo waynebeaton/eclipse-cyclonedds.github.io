@@ -1,0 +1,13 @@
+.. _exhale_function_MemberType_8hpp_1a7be5f035692f12014716432f1f22c55b:
+
+Template Function dds::core::xtypes::isOptional
+===============================================
+
+- Defined in :ref:`file_dds_core_xtypes_MemberType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::isOptional(const MemberType<T>&)

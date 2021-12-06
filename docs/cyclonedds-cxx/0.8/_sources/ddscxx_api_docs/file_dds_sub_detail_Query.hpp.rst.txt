@@ -1,0 +1,57 @@
+
+.. _file_dds_sub_detail_Query.hpp:
+
+File Query.hpp
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/Query.hpp``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_Query.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/Query.hpp`` (:ref:`file_dds_sub_Query.hpp`)
+
+- ``org/eclipse/cyclonedds/sub/QueryDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_sub_QueryDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+- :ref:`namespace_dds__sub__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2Query_8hpp_1a30e90e68f05917d94df5c60f1b72cbc0`
+

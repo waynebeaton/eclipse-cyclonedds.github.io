@@ -1,0 +1,125 @@
+
+.. _program_listing_file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp:
+
+Program Listing for File cdr_stream.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp>` (``org/eclipse/cyclonedds/core/cdr/cdr_stream.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2021 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CDR_STREAM_HPP_
+   #define CDR_STREAM_HPP_
+   
+   #include "dds/ddsrt/endian.h"
+   #include <org/eclipse/cyclonedds/core/type_helpers.hpp>
+   #include <stdint.h>
+   #include <stdexcept>
+   #include <dds/core/macros.hpp>
+   
+   namespace org {
+   namespace eclipse {
+   namespace cyclonedds {
+   namespace core {
+   namespace cdr {
+   
+   template<typename T, typename = std::enable_if_t<std::is_arithmetic<T>::value> >
+   void byte_swap(T& toswap) {
+       union { T a; uint16_t u2; uint32_t u4; uint64_t u8; } u;
+       u.a = toswap;
+       DDSCXX_WARNING_MSVC_OFF(6326)
+       switch (sizeof(T)) {
+       case 1:
+           break;
+       case 2:
+           u.u2 = static_cast<uint16_t>((u.u2 & 0xFF00) >> 8) | static_cast<uint16_t>((u.u2 & 0x00FF) << 8);
+           break;
+       case 4:
+           u.u4 = static_cast<uint32_t>((u.u4 & 0xFFFF0000) >> 16) | static_cast<uint32_t>((u.u4 & 0x0000FFFF) << 16);
+           u.u4 = static_cast<uint32_t>((u.u4 & 0xFF00FF00) >> 8) | static_cast<uint32_t>((u.u4 & 0x00FF00FF) << 8);
+           break;
+       case 8:
+           u.u8 = static_cast<uint64_t>((u.u8 & 0xFFFFFFFF00000000) >> 32) | static_cast<uint64_t>((u.u8 & 0x00000000FFFFFFFF) << 32);
+           u.u8 = static_cast<uint64_t>((u.u8 & 0xFFFF0000FFFF0000) >> 16) | static_cast<uint64_t>((u.u8 & 0x0000FFFF0000FFFF) << 16);
+           u.u8 = static_cast<uint64_t>((u.u8 & 0xFF00FF00FF00FF00) >> 8) | static_cast<uint64_t>((u.u8 & 0x00FF00FF00FF00FF) << 8);
+           break;
+       default:
+           throw std::invalid_argument(std::string("attempted byteswap on variable of invalid size: ") + std::to_string(sizeof(T)));
+       }
+       DDSCXX_WARNING_MSVC_ON(6326)
+       toswap = u.a;
+   }
+   
+   enum class endianness {
+       little_endian = DDSRT_LITTLE_ENDIAN,
+       big_endian = DDSRT_BIG_ENDIAN
+   };
+   
+   constexpr endianness native_endianness() { return endianness(DDSRT_ENDIAN); }
+   
+   
+   inline bool swap_necessary(endianness remote) {return native_endianness() != remote;}
+   
+   enum class serialization_status {
+     move_bound_exceeded   = 0x1 << 0,
+     write_bound_exceeded  = 0x1 << 1,
+     read_bound_exceeded   = 0x1 << 2,
+     illegal_field_value   = 0x1 << 3
+   };
+   
+   class OMG_DDS_API cdr_stream {
+   public:
+       cdr_stream(size_t max_align, uint64_t ignore_faults = 0x0) : m_max_alignment(max_align), m_fault_mask(~ignore_faults) { ; }
+   
+       size_t alignment() const { return m_current_alignment; }
+   
+       size_t alignment(size_t newalignment) { return m_current_alignment = newalignment; }
+   
+       size_t position() const { return m_position; }
+   
+       size_t position(size_t newposition) { return m_position = newposition; }
+   
+       size_t incr_position(size_t incr_by) { if (m_position != SIZE_MAX) m_position += incr_by; return m_position; }
+   
+       void reset_position() { m_position = 0; m_current_alignment = 0; }
+   
+       void set_buffer(void* toset);
+   
+       void* get_cursor() const { return ((m_position != SIZE_MAX && m_buffer != nullptr) ? (m_buffer + m_position) : nullptr); }
+   
+       size_t align(size_t newalignment, bool add_zeroes);
+   
+       uint64_t status() const { return m_status; }
+   
+       bool status(serialization_status toadd) { m_status |= static_cast<uint64_t>(toadd); return abort_status(); }
+   
+       bool abort_status() const { return m_status & m_fault_mask; }
+   protected:
+   
+       size_t m_position = 0,  //the current offset position in the stream
+           m_max_alignment,  //the maximum bytes that can be aligned to
+           m_current_alignment = 1;  //the current alignment
+       char* m_buffer = nullptr;  //the current buffer in use
+       uint64_t m_status = 0,  //the current status of streaming
+                m_fault_mask;  //the mask for statuses that will causes streaming to be aborted
+   };
+   
+   }
+   }
+   }
+   }
+   } /* namespace org / eclipse / cyclonedds / core / cdr */
+   #endif

@@ -1,0 +1,13 @@
+.. _exhale_function_TimeHelper_8hpp_1a5c0e6a24c01ac36917efda86c6b87e91:
+
+Template Function org::eclipse::cyclonedds::core::timehelper::is_valid_for_arithmetic
+=====================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_TimeHelper.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::timehelper::is_valid_for_arithmetic(const TIMEISH&)

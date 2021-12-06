@@ -1,0 +1,32 @@
+.. _exhale_class_classdds_1_1sub_1_1NoOpSubscriberListener:
+
+Class NoOpSubscriberListener
+============================
+
+- Defined in :ref:`file_dds_sub_SubscriberListener.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public dds::sub::SubscriberListener`` (:ref:`exhale_class_classdds_1_1sub_1_1SubscriberListener`)
+- ``public dds::sub::NoOpAnyDataReaderListener`` (:ref:`exhale_class_classdds_1_1sub_1_1NoOpAnyDataReaderListener`)
+
+
+Derived Type
+************
+
+- ``public dds::domain::NoOpDomainParticipantListener`` (:ref:`exhale_class_classdds_1_1domain_1_1NoOpDomainParticipantListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::NoOpSubscriberListener
+   :members:
+   :protected-members:
+   :undoc-members:

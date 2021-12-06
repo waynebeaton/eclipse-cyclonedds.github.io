@@ -1,0 +1,78 @@
+
+.. _program_listing_file_org_eclipse_cyclonedds_core_EntitySet.hpp:
+
+Program Listing for File EntitySet.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_org_eclipse_cyclonedds_core_EntitySet.hpp>` (``org/eclipse/cyclonedds/core/EntitySet.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   
+   
+   #ifndef CYCLONEDDS_CORE_ENTITY_SET_HPP_
+   #define CYCLONEDDS_CORE_ENTITY_SET_HPP_
+   
+   #include <dds/core/InstanceHandle.hpp>
+   
+   #include <org/eclipse/cyclonedds/core/EntityDelegate.hpp>
+   #include <org/eclipse/cyclonedds/core/Mutex.hpp>
+   #include <org/eclipse/cyclonedds/core/WeakReferenceSet.hpp>
+   
+   #include <vector>
+   #include <memory>
+   #include <set>
+   
+   namespace org
+   {
+   namespace eclipse
+   {
+   namespace cyclonedds
+   {
+   namespace core
+   {
+   
+   class EntitySet
+   {
+   public:
+       typedef std::vector<org::eclipse::cyclonedds::core::ObjectDelegate::weak_ref_type>::iterator vectorIterator;
+       typedef std::vector<org::eclipse::cyclonedds::core::ObjectDelegate::weak_ref_type>           vector;
+   
+       void insert(org::eclipse::cyclonedds::core::EntityDelegate& entity);
+   
+       void erase(org::eclipse::cyclonedds::core::EntityDelegate& entity);
+   
+       bool contains(const dds::core::InstanceHandle& handle);
+   
+       void all_close();
+   
+       void all_retain();
+   
+       void all_enable();
+   
+       vector copy();
+   
+   private:
+       WeakReferenceSet<ObjectDelegate::weak_ref_type>::wset entities;
+       Mutex mutex;
+   };
+   
+   }
+   }
+   }
+   }
+   
+   #endif /* CYCLONEDDS_CORE_ENTITY_SET_HPP_ */

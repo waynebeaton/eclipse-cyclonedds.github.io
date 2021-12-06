@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a959558856a13c8d5f833952980f27192:
+
+Define ISOCPP_INVALID_ARGUMENT_ERROR
+====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_INVALID_ARGUMENT_ERROR

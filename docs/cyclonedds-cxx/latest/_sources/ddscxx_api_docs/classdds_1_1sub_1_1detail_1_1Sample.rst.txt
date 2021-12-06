@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1Sample:
+
+Template Class Sample
+=====================
+
+- Defined in :ref:`file_dds_sub_detail_Sample.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::Sample
+   :members:
+   :protected-members:
+   :undoc-members:

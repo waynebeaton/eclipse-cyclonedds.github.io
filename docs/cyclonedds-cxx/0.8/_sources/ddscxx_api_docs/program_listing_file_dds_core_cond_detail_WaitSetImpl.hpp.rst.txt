@@ -1,0 +1,131 @@
+
+.. _program_listing_file_dds_core_cond_detail_WaitSetImpl.hpp:
+
+Program Listing for File WaitSetImpl.hpp
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_cond_detail_WaitSetImpl.hpp>` (``dds/core/cond/detail/WaitSetImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_CORE_COND_TWAITSET_HPP_
+   #define CYCLONEDDS_DDS_CORE_COND_TWAITSET_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/core/cond/WaitSet.hpp>
+   #include <org/eclipse/cyclonedds/core/ReportUtils.hpp>
+   
+   // Implementation
+   namespace dds
+   {
+   namespace core
+   {
+   namespace cond
+   {
+   
+   WaitSet::WaitSet()
+   {
+       this->set_ref(new DELEGATE);
+       this->delegate()->init(this->impl_);
+   }
+   
+   
+   const typename WaitSet::ConditionSeq WaitSet::wait(const dds::core::Duration& timeout)
+   {
+       ConditionSeq triggered;
+       return this->wait(triggered, timeout);
+   }
+   
+   
+   const typename WaitSet::ConditionSeq WaitSet::wait()
+   {
+       ConditionSeq triggered;
+       return this->wait(triggered, dds::core::Duration::infinite());
+   }
+   
+   
+   typename WaitSet::ConditionSeq& WaitSet::wait(ConditionSeq& triggered, const dds::core::Duration& timeout)
+   {
+       return this->delegate()->wait(triggered, timeout);
+   }
+   
+   
+   typename WaitSet::ConditionSeq& WaitSet::wait(ConditionSeq& triggered)
+   {
+       return this->wait(triggered, dds::core::Duration::infinite());
+   }
+   
+   
+   void WaitSet::dispatch()
+   {
+       this->dispatch(dds::core::Duration::infinite());
+   }
+   
+   
+   void WaitSet::dispatch(const dds::core::Duration& timeout)
+   {
+       this->delegate()->dispatch(timeout);
+   }
+   
+   
+   WaitSet& WaitSet::operator +=(const dds::core::cond::Condition& cond)
+   {
+       this->attach_condition(cond);
+       return *this;
+   }
+   
+   
+   WaitSet& WaitSet::operator -=(const dds::core::cond::Condition& cond)
+   {
+       this->detach_condition(cond);
+       return *this;
+   }
+   
+   
+   WaitSet& WaitSet::attach_condition(const dds::core::cond::Condition& cond)
+   {
+       this->delegate()->attach_condition(cond);
+       return *this;
+   }
+   
+   
+   bool WaitSet::detach_condition(const dds::core::cond::Condition& cond)
+   {
+       return this->delegate()->detach_condition(cond.delegate().get());
+   }
+   
+   
+   const typename WaitSet::ConditionSeq WaitSet::conditions() const
+   {
+       ConditionSeq conds;
+       return this->conditions(conds);
+   }
+   
+   
+   typename WaitSet::ConditionSeq& WaitSet::conditions(ConditionSeq& conds) const
+   {
+       return this->delegate()->conditions(conds);
+   }
+   
+   }
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_CORE_COND_TWAITSET_HPP_ */

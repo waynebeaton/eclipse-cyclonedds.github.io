@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2CoherentAccess_8hpp_1aeb7ca81d3a43f68bfacb2a7c328ae7a1:
+
+Typedef dds::sub::detail::CoherentAccess
+========================================
+
+- Defined in :ref:`file_dds_sub_detail_CoherentAccess.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::CoherentAccess

@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1core_1_1Duration:
+
+Class Duration
+==============
+
+- Defined in :ref:`file_dds_core_Duration.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::Duration
+   :members:
+   :protected-members:
+   :undoc-members:

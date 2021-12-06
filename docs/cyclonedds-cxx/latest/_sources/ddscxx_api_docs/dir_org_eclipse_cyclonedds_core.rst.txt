@@ -1,0 +1,45 @@
+.. _dir_org_eclipse_cyclonedds_core:
+
+
+Directory core
+==============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds>` (``org/eclipse/cyclonedds``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``org/eclipse/cyclonedds/core``
+
+Subdirectories
+--------------
+
+- :ref:`dir_org_eclipse_cyclonedds_core_cdr`
+- :ref:`dir_org_eclipse_cyclonedds_core_cond`
+- :ref:`dir_org_eclipse_cyclonedds_core_policy`
+- :ref:`dir_org_eclipse_cyclonedds_core_status`
+
+
+Files
+-----
+
+- :ref:`file_org_eclipse_cyclonedds_core_config.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_DDScObjectDelegate.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_EntityRegistry.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_EntitySet.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_InstanceHandleDelegate.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_Missing.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_Mutex.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_ObjectDelegate.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_ObjectSet.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_QosProviderDelegate.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_ScopedLock.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_TimeHelper.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_type_helpers.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_WeakReferenceSet.hpp`
+
+

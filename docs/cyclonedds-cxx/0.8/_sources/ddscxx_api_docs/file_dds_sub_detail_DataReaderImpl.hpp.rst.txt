@@ -1,0 +1,91 @@
+
+.. _file_dds_sub_detail_DataReaderImpl.hpp:
+
+File DataReaderImpl.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/DataReaderImpl.hpp``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_DataReaderImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/macros.hpp`` (:ref:`file_dds_core_macros.hpp`)
+
+- ``dds/domain/DomainParticipantListener.hpp`` (:ref:`file_dds_domain_DomainParticipantListener.hpp`)
+
+- ``dds/sub/AnyDataReader.hpp`` (:ref:`file_dds_sub_AnyDataReader.hpp`)
+
+- ``dds/sub/DataReaderListener.hpp`` (:ref:`file_dds_sub_DataReaderListener.hpp`)
+
+- ``dds/sub/Query.hpp`` (:ref:`file_dds_sub_Query.hpp`)
+
+- ``dds/sub/detail/DataReader.hpp`` (:ref:`file_dds_sub_detail_DataReader.hpp`)
+
+- ``dds/sub/detail/SamplesHolder.hpp`` (:ref:`file_dds_sub_detail_SamplesHolder.hpp`)
+
+- ``dds/topic/ContentFilteredTopic.hpp`` (:ref:`file_dds_topic_ContentFilteredTopic.hpp`)
+
+- ``dds/topic/Topic.hpp`` (:ref:`file_dds_topic_Topic.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ListenerDispatcher.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`)
+
+- ``org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_detail_ddssub.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1a16e03ba42cb0185fa54f9ad8161eb835`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1acb4c61c72e0d47aea594a30ae4d11293`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1ac16381f51fb0535a1e29eef285249a2d`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1a9b67094740bb444f70ddc332a76b1635`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1a53986725bd72eb728eee991ab64ac841`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1adda957dedf2a7b74c01048e79d1491f8`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1af426aca9788a4000f6ff1f5c51543139`
+

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File BuiltinTopicImpl.hpp &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File BuiltinTopicImpl.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/program_listing_file_dds_topic_detail_BuiltinTopicImpl.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-builtintopicimpl-hpp">
+<span id="program-listing-file-dds-topic-detail-builtintopicimpl-hpp"></span><h1>Program Listing for File BuiltinTopicImpl.hpp<a class="headerlink" href="#program-listing-for-file-builtintopicimpl-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_dds_topic_detail_BuiltinTopicImpl.hpp.html#file-dds-topic-detail-builtintopicimpl-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">dds/topic/detail/BuiltinTopicImpl.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#ifndef CYCLONEDDS_DDS_TOPIC_TBUILTINTOPIC_IMPL_HPP_</span>
+<span class="cp">#define CYCLONEDDS_DDS_TOPIC_TBUILTINTOPIC_IMPL_HPP_</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * OMG PSM class declaration</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/topic/BuiltinTopic.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">// Implementation</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">dds</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">topic</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="c1">//ParticipantBuiltinTopicData</span>
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">BuiltinTopicKey</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">ParticipantBuiltinTopicData::key</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">key</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ParticipantBuiltinTopicData</span><span class="o">::</span><span class="n">user_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">user_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//TopicBuiltinTopicData</span>
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">BuiltinTopicKey</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">key</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">key</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">name</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">type_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">type_name</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">durability</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">durability</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#ifdef OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">durability_service</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">durability_service</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">deadline</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">deadline</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">latency_budget</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">latency_budget</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">liveliness</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">liveliness</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">reliability</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">reliability</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TransportPriority</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">transport_priority</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">transport_priority</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">lifespan</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">lifespan</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">destination_order</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">destination_order</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">history</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">history</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">resource_limits</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">resource_limits</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">ownership</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">ownership</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicBuiltinTopicData</span><span class="o">::</span><span class="n">topic_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">topic_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//PublicationBuiltinTopicData</span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">BuiltinTopicKey</span><span class="o">&amp;</span><span class="w">  </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">key</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">key</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">BuiltinTopicKey</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">participant_key</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">key</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">topic_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">topic_name</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">type_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">type_name</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">durability</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">durability</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#ifdef OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">durability_service</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">durability_service</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="cp">#endif  </span><span class="c1">// OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">deadline</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">deadline</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">latency_budget</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">latency_budget</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">liveliness</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">liveliness</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">reliability</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">reliability</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">lifespan</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">lifespan</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">user_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">user_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">ownership</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">ownership</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#ifdef OMG_DDS_OWNERSHIP_SUPPORT</span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipStrength</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">ownership_strength</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">ownership_strength</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="cp">#endif  </span><span class="c1">// OMG_DDS_OWNERSHIP_SUPPORT</span>
+
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">destination_order</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">destination_order</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">presentation</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">presentation</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">partition</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">partition</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">topic_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">topic_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">PublicationBuiltinTopicData</span><span class="o">::</span><span class="n">group_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">group_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">BuiltinTopicKey</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">key</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">key</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">BuiltinTopicKey</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">participant_key</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">key</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">topic_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">topic_name</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">type_name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">type_name</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">durability</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">durability</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">deadline</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">deadline</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">latency_budget</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">latency_budget</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">liveliness</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">liveliness</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">reliability</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">reliability</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">ownership</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">ownership</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">destination_order</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">destination_order</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">user_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">user_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TimeBasedFilter</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">time_based_filter</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">time_based_filter</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">presentation</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">presentation</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">partition</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">partition</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">topic_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">topic_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">SubscriptionBuiltinTopicData</span><span class="o">::</span><span class="n">group_data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">group_data</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#if 0</span><span class="c"></span>
+
+<span class="c">//CMParticipantBuiltinTopicData</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMParticipantBuiltinTopicData::key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::ProductData&amp; CMParticipantBuiltinTopicData::product() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).product();</span>
+<span class="c">}</span>
+
+<span class="c">//CMPublisherBuiltinTopicData</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMPublisherBuiltinTopicData::key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::ProductData&amp; CMPublisherBuiltinTopicData::product() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).product();</span>
+<span class="c">}</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMPublisherBuiltinTopicData::participant_key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).participant_key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const std::string&amp; CMPublisherBuiltinTopicData::name() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).name();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::EntityFactory&amp; CMPublisherBuiltinTopicData::entity_factory() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).entity_factory();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::Partition&amp; CMPublisherBuiltinTopicData::partition() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).partition();</span>
+<span class="c">}</span>
+
+<span class="c">//CMSubscriberBuiltinTopicData</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMSubscriberBuiltinTopicData::key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::ProductData&amp; CMSubscriberBuiltinTopicData::product() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).product();</span>
+<span class="c">}</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMSubscriberBuiltinTopicData::participant_key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).participant_key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const std::string&amp; CMSubscriberBuiltinTopicData::name() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).name();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::EntityFactory&amp; CMSubscriberBuiltinTopicData::entity_factory() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).entity_factory();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::Partition&amp; CMSubscriberBuiltinTopicData::partition() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).partition();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::Share&amp; CMSubscriberBuiltinTopicData::share() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).share();</span>
+<span class="c">}</span>
+
+<span class="c">//CMDataWriterBuiltinTopicData</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMDataWriterBuiltinTopicData::key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::ProductData&amp; CMDataWriterBuiltinTopicData::product() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).product();</span>
+<span class="c">}</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMDataWriterBuiltinTopicData::publisher_key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).publisher_key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const std::string&amp; CMDataWriterBuiltinTopicData::name() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).name();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::History&amp; CMDataWriterBuiltinTopicData::history() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).history();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::ResourceLimits&amp; CMDataWriterBuiltinTopicData::resource_limits() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).resource_limits();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::WriterDataLifecycle&amp; CMDataWriterBuiltinTopicData::writer_data_lifecycle() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).writer_data_lifecycle();</span>
+<span class="c">}</span>
+
+<span class="c">//CMDataReaderBuiltinTopicData</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMDataReaderBuiltinTopicData::key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::ProductData&amp; CMDataReaderBuiltinTopicData::product() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).product();</span>
+<span class="c">}</span>
+
+
+<span class="c">const dds::topic::BuiltinTopicKey&amp; CMDataReaderBuiltinTopicData::subscriber_key() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).subscriber_key();</span>
+<span class="c">}</span>
+
+
+<span class="c">const std::string&amp; CMDataReaderBuiltinTopicData::name() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).name();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::History&amp; CMDataReaderBuiltinTopicData::history() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).history();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::ResourceLimits&amp; CMDataReaderBuiltinTopicData::resource_limits() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).resource_limits();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::dds::core::policy::ReaderDataLifecycle&amp; CMDataReaderBuiltinTopicData::reader_data_lifecycle() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).reader_data_lifecycle();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::SubscriptionKey&amp; CMDataReaderBuiltinTopicData::subscription_keys() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).subscription_keys();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::ReaderLifespan&amp; CMDataReaderBuiltinTopicData::reader_lifespan() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).reader_lifespan();</span>
+<span class="c">}</span>
+
+
+<span class="c">const ::org::eclipse::cyclonedds::core::policy::Share&amp; CMDataReaderBuiltinTopicData::share() const</span>
+<span class="c">{</span>
+<span class="c">    return ((D)this-&gt;delegate()).share();</span>
+<span class="c">}</span>
+<span class="cp">#endif</span>
+
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// End of implementation</span>
+
+<span class="cp">#endif </span><span class="cm">/* CYCLONEDDS_DDS_TOPIC_TBUILTINTOPIC_IMPL_HPP_ */</span><span class="cp"></span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

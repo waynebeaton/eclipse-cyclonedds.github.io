@@ -1,0 +1,78 @@
+
+.. _file_dds_sub_detail_DataReader.hpp:
+
+File DataReader.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/DataReader.hpp``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_DataReader.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/status/Status.hpp`` (:ref:`file_dds_core_status_Status.hpp`)
+
+- ``dds/dds.h`` (:ref:`file_dds_dds.hpp`)
+
+- ``dds/sub/LoanedSamples.hpp`` (:ref:`file_dds_sub_LoanedSamples.hpp`)
+
+- ``dds/sub/Query.hpp`` (:ref:`file_dds_sub_Query.hpp`)
+
+- ``dds/sub/Subscriber.hpp`` (:ref:`file_dds_sub_Subscriber.hpp`)
+
+- ``dds/sub/detail/Manipulators.hpp`` (:ref:`file_dds_sub_detail_Manipulators.hpp`)
+
+- ``dds/sub/status/detail/DataStateImpl.hpp`` (:ref:`file_dds_sub_status_detail_DataStateImpl.hpp`)
+
+- ``dds/topic/Topic.hpp`` (:ref:`file_dds_topic_Topic.hpp`)
+
+- ``dds/topic/TopicInstance.hpp`` (:ref:`file_dds_topic_TopicInstance.hpp`)
+
+- ``org/eclipse/cyclonedds/ForwardDeclarations.hpp`` (:ref:`file_org_eclipse_cyclonedds_ForwardDeclarations.hpp`)
+
+- ``org/eclipse/cyclonedds/core/EntityDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ScopedLock.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ScopedLock.hpp`)
+
+- ``org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader_1_1ManipulatorSelector`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader_1_1Selector`
+

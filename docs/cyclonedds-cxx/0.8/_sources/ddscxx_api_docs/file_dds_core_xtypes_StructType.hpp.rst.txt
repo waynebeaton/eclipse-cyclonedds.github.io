@@ -1,0 +1,74 @@
+
+.. _file_dds_core_xtypes_StructType.hpp:
+
+File StructType.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/StructType.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_StructType.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/xtypes/DynamicType.hpp`` (:ref:`file_dds_core_xtypes_DynamicType.hpp`)
+
+- ``dds/core/xtypes/MemberType.hpp`` (:ref:`file_dds_core_xtypes_MemberType.hpp`)
+
+- ``dds/core/xtypes/PrimitiveTypes.hpp`` (:ref:`file_dds_core_xtypes_PrimitiveTypes.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__xtypes`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1StructForwardDeclaration`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1StructType`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_StructType_8hpp_1abb408f35d05245049e0e6cd749ffa531`
+
+- :ref:`exhale_function_StructType_8hpp_1a943aaed9eb182660cfe2f0f9882f5d1f`
+
+- :ref:`exhale_function_StructType_8hpp_1ab4ea1fd3f293974fb6add2b0dc54f416`
+
+- :ref:`exhale_function_StructType_8hpp_1a50a672237049567e3e00403cbabdc13d`
+

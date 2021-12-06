@@ -1,0 +1,13 @@
+.. _exhale_function_SubscriberQosDelegate_8hpp_1a298cc12334e34371976832d090bcf348:
+
+Function org::eclipse::cyclonedds::sub::qos::SubscriberQosDelegate::policy< dds::core::policy::EntityFactory >
+==============================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_qos_SubscriberQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::sub::qos::SubscriberQosDelegate::policy< dds::core::policy::EntityFactory >()

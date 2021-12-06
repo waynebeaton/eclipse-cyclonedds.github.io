@@ -1,0 +1,13 @@
+.. _exhale_typedef_dds_2topic_2detail_2BuiltinTopic_8hpp_1a107dc148d31c1260cb4be37f3e4d92c0:
+
+Typedef dds::topic::detail::TopicBuiltinTopicData
+=================================================
+
+- Defined in :ref:`file_dds_topic_detail_BuiltinTopic.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::topic::detail::TopicBuiltinTopicData

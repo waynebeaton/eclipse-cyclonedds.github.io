@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2topic_2detail_2find_8hpp_1a4fc3db98e72102b289bce5455d207931:
+
+Template Function dds::topic::find
+==================================
+
+- Defined in :ref:`file_dds_topic_detail_find.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::topic::find(const dds::domain::DomainParticipant&, const std::string&)

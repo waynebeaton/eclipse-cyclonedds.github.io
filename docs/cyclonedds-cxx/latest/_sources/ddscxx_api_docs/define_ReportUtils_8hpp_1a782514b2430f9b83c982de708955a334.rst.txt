@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a782514b2430f9b83c982de708955a334:
+
+Define ISOCPP_INCONSISTENT_POLICY_ERROR
+=======================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_INCONSISTENT_POLICY_ERROR

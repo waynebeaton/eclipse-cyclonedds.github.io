@@ -1,0 +1,43 @@
+
+.. _file_dds_sub_detail_QueryImpl.hpp:
+
+File QueryImpl.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/QueryImpl.hpp``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_QueryImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/Query.hpp`` (:ref:`file_dds_sub_Query.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_detail_ddssub.hpp`
+
+
+

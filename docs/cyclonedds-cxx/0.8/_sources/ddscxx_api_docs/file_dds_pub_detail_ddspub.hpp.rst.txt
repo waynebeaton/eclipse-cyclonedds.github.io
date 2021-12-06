@@ -1,0 +1,43 @@
+
+.. _file_dds_pub_detail_ddspub.hpp:
+
+File ddspub.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub_detail>` (``dds/pub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/pub/detail/ddspub.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_pub_detail_ddspub.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/pub/detail/DataWriterImpl.hpp`` (:ref:`file_dds_pub_detail_DataWriterImpl.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_pub_ddspub.hpp`
+
+
+

@@ -1,0 +1,31 @@
+
+.. _file_dds_core_BuiltinTopicTypes.hpp:
+
+File BuiltinTopicTypes.hpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/BuiltinTopicTypes.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_BuiltinTopicTypes.hpp.rst
+
+
+
+
+
+
+
+
+

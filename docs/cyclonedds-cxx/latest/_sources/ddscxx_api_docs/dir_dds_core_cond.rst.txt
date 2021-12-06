@@ -1,0 +1,28 @@
+.. _dir_dds_core_cond:
+
+
+Directory cond
+==============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/core/cond``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_core_cond_detail`
+
+
+Files
+-----
+
+- :ref:`file_dds_core_cond_Condition.hpp`
+- :ref:`file_dds_core_cond_GuardCondition.hpp`
+- :ref:`file_dds_core_cond_StatusCondition.hpp`
+- :ref:`file_dds_core_cond_WaitSet.hpp`
+
+

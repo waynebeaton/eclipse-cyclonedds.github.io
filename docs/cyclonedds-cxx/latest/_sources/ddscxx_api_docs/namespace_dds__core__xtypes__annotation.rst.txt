@@ -1,0 +1,47 @@
+
+.. _namespace_dds__core__xtypes__annotation:
+
+Namespace dds::core::xtypes::annotation
+=======================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Annotations_8hpp_1a83b19e0388290a065209764356ce2c84`
+
+- :ref:`exhale_function_Annotations_8hpp_1a2821cb9805ed98f20ddf99ec96e92346`
+
+- :ref:`exhale_function_Annotations_8hpp_1a8d7ce68a1074784c996fd4782dddfd67`
+
+- :ref:`exhale_function_Annotations_8hpp_1a682db109cde38f7ab911f9a0b434833f`
+
+- :ref:`exhale_function_Annotations_8hpp_1afe2e14916b545e0e46c3569335df463d`
+
+- :ref:`exhale_function_Annotations_8hpp_1a550b3c8b246290c5676e8c82d2b5dae5`
+
+- :ref:`exhale_function_Annotations_8hpp_1accca80b7645d3d36de357b8bf19dcac8`
+
+- :ref:`exhale_function_Annotations_8hpp_1aae3db83f149c77e66101e7618ed8a9a6`
+
+- :ref:`exhale_function_Annotations_8hpp_1a35848f215970c76b7f1347d1d06ea311`
+
+- :ref:`exhale_function_Annotations_8hpp_1a5cd0ce727d5dd9fd22629cda34fb0f4c`
+
+- :ref:`exhale_function_Annotations_8hpp_1aeda8a8fb6e3e770fdeaca548ab72e245`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_Annotations_8hpp_1a22ddde9d622d58be7d7da774c96ad5d9`

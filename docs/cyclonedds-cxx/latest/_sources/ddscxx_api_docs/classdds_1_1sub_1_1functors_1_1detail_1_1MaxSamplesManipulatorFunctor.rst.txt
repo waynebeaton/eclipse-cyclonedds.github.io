@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1MaxSamplesManipulatorFunctor:
+
+Class MaxSamplesManipulatorFunctor
+==================================
+
+- Defined in :ref:`file_dds_sub_detail_Manipulators.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::functors::detail::MaxSamplesManipulatorFunctor
+   :members:
+   :protected-members:
+   :undoc-members:

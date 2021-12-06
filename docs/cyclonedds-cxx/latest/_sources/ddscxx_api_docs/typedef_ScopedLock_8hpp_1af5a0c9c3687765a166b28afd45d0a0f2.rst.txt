@@ -1,0 +1,13 @@
+.. _exhale_typedef_ScopedLock_8hpp_1af5a0c9c3687765a166b28afd45d0a0f2:
+
+Typedef org::eclipse::cyclonedds::core::ScopedObjectLock
+========================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ScopedLock.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: org::eclipse::cyclonedds::core::ScopedObjectLock

@@ -1,0 +1,26 @@
+.. _exhale_class_classdds_1_1topic_1_1TopicListener:
+
+Template Class TopicListener
+============================
+
+- Defined in :ref:`file_dds_topic_Topic.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public dds::topic::NoOpTopicListener< T >`` (:ref:`exhale_class_classdds_1_1topic_1_1NoOpTopicListener`)
+- ``public org::eclipse::cyclonedds::topic::TopicListener< T >`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1TopicListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::TopicListener
+   :members:
+   :protected-members:
+   :undoc-members:

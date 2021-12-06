@@ -1,0 +1,13 @@
+.. _exhale_function_DataWriterQosDelegate_8hpp_1a6f1cd51faf9c58d8bf45d5c16c4a3d51:
+
+Function org::eclipse::cyclonedds::pub::qos::DataWriterQosDelegate::policy< dds::core::policy::UserData >
+=========================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_pub_qos_DataWriterQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::pub::qos::DataWriterQosDelegate::policy< dds::core::policy::UserData >()

@@ -1,0 +1,13 @@
+.. _exhale_variable_Annotations_8hpp_1a22ddde9d622d58be7d7da774c96ad5d9:
+
+Variable dds::core::xtypes::annotation::Id
+==========================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: dds::core::xtypes::annotation::Id

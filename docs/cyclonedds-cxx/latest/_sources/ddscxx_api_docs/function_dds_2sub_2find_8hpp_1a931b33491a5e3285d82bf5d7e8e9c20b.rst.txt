@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2sub_2find_8hpp_1a931b33491a5e3285d82bf5d7e8e9c20b:
+
+Function dds::sub::builtin_subscriber
+=====================================
+
+- Defined in :ref:`file_dds_sub_find.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::builtin_subscriber(const dds::domain::DomainParticipant&)

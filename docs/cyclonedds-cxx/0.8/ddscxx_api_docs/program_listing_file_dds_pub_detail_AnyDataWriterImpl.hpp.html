@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File AnyDataWriterImpl.hpp &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File AnyDataWriterImpl.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/program_listing_file_dds_pub_detail_AnyDataWriterImpl.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-anydatawriterimpl-hpp">
+<span id="program-listing-file-dds-pub-detail-anydatawriterimpl-hpp"></span><h1>Program Listing for File AnyDataWriterImpl.hpp<a class="headerlink" href="#program-listing-for-file-anydatawriterimpl-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_dds_pub_detail_AnyDataWriterImpl.hpp.html#file-dds-pub-detail-anydatawriterimpl-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">dds/pub/detail/AnyDataWriterImpl.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#ifndef OMG_DDS_PUB_DETAIL_TANYDATAWRITER_HPP_</span>
+<span class="cp">#define OMG_DDS_PUB_DETAIL_TANYDATAWRITER_HPP_</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * OMG PSM class declaration</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/pub/AnyDataWriter.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">// Implementation</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">dds</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">pub</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">pub</span><span class="o">::</span><span class="n">Publisher</span><span class="o">&amp;</span><span class="w"></span>
+<span class="nf">AnyDataWriter::publisher</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">publisher</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">TopicDescription</span><span class="o">&amp;</span><span class="w"></span>
+<span class="nf">AnyDataWriter::topic_description</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">topic_description</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">pub</span><span class="o">::</span><span class="n">qos</span><span class="o">::</span><span class="n">DataWriterQos</span><span class="w"></span>
+<span class="nf">AnyDataWriter::qos</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">qos</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">void</span><span class="w"></span>
+<span class="nf">AnyDataWriter::qos</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">pub</span><span class="o">::</span><span class="n">qos</span><span class="o">::</span><span class="n">DataWriterQos</span><span class="o">&amp;</span><span class="w"> </span><span class="n">qos</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">qos</span><span class="p">(</span><span class="n">qos</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">AnyDataWriter</span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="k">operator</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">pub</span><span class="o">::</span><span class="n">qos</span><span class="o">::</span><span class="n">DataWriterQos</span><span class="o">&amp;</span><span class="w"> </span><span class="n">qos</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">qos</span><span class="p">(</span><span class="n">qos</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">AnyDataWriter</span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="k">operator</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">pub</span><span class="o">::</span><span class="n">qos</span><span class="o">::</span><span class="n">DataWriterQos</span><span class="o">&amp;</span><span class="w"> </span><span class="n">qos</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">qos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">qos</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">void</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="n">wait_for_acknowledgments</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">timeout</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">wait_for_acknowledgments</span><span class="p">(</span><span class="n">timeout</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">status</span><span class="o">::</span><span class="n">LivelinessLostStatus</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="n">liveliness_lost_status</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">liveliness_lost_status</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">status</span><span class="o">::</span><span class="n">OfferedDeadlineMissedStatus</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="n">offered_deadline_missed_status</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">offered_deadline_missed_status</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">status</span><span class="o">::</span><span class="n">OfferedIncompatibleQosStatus</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="n">offered_incompatible_qos_status</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">offered_incompatible_qos_status</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">status</span><span class="o">::</span><span class="n">PublicationMatchedStatus</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="n">publication_matched_status</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">publication_matched_status</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">void</span><span class="w"></span>
+<span class="n">AnyDataWriter</span><span class="o">::</span><span class="n">assert_liveliness</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">assert_liveliness</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// End of implementation</span>
+
+<span class="cp">#endif </span><span class="cm">/* OMG_DDS_PUB_DETAIL_TANYDATAWRITER_HPP_ */</span><span class="cp"></span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

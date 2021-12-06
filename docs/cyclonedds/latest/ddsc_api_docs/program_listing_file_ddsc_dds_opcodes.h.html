@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File dds_opcodes.h &mdash; CycloneDDS 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File dds_opcodes.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/program_listing_file_ddsc_dds_opcodes.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-dds-opcodes-h">
+<span id="program-listing-file-ddsc-dds-opcodes-h"></span><h1>Program Listing for File dds_opcodes.h<a class="headerlink" href="#program-listing-for-file-dds-opcodes-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_ddsc_dds_opcodes.h.html#file-ddsc-dds-opcodes-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_opcodes.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2021 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="cp">#ifndef DDS_OPCODES_H</span>
+<span class="cp">#define DDS_OPCODES_H</span>
+
+<span class="cp">#if defined (__cplusplus)</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="cp">#define DDS_OP_MASK               0xff000000</span>
+<span class="cp">#define DDS_OP_TYPE_FLAGS_MASK    0x00800000</span>
+<span class="cp">#define DDS_OP_TYPE_MASK          0x007f0000</span>
+<span class="cp">#define DDS_OP_SUBTYPE_MASK       0x0000ff00</span>
+<span class="cp">#define DDS_OP_JMP_MASK           0x0000ffff</span>
+<span class="cp">#define DDS_OP_FLAGS_MASK         0x000000ff</span>
+<span class="cp">#define DDS_JEQ_TYPE_FLAGS_MASK   0x00800000</span>
+<span class="cp">#define DDS_JEQ_TYPE_MASK         0x007f0000</span>
+<span class="cp">#define DDS_PLM_FLAGS_MASK        0x00ff0000</span>
+<span class="cp">#define DDS_KOF_OFFSET_MASK       0x0000ffff</span>
+
+<span class="cp">#define DDS_OP(o)             ((enum dds_stream_opcode) ((o) &amp; DDS_OP_MASK))</span>
+<span class="cp">#define DDS_OP_TYPE(o)        ((enum dds_stream_typecode) (((o) &amp; DDS_OP_TYPE_MASK) &gt;&gt; 16))</span>
+<span class="cp">#define DDS_OP_TYPE_FLAGS(o)  ((o) &amp; DDS_OP_TYPE_FLAGS_MASK)</span>
+<span class="cp">#define DDS_OP_SUBTYPE(o)     ((enum dds_stream_typecode) (((o) &amp; DDS_OP_SUBTYPE_MASK) &gt;&gt; 8))</span>
+<span class="cp">#define DDS_OP_FLAGS(o)       ((o) &amp; DDS_OP_FLAGS_MASK)</span>
+<span class="cp">#define DDS_OP_ADR_JSR(o)     ((int16_t) ((o) &amp; DDS_OP_JMP_MASK))</span>
+<span class="cp">#define DDS_OP_ADR_PLM(o)     ((int16_t) ((o) &amp; DDS_OP_JMP_MASK))</span>
+<span class="cp">#define DDS_OP_LENGTH(o)      ((uint16_t) ((o) &amp; DDS_OP_JMP_MASK))</span>
+<span class="cp">#define DDS_OP_JUMP(o)        ((int16_t) ((o) &amp; DDS_OP_JMP_MASK))</span>
+<span class="cp">#define DDS_OP_ADR_JMP(o)     ((o) &gt;&gt; 16)</span>
+<span class="cp">#define DDS_JEQ_TYPE(o)       ((enum dds_stream_typecode) (((o) &amp; DDS_JEQ_TYPE_MASK) &gt;&gt; 16))</span>
+<span class="cp">#define DDS_JEQ_TYPE_FLAGS(o) ((o) &amp; DDS_JEQ_TYPE_FLAGS_MASK)</span>
+<span class="cp">#define DDS_PLM_FLAGS(o)      ((enum dds_stream_typecode) (((o) &amp; DDS_PLM_FLAGS_MASK) &gt;&gt; 16))</span>
+
+<span class="cm">/* Topic encoding instruction types */</span><span class="w"></span>
+
+<span class="k">enum</span> <span class="nc">dds_stream_opcode</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* return from subroutine, exits top-level</span>
+<span class="cm">     [RTS,   0,   0, 0] */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_RTS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* data field</span>
+<span class="cm">     [ADR, nBY,   0, f] [offset]</span>
+<span class="cm">     [ADR, ENU,   0, f] [offset] [max]</span>
+<span class="cm">     [ADR, STR,   0, f] [offset]</span>
+<span class="cm">     [ADR, BST,   0, f] [offset] [max-size]</span>
+
+<span class="cm">     [ADR, SEQ, nBY, 0] [offset]</span>
+<span class="cm">     [ADR, SEQ, ENU, 0] [offset] [max]</span>
+<span class="cm">     [ADR, SEQ, STR, 0] [offset]</span>
+<span class="cm">     [ADR, SEQ, BST, 0] [offset] [max-size]</span>
+<span class="cm">     [ADR, SEQ,   s, 0] [offset] [elem-size] [next-insn, elem-insn]</span>
+<span class="cm">       where s = {SEQ,ARR,UNI,STU}</span>
+<span class="cm">     [ADR, SEQ, EXT, f] *** not supported</span>
+
+<span class="cm">     [ADR, ARR, nBY, f] [offset] [alen]</span>
+<span class="cm">     [ADR, ARR, ENU, f] [offset] [alen] [max]</span>
+<span class="cm">     [ADR, ARR, STR, 0] [offset] [alen]</span>
+<span class="cm">     [ADR, ARR, BST, 0] [offset] [alen] [0] [max-size]</span>
+<span class="cm">     [ADR, ARR,   s, 0] [offset] [alen] [next-insn, elem-insn] [elem-size]</span>
+<span class="cm">         where s = {SEQ,ARR,UNI,STU}</span>
+<span class="cm">     [ADR, ARR, EXT, f] *** not supported</span>
+
+<span class="cm">     [ADR, UNI,   d, z] [offset] [alen] [next-insn, cases]</span>
+<span class="cm">     [ADR, UNI, ENU, z] [offset] [alen] [next-insn, cases] [max]</span>
+<span class="cm">     [ADR, UNI, EXT, f] *** not supported</span>
+<span class="cm">       where</span>
+<span class="cm">         d = discriminant type of {1BY,2BY,4BY}</span>
+<span class="cm">         z = default present/not present (DDS_OP_FLAG_DEF)</span>
+<span class="cm">         offset = discriminant offset</span>
+<span class="cm">         max = max enum value</span>
+<span class="cm">       followed by alen case labels: in JEQ format</span>
+
+<span class="cm">     [ADR, e | EXT,   0, f] [offset] [next-insn, elem-insn] [elem-size iff &quot;external&quot; flag e is set, or flag f has DDS_OP_FLAG_OPT]</span>
+<span class="cm">     [ADR, STU,   0, f] *** not supported</span>
+<span class="cm">   where</span>
+<span class="cm">     s            = subtype</span>
+<span class="cm">     e            = external: stored as external data (pointer) (DDS_OP_FLAG_EXT)</span>
+<span class="cm">     f            = flags:</span>
+<span class="cm">                    - key/not key (DDS_OP_FLAG_KEY)</span>
+<span class="cm">                    - base type member, used with EXT type (DDS_OP_FLAG_BASE)</span>
+<span class="cm">                    - optional (DDS_OP_FLAG_OPT)</span>
+<span class="cm">     [offset]     = field offset from start of element in memory</span>
+<span class="cm">     [elem-size]  = element size in memory (elem-size is only included in case &#39;external&#39; flag is set)</span>
+<span class="cm">     [max-size]   = string bound + 1</span>
+<span class="cm">     [max]        = max enum value</span>
+<span class="cm">     [alen]       = array length, number of cases</span>
+<span class="cm">     [next-insn]  = (unsigned 16 bits) offset to instruction for next field, from start of insn</span>
+<span class="cm">     [elem-insn]  = (unsigned 16 bits) offset to first instruction for element, from start of insn</span>
+<span class="cm">     [cases]      = (unsigned 16 bits) offset to first case label, from start of insn</span>
+<span class="cm">   */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_ADR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x01</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* jump-to-subroutine (e.g. used for recursive types and appendable unions)</span>
+<span class="cm">     [JSR,   0, e]</span>
+<span class="cm">       where</span>
+<span class="cm">         e = (signed 16 bits) offset to first instruction in subroutine, from start of insn</span>
+<span class="cm">             instruction sequence must end in RTS, execution resumes at instruction</span>
+<span class="cm">             following JSR */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_JSR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x02</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* jump-if-equal, used for union cases:</span>
+<span class="cm">     [JEQ, nBY, 0] [disc] [offset]</span>
+<span class="cm">     [JEQ, STR, 0] [disc] [offset]</span>
+<span class="cm">     [JEQ, s,   i] [disc] [offset]</span>
+<span class="cm">     [JEQ4, nBY, 0] [disc] [offset] 0</span>
+<span class="cm">     [JEQ4, STR, 0] [disc] [offset] 0</span>
+<span class="cm">     [JEQ4, ENU, 0] [disc] [offset] [max]</span>
+<span class="cm">     [JEQ4, EXT, 0] *** not supported, use STU/UNI for external defined types</span>
+<span class="cm">     [JEQ4, e | s, i] [disc] [offset] [elem-size iff &quot;external&quot; flag e is set, else 0]</span>
+<span class="cm">       where</span>
+<span class="cm">         e  = external: stored as external data (pointer) (DDS_OP_FLAG_EXT)</span>
+<span class="cm">         s  = subtype other than {nBY,STR} for JEQ and {nBY,STR,ENU,EXT} for JEQ4</span>
+<span class="cm">         i  = (unsigned 16 bits) offset to first instruction for case, from start of insn</span>
+<span class="cm">              instruction sequence must end in RTS, at which point executes continues</span>
+<span class="cm">              at the next field&#39;s instruction as specified by the union</span>
+<span class="cm">  */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_JEQ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x03</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+
+<span class="w">  </span><span class="cm">/* XCDR2 delimited CDR (inserts DHEADER before type)</span>
+<span class="cm">    [DLC, 0, 0]</span>
+<span class="cm">  */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_DLC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x04</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+
+<span class="w">  </span><span class="cm">/* XCDR2 parameter list CDR (inserts DHEADER before type and EMHEADER before each member)</span>
+<span class="cm">     [PLC, 0, 0]</span>
+<span class="cm">          followed by a list of JEQ instructions</span>
+<span class="cm">  */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_PLC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x05</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+
+<span class="w">  </span><span class="cm">/*</span>
+<span class="cm">     [PLM,   f, elem-insn] [member id]</span>
+<span class="cm">       for members of aggregated mutable types (pl-cdr):</span>
+<span class="cm">       where</span>
+<span class="cm">         f           = flags:</span>
+<span class="cm">                       - must-understand (DDS_OP_FLAG_MU)</span>
+<span class="cm">                       - jump to base type (DDS_OP_FLAG_BASE)</span>
+<span class="cm">         [elem-insn] = (unsigned 16 bits) offset to instruction for element, from start of insn</span>
+<span class="cm">                        when FLAG_BASE is set, this is the offset of the PLM list of the base type</span>
+<span class="cm">         [member id] = id for this member (0 in case FLAG_BASE is set)</span>
+<span class="cm">  */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_PLM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x06</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+
+<span class="w">  </span><span class="cm">/* Key offset list</span>
+<span class="cm">     [KOF, 0, n] [offset-1] ... [offset-n]</span>
+<span class="cm">       where</span>
+<span class="cm">        n      = number of key offsets in following ops</span>
+<span class="cm">        offset = offset of the key field, relative to the previous offset</span>
+<span class="cm">                  (repeated n times, e.g. when key in nested struct)</span>
+<span class="cm">  */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_KOF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x07</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w"></span>
+
+<span class="w">  </span><span class="cm">/* see comment for JEQ/JEQ4 above */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_JEQ4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x08</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">24</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="k">enum</span> <span class="nc">dds_stream_typecode</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_1BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x01</span><span class="p">,</span><span class="w"> </span><span class="cm">/* one byte simple type (char, octet, boolean) */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_2BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x02</span><span class="p">,</span><span class="w"> </span><span class="cm">/* two byte simple type ((unsigned) short) */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_4BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x03</span><span class="p">,</span><span class="w"> </span><span class="cm">/* four byte simple type ((unsigned) long, enums, float) */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_8BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x04</span><span class="p">,</span><span class="w"> </span><span class="cm">/* eight byte simple type ((unsigned) long long, double) */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_STR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x05</span><span class="p">,</span><span class="w"> </span><span class="cm">/* string */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_BST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x06</span><span class="p">,</span><span class="w"> </span><span class="cm">/* bounded string */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_SEQ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x07</span><span class="p">,</span><span class="w"> </span><span class="cm">/* sequence */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_ARR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x08</span><span class="p">,</span><span class="w"> </span><span class="cm">/* array */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_UNI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x09</span><span class="p">,</span><span class="w"> </span><span class="cm">/* union */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_STU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x0a</span><span class="p">,</span><span class="w"> </span><span class="cm">/* struct */</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* 0x0b **available for future use** */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_ENU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x0c</span><span class="p">,</span><span class="w"> </span><span class="cm">/* enumerated value (long) */</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_VAL_EXT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x0d</span><span class="w">  </span><span class="cm">/* field with external definition */</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cm">/* primary type code for DDS_OP_ADR, DDS_OP_JEQ */</span><span class="w"></span>
+<span class="k">enum</span> <span class="nc">dds_stream_typecode_primary</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_1BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_1BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_2BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_2BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_4BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_4BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_8BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_8BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_STR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_STR</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_BST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_BST</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_SEQ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_SEQ</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_ARR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_ARR</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_UNI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_UNI</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_STU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_STU</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_ENU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_ENU</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_TYPE_EXT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_EXT</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">16</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+<span class="cp">#define DDS_OP_TYPE_BOO DDS_OP_TYPE_1BY</span>
+
+<span class="cm">/* This flag indicates that the type has external data (i.e. a mapped to a pointer type),</span>
+<span class="cm">   which can be the case because of (1) the @external annotation in idl or (2) the @optional</span>
+<span class="cm">   annotation (optional fields are also mapped to pointer types as described in the XTypes spec).</span>
+<span class="cm">   This flag is stored in the most-significant bit of the &#39;type&#39; part of the serializer instruction. */</span><span class="w"></span>
+<span class="cp">#define DDS_OP_FLAG_EXT (1u &lt;&lt; 23)</span>
+
+
+<span class="cm">/* sub-type code:</span>
+<span class="cm">   - encodes element type for DDS_OP_TYPE_{SEQ,ARR},</span>
+<span class="cm">   - discriminant type for DDS_OP_TYPE_UNI */</span><span class="w"></span>
+<span class="k">enum</span> <span class="nc">dds_stream_typecode_subtype</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_1BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_1BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_2BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_2BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_4BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_4BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_8BY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_8BY</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_STR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_STR</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_BST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_BST</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_SEQ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_SEQ</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_ARR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_ARR</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_UNI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_UNI</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_STU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_STU</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OP_SUBTYPE_ENU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DDS_OP_VAL_ENU</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">8</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+<span class="cp">#define DDS_OP_SUBTYPE_BOO DDS_OP_SUBTYPE_1BY</span>
+
+<span class="cm">/* key field: applicable to {1,2,4,8}BY, STR, BST, ARR-of-{1,2,4,8}BY.</span>
+<span class="cm">   Note that when defining keys in nested types, the key flag should be set</span>
+<span class="cm">   on both the field(s) in the subtype and on the enclosing STU/EXT field. */</span><span class="w"></span>
+<span class="cp">#define DDS_OP_FLAG_KEY 0x01</span>
+
+<span class="cp">#define DDS_OP_FLAG_DEF 0x02 </span><span class="cm">/* union has a default case (for DDS_OP_ADR | DDS_OP_TYPE_UNI) */</span><span class="cp"></span>
+
+<span class="cm">/* For a union: (1) the discriminator may be a key field; (2) there may be a default value;</span>
+<span class="cm">   and (3) the discriminator can be an integral type (or enumerated - here treated as equivalent).</span>
+<span class="cm">   What it can&#39;t be is a floating-point type. So DEF and FP need never be set at the same time.</span>
+<span class="cm">   There are only a few flag bits, so saving one is not such a bad idea. */</span><span class="w"></span>
+<span class="cp">#define DDS_OP_FLAG_FP   (1u &lt;&lt; 1) </span><span class="cm">/* floating-point: applicable to {4,8}BY and arrays, sequences of them */</span><span class="cp"></span>
+<span class="cp">#define DDS_OP_FLAG_SGN  (1u &lt;&lt; 2) </span><span class="cm">/* signed: applicable to {1,2,4,8}BY and arrays, sequences of them */</span><span class="cp"></span>
+<span class="cp">#define DDS_OP_FLAG_MU   (1u &lt;&lt; 3) </span><span class="cm">/* must-understand flag */</span><span class="cp"></span>
+<span class="cp">#define DDS_OP_FLAG_BASE (1u &lt;&lt; 4) </span><span class="cm">/* jump to base type, used with PLM in mutable types and for</span>
+<span class="cm">                                      the TYPE_EXT &#39;parent&#39; member in final and appendable types */</span><span class="cp"></span>
+<span class="cp">#define DDS_OP_FLAG_OPT  (1u &lt;&lt; 5) </span><span class="cm">/* optional flag, used with struct members. For non-string types,</span>
+<span class="cm">                                      an optional member also gets the FLAG_EXT, see above. */</span><span class="cp"></span>
+
+<span class="cm">/* Topic descriptor flag values */</span><span class="w"></span>
+<span class="cp">#define DDS_TOPIC_FLAGS_MASK                    0x3fffffff  </span><span class="cm">/* The 2 most significant bits are used for type extensibility */</span><span class="cp"></span>
+<span class="cp">#define DDS_TOPIC_NO_OPTIMIZE                   (1u &lt;&lt; 0)</span>
+<span class="cp">#define DDS_TOPIC_FIXED_KEY                     (1u &lt;&lt; 1)   </span><span class="cm">/* Set if the XCDR1 serialized key fits in 16 bytes */</span><span class="cp"></span>
+<span class="cp">#define DDS_TOPIC_CONTAINS_UNION                (1u &lt;&lt; 2)</span>
+<span class="cp">#define DDS_TOPIC_DISABLE_TYPECHECK             (1u &lt;&lt; 3)</span>
+<span class="cp">#define DDS_TOPIC_FIXED_SIZE                    (1u &lt;&lt; 4)</span>
+<span class="cp">#define DDS_TOPIC_FIXED_KEY_XCDR2               (1u &lt;&lt; 5)   </span><span class="cm">/* Set if the XCDR2 serialized key fits in 16 bytes */</span><span class="cp"></span>
+
+
+<span class="cp">#define DDS_TOPIC_TYPE_EXTENSIBILITY_MASK       0xc0000000</span>
+<span class="cp">#define DDS_TOPIC_TYPE_EXTENSIBILITY(fs)        (((fs) &amp; DDS_TOPIC_TYPE_EXTENSIBILITY_MASK) &gt;&gt; 30)</span>
+<span class="cp">#define DDS_TOPIC_TYPE_EXTENSIBILITY_FINAL      (0u &lt;&lt; 30)</span>
+<span class="cp">#define DDS_TOPIC_TYPE_EXTENSIBILITY_APPENDABLE (1u &lt;&lt; 30)</span>
+<span class="cp">#define DDS_TOPIC_TYPE_EXTENSIBILITY_MUTABLE    (2u &lt;&lt; 30)</span>
+
+<span class="cp">#if defined(__cplusplus)</span>
+<span class="p">}</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="cp">#endif </span><span class="cm">/* DDS_OPCODES_H */</span><span class="cp"></span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

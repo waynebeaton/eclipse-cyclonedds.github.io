@@ -1,0 +1,91 @@
+
+.. _file_org_eclipse_cyclonedds_core_EntityDelegate.hpp:
+
+File EntityDelegate.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core>` (``org/eclipse/cyclonedds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/EntityDelegate.hpp``)
+---------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_EntityDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/core/policy/CorePolicy.hpp`` (:ref:`file_dds_core_policy_CorePolicy.hpp`)
+
+- ``dds/core/status/State.hpp`` (:ref:`file_dds_core_status_State.hpp`)
+
+- ``org/eclipse/cyclonedds/ForwardDeclarations.hpp`` (:ref:`file_org_eclipse_cyclonedds_ForwardDeclarations.hpp`)
+
+- ``org/eclipse/cyclonedds/core/DDScObjectDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_DDScObjectDelegate.hpp`)
+
+- ``org/eclipse/cyclonedds/core/status/StatusDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_status_StatusDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_detail_Entity.hpp`
+
+- :ref:`file_dds_pub_detail_DataWriter.hpp`
+
+- :ref:`file_dds_sub_detail_DataReader.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_EntitySet.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_AnyDataWriterDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_SubscriberDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_AnyTopicDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1EntityDelegate`
+

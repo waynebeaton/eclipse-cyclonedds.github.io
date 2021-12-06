@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2QosProvider_8hpp_1a36bc2d5464d2c11b529c93db277afdfe:
+
+Typedef dds::core::detail::QosProvider
+======================================
+
+- Defined in :ref:`file_dds_core_detail_QosProvider.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::detail::QosProvider

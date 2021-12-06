@@ -1,0 +1,140 @@
+
+.. _program_listing_file_dds_core_detail_Value.hpp:
+
+Program Listing for File Value.hpp
+==================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_detail_Value.hpp>` (``dds/core/detail/Value.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_CORE_DETAIL_VALUE_HPP_
+   #define CYCLONEDDS_DDS_CORE_DETAIL_VALUE_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/core/Value.hpp>
+   
+   // Implementation
+   namespace dds
+   {
+   namespace core
+   {
+   
+   Value::Value() { }
+   
+   
+   template <typename ARG>
+   Value::Value(const ARG& arg) : d_(arg) { }
+   
+   
+   template <typename ARG1, typename ARG2>
+   Value::Value(const ARG1& arg1, const ARG2& arg2) : d_(arg1, arg2) { }
+   
+   
+   template <typename ARG1, typename ARG2, typename ARG3>
+   Value::Value(const ARG1& arg1, const ARG2& arg2, const ARG3& arg3)
+       : d_(arg1, arg2, arg3) { }
+   
+   
+   template <typename ARG1, typename ARG2, typename ARG3, typename ARG4>
+   Value::Value(const ARG1& arg1, const ARG2& arg2, const ARG3& arg3, const ARG4& arg4)
+       : d_(arg1, arg2, arg3, arg4) { }
+   
+   
+   template <typename ARG1, typename ARG2, typename ARG3, typename ARG4, typename ARG5>
+   Value::Value(const ARG1& arg1, const ARG2& arg2, const ARG3& arg3, const ARG4& arg4, const ARG5& arg5)
+       : d_(arg1, arg2, arg3, arg4, arg5) { }
+   
+   
+   template <typename ARG1, typename ARG2, typename ARG3, typename ARG4, typename ARG5, typename ARG6>
+   Value::Value(const ARG1& arg1, const ARG2& arg2, const ARG3& arg3, const ARG4& arg4, const ARG5& arg5, const ARG6& arg6)
+       : d_(arg1, arg2, arg3, arg4, arg5, arg6) { }
+   
+   
+   Value& Value::operator=(const Value& other)
+   {
+       if(this != &other)
+       {
+           d_ = other.d_;
+       }
+       return *this;
+   }
+   
+   
+   Value& Value::operator=(Value&& other)
+   {
+       if(this != &other)
+       {
+           d_ = other.d_;
+       }
+       return *this;
+   }
+   
+   
+   bool Value::operator==(const Value& other) const
+   {
+       return (d_ == other.d_);
+   }
+   
+   
+   bool Value::operator !=(const Value& other) const
+   {
+       return !(d_ == other.d_);
+   }
+   
+   
+   const D* Value::operator->() const
+   {
+       return &d_;
+   }
+   
+   
+   D* Value::operator->()
+   {
+       return &d_;
+   }
+   
+   
+   const D& Value::delegate() const
+   {
+       return d_;
+   }
+   
+   
+   D& Value::delegate()
+   {
+       return d_;
+   }
+   
+   
+   Value::operator D& ()
+   {
+       return d_;
+   }
+   
+   
+   Value::operator const D& () const
+   {
+       return d_;
+   }
+   
+   }
+   }
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_CORE_DETAIL_VALUE_HPP_ */

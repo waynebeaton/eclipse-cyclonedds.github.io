@@ -1,0 +1,65 @@
+
+.. _file_dds_topic_BuiltinTopic.hpp:
+
+File BuiltinTopic.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic>` (``dds/topic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/topic/BuiltinTopic.hpp``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_topic_BuiltinTopic.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Value.hpp`` (:ref:`file_dds_core_Value.hpp`)
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``dds/core/policy/CorePolicy.hpp`` (:ref:`file_dds_core_policy_CorePolicy.hpp`)
+
+- ``dds/topic/BuiltinTopicKey.hpp`` (:ref:`file_dds_topic_BuiltinTopicKey.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__topic`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1topic_1_1ParticipantBuiltinTopicData`
+
+- :ref:`exhale_class_classdds_1_1topic_1_1PublicationBuiltinTopicData`
+
+- :ref:`exhale_class_classdds_1_1topic_1_1SubscriptionBuiltinTopicData`
+
+- :ref:`exhale_class_classdds_1_1topic_1_1TopicBuiltinTopicData`
+

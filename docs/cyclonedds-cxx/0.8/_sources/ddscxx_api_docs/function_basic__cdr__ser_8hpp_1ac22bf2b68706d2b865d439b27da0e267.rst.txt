@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1ac22bf2b68706d2b865d439b27da0e267:
+
+Template Function org::eclipse::cyclonedds::core::cdr::max_many
+===============================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::max_many(basic_cdr_stream&, const T *, size_t)

@@ -1,0 +1,13 @@
+.. _exhale_function_ReferenceImpl_8hpp_1adeb161373599d164872384765315a761:
+
+Template Function operator!=(dds::core::null_type, const dds::core::Reference&)
+===============================================================================
+
+- Defined in :ref:`file_dds_core_detail_ReferenceImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: operator!=(dds::core::null_type, const dds::core::Reference&)

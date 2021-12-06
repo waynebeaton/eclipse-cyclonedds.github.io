@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Status_8hpp_1ada2e2ae79384083b0b757df561c21e54:
+
+Typedef dds::core::status::detail::RequestedIncompatibleQosStatus
+=================================================================
+
+- Defined in :ref:`file_dds_core_status_detail_Status.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::status::detail::RequestedIncompatibleQosStatus

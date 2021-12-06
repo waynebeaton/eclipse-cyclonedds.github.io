@@ -1,0 +1,13 @@
+.. _exhale_function_MiscUtils_8hpp_1a5186fee13f21dd8f2f688994f7bdb830:
+
+Function org::eclipse::cyclonedds::core::convertByteSeq(const dds::core::ByteSeq&, void \*&, int32_t)
+=====================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::convertByteSeq(const dds::core::ByteSeq&, void *&, int32_t)

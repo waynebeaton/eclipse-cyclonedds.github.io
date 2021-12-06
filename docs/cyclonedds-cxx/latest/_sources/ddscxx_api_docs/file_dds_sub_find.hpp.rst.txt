@@ -1,0 +1,61 @@
+
+.. _file_dds_sub_find.hpp:
+
+File find.hpp
+=============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/find.hpp``)
+---------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_find.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/detail/find.hpp`` (:ref:`file_dds_sub_detail_find.hpp`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_dds_2sub_2find_8hpp_1a931b33491a5e3285d82bf5d7e8e9c20b`
+

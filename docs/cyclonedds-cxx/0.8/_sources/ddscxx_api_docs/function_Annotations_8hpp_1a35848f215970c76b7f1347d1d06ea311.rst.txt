@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1a35848f215970c76b7f1347d1d06ea311:
+
+Function dds::core::xtypes::annotation::Nested
+==============================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::Nested()

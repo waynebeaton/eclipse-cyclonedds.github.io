@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2BuiltinTopicKey_8hpp_1ac5b088e7b23254170727f193ff9e29c0:
+
+Typedef dds::topic::detail::BuiltinTopicKey
+===========================================
+
+- Defined in :ref:`file_dds_topic_detail_BuiltinTopicKey.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::topic::detail::BuiltinTopicKey

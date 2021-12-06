@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2topic_2discovery_8hpp_1aa19680a38f9c0b05e917142b1128452f:
+
+Function dds::topic::ignore(const dds::domain::DomainParticipant&, const dds::core::InstanceHandle&)
+====================================================================================================
+
+- Defined in :ref:`file_dds_topic_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::topic::ignore(const dds::domain::DomainParticipant&, const dds::core::InstanceHandle&)

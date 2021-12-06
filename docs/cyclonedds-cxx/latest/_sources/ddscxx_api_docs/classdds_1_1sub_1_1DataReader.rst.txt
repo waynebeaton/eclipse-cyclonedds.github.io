@@ -1,0 +1,27 @@
+.. _exhale_class_classdds_1_1sub_1_1DataReader:
+
+Template Class DataReader
+=========================
+
+- Defined in :ref:`file_dds_sub_DataReader.hpp`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader_1_1ManipulatorSelector`
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader_1_1Selector`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::DataReader
+   :members:
+   :protected-members:
+   :undoc-members:

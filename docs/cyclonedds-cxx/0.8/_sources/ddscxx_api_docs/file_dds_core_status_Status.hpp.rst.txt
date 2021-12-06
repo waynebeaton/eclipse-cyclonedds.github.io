@@ -1,0 +1,105 @@
+
+.. _file_dds_core_status_Status.hpp:
+
+File Status.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_status>` (``dds/core/status``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/status/Status.hpp``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_status_Status.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/core/Value.hpp`` (:ref:`file_dds_core_Value.hpp`)
+
+- ``dds/core/policy/CorePolicy.hpp`` (:ref:`file_dds_core_policy_CorePolicy.hpp`)
+
+- ``dds/core/policy/QosPolicyCount.hpp`` (:ref:`file_dds_core_policy_QosPolicyCount.hpp`)
+
+- ``dds/core/status/State.hpp`` (:ref:`file_dds_core_status_State.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_Entity.hpp`
+
+- :ref:`file_dds_core_status_detail_StatusImpl.hpp`
+
+- :ref:`file_dds_sub_AnyDataReaderListener.hpp`
+
+- :ref:`file_dds_sub_DataReaderListener.hpp`
+
+- :ref:`file_dds_sub_detail_DataReader.hpp`
+
+- :ref:`file_dds_topic_detail_Topic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_cond_StatusConditionDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_AnyDataWriterDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__status`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1InconsistentTopicStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1LivelinessChangedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1LivelinessLostStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1OfferedDeadlineMissedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1OfferedIncompatibleQosStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1PublicationMatchedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1RequestedDeadlineMissedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1RequestedIncompatibleQosStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleLostStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleRejectedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SubscriptionMatchedStatus`
+

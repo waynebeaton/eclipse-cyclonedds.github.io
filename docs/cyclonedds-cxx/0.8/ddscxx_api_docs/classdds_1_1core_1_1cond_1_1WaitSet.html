@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class WaitSet &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class WaitSet</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classdds_1_1core_1_1cond_1_1WaitSet.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-waitset">
+<span id="exhale-class-classdds-1-1core-1-1cond-1-1waitset"></span><h1>Class WaitSet<a class="headerlink" href="#class-waitset" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds_core_cond_WaitSet.hpp.html#file-dds-core-cond-waitset-hpp"><span class="std std-ref">File WaitSet.hpp</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
+<section id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">dds::core::Reference</span></code> (<a class="reference internal" href="classdds_1_1core_1_1Reference.html#exhale-class-classdds-1-1core-1-1reference"><span class="std std-ref">Class Reference</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSetE">
+<span id="_CPPv3N3dds4core4cond7WaitSetE"></span><span id="_CPPv2N3dds4core4cond7WaitSetE"></span><span id="dds::core::cond::WaitSet"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4condE" title="dds::core::cond"><span class="n"><span class="pre">cond</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">WaitSet</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core9ReferenceE" title="dds::core::Reference"><span class="n"><span class="pre">Reference</span></span></a><br /></dt>
+<dd><p>A <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> object allows an application to wait until one or more of the attached <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> objects has a trigger_value of TRUE or else until the timeout expires. </p>
+<p>A <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> is not necessarily associated with a single DomainParticipant and could be used to wait for <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> objects associated with different DomainParticipant objects.</p>
+<p><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1anchor_dds_core_cond_waitset_examples"></span><strong></strong>
+ When using the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet_1ad154f8a2cc65e9f2376b29fac706ae72"><span class="std std-ref">wait()</span></a> operation, the triggered Conditions are returned in a list. <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Create a Condition to attach to a Waitset</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">StatusCondition</span><span class="w"> </span><span class="n">readerSC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">StatusCondition</span><span class="p">(</span><span class="n">reader</span><span class="p">);</span><span class="w"></span>
+<span class="n">readerSC</span><span class="p">.</span><span class="n">enabled_statuses</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">status</span><span class="o">::</span><span class="n">StatusMask</span><span class="o">::</span><span class="n">data_available</span><span class="p">());</span><span class="w"></span>
+
+<span class="c1">// Create WaitSet and attach Condition</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">WaitSet</span><span class="w"> </span><span class="n">waitset</span><span class="p">;</span><span class="w"></span>
+<span class="n">waitset</span><span class="p">.</span><span class="n">attach_condition</span><span class="p">(</span><span class="n">readerSC</span><span class="p">);</span><span class="w"> </span><span class="c1">// or waitset += readerSC;</span>
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">WaitSet</span><span class="o">::</span><span class="n">ConditionSeq</span><span class="w"> </span><span class="n">conditions</span><span class="p">;</span><span class="w"></span>
+<span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Wait for any Condition to trigger.</span>
+<span class="w">    </span><span class="n">conditions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">waitset</span><span class="p">.</span><span class="n">wait</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Loop through the triggered conditions.</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">conditions</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Handle data_available when right Condition triggered.</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">conditions</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">readerSC</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="c1">// Read samples from the DataReader</span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</p>
+<p><strong></strong>
+ When using the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet_1a20cb5a74eda3dedbf6b0e1a7cf274ae6"><span class="std std-ref">dispatch()</span></a> operation, the Functors of the triggered Conditions will be called. <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Functor to add to a Condition</span>
+<span class="k">class</span> <span class="nc">FunctorStatusCondition</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="p">()(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">StatusCondition</span><span class="o">&amp;</span><span class="w"> </span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Possibly get reader from the condition and read some samples.</span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+<span class="n">FunctorStatusCondition</span><span class="w"> </span><span class="n">functor</span><span class="p">;</span><span class="w"></span>
+
+<span class="c1">// Create a Condition with functor to attach to a Waitset</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">StatusCondition</span><span class="w"> </span><span class="n">readerSC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">StatusCondition</span><span class="p">(</span><span class="n">reader</span><span class="p">,</span><span class="w"> </span><span class="n">functor</span><span class="p">);</span><span class="w"></span>
+<span class="n">readerSC</span><span class="p">.</span><span class="n">enabled_statuses</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">status</span><span class="o">::</span><span class="n">StatusMask</span><span class="o">::</span><span class="n">data_available</span><span class="p">());</span><span class="w"></span>
+
+<span class="c1">// Create WaitSet and attach Condition</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cond</span><span class="o">::</span><span class="n">WaitSet</span><span class="w"> </span><span class="n">waitset</span><span class="p">;</span><span class="w"></span>
+<span class="n">waitset</span><span class="p">.</span><span class="n">attach_condition</span><span class="p">(</span><span class="n">readerSC</span><span class="p">);</span><span class="w"> </span><span class="c1">// or waitset += readerSC;</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Wait for any Condition to trigger.</span>
+<span class="w">    </span><span class="c1">// The functors of the Conditions are automatically called</span>
+<span class="w">    </span><span class="c1">// when the Condition triggers.</span>
+<span class="w">    </span><span class="n">waitset</span><span class="p">.</span><span class="n">dispatch</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p>for more information: WaitSet concept </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE">
+<span id="_CPPv3N3dds4core4cond7WaitSet12ConditionSeqE"></span><span id="_CPPv2N3dds4core4cond7WaitSet12ConditionSeqE"></span><span id="dds::core::cond::WaitSet::ConditionSeq"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1acea647547546c8f0097085130a551819"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4condE" title="dds::core::cond"><span class="n"><span class="pre">cond</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond9ConditionE" title="dds::core::cond::Condition"><span class="n"><span class="pre">Condition</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ConditionSeq</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet7WaitSetEv">
+<span id="_CPPv3N3dds4core4cond7WaitSet7WaitSetEv"></span><span id="_CPPv2N3dds4core4cond7WaitSet7WaitSetEv"></span><span id="dds::core::cond::WaitSet::WaitSet"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1a53c4e7930bffd788b2f03c4ab3966fdb"></span><span class="sig-name descname"><span class="n"><span class="pre">WaitSet</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet4waitERKN3dds4core8DurationE">
+<span id="_CPPv3N3dds4core4cond7WaitSet4waitERKN3dds4core8DurationE"></span><span id="_CPPv2N3dds4core4cond7WaitSet4waitERKN3dds4core8DurationE"></span><span id="dds::core::cond::WaitSet::wait__dds::core::DurationCR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1a917440a057e3d3b4d912bc25f74c7ada"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wait</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">timeout</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation allows an application thread to wait for the occurrence of at least one of the conditions that is attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>This operation allows an application thread to wait for the occurrence of certain Conditions. If none of the Conditions attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> have a trigger_value of TRUE, the wait operation will block suspending the calling thread.</p>
+<p>The wait operation takes a timeout argument that specifies the maximum duration for the wait. If this duration is exceeded and none of the attached <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> objects is true, a <a class="reference internal" href="classdds_1_1core_1_1TimeoutError.html#classdds_1_1core_1_1TimeoutError"><span class="std std-ref">TimeoutError</span></a> will be thrown.</p>
+<p>It is not allowed for more than one application thread to be waiting on the same <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. If the wait operation is invoked on a <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> that already has a thread blocking on it, the operation will immediately raise a <a class="reference internal" href="classdds_1_1core_1_1PreconditionNotMetError.html#classdds_1_1core_1_1PreconditionNotMetError"><span class="std std-ref">PreconditionNotMetError</span></a> exception.</p>
+<p>The result of the wait operation is the list of all the attached Conditions that have a trigger_value of TRUE (i.e., the Conditions that unblocked the wait).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timeout</strong> – The maximum amount of time for which the wait should block while waiting for a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to be triggered. </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core12TimeoutErrorE" title="dds::core::TimeoutError"><span class="n">TimeoutError</span></a></span></span> – The timeout has elapsed without any of the attached conditions becoming TRUE. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23PreconditionNotMetErrorE" title="dds::core::PreconditionNotMetError"><span class="n">PreconditionNotMetError</span></a></span></span> – When multiple thread try to invoke the function concurrently. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ConditionSeq A vector containing the triggered Conditions </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet4waitEv">
+<span id="_CPPv3N3dds4core4cond7WaitSet4waitEv"></span><span id="_CPPv2N3dds4core4cond7WaitSet4waitEv"></span><span id="dds::core::cond::WaitSet::wait"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1ad154f8a2cc65e9f2376b29fac706ae72"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wait</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation allows an application thread to wait for the occurrence of at least one of the conditions that is attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>This operation allows an application thread to wait for the occurrence of certain Conditions. If none of the Conditions attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> have a trigger_value of TRUE, the wait operation will block suspending the calling thread.</p>
+<p>It is not allowed for more than one application thread to be waiting on the same <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. If the wait operation is invoked on a <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> that already has a thread blocking on it, the operation will immediately raise a <a class="reference internal" href="classdds_1_1core_1_1PreconditionNotMetError.html#classdds_1_1core_1_1PreconditionNotMetError"><span class="std std-ref">PreconditionNotMetError</span></a> exception.</p>
+<p>The result of the wait operation is the list of all the attached Conditions that have a trigger_value of TRUE (i.e., the Conditions that unblocked the wait).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23PreconditionNotMetErrorE" title="dds::core::PreconditionNotMetError"><span class="n">PreconditionNotMetError</span></a></span></span> – When multiple thread try to invoke the function concurrently. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ConditionSeq A vector containing the triggered Conditions </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet4waitER12ConditionSeqRKN3dds4core8DurationE">
+<span id="_CPPv3N3dds4core4cond7WaitSet4waitER12ConditionSeqRKN3dds4core8DurationE"></span><span id="_CPPv2N3dds4core4cond7WaitSet4waitER12ConditionSeqRKN3dds4core8DurationE"></span><span id="dds::core::cond::WaitSet::wait__ConditionSeqR.dds::core::DurationCR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1af0ac614a143c7380ad9093333ec42739"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">wait</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">triggered</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">timeout</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation allows an application thread to wait for the occurrence of at least one of the conditions that is attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>This operation allows an application thread to wait for the occurrence of certain Conditions. If none of the Conditions attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> have a trigger_value of TRUE, the wait operation will block suspending the calling thread.</p>
+<p>The wait operation takes a timeout argument that specifies the maximum duration for the wait. If this duration is exceeded and none of the attached <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> objects is true, a <a class="reference internal" href="classdds_1_1core_1_1TimeoutError.html#classdds_1_1core_1_1TimeoutError"><span class="std std-ref">TimeoutError</span></a> will be thrown.</p>
+<p>It is not allowed for more than one application thread to be waiting on the same <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. If the wait operation is invoked on a <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> that already has a thread blocking on it, the operation will immediately raise a <a class="reference internal" href="classdds_1_1core_1_1PreconditionNotMetError.html#classdds_1_1core_1_1PreconditionNotMetError"><span class="std std-ref">PreconditionNotMetError</span></a> exception.</p>
+<p>The result of the wait operation is the list of all the attached Conditions that have a trigger_value of TRUE (i.e., the Conditions that unblocked the wait).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>triggered</strong> – A ConditionSeq in which to put Conditions that were triggered during the wait. </p></li>
+<li><p><strong>timeout</strong> – The maximum amount of time for which the wait should block while waiting for a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to be triggered. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core12TimeoutErrorE" title="dds::core::TimeoutError"><span class="n">TimeoutError</span></a></span></span> – The timeout has elapsed without any of the attached conditions becoming TRUE. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23PreconditionNotMetErrorE" title="dds::core::PreconditionNotMetError"><span class="n">PreconditionNotMetError</span></a></span></span> – When multiple thread try to invoke the function concurrently. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ConditionSeq A vector containing the triggered Conditions </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet4waitER12ConditionSeq">
+<span id="_CPPv3N3dds4core4cond7WaitSet4waitER12ConditionSeq"></span><span id="_CPPv2N3dds4core4cond7WaitSet4waitER12ConditionSeq"></span><span id="dds::core::cond::WaitSet::wait__ConditionSeqR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1a84e594a3709daf7dd44cc7f5b7077883"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">wait</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">triggered</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation allows an application thread to wait for the occurrence of at least one of the conditions that is attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>This operation allows an application thread to wait for the occurrence of certain Conditions. If none of the Conditions attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> have a trigger_value of TRUE, the wait operation will block suspending the calling thread.</p>
+<p>It is not allowed for more than one application thread to be waiting on the same <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. If the wait operation is invoked on a <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> that already has a thread blocking on it, the operation will immediately raise a <a class="reference internal" href="classdds_1_1core_1_1PreconditionNotMetError.html#classdds_1_1core_1_1PreconditionNotMetError"><span class="std std-ref">PreconditionNotMetError</span></a> exception.</p>
+<p>The result of the wait operation is the list of all the attached Conditions that have a trigger_value of TRUE (i.e., the Conditions that unblocked the wait).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>triggered</strong> – A ConditionSeq in which to put Conditions that were triggered during the wait. </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23PreconditionNotMetErrorE" title="dds::core::PreconditionNotMetError"><span class="n">PreconditionNotMetError</span></a></span></span> – When multiple thread try to invoke the function concurrently. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ConditionSeq A vector containing the triggered Conditions </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet8dispatchEv">
+<span id="_CPPv3N3dds4core4cond7WaitSet8dispatchEv"></span><span id="_CPPv2N3dds4core4cond7WaitSet8dispatchEv"></span><span id="dds::core::cond::WaitSet::dispatch"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1a20cb5a74eda3dedbf6b0e1a7cf274ae6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dispatch</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Waits for at least one of the attached Conditions to trigger and then dispatches the functor associated with the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23PreconditionNotMetErrorE" title="dds::core::PreconditionNotMetError"><span class="n">PreconditionNotMetError</span></a></span></span> – When multiple thread try to invoke the function concurrently. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet8dispatchERKN3dds4core8DurationE">
+<span id="_CPPv3N3dds4core4cond7WaitSet8dispatchERKN3dds4core8DurationE"></span><span id="_CPPv2N3dds4core4cond7WaitSet8dispatchERKN3dds4core8DurationE"></span><span id="dds::core::cond::WaitSet::dispatch__dds::core::DurationCR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1a3585ea21130dea5ea8f993a4d23ec5f1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dispatch</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">timeout</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Waits for at least one of the attached Conditions to trigger and then dispatches the functor associated with the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a>, or, times out and throws a <a class="reference internal" href="classdds_1_1core_1_1TimeoutError.html#classdds_1_1core_1_1TimeoutError"><span class="std std-ref">TimeoutError</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timeout</strong> – The maximum amount of time for which the dispatch should block while waiting for a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to be triggered. </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core12TimeoutErrorE" title="dds::core::TimeoutError"><span class="n">TimeoutError</span></a></span></span> – The timeout has elapsed without any of the attached conditions becoming TRUE. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core23PreconditionNotMetErrorE" title="dds::core::PreconditionNotMetError"><span class="n">PreconditionNotMetError</span></a></span></span> – When multiple thread try to invoke the function concurrently. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSetpLERKN3dds4core4cond9ConditionE">
+<span id="_CPPv3N3dds4core4cond7WaitSetpLERKN3dds4core4cond9ConditionE"></span><span id="_CPPv2N3dds4core4cond7WaitSetpLERKN3dds4core4cond9ConditionE"></span><span id="dds::core::cond::WaitSet::add-assign-operator__dds::core::cond::ConditionCR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1a473be21b0f585003d493b69fd9c268f8"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSetE" title="dds::core::cond::WaitSet"><span class="n"><span class="pre">WaitSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4condE" title="dds::core::cond"><span class="n"><span class="pre">cond</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond9ConditionE" title="dds::core::cond::Condition"><span class="n"><span class="pre">Condition</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cond</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation attaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>Attaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. It is possible to attach a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> on a <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> that is currently being waited upon (via the wait operation). In this case, if the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> has a trigger_value of TRUE, then attaching the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> will unblock the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. Adding a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> that is already attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> has no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cond</strong> – The <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to be attached to this <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> itself so that attaching Conditions can be chained. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSetmIERKN3dds4core4cond9ConditionE">
+<span id="_CPPv3N3dds4core4cond7WaitSetmIERKN3dds4core4cond9ConditionE"></span><span id="_CPPv2N3dds4core4cond7WaitSetmIERKN3dds4core4cond9ConditionE"></span><span id="dds::core::cond::WaitSet::sub-assign-operator__dds::core::cond::ConditionCR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1af36f01b84d1fa3862b0fd9a311b0246b"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSetE" title="dds::core::cond::WaitSet"><span class="n"><span class="pre">WaitSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4condE" title="dds::core::cond"><span class="n"><span class="pre">cond</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond9ConditionE" title="dds::core::cond::Condition"><span class="n"><span class="pre">Condition</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cond</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation detaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>Detaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> from the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. If the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> was not attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>, the operation will return false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cond</strong> – The <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to detach from this <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool True if the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> was found and detached, False if the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> was not part of the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet16attach_conditionERKN3dds4core4cond9ConditionE">
+<span id="_CPPv3N3dds4core4cond7WaitSet16attach_conditionERKN3dds4core4cond9ConditionE"></span><span id="_CPPv2N3dds4core4cond7WaitSet16attach_conditionERKN3dds4core4cond9ConditionE"></span><span id="dds::core::cond::WaitSet::attach_condition__dds::core::cond::ConditionCR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1addfc5ea17e27d2a8f6b346e1707b4f8c"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSetE" title="dds::core::cond::WaitSet"><span class="n"><span class="pre">WaitSet</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">attach_condition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4condE" title="dds::core::cond"><span class="n"><span class="pre">cond</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond9ConditionE" title="dds::core::cond::Condition"><span class="n"><span class="pre">Condition</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cond</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation attaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>Attaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. It is possible to attach a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> on a <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> that is currently being waited upon (via the wait operation). In this case, if the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> has a trigger_value of TRUE, then attaching the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> will unblock the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. Adding a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> that is already attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> has no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cond</strong> – The <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to be attached to this <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> itself so that attaching Conditions can be chained. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core4cond7WaitSet16detach_conditionERKN3dds4core4cond9ConditionE">
+<span id="_CPPv3N3dds4core4cond7WaitSet16detach_conditionERKN3dds4core4cond9ConditionE"></span><span id="_CPPv2N3dds4core4cond7WaitSet16detach_conditionERKN3dds4core4cond9ConditionE"></span><span id="dds::core::cond::WaitSet::detach_condition__dds::core::cond::ConditionCR"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1aa4b635f135f1d5e1482322287f3ee0eb"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">detach_condition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4condE" title="dds::core::cond"><span class="n"><span class="pre">cond</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond9ConditionE" title="dds::core::cond::Condition"><span class="n"><span class="pre">Condition</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cond</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This operation detaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>.</p>
+<p>Detaches a <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> from the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. If the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> was not attached to the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>, the operation will return false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cond</strong> – The <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> to detach from this <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bool True if the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> was found and detached, False if the <a class="reference internal" href="classdds_1_1core_1_1cond_1_1Condition.html#classdds_1_1core_1_1cond_1_1Condition"><span class="std std-ref">Condition</span></a> was not part of the <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core4cond7WaitSet10conditionsEv">
+<span id="_CPPv3NK3dds4core4cond7WaitSet10conditionsEv"></span><span id="_CPPv2NK3dds4core4cond7WaitSet10conditionsEv"></span><span id="dds::core::cond::WaitSet::conditionsC"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1ae9e6f353e276eb86a0ed8d1c00c43d8b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">conditions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>This operation retrieves the list of attached Conditions.</p>
+<p>The resulting sequence will either be an empty sequence, meaning there were no conditions attached, or will contain a list of ReadCondition, QueryCondition, <a class="reference internal" href="classdds_1_1core_1_1cond_1_1StatusCondition.html#classdds_1_1core_1_1cond_1_1StatusCondition"><span class="std std-ref">StatusCondition</span></a> and <a class="reference internal" href="classdds_1_1core_1_1cond_1_1GuardCondition.html#classdds_1_1core_1_1cond_1_1GuardCondition"><span class="std std-ref">GuardCondition</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ConditionSeq The list of attached Conditions. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core4cond7WaitSet10conditionsER12ConditionSeq">
+<span id="_CPPv3NK3dds4core4cond7WaitSet10conditionsER12ConditionSeq"></span><span id="_CPPv2NK3dds4core4cond7WaitSet10conditionsER12ConditionSeq"></span><span id="dds::core::cond::WaitSet::conditions__ConditionSeqRC"></span><span class="target" id="classdds_1_1core_1_1cond_1_1WaitSet_1aba7e88259de01ad5b35f39e6b5085e9d"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">conditions</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core4cond7WaitSet12ConditionSeqE" title="dds::core::cond::WaitSet::ConditionSeq"><span class="n"><span class="pre">ConditionSeq</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">conds</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>This operation retrieves the list of attached Conditions.</p>
+<p>The resulting sequence will either be an empty sequence, meaning there were no conditions attached, or will contain a list of ReadCondition, QueryCondition, <a class="reference internal" href="classdds_1_1core_1_1cond_1_1StatusCondition.html#classdds_1_1core_1_1cond_1_1StatusCondition"><span class="std std-ref">StatusCondition</span></a> and <a class="reference internal" href="classdds_1_1core_1_1cond_1_1GuardCondition.html#classdds_1_1core_1_1cond_1_1GuardCondition"><span class="std std-ref">GuardCondition</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>conds</strong> – A ConditionSeq in which to put the attached Conditions. </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The <a class="reference internal" href="#classdds_1_1core_1_1cond_1_1WaitSet"><span class="std std-ref">WaitSet</span></a> was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ConditionSeq The list of attached Conditions. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

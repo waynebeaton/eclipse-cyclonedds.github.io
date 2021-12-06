@@ -1,0 +1,52 @@
+
+.. _file_dds_core_cond_detail_GuardConditionImpl.hpp:
+
+File GuardConditionImpl.hpp
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_cond_detail>` (``dds/core/cond/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/cond/detail/GuardConditionImpl.hpp``)
+------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_cond_detail_GuardConditionImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/cond/GuardCondition.hpp`` (:ref:`file_dds_core_cond_GuardCondition.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ReportUtils.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`)
+
+- ``org/eclipse/cyclonedds/core/cond/GuardConditionDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_cond_GuardConditionDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__cond`
+

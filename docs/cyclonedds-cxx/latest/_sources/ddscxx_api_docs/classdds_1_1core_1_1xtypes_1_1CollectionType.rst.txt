@@ -1,0 +1,32 @@
+.. _exhale_class_classdds_1_1core_1_1xtypes_1_1CollectionType:
+
+Class CollectionType
+====================
+
+- Defined in :ref:`file_dds_core_xtypes_CollectionTypes.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public DynamicType``
+
+
+Derived Types
+*************
+
+- ``public dds::core::xtypes::MapType`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1MapType`)
+- ``public dds::core::xtypes::SequenceType`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1SequenceType`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::xtypes::CollectionType
+   :members:
+   :protected-members:
+   :undoc-members:

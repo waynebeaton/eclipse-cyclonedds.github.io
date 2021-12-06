@@ -1,0 +1,13 @@
+.. _exhale_function_TopicQosDelegate_8hpp_1a6d4b77f05b43b35b259ac2fb09198506:
+
+Function org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::LatencyBudget >
+===========================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_qos_TopicQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::LatencyBudget >()

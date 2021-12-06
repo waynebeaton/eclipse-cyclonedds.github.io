@@ -1,0 +1,72 @@
+
+.. _file_dds_core_xtypes_DynamicData.hpp:
+
+File DynamicData.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/DynamicData.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_DynamicData.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``dds/core/xtypes/DynamicType.hpp`` (:ref:`file_dds_core_xtypes_DynamicType.hpp`)
+
+- ``dds/core/xtypes/MemberType.hpp`` (:ref:`file_dds_core_xtypes_MemberType.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__xtypes`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1DynamicData`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_DynamicData_8hpp_1aba51a2b59abac6ea83654a1b5c0acb5f`
+
+- :ref:`exhale_function_DynamicData_8hpp_1ab6f1dc9d04f98051f9fdde495b233b2a`
+
+- :ref:`exhale_function_DynamicData_8hpp_1a0829017faf30a820184e0f840f8014f5`
+
+- :ref:`exhale_function_DynamicData_8hpp_1aec3265c78c301682764e98c346bfd5bb`
+

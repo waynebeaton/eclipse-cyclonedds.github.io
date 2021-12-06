@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Class Topic &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Template Class Topic</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classdds_1_1topic_1_1Topic.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="template-class-topic">
+<span id="exhale-class-classdds-1-1topic-1-1topic"></span><h1>Template Class Topic<a class="headerlink" href="#template-class-topic" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds_topic_Topic.hpp.html#file-dds-topic-topic-hpp"><span class="std std-ref">File Topic.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3dds5topic5TopicE">
+<span id="_CPPv3I0EN3dds5topic5TopicE"></span><span id="_CPPv2I0EN3dds5topic5TopicE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classdds_1_1topic_1_1Topic"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Topic</span></span></span><br /></dt>
+<dd><p><a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is the most basic description of the data to be published and subscribed. </p>
+<p>A <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is identified by its name, which must be unique in the whole Domain. In addition (by virtue of extending <a class="reference internal" href="classdds_1_1topic_1_1TopicDescription.html#classdds_1_1topic_1_1TopicDescription"><span class="std std-ref">TopicDescription</span></a>) it fully specifies the type of the data that can be communicated when publishing or subscribing to the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>.</p>
+<p><a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is the only <a class="reference internal" href="classdds_1_1topic_1_1TopicDescription.html#classdds_1_1topic_1_1TopicDescription"><span class="std std-ref">TopicDescription</span></a> that can be used for publications and therefore associated with a DataWriter.</p>
+<p><strong></strong> <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Default creation of a Topic</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">domain</span><span class="o">::</span><span class="n">DomainParticipant</span><span class="w"> </span><span class="nf">participant</span><span class="p">(</span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">domain</span><span class="o">::</span><span class="n">default_id</span><span class="p">());</span><span class="w"></span>
+<span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">Topic</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">topic</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TopicName&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// The Topic can be used to create readers and writers</span>
+<span class="c1">// DataReader</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="nf">subscriber</span><span class="p">(</span><span class="n">participant</span><span class="p">);</span><span class="w"></span>
+<span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">DataReader</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">reader</span><span class="p">(</span><span class="n">subscriber</span><span class="p">,</span><span class="w"> </span><span class="n">topic</span><span class="p">);</span><span class="w"></span>
+<span class="c1">// DataWriter</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">pub</span><span class="o">::</span><span class="n">Publisher</span><span class="w"> </span><span class="nf">publisher</span><span class="p">(</span><span class="n">participant</span><span class="p">);</span><span class="w"></span>
+<span class="n">dds</span><span class="o">::</span><span class="n">pub</span><span class="o">::</span><span class="n">DataWriter</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">writer</span><span class="p">(</span><span class="n">publisher</span><span class="p">,</span><span class="w"> </span><span class="n">topic</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p>for more information: Topic Definition </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds5topic5Topic8DataTypeE">
+<span id="_CPPv3N3dds5topic5Topic8DataTypeE"></span><span id="_CPPv2N3dds5topic5Topic8DataTypeE"></span><span id="dds::topic::Topic::DataType"></span><span class="target" id="classdds_1_1topic_1_1Topic_1a6e4e424c332e70ccbaf3491882ed4c6b"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds5topic5TopicE" title="dds::topic::Topic::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataType</span></span></span><br /></dt>
+<dd><p>Convenience typedef for the type of the data sample. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds5topic5Topic8ListenerE">
+<span id="_CPPv3N3dds5topic5Topic8ListenerE"></span><span id="_CPPv2N3dds5topic5Topic8ListenerE"></span><span id="dds::topic::Topic::Listener"></span><span class="target" id="classdds_1_1topic_1_1Topic_1a63dec6dfa7ac12521bbf19b021d037c4"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds5topic13TopicListenerE" title="dds::topic::TopicListener"><span class="n"><span class="pre">TopicListener</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds5topic5TopicE" title="dds::topic::Topic::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Listener</span></span></span><br /></dt>
+<dd><p>Local convenience typedef for <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">dds::topic::TopicListener</span></a>. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringE">
+<span id="_CPPv3N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringE"></span><span id="_CPPv2N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringE"></span><span id="dds::topic::Topic::Topic__dds::domain::DomainParticipantCR.ssCR"></span><span class="target" id="classdds_1_1topic_1_1Topic_1a399e6716615d77b05e3fdbea4b07e4dd"></span><span class="sig-name descname"><span class="n"><span class="pre">Topic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domainE" title="dds::domain"><span class="n"><span class="pre">domain</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domain17DomainParticipantE" title="dds::domain::DomainParticipant"><span class="n"><span class="pre">DomainParticipant</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">topic_name</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>.</p>
+<p>This operation creates a reference to a new or existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> under the given name, for a specific data type.</p>
+<p><em>QoS</em>
+ The <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> will be created with the QoS values specified on the last successful call to dp.default_topic_qos(qos)  or, if the call was never made, the <a class="reference internal" href="classdds_1_1topic_1_1qos_1_1TopicQos.html#classdds_1_1topic_1_1qos_1_1TopicQos_1anchor_dds_topic_qos_defaults"><span class="std std-ref">default</span></a> values.</p>
+<p><em>Existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> Name</em>
+ Before creating a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>, this operation performs a lookup_topicdescription for the specified topic_name. When a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is found with the same name in the current domain, the QoS and type_name of the found <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> are matched against the parameters qos and type_name. When they are the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created but a new proxy of the existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is returned. When they are not exactly the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created and <a class="reference internal" href="classdds_1_1core_1_1Error.html#classdds_1_1core_1_1Error"><span class="std std-ref">dds::core::Error</span></a> is thrown.</p>
+<p><em>Local Proxy</em>
+ Since a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is a global concept in the system, access is provided through a local proxy. In other words, the reference returned is actually not a reference to a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> but to a locally created proxy. The Data Distribution Service propagates Topics and makes remotely created Topics locally available through this proxy. The deletion of a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> object will not delete the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> from the domain, just the local proxy is deleted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dp</strong> – the domain participant on which the topic will be defined </p></li>
+<li><p><strong>topic_name</strong> – the name of the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> to be created </p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – A other <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> with the same name but different type or QoS was detected in the current domain or another internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKNSt6stringE">
+<span id="_CPPv3N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKNSt6stringE"></span><span id="_CPPv2N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKNSt6stringE"></span><span id="dds::topic::Topic::Topic__dds::domain::DomainParticipantCR.ssCR.ssCR"></span><span class="target" id="classdds_1_1topic_1_1Topic_1ab327a36b03741a1e0ec8a894d429a67e"></span><span class="sig-name descname"><span class="n"><span class="pre">Topic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domainE" title="dds::domain"><span class="n"><span class="pre">domain</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domain17DomainParticipantE" title="dds::domain::DomainParticipant"><span class="n"><span class="pre">DomainParticipant</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">topic_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">type_name</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>.</p>
+<p>This operation creates a reference to a new or existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> under the given name, for a specific data type and type_name.</p>
+<p><em>QoS</em>
+ The <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> will be created with the QoS values specified on the last successful call to dp.default_topic_qos(qos)  or, if the call was never made, the <a class="reference internal" href="classdds_1_1topic_1_1qos_1_1TopicQos.html#classdds_1_1topic_1_1qos_1_1TopicQos_1anchor_dds_topic_qos_defaults"><span class="std std-ref">default</span></a> values.</p>
+<p><em>Existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> Name</em>
+ Before creating a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>, this operation performs a lookup_topicdescription for the specified topic_name. When a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is found with the same name in the current domain, the QoS and type_name of the found <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> are matched against the parameters qos and type_name. When they are the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created but a new proxy of the existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is returned. When they are not exactly the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created and <a class="reference internal" href="classdds_1_1core_1_1Error.html#classdds_1_1core_1_1Error"><span class="std std-ref">dds::core::Error</span></a> is thrown.</p>
+<p><em>Local Proxy</em>
+ Since a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is a global concept in the system, access is provided through a local proxy. In other words, the reference returned is actually not a reference to a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> but to a locally created proxy. The Data Distribution Service propagates Topics and makes remotely created Topics locally available through this proxy. The deletion of a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> object will not delete the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> from the domain, just the local proxy is deleted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dp</strong> – the domain participant on which the topic will be defined </p></li>
+<li><p><strong>topic_name</strong> – the topic’s name </p></li>
+<li><p><strong>type_name</strong> – a local alias of the data type </p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – A other <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> with the same name but different type or QoS was detected in the current domain or another internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKN3dds5topic3qos8TopicQosEPN3dds5topic13TopicListenerI1TEERKN3dds4core6status10StatusMaskE">
+<span id="_CPPv3N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKN3dds5topic3qos8TopicQosEPN3dds5topic13TopicListenerI1TEERKN3dds4core6status10StatusMaskE"></span><span id="_CPPv2N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKN3dds5topic3qos8TopicQosEPN3dds5topic13TopicListenerI1TEERKN3dds4core6status10StatusMaskE"></span><span id="dds::topic::Topic::Topic__dds::domain::DomainParticipantCR.ssCR.dds::topic::qos::TopicQosCR.dds::topic::TopicListener:T:P.dds::core::status::StatusMaskCR"></span><span class="target" id="classdds_1_1topic_1_1Topic_1abeec4a9f0b2459ea55ecdce8d460d01a"></span><span class="sig-name descname"><span class="n"><span class="pre">Topic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domainE" title="dds::domain"><span class="n"><span class="pre">domain</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domain17DomainParticipantE" title="dds::domain::DomainParticipant"><span class="n"><span class="pre">DomainParticipant</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">topic_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic3qosE" title="dds::topic::qos"><span class="n"><span class="pre">qos</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic3qos8TopicQosE" title="dds::topic::qos::TopicQos"><span class="n"><span class="pre">TopicQos</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qos</span></span>, <a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds5topic13TopicListenerE" title="dds::topic::TopicListener"><span class="n"><span class="pre">TopicListener</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds5topic5TopicE" title="dds::topic::Topic::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">listener</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NULL</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status10StatusMaskE" title="dds::core::status::StatusMask"><span class="n"><span class="pre">StatusMask</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">mask</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status10StatusMaskE" title="dds::core::status::StatusMask"><span class="n"><span class="pre">StatusMask</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status10StatusMask4noneEv" title="dds::core::status::StatusMask::none"><span class="n"><span class="pre">none</span></span></a><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>.</p>
+<p>This operation creates a reference to a new or existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> under the given name, for a specific data type.</p>
+<p><em>QoS</em>
+ A possible application pattern to construct the TopicQos for the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is to: <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1) Retrieve the QosPolicy settings on the associated DomainParticipant</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">qos</span><span class="o">::</span><span class="n">TopicQos</span><span class="w"> </span><span class="n">topicQos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">participant</span><span class="p">.</span><span class="n">default_datareader_qos</span><span class="p">();</span><span class="w"></span>
+<span class="c1">// 2) Selectively modify QosPolicy settings as desired.</span>
+<span class="n">topicQos</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Durability</span><span class="o">::</span><span class="n">Transient</span><span class="p">();</span><span class="w"></span>
+<span class="c1">// 3) Use the resulting QoS to construct the DataReader.</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">Topic</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">topic</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TopicName&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">topicQos</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</p>
+<p><em>Existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> Name</em>
+ Before creating a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>, this operation performs a lookup_topicdescription for the specified topic_name. When a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is found with the same name in the current domain, the QoS and type_name of the found <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> are matched against the parameters qos and type_name. When they are the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created but a new proxy of the existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is returned. When they are not exactly the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created and <a class="reference internal" href="classdds_1_1core_1_1Error.html#classdds_1_1core_1_1Error"><span class="std std-ref">dds::core::Error</span></a> is thrown.</p>
+<p><em>Local Proxy</em>
+ Since a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is a global concept in the system, access is provided through a local proxy. In other words, the reference returned is actually not a reference to a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> but to a locally created proxy. The Data Distribution Service propagates Topics and makes remotely created Topics locally available through this proxy. The deletion of a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> object will not delete the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> from the domain, just the local proxy is deleted.</p>
+<p><em>Listener</em>
+ The following statuses are applicable to the <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a>:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1core_1_1status_1_1StatusMask.html#classdds_1_1core_1_1status_1_1StatusMask_1a3ce8ea1de44c9b9c2d1a7aa98962f5a7"><span class="std std-ref">dds::core::status::StatusMask::inconsistent_topic()</span></a></p></li>
+</ul>
+</p>
+<p>See listener concept, <a class="reference internal" href="#classdds_1_1topic_1_1Topic_1anchor_dds_topic_listener_commstatus"><span class="std std-ref">communication status</span></a> and <a class="reference internal" href="#classdds_1_1topic_1_1Topic_1anchor_dds_topic_listener_commpropagation"><span class="std std-ref">communication propagation</span></a> for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dp</strong> – the domain participant on which the topic will be defined </p></li>
+<li><p><strong>topic_name</strong> – the topic’s name </p></li>
+<li><p><strong>qos</strong> – the topic listener </p></li>
+<li><p><strong>listener</strong> – the topic listener </p></li>
+<li><p><strong>mask</strong> – the listener event mask </p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – A other <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> with the same name but different type or QoS was detected in the current domain or another internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKNSt6stringERKN3dds5topic3qos8TopicQosEPN3dds5topic13TopicListenerI1TEERKN3dds4core6status10StatusMaskE">
+<span id="_CPPv3N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKNSt6stringERKN3dds5topic3qos8TopicQosEPN3dds5topic13TopicListenerI1TEERKN3dds4core6status10StatusMaskE"></span><span id="_CPPv2N3dds5topic5Topic5TopicERKN3dds6domain17DomainParticipantERKNSt6stringERKNSt6stringERKN3dds5topic3qos8TopicQosEPN3dds5topic13TopicListenerI1TEERKN3dds4core6status10StatusMaskE"></span><span id="dds::topic::Topic::Topic__dds::domain::DomainParticipantCR.ssCR.ssCR.dds::topic::qos::TopicQosCR.dds::topic::TopicListener:T:P.dds::core::status::StatusMaskCR"></span><span class="target" id="classdds_1_1topic_1_1Topic_1a0067f4ec67cdb372f05bb99c7d2bbb7e"></span><span class="sig-name descname"><span class="n"><span class="pre">Topic</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domainE" title="dds::domain"><span class="n"><span class="pre">domain</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds6domain17DomainParticipantE" title="dds::domain::DomainParticipant"><span class="n"><span class="pre">DomainParticipant</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">topic_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">type_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic3qosE" title="dds::topic::qos"><span class="n"><span class="pre">qos</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic3qos8TopicQosE" title="dds::topic::qos::TopicQos"><span class="n"><span class="pre">TopicQos</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qos</span></span>, <a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds5topic13TopicListenerE" title="dds::topic::TopicListener"><span class="n"><span class="pre">TopicListener</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds5topic5TopicE" title="dds::topic::Topic::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">listener</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NULL</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status10StatusMaskE" title="dds::core::status::StatusMask"><span class="n"><span class="pre">StatusMask</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">mask</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status10StatusMaskE" title="dds::core::status::StatusMask"><span class="n"><span class="pre">StatusMask</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status10StatusMask4noneEv" title="dds::core::status::StatusMask::none"><span class="n"><span class="pre">none</span></span></a><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>.</p>
+<p>This operation creates a reference to a new or existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> under the given name, for a specific data type and type_name.</p>
+<p><em>QoS</em>
+ A possible application pattern to construct the TopicQos for the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is to: <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1) Retrieve the QosPolicy settings on the associated DomainParticipant</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">qos</span><span class="o">::</span><span class="n">TopicQos</span><span class="w"> </span><span class="n">topicQos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">participant</span><span class="p">.</span><span class="n">default_datareader_qos</span><span class="p">();</span><span class="w"></span>
+<span class="c1">// 2) Selectively modify QosPolicy settings as desired.</span>
+<span class="n">topicQos</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">Durability</span><span class="o">::</span><span class="n">Transient</span><span class="p">();</span><span class="w"></span>
+<span class="c1">// 3) Use the resulting QoS to construct the DataReader.</span>
+<span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">Topic</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">topic</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TopicName&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TypeName&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">topicQos</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</p>
+<p><em>Existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> Name</em>
+ Before creating a new <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>, this operation performs a lookup_topicdescription for the specified topic_name. When a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is found with the same name in the current domain, the QoS and type_name of the found <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> are matched against the parameters qos and type_name. When they are the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created but a new proxy of the existing <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is returned. When they are not exactly the same, no <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is created and <a class="reference internal" href="classdds_1_1core_1_1Error.html#classdds_1_1core_1_1Error"><span class="std std-ref">dds::core::Error</span></a> is thrown.</p>
+<p><em>Local Proxy</em>
+ Since a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> is a global concept in the system, access is provided through a local proxy. In other words, the reference returned is actually not a reference to a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> but to a locally created proxy. The Data Distribution Service propagates Topics and makes remotely created Topics locally available through this proxy. The deletion of a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> object will not delete the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> from the domain, just the local proxy is deleted.</p>
+<p><em>Listener</em>
+ The following statuses are applicable to the <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a>:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1core_1_1status_1_1StatusMask.html#classdds_1_1core_1_1status_1_1StatusMask_1a3ce8ea1de44c9b9c2d1a7aa98962f5a7"><span class="std std-ref">dds::core::status::StatusMask::inconsistent_topic()</span></a></p></li>
+</ul>
+</p>
+<p>See listener concept, <a class="reference internal" href="#classdds_1_1topic_1_1Topic_1anchor_dds_topic_listener_commstatus"><span class="std std-ref">communication status</span></a> and <a class="reference internal" href="#classdds_1_1topic_1_1Topic_1anchor_dds_topic_listener_commpropagation"><span class="std std-ref">communication propagation</span></a> for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dp</strong> – the domain participant on which the topic will be defined </p></li>
+<li><p><strong>topic_name</strong> – the topic’s name </p></li>
+<li><p><strong>type_name</strong> – a local alias of the data type </p></li>
+<li><p><strong>qos</strong> – the topic listener </p></li>
+<li><p><strong>listener</strong> – the topic listener </p></li>
+<li><p><strong>mask</strong> – the listener event mask </p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – A other <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> with the same name but different type or QoS was detected in the current domain or another internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds5topic5Topic8listenerEP8ListenerRKN3dds4core6status10StatusMaskE">
+<span id="_CPPv3N3dds5topic5Topic8listenerEP8ListenerRKN3dds4core6status10StatusMaskE"></span><span id="_CPPv2N3dds5topic5Topic8listenerEP8ListenerRKN3dds4core6status10StatusMaskE"></span><span id="dds::topic::Topic::listener__ListenerP.dds::core::status::StatusMaskCR"></span><span class="target" id="classdds_1_1topic_1_1Topic_1a4c7471ce7e69e0dcc0cd9f7fc64bb9a5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">listener</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic5Topic8ListenerE" title="dds::topic::Topic::Listener"><span class="n"><span class="pre">Listener</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">listener</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6statusE" title="dds::core::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6status10StatusMaskE" title="dds::core::status::StatusMask"><span class="n"><span class="pre">StatusMask</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">event_mask</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Register a listener with the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>.</p>
+<p>This operation attaches a <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a> to the <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>. Only one <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a> can be attached to each <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>. If a <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a> was already attached, the operation will replace it with the new one. When the listener is the NULL pointer, it represents a listener that is treated as a NOOP for all statuses activated in the bit mask.</p>
+<p>Listener un-registration is performed by setting the listener to NULL and mask none().</p>
+<p><span class="target" id="classdds_1_1topic_1_1Topic_1anchor_dds_topic_listener_commstatus"></span><em>Communication Status</em>
+ For each communication status, the StatusChangedFlag flag is initially set to FALSE. It becomes TRUE whenever that communication status changes. For each communication status activated in the mask, the associated <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a> operation is invoked and the communication status is reset to FALSE, as the listener implicitly accesses the status which is passed as a parameter to that operation. The status is reset prior to calling the listener, so if the application calls the get_&lt;status_name&gt;_status from inside the listener it will see the status already reset. An exception to this rule is the NULL listener, which does not reset the communication statuses for which it is invoked.</p>
+<p>The following statuses are applicable to the <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a>:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1core_1_1status_1_1StatusMask.html#classdds_1_1core_1_1status_1_1StatusMask_1a3ce8ea1de44c9b9c2d1a7aa98962f5a7"><span class="std std-ref">dds::core::status::StatusMask::inconsistent_topic()</span></a></p></li>
+</ul>
+</p>
+<p>Status bits are declared as a constant and can be used by the application in an OR operation to create a tailored mask. The special constant <a class="reference internal" href="classdds_1_1core_1_1status_1_1StatusMask.html#classdds_1_1core_1_1status_1_1StatusMask_1a37dcfbbbf459c4836f3db5050a1057b3"><span class="std std-ref">dds::core::status::StatusMask::none()</span></a> can be used to indicate that the created entity should not respond to any of its available statuses. The DDS will therefore attempt to propagate these statuses to its factory. The special constant <a class="reference internal" href="classdds_1_1core_1_1status_1_1StatusMask.html#classdds_1_1core_1_1status_1_1StatusMask_1a755f9ed62ec22b8fcf632380439a65e3"><span class="std std-ref">dds::core::status::StatusMask::all()</span></a> can be used to select all applicable statuses specified in the “Data Distribution Service for Real-time Systems Version 1.2” specification which are applicable to the PublisherListener.</p>
+<p><span class="target" id="classdds_1_1topic_1_1Topic_1anchor_dds_topic_listener_commpropagation"></span><em>Status Propagation</em>
+ In case a communication status is not activated in the mask of the <a class="reference internal" href="classdds_1_1topic_1_1TopicListener.html#classdds_1_1topic_1_1TopicListener"><span class="std std-ref">TopicListener</span></a>, the DomainParticipantListener of the containing DomainParticipant is invoked (if attached and activated for the status that occurred). This allows the application to set a default behaviour in the DomainParticipantListener of the containing DomainParticipant and a <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a> specific behaviour when needed. In case the communication status is not activated in the mask of the DomainParticipantListener as well, the application is not notified of the change.</p>
+<p>See also listener information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listener</strong> – the listener </p></li>
+<li><p><strong>event_mask</strong> – the mask defining the events for which the listener will be notified. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core5ErrorE" title="dds::core::Error"><span class="n">Error</span></a></span></span> – An internal error has occurred. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18AlreadyClosedErrorE" title="dds::core::AlreadyClosedError"><span class="n">AlreadyClosedError</span></a></span></span> – The entity has already been closed. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core16UnsupportedErrorE" title="dds::core::UnsupportedError"><span class="n">UnsupportedError</span></a></span></span> – A status was selected that cannot be supported because the infrastructure does not maintain the required connectivity information. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core19OutOfResourcesErrorE" title="dds::core::OutOfResourcesError"><span class="n">OutOfResourcesError</span></a></span></span> – The Data Distribution Service ran out of resources to complete this operation. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds5topic5Topic8listenerEv">
+<span id="_CPPv3NK3dds5topic5Topic8listenerEv"></span><span id="_CPPv2NK3dds5topic5Topic8listenerEv"></span><span id="dds::topic::Topic::listenerC"></span><span class="target" id="classdds_1_1topic_1_1Topic_1ab3e709dd44c329f150dcad1e00c0738c"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic5Topic8ListenerE" title="dds::topic::Topic::Listener"><span class="n"><span class="pre">Listener</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">listener</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get the listener of this <a class="reference internal" href="#classdds_1_1topic_1_1Topic"><span class="std std-ref">Topic</span></a>.</p>
+<p>See also listener information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n">dds</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n">core</span></a><span class="p">::</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core18NullReferenceErrorE" title="dds::core::NullReferenceError"><span class="n">NullReferenceError</span></a></span></span> – The entity was not properly created and references to dds::core::null. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the listener </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

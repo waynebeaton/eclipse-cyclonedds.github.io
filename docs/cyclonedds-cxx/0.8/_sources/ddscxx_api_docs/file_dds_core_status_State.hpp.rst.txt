@@ -1,0 +1,79 @@
+
+.. _file_dds_core_status_State.hpp:
+
+File State.hpp
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_status>` (``dds/core/status``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/status/State.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_status_State.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``bitset``
+
+- ``dds/core/macros.hpp`` (:ref:`file_dds_core_macros.hpp`)
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_cond_StatusCondition.hpp`
+
+- :ref:`file_dds_core_status_Status.hpp`
+
+- :ref:`file_dds_topic_detail_Topic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_SubscriberDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__status`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleRejectedState`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1StatusMask`
+

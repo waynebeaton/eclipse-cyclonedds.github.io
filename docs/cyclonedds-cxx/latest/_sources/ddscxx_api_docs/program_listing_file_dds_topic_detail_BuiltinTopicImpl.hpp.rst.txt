@@ -1,0 +1,588 @@
+
+.. _program_listing_file_dds_topic_detail_BuiltinTopicImpl.hpp:
+
+Program Listing for File BuiltinTopicImpl.hpp
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_topic_detail_BuiltinTopicImpl.hpp>` (``dds/topic/detail/BuiltinTopicImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_TOPIC_TBUILTINTOPIC_IMPL_HPP_
+   #define CYCLONEDDS_DDS_TOPIC_TBUILTINTOPIC_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/topic/BuiltinTopic.hpp>
+   
+   // Implementation
+   namespace dds
+   {
+   namespace topic
+   {
+   
+   //ParticipantBuiltinTopicData
+   
+   const dds::topic::BuiltinTopicKey& ParticipantBuiltinTopicData::key() const
+   {
+       return this->delegate().key();
+   }
+   
+   
+   const ::dds::core::policy::UserData& ParticipantBuiltinTopicData::user_data() const
+   {
+       return this->delegate().user_data();
+   }
+   
+   //TopicBuiltinTopicData
+   
+   const dds::topic::BuiltinTopicKey& TopicBuiltinTopicData::key() const
+   {
+       return this->delegate().key();
+   }
+   
+   
+   const std::string& TopicBuiltinTopicData::name() const
+   {
+       return this->delegate().name();
+   }
+   
+   
+   const std::string& TopicBuiltinTopicData::type_name() const
+   {
+       return this->delegate().type_name();
+   }
+   
+   
+   const ::dds::core::policy::Durability& TopicBuiltinTopicData::durability() const
+   {
+       return this->delegate().durability();
+   }
+   
+   #ifdef OMG_DDS_PERSISTENCE_SUPPORT
+   
+   const ::dds::core::policy::DurabilityService& TopicBuiltinTopicData::durability_service() const
+   {
+       return this->delegate().durability_service();
+   }
+   
+   #endif  // OMG_DDS_PERSISTENCE_SUPPORT
+   
+   
+   const ::dds::core::policy::Deadline& TopicBuiltinTopicData::deadline() const
+   {
+       return this->delegate().deadline();
+   }
+   
+   
+   const ::dds::core::policy::LatencyBudget& TopicBuiltinTopicData::latency_budget() const
+   {
+       return this->delegate().latency_budget();
+   }
+   
+   
+   const ::dds::core::policy::Liveliness& TopicBuiltinTopicData::liveliness() const
+   {
+       return this->delegate().liveliness();
+   }
+   
+   
+   const ::dds::core::policy::Reliability& TopicBuiltinTopicData::reliability() const
+   {
+       return this->delegate().reliability();
+   }
+   
+   
+   const ::dds::core::policy::TransportPriority& TopicBuiltinTopicData::transport_priority() const
+   {
+       return this->delegate().transport_priority();
+   }
+   
+   
+   const ::dds::core::policy::Lifespan& TopicBuiltinTopicData::lifespan() const
+   {
+       return this->delegate().lifespan();
+   }
+   
+   
+   const ::dds::core::policy::DestinationOrder& TopicBuiltinTopicData::destination_order() const
+   {
+       return this->delegate().destination_order();
+   }
+   
+   
+   const ::dds::core::policy::History& TopicBuiltinTopicData::history() const
+   {
+       return this->delegate().history();
+   }
+   
+   
+   const ::dds::core::policy::ResourceLimits& TopicBuiltinTopicData::resource_limits() const
+   {
+       return this->delegate().resource_limits();
+   }
+   
+   
+   const ::dds::core::policy::Ownership& TopicBuiltinTopicData::ownership() const
+   {
+       return this->delegate().ownership();
+   }
+   
+   
+   const ::dds::core::policy::TopicData& TopicBuiltinTopicData::topic_data() const
+   {
+       return this->delegate().topic_data();
+   }
+   
+   //PublicationBuiltinTopicData
+   
+   
+   const dds::topic::BuiltinTopicKey&  PublicationBuiltinTopicData::key() const
+   {
+       return this->delegate().key();
+   }
+   
+   
+   const dds::topic::BuiltinTopicKey& PublicationBuiltinTopicData::participant_key() const
+   {
+       return this->delegate().key();
+   }
+   
+   
+   const std::string& PublicationBuiltinTopicData::topic_name() const
+   {
+       return this->delegate().topic_name();
+   }
+   
+   
+   const std::string& PublicationBuiltinTopicData::type_name() const
+   {
+       return this->delegate().type_name();
+   }
+   
+   
+   const ::dds::core::policy::Durability& PublicationBuiltinTopicData::durability() const
+   {
+       return this->delegate().durability();
+   }
+   
+   #ifdef OMG_DDS_PERSISTENCE_SUPPORT
+   
+   
+   const ::dds::core::policy::DurabilityService& PublicationBuiltinTopicData::durability_service() const
+   {
+       return this->delegate().durability_service();
+   }
+   #endif  // OMG_DDS_PERSISTENCE_SUPPORT
+   
+   
+   const ::dds::core::policy::Deadline& PublicationBuiltinTopicData::deadline() const
+   {
+       return this->delegate().deadline();
+   }
+   
+   
+   const ::dds::core::policy::LatencyBudget& PublicationBuiltinTopicData::latency_budget() const
+   {
+       return this->delegate().latency_budget();
+   }
+   
+   
+   const ::dds::core::policy::Liveliness& PublicationBuiltinTopicData::liveliness() const
+   {
+       return this->delegate().liveliness();
+   }
+   
+   
+   const ::dds::core::policy::Reliability& PublicationBuiltinTopicData::reliability() const
+   {
+       return this->delegate().reliability();
+   }
+   
+   
+   
+   const ::dds::core::policy::Lifespan& PublicationBuiltinTopicData::lifespan() const
+   {
+       return this->delegate().lifespan();
+   }
+   
+   
+   const ::dds::core::policy::UserData& PublicationBuiltinTopicData::user_data() const
+   {
+       return this->delegate().user_data();
+   }
+   
+   
+   const ::dds::core::policy::Ownership& PublicationBuiltinTopicData::ownership() const
+   {
+       return this->delegate().ownership();
+   }
+   
+   #ifdef OMG_DDS_OWNERSHIP_SUPPORT
+   
+   
+   const ::dds::core::policy::OwnershipStrength& PublicationBuiltinTopicData::ownership_strength() const
+   {
+       return this->delegate().ownership_strength();
+   }
+   #endif  // OMG_DDS_OWNERSHIP_SUPPORT
+   
+   
+   
+   const ::dds::core::policy::DestinationOrder& PublicationBuiltinTopicData::destination_order() const
+   {
+       return this->delegate().destination_order();
+   }
+   
+   
+   const ::dds::core::policy::Presentation& PublicationBuiltinTopicData::presentation() const
+   {
+       return this->delegate().presentation();
+   }
+   
+   
+   const ::dds::core::policy::Partition& PublicationBuiltinTopicData::partition() const
+   {
+       return this->delegate().partition();
+   }
+   
+   
+   const ::dds::core::policy::TopicData& PublicationBuiltinTopicData::topic_data() const
+   {
+       return this->delegate().topic_data();
+   }
+   
+   
+   const ::dds::core::policy::GroupData& PublicationBuiltinTopicData::group_data() const
+   {
+       return this->delegate().group_data();
+   }
+   
+   
+   
+   
+   const dds::topic::BuiltinTopicKey& SubscriptionBuiltinTopicData::key() const
+   {
+       return this->delegate().key();
+   }
+   
+   
+   const dds::topic::BuiltinTopicKey& SubscriptionBuiltinTopicData::participant_key() const
+   {
+       return this->delegate().key();
+   }
+   
+   
+   const std::string& SubscriptionBuiltinTopicData::topic_name() const
+   {
+       return this->delegate().topic_name();
+   }
+   
+   
+   const std::string& SubscriptionBuiltinTopicData::type_name() const
+   {
+       return this->delegate().type_name();
+   }
+   
+   
+   const ::dds::core::policy::Durability& SubscriptionBuiltinTopicData::durability() const
+   {
+       return this->delegate().durability();
+   }
+   
+   
+   const ::dds::core::policy::Deadline& SubscriptionBuiltinTopicData::deadline() const
+   {
+       return this->delegate().deadline();
+   }
+   
+   
+   const ::dds::core::policy::LatencyBudget& SubscriptionBuiltinTopicData::latency_budget() const
+   {
+       return this->delegate().latency_budget();
+   }
+   
+   
+   const ::dds::core::policy::Liveliness& SubscriptionBuiltinTopicData::liveliness() const
+   {
+       return this->delegate().liveliness();
+   }
+   
+   
+   const ::dds::core::policy::Reliability& SubscriptionBuiltinTopicData::reliability() const
+   {
+       return this->delegate().reliability();
+   }
+   
+   
+   const ::dds::core::policy::Ownership& SubscriptionBuiltinTopicData::ownership() const
+   {
+       return this->delegate().ownership();
+   }
+   
+   
+   const ::dds::core::policy::DestinationOrder& SubscriptionBuiltinTopicData::destination_order() const
+   {
+       return this->delegate().destination_order();
+   }
+   
+   
+   const ::dds::core::policy::UserData& SubscriptionBuiltinTopicData::user_data() const
+   {
+       return this->delegate().user_data();
+   }
+   
+   
+   const ::dds::core::policy::TimeBasedFilter& SubscriptionBuiltinTopicData::time_based_filter() const
+   {
+       return this->delegate().time_based_filter();
+   }
+   
+   
+   const ::dds::core::policy::Presentation& SubscriptionBuiltinTopicData::presentation() const
+   {
+       return this->delegate().presentation();
+   }
+   
+   
+   const ::dds::core::policy::Partition& SubscriptionBuiltinTopicData::partition() const
+   {
+       return this->delegate().partition();
+   }
+   
+   
+   const ::dds::core::policy::TopicData& SubscriptionBuiltinTopicData::topic_data() const
+   {
+       return this->delegate().topic_data();
+   }
+   
+   
+   const ::dds::core::policy::GroupData& SubscriptionBuiltinTopicData::group_data() const
+   {
+       return this->delegate().group_data();
+   }
+   
+   #if 0
+   
+   //CMParticipantBuiltinTopicData
+   
+   
+   const dds::topic::BuiltinTopicKey& CMParticipantBuiltinTopicData::key() const
+   {
+       return ((D)this->delegate()).key();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::ProductData& CMParticipantBuiltinTopicData::product() const
+   {
+       return ((D)this->delegate()).product();
+   }
+   
+   //CMPublisherBuiltinTopicData
+   
+   
+   const dds::topic::BuiltinTopicKey& CMPublisherBuiltinTopicData::key() const
+   {
+       return ((D)this->delegate()).key();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::ProductData& CMPublisherBuiltinTopicData::product() const
+   {
+       return ((D)this->delegate()).product();
+   }
+   
+   
+   const dds::topic::BuiltinTopicKey& CMPublisherBuiltinTopicData::participant_key() const
+   {
+       return ((D)this->delegate()).participant_key();
+   }
+   
+   
+   const std::string& CMPublisherBuiltinTopicData::name() const
+   {
+       return ((D)this->delegate()).name();
+   }
+   
+   
+   const ::dds::core::policy::EntityFactory& CMPublisherBuiltinTopicData::entity_factory() const
+   {
+       return ((D)this->delegate()).entity_factory();
+   }
+   
+   
+   const ::dds::core::policy::Partition& CMPublisherBuiltinTopicData::partition() const
+   {
+       return ((D)this->delegate()).partition();
+   }
+   
+   //CMSubscriberBuiltinTopicData
+   
+   
+   const dds::topic::BuiltinTopicKey& CMSubscriberBuiltinTopicData::key() const
+   {
+       return ((D)this->delegate()).key();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::ProductData& CMSubscriberBuiltinTopicData::product() const
+   {
+       return ((D)this->delegate()).product();
+   }
+   
+   
+   const dds::topic::BuiltinTopicKey& CMSubscriberBuiltinTopicData::participant_key() const
+   {
+       return ((D)this->delegate()).participant_key();
+   }
+   
+   
+   const std::string& CMSubscriberBuiltinTopicData::name() const
+   {
+       return ((D)this->delegate()).name();
+   }
+   
+   
+   const ::dds::core::policy::EntityFactory& CMSubscriberBuiltinTopicData::entity_factory() const
+   {
+       return ((D)this->delegate()).entity_factory();
+   }
+   
+   
+   const ::dds::core::policy::Partition& CMSubscriberBuiltinTopicData::partition() const
+   {
+       return ((D)this->delegate()).partition();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::Share& CMSubscriberBuiltinTopicData::share() const
+   {
+       return ((D)this->delegate()).share();
+   }
+   
+   //CMDataWriterBuiltinTopicData
+   
+   
+   const dds::topic::BuiltinTopicKey& CMDataWriterBuiltinTopicData::key() const
+   {
+       return ((D)this->delegate()).key();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::ProductData& CMDataWriterBuiltinTopicData::product() const
+   {
+       return ((D)this->delegate()).product();
+   }
+   
+   
+   const dds::topic::BuiltinTopicKey& CMDataWriterBuiltinTopicData::publisher_key() const
+   {
+       return ((D)this->delegate()).publisher_key();
+   }
+   
+   
+   const std::string& CMDataWriterBuiltinTopicData::name() const
+   {
+       return ((D)this->delegate()).name();
+   }
+   
+   
+   const ::dds::core::policy::History& CMDataWriterBuiltinTopicData::history() const
+   {
+       return ((D)this->delegate()).history();
+   }
+   
+   
+   const ::dds::core::policy::ResourceLimits& CMDataWriterBuiltinTopicData::resource_limits() const
+   {
+       return ((D)this->delegate()).resource_limits();
+   }
+   
+   
+   const ::dds::core::policy::WriterDataLifecycle& CMDataWriterBuiltinTopicData::writer_data_lifecycle() const
+   {
+       return ((D)this->delegate()).writer_data_lifecycle();
+   }
+   
+   //CMDataReaderBuiltinTopicData
+   
+   
+   const dds::topic::BuiltinTopicKey& CMDataReaderBuiltinTopicData::key() const
+   {
+       return ((D)this->delegate()).key();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::ProductData& CMDataReaderBuiltinTopicData::product() const
+   {
+       return ((D)this->delegate()).product();
+   }
+   
+   
+   const dds::topic::BuiltinTopicKey& CMDataReaderBuiltinTopicData::subscriber_key() const
+   {
+       return ((D)this->delegate()).subscriber_key();
+   }
+   
+   
+   const std::string& CMDataReaderBuiltinTopicData::name() const
+   {
+       return ((D)this->delegate()).name();
+   }
+   
+   
+   const ::dds::core::policy::History& CMDataReaderBuiltinTopicData::history() const
+   {
+       return ((D)this->delegate()).history();
+   }
+   
+   
+   const ::dds::core::policy::ResourceLimits& CMDataReaderBuiltinTopicData::resource_limits() const
+   {
+       return ((D)this->delegate()).resource_limits();
+   }
+   
+   
+   const ::dds::core::policy::ReaderDataLifecycle& CMDataReaderBuiltinTopicData::reader_data_lifecycle() const
+   {
+       return ((D)this->delegate()).reader_data_lifecycle();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::SubscriptionKey& CMDataReaderBuiltinTopicData::subscription_keys() const
+   {
+       return ((D)this->delegate()).subscription_keys();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::ReaderLifespan& CMDataReaderBuiltinTopicData::reader_lifespan() const
+   {
+       return ((D)this->delegate()).reader_lifespan();
+   }
+   
+   
+   const ::org::eclipse::cyclonedds::core::policy::Share& CMDataReaderBuiltinTopicData::share() const
+   {
+       return ((D)this->delegate()).share();
+   }
+   #endif
+   
+   }
+   }
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_TOPIC_TBUILTINTOPIC_IMPL_HPP_ */

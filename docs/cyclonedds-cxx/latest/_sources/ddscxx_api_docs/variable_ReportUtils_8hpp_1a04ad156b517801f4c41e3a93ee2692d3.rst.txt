@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1a04ad156b517801f4c41e3a93ee2692d3:
+
+Variable org::eclipse::cyclonedds::core::utils::precondition_not_met_error_code
+===============================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::precondition_not_met_error_code

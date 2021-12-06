@@ -1,0 +1,13 @@
+.. _exhale_function_detail_2StructType_8hpp_1abf3a2ddd7ea02dd481bfd3aa4619330a:
+
+Template Function dds::core::xtypes::detail::isFinal
+====================================================
+
+- Defined in :ref:`file_dds_core_xtypes_detail_StructType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::detail::isFinal(const StructType<T>&)

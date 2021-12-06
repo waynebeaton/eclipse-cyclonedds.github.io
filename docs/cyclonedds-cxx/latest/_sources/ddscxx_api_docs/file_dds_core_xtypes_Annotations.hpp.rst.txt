@@ -1,0 +1,117 @@
+
+.. _file_dds_core_xtypes_Annotations.hpp:
+
+File Annotations.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/Annotations.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_Annotations.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/xtypes/Annotation.hpp`` (:ref:`file_dds_core_xtypes_Annotation.hpp`)
+
+- ``dds/core/xtypes/detail/Annotation.hpp`` (:ref:`file_dds_core_xtypes_detail_Annotation.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_xtypes_DynamicType.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__xtypes`
+
+- :ref:`namespace_dds__core__xtypes__annotation`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Annotations_8hpp_1a83b19e0388290a065209764356ce2c84`
+
+- :ref:`exhale_function_Annotations_8hpp_1a2821cb9805ed98f20ddf99ec96e92346`
+
+- :ref:`exhale_function_Annotations_8hpp_1a8d7ce68a1074784c996fd4782dddfd67`
+
+- :ref:`exhale_function_Annotations_8hpp_1a682db109cde38f7ab911f9a0b434833f`
+
+- :ref:`exhale_function_Annotations_8hpp_1afe2e14916b545e0e46c3569335df463d`
+
+- :ref:`exhale_function_Annotations_8hpp_1a550b3c8b246290c5676e8c82d2b5dae5`
+
+- :ref:`exhale_function_Annotations_8hpp_1accca80b7645d3d36de357b8bf19dcac8`
+
+- :ref:`exhale_function_Annotations_8hpp_1aae3db83f149c77e66101e7618ed8a9a6`
+
+- :ref:`exhale_function_Annotations_8hpp_1a35848f215970c76b7f1347d1d06ea311`
+
+- :ref:`exhale_function_Annotations_8hpp_1a5cd0ce727d5dd9fd22629cda34fb0f4c`
+
+- :ref:`exhale_function_Annotations_8hpp_1aeda8a8fb6e3e770fdeaca548ab72e245`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_Annotations_8hpp_1abbd1f1deb80d242b0ed7e721be3adb2e`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a5b99d6fdd05d10a01b0aa588f34cde57`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1ab02d22728d60a61450f4bd267c3819e3`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a41321e5572dee1809aaa3dc5ea43261c`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a3c569ec49e2adeede775ffd61bccbe3d`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a88cf8bcbf902355621663c1d9e774f51`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a3818c64301e9d68d06d9d73b85555248`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1ab40fc2bb23e666ec8b70bd75f18f5a27`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a71d3fe7ccbc0e8ae3d7864e45bd32013`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a0a7923f8a17b159ddd820f09fc26fd0c`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_Annotations_8hpp_1a22ddde9d622d58be7d7da774c96ad5d9`
+

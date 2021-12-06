@@ -1,0 +1,13 @@
+.. _exhale_function_MemberType_8hpp_1a1a0aafffdc81785d0b42b0926bb031af:
+
+Template Function dds::core::xtypes::isShared
+=============================================
+
+- Defined in :ref:`file_dds_core_xtypes_MemberType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::isShared(const MemberType<T>&)

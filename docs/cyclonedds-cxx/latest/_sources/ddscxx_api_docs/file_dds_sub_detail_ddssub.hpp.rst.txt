@@ -1,0 +1,51 @@
+
+.. _file_dds_sub_detail_ddssub.hpp:
+
+File ddssub.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/ddssub.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_ddssub.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/cond/detail/QueryConditionImpl.hpp`` (:ref:`file_dds_sub_cond_detail_QueryConditionImpl.hpp`)
+
+- ``dds/sub/detail/DataReaderImpl.hpp`` (:ref:`file_dds_sub_detail_DataReaderImpl.hpp`)
+
+- ``dds/sub/detail/QueryImpl.hpp`` (:ref:`file_dds_sub_detail_QueryImpl.hpp`)
+
+- ``dds/sub/detail/SampleImpl.hpp`` (:ref:`file_dds_sub_detail_SampleImpl.hpp`)
+
+- ``dds/sub/detail/SampleRefImpl.hpp`` (:ref:`file_dds_sub_detail_SampleRefImpl.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+
+

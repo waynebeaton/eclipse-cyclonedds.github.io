@@ -1,0 +1,13 @@
+.. _exhale_typedef_types_8hpp_1af64219b65f7ff337e91052779680aef9:
+
+Typedef dds::core::ByteSeq
+==========================
+
+- Defined in :ref:`file_dds_core_types.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::ByteSeq

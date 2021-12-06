@@ -1,0 +1,93 @@
+
+.. _file_org_eclipse_cyclonedds_pub_AnyDataWriterDelegate.hpp:
+
+File AnyDataWriterDelegate.hpp
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_pub>` (``org/eclipse/cyclonedds/pub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/pub/AnyDataWriterDelegate.hpp``)
+---------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_pub_AnyDataWriterDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/core/Time.hpp`` (:ref:`file_dds_core_Time.hpp`)
+
+- ``dds/core/status/Status.hpp`` (:ref:`file_dds_core_status_Status.hpp`)
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+- ``dds/pub/qos/DataWriterQos.hpp`` (:ref:`file_dds_pub_qos_DataWriterQos.hpp`)
+
+- ``dds/topic/BuiltinTopic.hpp`` (:ref:`file_dds_topic_BuiltinTopic.hpp`)
+
+- ``dds/topic/TopicDescription.hpp`` (:ref:`file_dds_topic_TopicDescription.hpp`)
+
+- ``org/eclipse/cyclonedds/core/EntityDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/CDRBlob.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_CDRBlob.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/TopicTraits.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_TopicTraits.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_pub_detail_AnyDataWriter.hpp`
+
+- :ref:`file_dds_pub_detail_DataWriter.hpp`
+
+- :ref:`file_dds_pub_detail_DataWriterImpl.hpp`
+
+- :ref:`file_dds_pub_detail_find.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__pub`
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__pub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1AnyDataWriterDelegate`
+

@@ -1,0 +1,96 @@
+
+.. _file_dds_core_macros.hpp:
+
+File macros.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/macros.hpp``)
+------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_macros.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/macros.hpp`` (:ref:`file_dds_core_detail_macros.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_Exception.hpp`
+
+- :ref:`file_dds_core_refmacros.hpp`
+
+- :ref:`file_dds_core_status_State.hpp`
+
+- :ref:`file_dds_core_types.hpp`
+
+- :ref:`file_dds_sub_AnyDataReader.hpp`
+
+- :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_DDScObjectDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_Mutex.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_ObjectDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_WeakReferenceSet.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_config.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_QueryDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_FilterDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_hash.hpp`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_macros_8hpp_1a3921020c081a486ceeab75dccc8aad7a`
+
+- :ref:`exhale_define_macros_8hpp_1a637fd2bac7139dcc9a88c840c62c8634`
+
+- :ref:`exhale_define_macros_8hpp_1a2c7a85b222b7cb171faed77bb8e79ba0`
+
+- :ref:`exhale_define_macros_8hpp_1a3894a7a6c389ea0b6f7cb7e55010733c`
+
+- :ref:`exhale_define_macros_8hpp_1a785efc94a0709f725c5e3819b9301909`
+
+- :ref:`exhale_define_macros_8hpp_1aea2f572aa74dc0ea9f2bdef0a1a992ee`
+
+- :ref:`exhale_define_macros_8hpp_1abf9d7a65e0f8c604d0c4c90e9a76739c`
+
+- :ref:`exhale_define_macros_8hpp_1af58583c4a975ee5dad78c20bcf62c43b`
+
+- :ref:`exhale_define_macros_8hpp_1a086070504f7f02bfef7d60f45707c415`
+
+- :ref:`exhale_define_macros_8hpp_1a3acc7e2ea17443ee2f3ea40025194f9a`
+

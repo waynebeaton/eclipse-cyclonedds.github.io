@@ -1,0 +1,68 @@
+
+.. _file_dds_pub_DataWriter.hpp:
+
+File DataWriter.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub>` (``dds/pub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/pub/DataWriter.hpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_pub_DataWriter.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/pub/AnyDataWriter.hpp`` (:ref:`file_dds_pub_AnyDataWriter.hpp`)
+
+- ``dds/pub/Publisher.hpp`` (:ref:`file_dds_pub_Publisher.hpp`)
+
+- ``dds/pub/detail/DataWriter.hpp`` (:ref:`file_dds_pub_detail_DataWriter.hpp`)
+
+- ``dds/topic/Topic.hpp`` (:ref:`file_dds_topic_Topic.hpp`)
+
+- ``dds/topic/TopicInstance.hpp`` (:ref:`file_dds_topic_TopicInstance.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_pub_DataWriterListener.hpp`
+
+- :ref:`file_dds_pub_ddspub.hpp`
+
+- :ref:`file_dds_pub_detail_discovery.hpp`
+
+- :ref:`file_dds_pub_detail_find.hpp`
+
+- :ref:`file_dds_pub_discovery.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1pub_1_1DataWriter`
+

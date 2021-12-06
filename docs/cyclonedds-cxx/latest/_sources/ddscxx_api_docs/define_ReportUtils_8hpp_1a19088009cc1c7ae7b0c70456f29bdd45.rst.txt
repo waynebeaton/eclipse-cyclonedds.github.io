@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a19088009cc1c7ae7b0c70456f29bdd45:
+
+Define ISOCPP_ERROR
+===================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_ERROR

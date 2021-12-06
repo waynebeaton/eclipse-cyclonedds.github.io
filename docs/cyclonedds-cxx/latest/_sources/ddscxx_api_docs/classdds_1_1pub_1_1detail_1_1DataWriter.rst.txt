@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1pub_1_1detail_1_1DataWriter:
+
+Template Class DataWriter
+=========================
+
+- Defined in :ref:`file_dds_pub_detail_DataWriter.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::pub::detail::DataWriter
+   :members:
+   :protected-members:
+   :undoc-members:

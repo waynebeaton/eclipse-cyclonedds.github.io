@@ -1,0 +1,27 @@
+
+.. _namespace_dds__sub__cond:
+
+Namespace dds::sub::cond
+========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds__sub__cond__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1cond_1_1ReadCondition`

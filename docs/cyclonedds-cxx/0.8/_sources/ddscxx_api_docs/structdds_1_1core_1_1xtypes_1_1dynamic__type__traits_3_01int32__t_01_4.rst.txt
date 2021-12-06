@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits_3_01int32__t_01_4:
+
+Template Struct dynamic_type_traits< int32_t >
+==============================================
+
+- Defined in :ref:`file_dds_core_xtypes_detail_PrimitiveTypes.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds::core::xtypes::dynamic_type_traits< int32_t >
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,65 @@
+
+.. _file_dds_core_xtypes_UnionType.hpp:
+
+File UnionType.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/UnionType.hpp``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_UnionType.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/xtypes/DynamicType.hpp`` (:ref:`file_dds_core_xtypes_DynamicType.hpp`)
+
+- ``dds/core/xtypes/PrimitiveTypes.hpp`` (:ref:`file_dds_core_xtypes_PrimitiveTypes.hpp`)
+
+- ``dds/core/xtypes/UnionCase.hpp`` (:ref:`file_dds_core_xtypes_UnionCase.hpp`)
+
+- ``dds/core/xtypes/detail/UnionType.hpp`` (:ref:`file_dds_core_xtypes_detail_UnionType.hpp`)
+
+- ``vector``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__xtypes`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1UnionForwardDeclaration`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1UnionType`
+

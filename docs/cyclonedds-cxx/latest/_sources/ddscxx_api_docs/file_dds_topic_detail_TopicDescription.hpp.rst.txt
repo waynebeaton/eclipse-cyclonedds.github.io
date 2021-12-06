@@ -1,0 +1,63 @@
+
+.. _file_dds_topic_detail_TopicDescription.hpp:
+
+File TopicDescription.hpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic_detail>` (``dds/topic/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/topic/detail/TopicDescription.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_topic_detail_TopicDescription.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/topic/detail/TopicDescriptionImpl.hpp`` (:ref:`file_dds_topic_detail_TopicDescriptionImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/TopicDescriptionDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_TopicDescriptionDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_topic_detail_MultiTopic.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__topic`
+
+- :ref:`namespace_dds__topic__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2TopicDescription_8hpp_1a3d94a7832da2e439304522ff5b2c710a`
+

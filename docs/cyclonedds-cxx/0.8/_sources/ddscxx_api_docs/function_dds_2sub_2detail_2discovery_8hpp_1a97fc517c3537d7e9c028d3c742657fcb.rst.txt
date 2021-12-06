@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2sub_2detail_2discovery_8hpp_1a97fc517c3537d7e9c028d3c742657fcb:
+
+Template Function dds::sub::ignore(const dds::domain::DomainParticipant&, FwdIterator, FwdIterator)
+===================================================================================================
+
+- Defined in :ref:`file_dds_sub_detail_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::ignore(const dds::domain::DomainParticipant&, FwdIterator, FwdIterator)

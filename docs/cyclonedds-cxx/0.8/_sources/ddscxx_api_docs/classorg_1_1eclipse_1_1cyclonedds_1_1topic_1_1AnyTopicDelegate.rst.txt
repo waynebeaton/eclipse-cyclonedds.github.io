@@ -1,0 +1,26 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1AnyTopicDelegate:
+
+Class AnyTopicDelegate
+======================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_AnyTopicDelegate.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public org::eclipse::cyclonedds::core::EntityDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1EntityDelegate`)
+- ``public org::eclipse::cyclonedds::topic::TopicDescriptionDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1TopicDescriptionDelegate`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::topic::AnyTopicDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

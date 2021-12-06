@@ -1,0 +1,20 @@
+.. _dir_org_eclipse_cyclonedds_domain_qos:
+
+
+Directory qos
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_domain>` (``org/eclipse/cyclonedds/domain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``org/eclipse/cyclonedds/domain/qos``
+
+
+Files
+-----
+
+- :ref:`file_org_eclipse_cyclonedds_domain_qos_DomainParticipantQosDelegate.hpp`
+
+

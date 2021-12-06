@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Status_8hpp_1a8fc2d8661c8864d96735fbac1264ac04:
+
+Typedef dds::core::status::detail::SampleRejectedStatus
+=======================================================
+
+- Defined in :ref:`file_dds_core_status_detail_Status.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::status::detail::SampleRejectedStatus

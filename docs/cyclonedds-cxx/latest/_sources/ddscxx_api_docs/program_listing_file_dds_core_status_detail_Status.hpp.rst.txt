@@ -1,0 +1,74 @@
+
+.. _program_listing_file_dds_core_status_detail_Status.hpp:
+
+Program Listing for File Status.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_status_detail_Status.hpp>` (``dds/core/status/detail/Status.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_DDS_CORE_STATUS_DETAIL_STATUS_HPP_
+   #define OMG_DDS_CORE_STATUS_DETAIL_STATUS_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/status/detail/StatusImpl.hpp>
+   #include <org/eclipse/cyclonedds/core/status/StatusDelegate.hpp>
+   
+   
+   namespace dds { namespace core { namespace status { namespace detail {
+       typedef dds::core::status::InconsistentTopicStatus< org::eclipse::cyclonedds::core::InconsistentTopicStatusDelegate >
+       InconsistentTopicStatus;
+   
+       typedef dds::core::status::LivelinessChangedStatus <org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate>
+       LivelinessChangedStatus;
+   
+       typedef dds::core::status::LivelinessLostStatus<org::eclipse::cyclonedds::core::LivelinessLostStatusDelegate>
+       LivelinessLostStatus;
+   
+       typedef dds::core::status::OfferedDeadlineMissedStatus<org::eclipse::cyclonedds::core::OfferedDeadlineMissedStatusDelegate>
+       OfferedDeadlineMissedStatus;
+   
+       typedef dds::core::status::OfferedIncompatibleQosStatus<org::eclipse::cyclonedds::core::OfferedIncompatibleQosStatusDelegate>
+       OfferedIncompatibleQosStatus;
+   
+       typedef dds::core::status::PublicationMatchedStatus<org::eclipse::cyclonedds::core::PublicationMatchedStatusDelegate>
+       PublicationMatchedStatus;
+   
+       typedef dds::core::status::SampleRejectedStatus< org::eclipse::cyclonedds::core::SampleRejectedStatusDelegate >
+       SampleRejectedStatus;
+   
+       typedef dds::core::status::RequestedDeadlineMissedStatus<org::eclipse::cyclonedds::core::RequestedDeadlineMissedStatusDelegate>
+       RequestedDeadlineMissedStatus;
+   
+       typedef dds::core::status::RequestedIncompatibleQosStatus<org::eclipse::cyclonedds::core::RequestedIncompatibleQosStatusDelegate>
+       RequestedIncompatibleQosStatus;
+   
+       typedef dds::core::status::SampleLostStatus<org::eclipse::cyclonedds::core::SampleLostStatusDelegate>
+       SampleLostStatus;
+   
+       typedef dds::core::status::SubscriptionMatchedStatus<org::eclipse::cyclonedds::core::SubscriptionMatchedStatusDelegate>
+       SubscriptionMatchedStatus;
+   } } } } // namespace dds::core::status::detail
+   
+   
+   #endif /* OMG_DDS_CORE_STATUS_DETAIL_STATUS_HPP_ */

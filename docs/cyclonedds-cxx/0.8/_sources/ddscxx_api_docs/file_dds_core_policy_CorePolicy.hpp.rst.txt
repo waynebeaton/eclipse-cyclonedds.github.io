@@ -1,0 +1,121 @@
+
+.. _file_dds_core_policy_CorePolicy.hpp:
+
+File CorePolicy.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_policy>` (``dds/core/policy``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/policy/CorePolicy.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_policy_CorePolicy.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/LengthUnlimited.hpp`` (:ref:`file_dds_core_LengthUnlimited.hpp`)
+
+- ``dds/core/detail/Value.hpp`` (:ref:`file_dds_core_detail_Value.hpp`)
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``dds/core/policy/PolicyKind.hpp`` (:ref:`file_dds_core_policy_PolicyKind.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_policy_detail_CorePolicyImpl.hpp`
+
+- :ref:`file_dds_core_status_Status.hpp`
+
+- :ref:`file_dds_topic_BuiltinTopic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_qos_DomainParticipantQosDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_qos_PublisherQosDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_qos_SubscriberQosDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_BuiltinTopicDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_BuiltinTopic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_qos_TopicQosDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__policy`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1Deadline`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1DestinationOrder`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1Durability`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1EntityFactory`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1GroupData`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1History`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1LatencyBudget`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1Lifespan`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1Liveliness`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1Partition`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1Presentation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1ReaderDataLifecycle`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1Reliability`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1ResourceLimits`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1TimeBasedFilter`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1TopicData`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1TransportPriority`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1UserData`
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1WriterDataLifecycle`
+

@@ -1,0 +1,13 @@
+.. _exhale_define_macros_8hpp_1a637fd2bac7139dcc9a88c840c62c8634:
+
+Define OMG_DDS_COMPLETE_RULE_OF_FIVE_VIRTUAL_DEFAULT
+====================================================
+
+- Defined in :ref:`file_dds_core_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_COMPLETE_RULE_OF_FIVE_VIRTUAL_DEFAULT

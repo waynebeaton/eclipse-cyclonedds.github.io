@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1a99746730dbad32cdc892c7cdf5e56d90:
+
+Variable org::eclipse::cyclonedds::core::utils::null_reference_error_code
+=========================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::null_reference_error_code

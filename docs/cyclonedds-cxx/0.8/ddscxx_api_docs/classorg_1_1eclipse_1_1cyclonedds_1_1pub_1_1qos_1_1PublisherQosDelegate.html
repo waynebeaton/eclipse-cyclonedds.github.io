@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class PublisherQosDelegate &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class PublisherQosDelegate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-publisherqosdelegate">
+<span id="exhale-class-classorg-1-1eclipse-1-1cyclonedds-1-1pub-1-1qos-1-1publisherqosdelegate"></span><h1>Class PublisherQosDelegate<a class="headerlink" href="#class-publisherqosdelegate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_pub_qos_PublisherQosDelegate.hpp.html#file-org-eclipse-cyclonedds-pub-qos-publisherqosdelegate-hpp"><span class="std std-ref">File PublisherQosDelegate.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateE">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateE"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateE"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds3pubE" title="org::eclipse::cyclonedds::pub"><span class="n"><span class="pre">pub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds3pub3qosE" title="org::eclipse::cyclonedds::pub::qos"><span class="n"><span class="pre">qos</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PublisherQosDelegate</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate20PublisherQosDelegateEv">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate20PublisherQosDelegateEv"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate20PublisherQosDelegateEv"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::PublisherQosDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a09df0b4d8592459c4a8b45c4dda66c12"></span><span class="sig-name descname"><span class="n"><span class="pre">PublisherQosDelegate</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate20PublisherQosDelegateERK20PublisherQosDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate20PublisherQosDelegateERK20PublisherQosDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate20PublisherQosDelegateERK20PublisherQosDelegate"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::PublisherQosDelegate__PublisherQosDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1addc4783c798c2e8bbe7269b22a45ed0f"></span><span class="sig-name descname"><span class="n"><span class="pre">PublisherQosDelegate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate20PublisherQosDelegateERK20PublisherQosDelegate" title="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::PublisherQosDelegate"><span class="n"><span class="pre">PublisherQosDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateD0Ev">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateD0Ev"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateD0Ev"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::~PublisherQosDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a448529b561236fa7932e6e1a464b683a"></span><span class="sig-name descname"><span class="n"><span class="pre">~PublisherQosDelegate</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy12PresentationE">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy12PresentationE"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy12PresentationE"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy__dds::core::policy::PresentationCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1ac134eeb9ed05b9421d3e3a5698a5b142"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy12PresentationE" title="dds::core::policy::Presentation"><span class="n"><span class="pre">Presentation</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">presentation</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy9PartitionE">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy9PartitionE"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy9PartitionE"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy__dds::core::policy::PartitionCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a5e0769da98dece78e0e4e3b951e60c81"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy9PartitionE" title="dds::core::policy::Partition"><span class="n"><span class="pre">Partition</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">partition</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy9GroupDataE">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy9GroupDataE"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy9GroupDataE"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy__dds::core::policy::GroupDataCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1aae43efd091f9465b19f1fdb7dc993a1c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy9GroupDataE" title="dds::core::policy::GroupData"><span class="n"><span class="pre">GroupData</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">gdata</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy13EntityFactoryE">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy13EntityFactoryE"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERKN3dds4core6policy13EntityFactoryE"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy__dds::core::policy::EntityFactoryCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1ae8d987ab23bc8849673d7fb3dd5fd06b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13EntityFactoryE" title="dds::core::policy::EntityFactory"><span class="n"><span class="pre">EntityFactory</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">factory_policy</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0ENK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERK6POLICYv">
+<span id="_CPPv3I0ENK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyEv"></span><span id="_CPPv2I0ENK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">POLICY</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1aca0e542830feceba38342437e7f0b86f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0ENK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERK6POLICYv" title="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy::POLICY"><span class="n"><span class="pre">POLICY</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyER6POLICYv">
+<span id="_CPPv3I0EN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyEv"></span><span id="_CPPv2I0EN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">POLICY</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a7743ce71243d83fd4140bbe03bf3e86c"></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyER6POLICYv" title="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::policy::POLICY"><span class="n"><span class="pre">POLICY</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate8ddsc_qosEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate8ddsc_qosEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate8ddsc_qosEv"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::ddsc_qosC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1aa702cc951044e5a51d2cbc54a6643f67"></span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ddsc_qos</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate8ddsc_qosEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate8ddsc_qosEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate8ddsc_qosEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::ddsc_qos__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a944992f2cd0e7844d073241e36acf6f0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ddsc_qos</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate9named_qosERK22_DDS_NamedPublisherQos">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate9named_qosERK22_DDS_NamedPublisherQos"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate9named_qosERK22_DDS_NamedPublisherQos"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::named_qos___DDS_NamedPublisherQosCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a924608c8809787968f83181fcd888640"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">named_qos</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">_DDS_NamedPublisherQos</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate5checkEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate5checkEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate5checkEv"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::checkC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a8f05111900d4d92bcf88d35279c25800"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateeqERK20PublisherQosDelegate">
+<span id="_CPPv3NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateeqERK20PublisherQosDelegate"></span><span id="_CPPv2NK3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateeqERK20PublisherQosDelegate"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::eq-operator__PublisherQosDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1aac0c1cc9fa55cc6ec2dd9905c60ff333"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateE" title="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate"><span class="n"><span class="pre">PublisherQosDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateaSERK20PublisherQosDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateaSERK20PublisherQosDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateaSERK20PublisherQosDelegate"></span><span id="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate::assign-operator__PublisherQosDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a073d1a2fabf57296711fd8d9045ec311"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateE" title="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate"><span class="n"><span class="pre">PublisherQosDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegateE" title="org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate"><span class="n"><span class="pre">PublisherQosDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4IEN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERN3dds4core6policy12PresentationEv">
+<span id="_CPPv3IEN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyEv"></span><span id="_CPPv2IEN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a491d76777b957d641586f7c8329d2d67"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy12PresentationE" title="dds::core::policy::Presentation"><span class="n"><span class="pre">Presentation</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4IEN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERN3dds4core6policy9PartitionEv">
+<span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1adb4ca5d0f18c7416691d6466d105623b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy9PartitionE" title="dds::core::policy::Partition"><span class="n"><span class="pre">Partition</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4IEN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERN3dds4core6policy9GroupDataEv">
+<span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a15496961a8457a2aea6983e7663f42bd"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy9GroupDataE" title="dds::core::policy::GroupData"><span class="n"><span class="pre">GroupData</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4IEN3org7eclipse10cyclonedds3pub3qos20PublisherQosDelegate6policyERN3dds4core6policy13EntityFactoryEv">
+<span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate_1a70e36e141bb9694d3644e3518b534e02"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13EntityFactoryE" title="dds::core::policy::EntityFactory"><span class="n"><span class="pre">EntityFactory</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">policy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

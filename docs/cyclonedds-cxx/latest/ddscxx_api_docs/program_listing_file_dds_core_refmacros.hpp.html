@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File refmacros.hpp &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File refmacros.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/program_listing_file_dds_core_refmacros.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-refmacros-hpp">
+<span id="program-listing-file-dds-core-refmacros-hpp"></span><h1>Program Listing for File refmacros.hpp<a class="headerlink" href="#program-listing-for-file-refmacros-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_dds_core_refmacros.hpp.html#file-dds-core-refmacros-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">dds/core/refmacros.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef OMG_DDS_CORE_REFMACROS_HPP_</span>
+<span class="cp">#define OMG_DDS_CORE_REFMACROS_HPP_</span>
+
+<span class="cm">/* Copyright 2010, Object Management Group, Inc.</span>
+<span class="cm"> * Copyright 2010, PrismTech, Corp.</span>
+<span class="cm"> * Copyright 2010, Real-Time Innovations, Inc.</span>
+<span class="cm"> * All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="cm"> * you may not use this file except in compliance with the License.</span>
+<span class="cm"> * You may obtain a copy of the License at</span>
+<span class="cm"> *</span>
+<span class="cm"> *     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="cm"> *</span>
+<span class="cm"> * Unless required by applicable law or agreed to in writing, software</span>
+<span class="cm"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="cm"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="cm"> * See the License for the specific language governing permissions and</span>
+<span class="cm"> * limitations under the License.</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/macros.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/ref_traits.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">// Macros</span>
+
+<span class="cp">#define DECLARE_TYPE_TRAITS(TYPE) \</span>
+<span class="cp">    typedef TYPE  TYPE##_T;\</span>
+<span class="cp">    typedef typename ::dds::core::smart_ptr_traits&lt;TYPE&gt;::ref_type       TYPE##_REF_T;\</span>
+<span class="cp">    typedef typename ::dds::core::smart_ptr_traits&lt;TYPE&gt;::weak_ref_type  TYPE##_WEAK_REF_T;</span>
+
+
+<span class="cm">/*</span>
+<span class="cm"> * This macro defines all the functions that Reference Types have to implement.</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cm">/*</span>
+<span class="cm"> *</span>
+<span class="cm"> *</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="c1">// Defines all the types, functions and attributes required for a Reference type</span>
+<span class="c1">// without default ctor.</span>
+<span class="c1">//</span>
+
+<span class="cp">#define OMG_DDS_REF_TYPE_BASE(TYPE, BASE)     \</span>
+<span class="cp">    public: \</span>
+<span class="cp">    typedef typename ::dds::core::smart_ptr_traits::ref_type      DELEGATE_REF_T; \</span>
+<span class="cp">    typedef typename ::dds::core::smart_ptr_traits::weak_ref_type DELEGATE_WEAK_REF_T; \</span>
+<span class="cp">    \</span>
+<span class="cp">    private:\</span>
+<span class="cp">    const typename ::dds::core::Reference::DELEGATE_REF_T&amp; impl() const \</span>
+<span class="cp">    { return ::dds::core::Reference::impl_; }\</span>
+<span class="cp">    typename ::dds::core::Reference::DELEGATE_REF_T&amp; impl() \</span>
+<span class="cp">    { return ::dds::core::Reference::impl_; }\</span>
+<span class="cp">    \</span>
+<span class="cp">    public: \</span>
+<span class="cp">    typedef BASE                                                  BASE_T;\</span>
+<span class="cp">    \</span>
+<span class="cp">    public: \</span>
+<span class="cp">    TYPE(const dds::core::null_type&amp;) : dds::core::Reference(static_cast&lt;DELEGATE*&gt;(NULL)) { } \</span>
+<span class="cp">    \</span>
+<span class="cp">    TYPE&amp; operator=(const dds::core::null_type&amp; rhs) {\</span>
+<span class="cp">        (void)rhs; \</span>
+<span class="cp">        *this = TYPE(dds::core::null); \</span>
+<span class="cp">        return *this; \</span>
+<span class="cp">    } \</span>
+<span class="cp">    \</span>
+<span class="cp">    public:\</span>
+<span class="cp">    TYPE(const DELEGATE_REF_T&amp; ref) \</span>
+<span class="cp">        : dds::core::Reference(ref)\</span>
+<span class="cp">    { }</span>
+
+<span class="cp">#define OMG_DDS_IMPLICIT_REF_BASE(TYPE)         \</span>
+<span class="cp">    public:\</span>
+<span class="cp">    template &lt;typename H__&gt; \</span>
+<span class="cp">    TYPE(const H__&amp; h)    \</span>
+<span class="cp">    { \</span>
+<span class="cp">        if (h.is_nil()) { \</span>
+<span class="cp">            </span><span class="cm">/* We got a null object and are not really able to do a typecheck here. */</span><span class="cp"> \</span>
+<span class="cp">            </span><span class="cm">/* So, just set a null object. */</span><span class="cp"> \</span>
+<span class="cp">            *this = dds::core::null; \</span>
+<span class="cp">        } else { \</span>
+<span class="cp">            this-&gt;::dds::core::Reference&lt; DELEGATE_T &gt;::impl_ = ::std::dynamic_pointer_cast&lt; DELEGATE_T &gt;(h.delegate());  \</span>
+<span class="cp">            if (h.delegate() != this-&gt;::dds::core::Reference&lt; DELEGATE_T &gt;::impl_) { \</span>
+<span class="cp">                throw dds::core::IllegalOperationError(std::string(&quot;Attempted invalid cast: &quot;) + typeid(h).name() + &quot; to &quot; + typeid(*this).name()); \</span>
+<span class="cp">            } \</span>
+<span class="cp">        } \</span>
+<span class="cp">    }\</span>
+<span class="cp">    \</span>
+<span class="cp">    template &lt;typename T__&gt; \</span>
+<span class="cp">    TYPE&amp; \</span>
+<span class="cp">    operator=(const T__&amp; rhs) { \</span>
+<span class="cp">        const TYPE &amp;t = rhs; \</span>
+<span class="cp">        if (this != &amp;t) { \</span>
+<span class="cp">            if (rhs.is_nil()) { \</span>
+<span class="cp">                </span><span class="cm">/* We got a null object and are not really able to do a typecheck here. */</span><span class="cp"> \</span>
+<span class="cp">                </span><span class="cm">/* So, just set a null object. */</span><span class="cp"> \</span>
+<span class="cp">                *this = dds::core::null; \</span>
+<span class="cp">            } else { \</span>
+<span class="cp">                TYPE other(rhs); \</span>
+<span class="cp">                </span><span class="cm">/* Dont have to copy when the delegate impl is the same. */</span><span class="cp"> \</span>
+<span class="cp">                if (other.delegate() != this-&gt;::dds::core::Reference&lt; DELEGATE_T &gt;::impl_) { \</span>
+<span class="cp">                    *this = other; \</span>
+<span class="cp">                } \</span>
+<span class="cp">            } \</span>
+<span class="cp">        } \</span>
+<span class="cp">        return *this; \</span>
+<span class="cp">    }</span>
+
+<span class="cp">#define OMG_DDS_EXPLICIT_REF_BASE_DECL(TYPE, FROM)         \</span>
+<span class="cp">    public:\</span>
+<span class="cp">    TYPE(const FROM&amp; h);    \</span>
+<span class="cp">    \</span>
+<span class="cp">    TYPE&amp; \</span>
+<span class="cp">    operator=(const FROM&amp; rhs);</span>
+
+<span class="cp">#define OMG_DDS_EXPLICIT_REF_BASE(TYPE, FROM)         \</span>
+<span class="cp">    public:\</span>
+<span class="cp">    </span><span class="cm">/* We need to support both const and non-const conversion explicitly, because it could */</span><span class="cp"> \</span>
+<span class="cp">    </span><span class="cm">/* be that the class has a constructor that takes a single non-const template argument. */</span><span class="cp"> \</span>
+<span class="cp">    </span><span class="cm">/* That non-const templated constructor is a closer match than TYPE(const FROM&amp; h); when */</span><span class="cp"> \</span>
+<span class="cp">    </span><span class="cm">/* creating the TYPE class from a non-const FROM object. */</span><span class="cp"> \</span>
+<span class="cp">    TYPE(FROM&amp; h) { this-&gt;explicit_conversion(const_cast&lt;const FROM&amp;&gt;(h)); }    \</span>
+<span class="cp">    TYPE(const FROM&amp; h) { this-&gt;explicit_conversion(h); }    \</span>
+<span class="cp">    private:\</span>
+<span class="cp">    void explicit_conversion(const FROM&amp; h) \</span>
+<span class="cp">    { \</span>
+<span class="cp">        if (h.is_nil()) { \</span>
+<span class="cp">            </span><span class="cm">/* We got a null object and are not really able to do a typecheck here. */</span><span class="cp"> \</span>
+<span class="cp">            </span><span class="cm">/* So, just set a null object. */</span><span class="cp"> \</span>
+<span class="cp">            *this = dds::core::null; \</span>
+<span class="cp">        } else { \</span>
+<span class="cp">            this-&gt;::dds::core::Reference&lt;DELEGATE_T&gt;::impl_ = ::std::dynamic_pointer_cast&lt;DELEGATE_T&gt;(h.delegate());  \</span>
+<span class="cp">            if (h.delegate() != this-&gt;::dds::core::Reference&lt; DELEGATE_T &gt;::impl_) { \</span>
+<span class="cp">                throw dds::core::IllegalOperationError(std::string(&quot;Attempted invalid cast: &quot;) + typeid(h).name() + &quot; to &quot; + typeid(*this).name()); \</span>
+<span class="cp">            } \</span>
+<span class="cp">        } \</span>
+<span class="cp">    }\</span>
+<span class="cp">    \</span>
+<span class="cp">    public:\</span>
+<span class="cp">    TYPE&amp; \</span>
+<span class="cp">    operator=(const FROM&amp; rhs) { \</span>
+<span class="cp">        const TYPE &amp;t = rhs; \</span>
+<span class="cp">        if (this != &amp;t) { \</span>
+<span class="cp">            if (rhs.is_nil()) { \</span>
+<span class="cp">                </span><span class="cm">/* We got a null object and are not really able to do a typecheck here. */</span><span class="cp"> \</span>
+<span class="cp">                </span><span class="cm">/* So, just set a null object. */</span><span class="cp"> \</span>
+<span class="cp">                *this = dds::core::null; \</span>
+<span class="cp">            } else { \</span>
+<span class="cp">                TYPE other(rhs); \</span>
+<span class="cp">                </span><span class="cm">/* Dont have to copy when the delegate is the same. */</span><span class="cp"> \</span>
+<span class="cp">                if (other.delegate() != this-&gt;::dds::core::Reference&lt; DELEGATE_T &gt;::impl_) { \</span>
+<span class="cp">                    *this = other; \</span>
+<span class="cp">                } \</span>
+<span class="cp">            } \</span>
+<span class="cp">        } \</span>
+<span class="cp">        return *this; \</span>
+<span class="cp">    }</span>
+
+
+<span class="c1">// Declares a reference type equipped with a default ctor.</span>
+<span class="c1">//</span>
+<span class="cp">#define OMG_DDS_REF_TYPE_PROTECTED_DC(TYPE, BASE)                 \</span>
+<span class="cp">public:                                                                     \</span>
+<span class="cp">    typedef DELEGATE            DELEGATE_T;                                 \</span>
+<span class="cp">    OMG_DDS_REF_TYPE_BASE(TYPE, BASE_T)                           \</span>
+<span class="cp">protected:                                                                  \</span>
+<span class="cp">    TYPE() { }</span>
+
+<span class="cp">#define OMG_DDS_REF_TYPE_PROTECTED_DC_T(TYPE, BASE, T_PARAM)      \</span>
+<span class="cp">public:                                                                     \</span>
+<span class="cp">    typedef DELEGATE&lt;T_PARAM&gt;   DELEGATE_T;                                 \</span>
+<span class="cp">    OMG_DDS_REF_TYPE_BASE(TYPE, BASE_T)                           \</span>
+<span class="cp">    protected:                                                              \</span>
+<span class="cp">    TYPE() { }</span>
+
+<span class="cp">#define OMG_DDS_REF_TYPE_NO_DC(TYPE, BASE)                        \</span>
+<span class="cp">public:                                                                     \</span>
+<span class="cp">    typedef DELEGATE            DELEGATE_T;                                 \</span>
+<span class="cp">    OMG_DDS_REF_TYPE_BASE(TYPE, BASE_T)</span>
+
+<span class="cp">#define OMG_DDS_REF_TYPE_DELEGATE_C(TYPE, BASE)                   \</span>
+<span class="cp">    OMG_DDS_REF_TYPE_PROTECTED_DC(TYPE, BASE)                     \</span>
+<span class="cp">    public:                                                                 \</span>
+<span class="cp">    TYPE(DELEGATE_T *impl) : dds::core::Reference&lt; DELEGATE_T &gt;(impl) { }</span>
+
+<span class="cp">#endif </span><span class="cm">/* OMG_DDS_CORE_REFMACROS_HPP_ */</span><span class="cp"></span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

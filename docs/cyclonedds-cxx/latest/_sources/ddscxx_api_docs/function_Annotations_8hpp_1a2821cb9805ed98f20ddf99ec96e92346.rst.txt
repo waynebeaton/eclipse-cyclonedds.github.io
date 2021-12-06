@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1a2821cb9805ed98f20ddf99ec96e92346:
+
+Function dds::core::xtypes::annotation::Bitset
+==============================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::Bitset()

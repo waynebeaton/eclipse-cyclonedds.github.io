@@ -1,0 +1,133 @@
+
+.. _program_listing_file_dds_domain_DomainParticipant.hpp:
+
+Program Listing for File DomainParticipant.hpp
+==============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_domain_DomainParticipant.hpp>` (``dds/domain/DomainParticipant.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_DOMAIN_DOMAIN_PARTICIPANT_HPP_
+   #define OMG_TDDS_DOMAIN_DOMAIN_PARTICIPANT_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <string>
+   
+   #include <dds/ddsi/ddsi_config.h>
+   #include <dds/core/detail/conformance.hpp>
+   #include <dds/core/types.hpp>
+   #include <dds/core/Time.hpp>
+   #include <dds/core/Entity.hpp>
+   //#include <dds/core/cond/StatusCondition.hpp>
+   #include <dds/domain/qos/DomainParticipantQos.hpp>
+   
+   #include <dds/topic/qos/TopicQos.hpp>
+   
+   #include <dds/pub/qos/PublisherQos.hpp>
+   #include <dds/sub/qos/SubscriberQos.hpp>
+   
+   
+   namespace dds
+   {
+   namespace domain
+   {
+   
+   
+   class DomainParticipant;
+   
+   class DomainParticipantListener;
+   }
+   }
+   
+   class dds::domain::DomainParticipant : public ::dds::core::Entity
+   {
+   public:
+       typedef dds::domain::DomainParticipantListener Listener;
+   
+   public:
+       OMG_DDS_REF_TYPE_PROTECTED_DC(DomainParticipant, dds::core::Entity)
+       OMG_DDS_EXPLICIT_REF_BASE(DomainParticipant, dds::core::Entity)
+       OMG_DDS_COMPLETE_RULE_OF_FIVE_VIRTUAL_DEFAULT(DomainParticipant)
+   
+   public:
+       DomainParticipant(uint32_t id);
+   
+       DomainParticipant(uint32_t                                        id,
+                          const dds::domain::qos::DomainParticipantQos&   qos,
+                          dds::domain::DomainParticipantListener*         listener = NULL,
+                          const dds::core::status::StatusMask&            event_mask = dds::core::status::StatusMask::none(),
+                          const std::string&                              config = std::string());
+   
+       DomainParticipant(uint32_t                                        id,
+                          const dds::domain::qos::DomainParticipantQos&   qos,
+                          dds::domain::DomainParticipantListener*         listener,
+                          const dds::core::status::StatusMask&            event_mask,
+                          const ddsi_config&                              config);
+   
+   public:
+   
+       void listener(Listener* listener,
+                     const ::dds::core::status::StatusMask& event_mask);
+   
+       Listener* listener() const;
+   
+       const dds::domain::qos::DomainParticipantQos& qos() const;
+   
+       void qos(const dds::domain::qos::DomainParticipantQos& qos);
+   
+       uint32_t domain_id() const;
+   
+   
+       void assert_liveliness();
+   
+   
+       bool contains_entity(const ::dds::core::InstanceHandle& handle);
+   
+       dds::core::Time current_time() const;
+   
+       DomainParticipant& operator << (const dds::domain::qos::DomainParticipantQos& qos);
+   
+       const DomainParticipant& operator >> (dds::domain::qos::DomainParticipantQos& qos) const;
+   
+   public:
+       static dds::domain::qos::DomainParticipantQos default_participant_qos();
+   
+       static void default_participant_qos(const ::dds::domain::qos::DomainParticipantQos& qos);
+   
+       dds::pub::qos::PublisherQos default_publisher_qos() const;
+   
+       DomainParticipant& default_publisher_qos(const ::dds::pub::qos::PublisherQos& qos);
+   
+       dds::sub::qos::SubscriberQos default_subscriber_qos() const;
+   
+       DomainParticipant& default_subscriber_qos(const ::dds::sub::qos::SubscriberQos& qos);
+   
+       dds::topic::qos::TopicQos default_topic_qos() const;
+   
+       DomainParticipant& default_topic_qos(const dds::topic::qos::TopicQos& qos);
+   
+       //=============================================================================
+   };
+   
+   
+   #endif /* OMG_TDDS_DOMAIN_DOMAIN_PARTICIPANT_HPP_ */

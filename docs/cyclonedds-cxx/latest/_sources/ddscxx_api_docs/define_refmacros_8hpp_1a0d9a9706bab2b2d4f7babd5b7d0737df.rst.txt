@@ -1,0 +1,13 @@
+.. _exhale_define_refmacros_8hpp_1a0d9a9706bab2b2d4f7babd5b7d0737df:
+
+Define OMG_DDS_IMPLICIT_REF_BASE
+================================
+
+- Defined in :ref:`file_dds_core_refmacros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_IMPLICIT_REF_BASE

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class LivelinessChangedStatusDelegate &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class LivelinessChangedStatusDelegate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-livelinesschangedstatusdelegate">
+<span id="exhale-class-classorg-1-1eclipse-1-1cyclonedds-1-1core-1-1livelinesschangedstatusdelegate"></span><h1>Class LivelinessChangedStatusDelegate<a class="headerlink" href="#class-livelinesschangedstatusdelegate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_core_status_StatusDelegate.hpp.html#file-org-eclipse-cyclonedds-core-status-statusdelegate-hpp"><span class="std std-ref">File StatusDelegate.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegateE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegateE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegateE"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4coreE" title="org::eclipse::cyclonedds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">LivelinessChangedStatusDelegate</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate31LivelinessChangedStatusDelegateEv">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate31LivelinessChangedStatusDelegateEv"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate31LivelinessChangedStatusDelegateEv"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::LivelinessChangedStatusDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a4022146448852d6937139e9bed172b5b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LivelinessChangedStatusDelegate</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11alive_countEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11alive_countEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11alive_countEv"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::alive_countC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1afbffac436a115da0b5edec892f5ddd9e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">alive_count</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate15not_alive_countEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate15not_alive_countEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate15not_alive_countEv"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::not_alive_countC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1aac5896de8f2b6e439a7c39a84125aeac"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">not_alive_count</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate18alive_count_changeEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate18alive_count_changeEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate18alive_count_changeEv"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::alive_count_changeC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a4239976d32878f5ad2f15f88383a4f5a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">alive_count_change</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate22not_alive_count_changeEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate22not_alive_count_changeEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate22not_alive_count_changeEv"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::not_alive_count_changeC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1ae8a88118b95bebf716908863b94b6455"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">not_alive_count_change</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11alive_countE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11alive_countE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11alive_countE7int32_t"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::alive_count__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a8b79236771105bb2ae73f46f936a87fe"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">alive_count</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">alive_count</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate15not_alive_countE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate15not_alive_countE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate15not_alive_countE7int32_t"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::not_alive_count__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1afec011b08810cc730e24a8c16d3ab1b6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">not_alive_count</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">not_alive_count</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate18alive_count_changeE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate18alive_count_changeE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate18alive_count_changeE7int32_t"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::alive_count_change__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1aabb7f3b14db8c844dc2dffc0da2d377d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">alive_count_change</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">alive_count_change</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate22not_alive_count_changeE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate22not_alive_count_changeE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate22not_alive_count_changeE7int32_t"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::not_alive_count_change__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a0c139bc72cbbb7fcd1c89d4dba5e693e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">not_alive_count_change</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">not_alive_count_change</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23last_publication_handleEN3dds4core14InstanceHandleE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23last_publication_handleEN3dds4core14InstanceHandleE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23last_publication_handleEN3dds4core14InstanceHandleE"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::last_publication_handle__dds::core::InstanceHandle"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a3221ce76504233e5f68c2a13c4624067"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_publication_handle</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core14InstanceHandleE" title="dds::core::InstanceHandle"><span class="n"><span class="pre">InstanceHandle</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">last_publication_handle</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23last_publication_handleEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23last_publication_handleEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23last_publication_handleEv"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::last_publication_handleC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a3a6044b589bb3c1f86ec7f19892304fc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core14InstanceHandleE" title="dds::core::InstanceHandle"><span class="n"><span class="pre">InstanceHandle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_publication_handle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegateeqERK31LivelinessChangedStatusDelegate">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegateeqERK31LivelinessChangedStatusDelegate"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegateeqERK31LivelinessChangedStatusDelegate"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::eq-operator__LivelinessChangedStatusDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a95604fee7de5245a221b9ee88a0e3059"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegateE" title="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate"><span class="n"><span class="pre">LivelinessChangedStatusDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11ddsc_statusEPK31dds_liveliness_changed_status_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11ddsc_statusEPK31dds_liveliness_changed_status_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate11ddsc_statusEPK31dds_liveliness_changed_status_t"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::ddsc_status__dds_liveliness_changed_status_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a58705215a77ca4596c0d3fe49af6c3fb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ddsc_status</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_liveliness_changed_status_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">from</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate12alive_count_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate12alive_count_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate12alive_count_E"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::alive_count___int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a10ed35065714faff42eb0a5b99bd6dc6"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">alive_count_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate16not_alive_count_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate16not_alive_count_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate16not_alive_count_E"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::not_alive_count___int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1ac74de2d1b5407a0a9ff1b8985856c890"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">not_alive_count_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate19alive_count_change_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate19alive_count_change_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate19alive_count_change_E"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::alive_count_change___int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1ac4f9b1c839afe383dc0139a63e7a8434"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">alive_count_change_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23not_alive_count_change_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23not_alive_count_change_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate23not_alive_count_change_E"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::not_alive_count_change___int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a57f468154cb8cde60cbf10f7912b064f"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">not_alive_count_change_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate24last_publication_handle_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate24last_publication_handle_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core31LivelinessChangedStatusDelegate24last_publication_handle_E"></span><span id="org::eclipse::cyclonedds::core::LivelinessChangedStatusDelegate::last_publication_handle___dds::core::InstanceHandle"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1LivelinessChangedStatusDelegate_1a85f9bb7a55b67d6c3eb74ef3cef7cf01"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core14InstanceHandleE" title="dds::core::InstanceHandle"><span class="n"><span class="pre">InstanceHandle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_publication_handle_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

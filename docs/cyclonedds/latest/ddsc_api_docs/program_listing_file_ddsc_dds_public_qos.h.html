@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File dds_public_qos.h &mdash; CycloneDDS 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File dds_public_qos.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/program_listing_file_ddsc_dds_public_qos.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-dds-public-qos-h">
+<span id="program-listing-file-ddsc-dds-public-qos-h"></span><h1>Program Listing for File dds_public_qos.h<a class="headerlink" href="#program-listing-for-file-dds-public-qos-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_ddsc_dds_public_qos.h.html#file-ddsc-dds-public-qos-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_public_qos.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2006 to 2018 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="cp">#ifndef DDS_QOS_H</span>
+<span class="cp">#define DDS_QOS_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/export.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsc/dds_public_qosdefs.h&quot;</span><span class="cp"></span>
+
+<span class="cm">/* Whether or not the &quot;property list&quot; QoS setting is supported in this version.  If it is,</span>
+<span class="cm">   the &quot;dds.sec.&quot; properties are treated specially, preventing the accidental creation of</span>
+<span class="cm">   an non-secure participant by an implementation built without support for DDS Security. */</span><span class="w"></span>
+<span class="cp">#define DDS_HAS_PROPERTY_LIST_QOS 1</span>
+
+<span class="cp">#if defined (__cplusplus)</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="n">DDS_EXPORT</span><span class="w"></span>
+<span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dds_create_qos</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+<span class="n">DDS_DEPRECATED_EXPORT</span><span class="w"></span>
+<span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dds_qos_create</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_delete_qos</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_DEPRECATED_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qos_delete</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_reset_qos</span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_DEPRECATED_EXPORT</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">dds_qos_reset</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="w"></span>
+<span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="n">dds_return_t</span><span class="w"></span>
+<span class="n">dds_copy_qos</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">src</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_DEPRECATED_EXPORT</span><span class="w"> </span><span class="n">dds_return_t</span><span class="w"></span>
+<span class="n">dds_qos_copy</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">src</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_merge_qos</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">src</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_DEPRECATED_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qos_merge</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">src</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qos_equal</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_userdata</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_topicdata</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_groupdata</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_durability</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="n">dds_durability_kind_t</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_history</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_history_kind_t</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">depth</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_resource_limits</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_presentation</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_presentation_access_scope_kind_t</span><span class="w"> </span><span class="n">access_scope</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_lifespan</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">lifespan</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_deadline</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">deadline</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_latency_budget</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">duration</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_ownership</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_ownership_kind_t</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_ownership_strength</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_liveliness</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_liveliness_kind_t</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_time_based_filter</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">minimum_separation</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_partition</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">ps</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_partition1</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">name</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_reliability</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_reliability_kind_t</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_transport_priority</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_destination_order</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_destination_order_kind_t</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_writer_data_lifecycle</span><span class="w"> </span><span class="p">(</span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">autodispose</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_reader_data_lifecycle</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_durability_service</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="n">service_cleanup_delay</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_history_kind_t</span><span class="w"> </span><span class="n">history_kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">history_depth</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_ignorelocal</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_ignorelocal_kind_t</span><span class="w"> </span><span class="n">ignore</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_prop</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qunset_prop</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_bprop</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qunset_bprop</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_type_consistency</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_type_consistency_kind_t</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">ignore_sequence_bounds</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">ignore_string_bounds</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">ignore_member_names</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">prevent_type_widening</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">force_type_validation</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">dds_qset_data_representation</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_data_representation_id_t</span><span class="w"> </span><span class="o">*</span><span class="n">values</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">dds_qget_userdata</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">**</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">dds_qget_topicdata</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">**</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">dds_qget_groupdata</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">**</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">dds_qget_durability</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="n">dds_durability_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">dds_qget_history</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"> </span><span class="n">dds_history_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">kind</span><span class="p">,</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">depth</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_resource_limits</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">max_samples</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">max_instances</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_presentation</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_presentation_access_scope_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">access_scope</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">coherent_access</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">ordered_access</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_lifespan</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">lifespan</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_deadline</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">deadline</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_latency_budget</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">duration</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_ownership</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_ownership_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_ownership_strength</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_liveliness</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_liveliness_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">lease_duration</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_time_based_filter</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">minimum_separation</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_partition</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="o">*</span><span class="n">n</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="o">***</span><span class="n">ps</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_reliability</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_reliability_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">max_blocking_time</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_transport_priority</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_destination_order</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_destination_order_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_writer_data_lifecycle</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">autodispose</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_reader_data_lifecycle</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_durability_service</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_duration_t</span><span class="w"> </span><span class="o">*</span><span class="n">service_cleanup_delay</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_history_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">history_kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">history_depth</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">max_samples</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">max_instances</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">int32_t</span><span class="w"> </span><span class="o">*</span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_ignorelocal</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_ignorelocal_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">ignore</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_propnames</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="o">***</span><span class="w"> </span><span class="n">names</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_prop</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_bpropnames</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="o">***</span><span class="w"> </span><span class="n">names</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_bprop</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_type_consistency</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_type_consistency_kind_t</span><span class="w"> </span><span class="o">*</span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">ignore_sequence_bounds</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">ignore_string_bounds</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">ignore_member_names</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">prevent_type_widening</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="o">*</span><span class="n">force_type_validation</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">DDS_EXPORT</span><span class="w"> </span><span class="kt">bool</span><span class="w"></span>
+<span class="n">dds_qget_data_representation</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">__restrict</span><span class="w"> </span><span class="n">qos</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="o">*</span><span class="n">n</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">dds_data_representation_id_t</span><span class="w"> </span><span class="o">**</span><span class="n">values</span><span class="p">);</span><span class="w"></span>
+
+<span class="cp">#if defined (__cplusplus)</span>
+<span class="p">}</span><span class="w"></span>
+<span class="cp">#endif</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

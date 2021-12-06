@@ -1,0 +1,13 @@
+.. _exhale_typedef_dds_2sub_2detail_2find_8hpp_1a32d657b32963c74056897b4e51f323f4:
+
+Typedef dds::sub::detail::base_readers_iterator
+===============================================
+
+- Defined in :ref:`file_dds_sub_detail_find.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::base_readers_iterator

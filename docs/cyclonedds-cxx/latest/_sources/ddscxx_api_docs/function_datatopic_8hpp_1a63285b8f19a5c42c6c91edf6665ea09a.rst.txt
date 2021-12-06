@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a63285b8f19a5c42c6c91edf6665ea09a:
+
+Template Function serdata_from_ser_iov
+======================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_from_ser_iov(const ddsi_sertype *, enum ddsi_serdata_kind, ddsrt_msg_iovlen_t, const ddsrt_iovec_t *, size_t)

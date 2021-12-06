@@ -1,0 +1,13 @@
+.. _exhale_function_ListenerDispatcher_8hpp_1a57053a03cb5411ce2a30732b9fd80b75:
+
+Function callback_on_liveliness_lost
+====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: callback_on_liveliness_lost(dds_entity_t, dds_liveliness_lost_status_t, void *)

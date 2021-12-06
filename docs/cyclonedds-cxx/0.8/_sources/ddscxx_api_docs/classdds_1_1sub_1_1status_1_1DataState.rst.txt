@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1status_1_1DataState:
+
+Class DataState
+===============
+
+- Defined in :ref:`file_dds_sub_status_DataState.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::status::DataState
+   :members:
+   :protected-members:
+   :undoc-members:

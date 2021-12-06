@@ -1,0 +1,79 @@
+
+.. _file_dds_core_cond_Condition.hpp:
+
+File Condition.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_cond>` (``dds/core/cond``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/cond/Condition.hpp``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_cond_Condition.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``dds/core/cond/detail/GuardCondition.hpp`` (:ref:`file_dds_core_cond_detail_GuardCondition.hpp`)
+
+- ``dds/core/cond/detail/StatusCondition.hpp`` (:ref:`file_dds_core_cond_detail_StatusCondition.hpp`)
+
+- ``dds/sub/cond/detail/QueryCondition.hpp`` (:ref:`file_dds_sub_cond_detail_QueryCondition.hpp`)
+
+- ``dds/sub/cond/detail/ReadCondition.hpp`` (:ref:`file_dds_sub_cond_detail_ReadCondition.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_cond_GuardCondition.hpp`
+
+- :ref:`file_dds_core_cond_StatusCondition.hpp`
+
+- :ref:`file_dds_core_cond_WaitSet.hpp`
+
+- :ref:`file_dds_core_cond_detail_ConditionImpl.hpp`
+
+- :ref:`file_dds_sub_cond_ReadCondition.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_cond_WaitSetDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__cond`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1cond_1_1Condition`
+

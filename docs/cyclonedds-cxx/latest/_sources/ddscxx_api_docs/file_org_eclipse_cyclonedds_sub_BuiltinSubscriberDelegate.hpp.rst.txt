@@ -1,0 +1,73 @@
+
+.. _file_org_eclipse_cyclonedds_sub_BuiltinSubscriberDelegate.hpp:
+
+File BuiltinSubscriberDelegate.hpp
+==================================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_sub>` (``org/eclipse/cyclonedds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/sub/BuiltinSubscriberDelegate.hpp``)
+-------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_sub_BuiltinSubscriberDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+- ``dds/domain/DomainParticipant.hpp`` (:ref:`file_dds_domain_DomainParticipant.hpp`)
+
+- ``org/eclipse/cyclonedds/ForwardDeclarations.hpp`` (:ref:`file_org_eclipse_cyclonedds_ForwardDeclarations.hpp`)
+
+- ``org/eclipse/cyclonedds/core/Mutex.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_Mutex.hpp`)
+
+- ``org/eclipse/cyclonedds/sub/AnyDataReaderDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`)
+
+- ``org/eclipse/cyclonedds/sub/SubscriberDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_sub_SubscriberDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_detail_find.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__sub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1BuiltinSubscriberDelegate`
+

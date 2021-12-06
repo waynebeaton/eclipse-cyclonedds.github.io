@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1aa426a852c708507468a8fd8fe49d0c4d:
+
+Define ISOCPP_BOOL_CHECK_AND_THROW
+==================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_BOOL_CHECK_AND_THROW

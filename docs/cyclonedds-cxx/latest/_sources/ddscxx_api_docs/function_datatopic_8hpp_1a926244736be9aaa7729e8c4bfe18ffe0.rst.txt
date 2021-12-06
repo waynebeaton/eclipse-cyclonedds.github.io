@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a926244736be9aaa7729e8c4bfe18ffe0:
+
+Template Function sertype_realloc_samples
+=========================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: sertype_realloc_samples(void **, const ddsi_sertype *, void *, size_t, size_t)

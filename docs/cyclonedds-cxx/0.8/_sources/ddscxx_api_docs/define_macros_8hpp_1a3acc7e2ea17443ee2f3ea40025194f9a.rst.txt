@@ -1,0 +1,13 @@
+.. _exhale_define_macros_8hpp_1a3acc7e2ea17443ee2f3ea40025194f9a:
+
+Define TEMP_TYPE
+================
+
+- Defined in :ref:`file_dds_core_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TEMP_TYPE

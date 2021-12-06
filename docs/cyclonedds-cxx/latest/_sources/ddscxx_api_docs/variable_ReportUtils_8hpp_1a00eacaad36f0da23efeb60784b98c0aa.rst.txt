@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1a00eacaad36f0da23efeb60784b98c0aa:
+
+Variable org::eclipse::cyclonedds::core::utils::out_of_resources_error_code
+===========================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::out_of_resources_error_code

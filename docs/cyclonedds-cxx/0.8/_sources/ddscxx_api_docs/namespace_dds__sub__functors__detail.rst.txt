@@ -1,0 +1,28 @@
+
+.. _namespace_dds__sub__functors__detail:
+
+Namespace dds::sub::functors::detail
+====================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1ContentFilterManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1InstanceManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1MaxSamplesManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1NextInstanceManipulatorFunctor`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1functors_1_1detail_1_1StateFilterManipulatorFunctor`

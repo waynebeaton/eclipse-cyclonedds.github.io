@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderQosDelegate_8hpp_1a74b177e2025302195691c07a9fd43c30:
+
+Function org::eclipse::cyclonedds::sub::qos::DataReaderQosDelegate::policy< dds::core::policy::Reliability >
+============================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_qos_DataReaderQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::sub::qos::DataReaderQosDelegate::policy< dds::core::policy::Reliability >()

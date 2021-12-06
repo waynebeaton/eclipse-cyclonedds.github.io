@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds__rhc__ops:
+
+Struct dds_rhc_ops
+==================
+
+- Defined in :ref:`file_ddsc_dds_rhc.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds_rhc_ops
+   :members:
+   :protected-members:
+   :undoc-members:

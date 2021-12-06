@@ -1,0 +1,13 @@
+.. _exhale_define_TimeHelper_8hpp_1ab9e061e05d689a5769936b213022102f:
+
+Define MS
+=========
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_TimeHelper.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MS

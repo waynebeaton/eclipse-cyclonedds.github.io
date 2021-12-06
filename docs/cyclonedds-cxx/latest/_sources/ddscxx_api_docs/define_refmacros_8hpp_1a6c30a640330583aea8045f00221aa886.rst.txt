@@ -1,0 +1,13 @@
+.. _exhale_define_refmacros_8hpp_1a6c30a640330583aea8045f00221aa886:
+
+Define OMG_DDS_REF_TYPE_PROTECTED_DC
+====================================
+
+- Defined in :ref:`file_dds_core_refmacros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_REF_TYPE_PROTECTED_DC

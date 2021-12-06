@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File dds_rhc.h &mdash; CycloneDDS 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>File dds_rhc.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/file_ddsc_dds_rhc.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-dds-rhc-h">
+<span id="file-ddsc-dds-rhc-h"></span><h1>File dds_rhc.h<a class="headerlink" href="#file-dds-rhc-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="dir_ddsc.html#dir-ddsc"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">ddsc</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-ddsc-dds-rhc-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_rhc.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id3">Classes</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id4">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id5">Defines</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id6">Typedefs</a></p></li>
+</ul>
+</div>
+<section id="definition-ddsc-dds-rhc-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_rhc.h</span></code>)<a class="headerlink" href="#definition-ddsc-dds-rhc-h" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_ddsc_dds_rhc.h.html">Program Listing for File dds_rhc.h</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">dds/ddsi/ddsi_rhc.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dds/ddsrt/static_assert.h</span></code></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structdds__rhc.html#exhale-struct-structdds-rhc"><span class="std std-ref">Struct dds_rhc</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__rhc__ops.html#exhale-struct-structdds-rhc-ops"><span class="std std-ref">Struct dds_rhc_ops</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a73bec675921a61290e7084628f79ce06.html#exhale-function-dds-rhc-8h-1a73bec675921a61290e7084628f79ce06"><span class="std std-ref">Function dds_reader_data_available_cb</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a4ea94a53178917eb53fd8c66065edbee.html#exhale-function-dds-rhc-8h-1a4ea94a53178917eb53fd8c66065edbee"><span class="std std-ref">Function dds_rhc_add_readcondition</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1ad796d8e680757af062d56d7ebd99d61f.html#exhale-function-dds-rhc-8h-1ad796d8e680757af062d56d7ebd99d61f"><span class="std std-ref">Function dds_rhc_associate</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a24152905ca184557fd35a661bfd123e5.html#exhale-function-dds-rhc-8h-1a24152905ca184557fd35a661bfd123e5"><span class="std std-ref">Function dds_rhc_free</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1ae36ec3c19cd6ce213b449f9dec2eb684.html#exhale-function-dds-rhc-8h-1ae36ec3c19cd6ce213b449f9dec2eb684"><span class="std std-ref">Function dds_rhc_lock_samples</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a058f09f56e06500734cff49afb263667.html#exhale-function-dds-rhc-8h-1a058f09f56e06500734cff49afb263667"><span class="std std-ref">Function dds_rhc_read</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1ab9f1d0df0c5b164e5fc248b9c4283161.html#exhale-function-dds-rhc-8h-1ab9f1d0df0c5b164e5fc248b9c4283161"><span class="std std-ref">Function dds_rhc_readcdr</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a60659a18aa4cfb043903e8b1f3c60eab.html#exhale-function-dds-rhc-8h-1a60659a18aa4cfb043903e8b1f3c60eab"><span class="std std-ref">Function dds_rhc_relinquish_ownership</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1afb8fad57880b53cbe94f3099f945e0b3.html#exhale-function-dds-rhc-8h-1afb8fad57880b53cbe94f3099f945e0b3"><span class="std std-ref">Function dds_rhc_remove_readcondition</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a996b4ddb3a72b95cfda5975710de1881.html#exhale-function-dds-rhc-8h-1a996b4ddb3a72b95cfda5975710de1881"><span class="std std-ref">Function dds_rhc_set_qos</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a3919e922dbd3f14e83808bf225d06aa4.html#exhale-function-dds-rhc-8h-1a3919e922dbd3f14e83808bf225d06aa4"><span class="std std-ref">Function dds_rhc_store</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1ad7616d6165bc539633f33801dc831c79.html#exhale-function-dds-rhc-8h-1ad7616d6165bc539633f33801dc831c79"><span class="std std-ref">Function dds_rhc_take</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1acb011605b44c072d5f4881a91354c959.html#exhale-function-dds-rhc-8h-1acb011605b44c072d5f4881a91354c959"><span class="std std-ref">Function dds_rhc_takecdr</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__rhc_8h_1a2ca60ce050ecb1be1f4569dfd5a5f200.html#exhale-function-dds-rhc-8h-1a2ca60ce050ecb1be1f4569dfd5a5f200"><span class="std std-ref">Function dds_rhc_unregister_wr</span></a></p></li>
+</ul>
+</section>
+<section id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_dds__rhc_8h_1a5d53740a86315bc42ea61fa353d6d108.html#exhale-define-dds-rhc-8h-1a5d53740a86315bc42ea61fa353d6d108"><span class="std std-ref">Define NO_STATE_MASK_SET</span></a></p></li>
+</ul>
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_dds__rhc_8h_1a2ab7df446352a1c4a1b45e774ce5820e.html#exhale-typedef-dds-rhc-8h-1a2ab7df446352a1c4a1b45e774ce5820e"><span class="std std-ref">Typedef dds_rhc_add_readcondition_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__rhc_8h_1aab01ec3664d48504be2a984e254229a6.html#exhale-typedef-dds-rhc-8h-1aab01ec3664d48504be2a984e254229a6"><span class="std std-ref">Typedef dds_rhc_associate_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__rhc_8h_1a0ae2d137a1376748d209f13a638155c2.html#exhale-typedef-dds-rhc-8h-1a0ae2d137a1376748d209f13a638155c2"><span class="std std-ref">Typedef dds_rhc_lock_samples_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__rhc_8h_1addd458c0e9691b321dbc217509a25eee.html#exhale-typedef-dds-rhc-8h-1addd458c0e9691b321dbc217509a25eee"><span class="std std-ref">Typedef dds_rhc_read_take_cdr_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__rhc_8h_1a283c803daa880eb43031db9f8af833b9.html#exhale-typedef-dds-rhc-8h-1a283c803daa880eb43031db9f8af833b9"><span class="std std-ref">Typedef dds_rhc_read_take_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__rhc_8h_1a007b66ca29c5c8b0629bc1f424b6239d.html#exhale-typedef-dds-rhc-8h-1a007b66ca29c5c8b0629bc1f424b6239d"><span class="std std-ref">Typedef dds_rhc_remove_readcondition_t</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

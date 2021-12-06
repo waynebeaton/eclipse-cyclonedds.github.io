@@ -1,0 +1,88 @@
+
+.. _file_dds_core_detail_conformance.hpp:
+
+File conformance.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_detail>` (``dds/core/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/detail/conformance.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_detail_conformance.hpp.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_conformance.hpp`
+
+- :ref:`file_dds_core_ddscore.hpp`
+
+- :ref:`file_dds_core_policy_PolicyKind.hpp`
+
+- :ref:`file_dds_core_policy_CorePolicy.hpp`
+
+- :ref:`file_dds_core_types.hpp`
+
+- :ref:`file_dds_core_xtypes_TypeKind.hpp`
+
+- :ref:`file_dds_domain_DomainParticipant.hpp`
+
+- :ref:`file_dds_sub_DataReader.hpp`
+
+- :ref:`file_dds_sub_cond_QueryCondition.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_dds_topic_BuiltinTopic.hpp`
+
+- :ref:`file_dds_topic_ContentFilteredTopic.hpp`
+
+- :ref:`file_dds_topic_MultiTopic.hpp`
+
+- :ref:`file_dds_topic_detail_ContentFilteredTopic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_qos_DataWriterQosDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_qos_DataReaderQosDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_BuiltinTopicDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_BuiltinTopic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_topic_qos_TopicQosDelegate.hpp`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_detail_2conformance_8hpp_1a5ba7788c2966f039709ad445e1d552f7`
+
+- :ref:`exhale_define_detail_2conformance_8hpp_1a628f7b220db70426b6f189161b042689`
+
+- :ref:`exhale_define_detail_2conformance_8hpp_1a97a7ef283278dc685a3e0dfe750e9acc`
+
+- :ref:`exhale_define_detail_2conformance_8hpp_1a8abe14249704651f38b6e832bafe9823`
+
+- :ref:`exhale_define_detail_2conformance_8hpp_1ae02a7f506691c69a1d8d6adae05035ae`
+

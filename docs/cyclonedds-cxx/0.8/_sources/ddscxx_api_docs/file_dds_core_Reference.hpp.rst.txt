@@ -1,0 +1,92 @@
+
+.. _file_dds_core_Reference.hpp:
+
+File Reference.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/Reference.hpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_Reference.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Exception.hpp`` (:ref:`file_dds_core_Exception.hpp`)
+
+- ``dds/core/refmacros.hpp`` (:ref:`file_dds_core_refmacros.hpp`)
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_Entity.hpp`
+
+- :ref:`file_dds_core_QosProvider.hpp`
+
+- :ref:`file_dds_core_WeakReference.hpp`
+
+- :ref:`file_dds_core_cond_Condition.hpp`
+
+- :ref:`file_dds_core_detail_ReferenceImpl.hpp`
+
+- :ref:`file_dds_core_xtypes_Annotation.hpp`
+
+- :ref:`file_dds_core_xtypes_DynamicData.hpp`
+
+- :ref:`file_dds_core_xtypes_DynamicType.hpp`
+
+- :ref:`file_dds_core_xtypes_UnionCase.hpp`
+
+- :ref:`file_dds_sub_SharedSamples.hpp`
+
+- :ref:`file_dds_sub_Query.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1Reference`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Reference_8hpp_1adeb161373599d164872384765315a761`
+
+- :ref:`exhale_function_Reference_8hpp_1a1152144b7b814055b22a4696cb5067be`
+

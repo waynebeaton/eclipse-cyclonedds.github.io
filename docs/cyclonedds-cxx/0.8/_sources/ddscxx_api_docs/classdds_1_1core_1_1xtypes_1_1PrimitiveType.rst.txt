@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1core_1_1xtypes_1_1PrimitiveType:
+
+Template Class PrimitiveType
+============================
+
+- Defined in :ref:`file_dds_core_xtypes_PrimitiveTypes.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::xtypes::PrimitiveType
+   :members:
+   :protected-members:
+   :undoc-members:

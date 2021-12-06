@@ -1,0 +1,21 @@
+.. _dir_org_eclipse_cyclonedds_core_cdr:
+
+
+Directory cdr
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core>` (``org/eclipse/cyclonedds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``org/eclipse/cyclonedds/core/cdr``
+
+
+Files
+-----
+
+- :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+- :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+

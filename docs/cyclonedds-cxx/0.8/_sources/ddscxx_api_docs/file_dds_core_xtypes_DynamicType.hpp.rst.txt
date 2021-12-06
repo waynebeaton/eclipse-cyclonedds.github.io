@@ -1,0 +1,61 @@
+
+.. _file_dds_core_xtypes_DynamicType.hpp:
+
+File DynamicType.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/DynamicType.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_DynamicType.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``dds/core/conformance.hpp`` (:ref:`file_dds_core_conformance.hpp`)
+
+- ``dds/core/xtypes/Annotations.hpp`` (:ref:`file_dds_core_xtypes_Annotations.hpp`)
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_xtypes_PrimitiveTypes.hpp`
+
+- :ref:`file_dds_core_xtypes_CollectionTypes.hpp`
+
+- :ref:`file_dds_core_xtypes_DynamicData.hpp`
+
+- :ref:`file_dds_core_xtypes_StructType.hpp`
+
+- :ref:`file_dds_core_xtypes_TypeProvider.hpp`
+
+- :ref:`file_dds_core_xtypes_UnionType.hpp`
+
+
+

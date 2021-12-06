@@ -1,0 +1,26 @@
+.. _dir_dds_sub_cond:
+
+
+Directory cond
+==============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/sub/cond``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_sub_cond_detail`
+
+
+Files
+-----
+
+- :ref:`file_dds_sub_cond_QueryCondition.hpp`
+- :ref:`file_dds_sub_cond_ReadCondition.hpp`
+
+

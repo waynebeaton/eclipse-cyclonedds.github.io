@@ -1,0 +1,31 @@
+.. _exhale_class_classdds_1_1topic_1_1NoOpAnyTopicListener:
+
+Class NoOpAnyTopicListener
+==========================
+
+- Defined in :ref:`file_dds_topic_AnyTopicListener.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::topic::AnyTopicListener`` (:ref:`exhale_class_classdds_1_1topic_1_1AnyTopicListener`)
+
+
+Derived Type
+************
+
+- ``public dds::domain::NoOpDomainParticipantListener`` (:ref:`exhale_class_classdds_1_1domain_1_1NoOpDomainParticipantListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::NoOpAnyTopicListener
+   :members:
+   :protected-members:
+   :undoc-members:

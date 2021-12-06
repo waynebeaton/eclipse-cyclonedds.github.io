@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2CoherentSet_8hpp_1a336966fa413668560b630fcb4536bad0:
+
+Typedef dds::pub::detail::CoherentSet
+=====================================
+
+- Defined in :ref:`file_dds_pub_detail_CoherentSet.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::pub::detail::CoherentSet

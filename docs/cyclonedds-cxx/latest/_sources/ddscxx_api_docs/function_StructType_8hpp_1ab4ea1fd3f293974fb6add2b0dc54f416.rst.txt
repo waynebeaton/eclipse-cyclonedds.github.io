@@ -1,0 +1,13 @@
+.. _exhale_function_StructType_8hpp_1ab4ea1fd3f293974fb6add2b0dc54f416:
+
+Template Function dds::core::xtypes::isMutable
+==============================================
+
+- Defined in :ref:`file_dds_core_xtypes_StructType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::isMutable(const StructType<T>&)

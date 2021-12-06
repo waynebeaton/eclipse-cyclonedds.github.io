@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Status_8hpp_1a0ea269ca3f45f85d44013b28d75d08b5:
+
+Typedef dds::core::status::detail::SampleLostStatus
+===================================================
+
+- Defined in :ref:`file_dds_core_status_detail_Status.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::status::detail::SampleLostStatus

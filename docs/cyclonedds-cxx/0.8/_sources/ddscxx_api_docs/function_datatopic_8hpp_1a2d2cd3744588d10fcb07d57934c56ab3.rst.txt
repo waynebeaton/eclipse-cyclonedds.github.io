@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a2d2cd3744588d10fcb07d57934c56ab3:
+
+Template Function serdata_size
+==============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_size(const ddsi_serdata *)

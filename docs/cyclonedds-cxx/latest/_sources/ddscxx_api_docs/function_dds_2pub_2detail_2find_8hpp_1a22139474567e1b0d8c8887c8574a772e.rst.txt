@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2pub_2detail_2find_8hpp_1a22139474567e1b0d8c8887c8574a772e:
+
+Template Function dds::pub::find(const dds::pub::Publisher&, const std::string&, FwdIterator, uint32_t)
+=======================================================================================================
+
+- Defined in :ref:`file_dds_pub_detail_find.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::pub::find(const dds::pub::Publisher&, const std::string&, FwdIterator, uint32_t)

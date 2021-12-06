@@ -1,0 +1,13 @@
+.. _exhale_function_MemberType_8hpp_1ab069ae7c9d98f0a4462f75e85bd45578:
+
+Template Function dds::core::xtypes::isBitset
+=============================================
+
+- Defined in :ref:`file_dds_core_xtypes_MemberType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::isBitset(const MemberType<T>&)

@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1a804fc8ce165e56bdc80e5c651a520919:
+
+Template Function org::eclipse::cyclonedds::core::cdr::write
+============================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::write(basic_cdr_stream&, const T&)

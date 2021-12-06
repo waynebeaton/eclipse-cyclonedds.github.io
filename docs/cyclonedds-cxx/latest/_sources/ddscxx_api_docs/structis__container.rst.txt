@@ -1,0 +1,25 @@
+.. _exhale_struct_structis__container:
+
+Template Struct is_container
+============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_type_helpers.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public false_type``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: is_container
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_function_Duration_8hpp_1aa1c5f82736e712a15d59e5782c3b40cf:
+
+Function dds::core::operator\*(uint64_t, const Duration&)
+=========================================================
+
+- Defined in :ref:`file_dds_core_Duration.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::operator*(uint64_t, const Duration&)

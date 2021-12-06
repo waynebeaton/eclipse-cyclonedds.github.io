@@ -1,0 +1,13 @@
+.. _exhale_function_TimeHelper_8hpp_1a233ba56b68e606a3b91b408d4273acf9:
+
+Template Function org::eclipse::cyclonedds::core::timehelper::validate
+======================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_TimeHelper.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::timehelper::validate(const TIMEISH&, const char *, const char *)

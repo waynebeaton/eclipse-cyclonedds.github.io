@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1af5a540dc6c251c900f22a91a5fd15fef:
+
+Define ISOCPP_ALREADY_CLOSED_ERROR
+==================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_ALREADY_CLOSED_ERROR

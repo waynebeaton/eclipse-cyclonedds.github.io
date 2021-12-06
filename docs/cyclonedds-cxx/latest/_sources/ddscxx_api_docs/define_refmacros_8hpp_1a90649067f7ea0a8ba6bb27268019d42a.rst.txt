@@ -1,0 +1,13 @@
+.. _exhale_define_refmacros_8hpp_1a90649067f7ea0a8ba6bb27268019d42a:
+
+Define DECLARE_TYPE_TRAITS
+==========================
+
+- Defined in :ref:`file_dds_core_refmacros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DECLARE_TYPE_TRAITS

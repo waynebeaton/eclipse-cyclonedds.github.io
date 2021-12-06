@@ -1,0 +1,99 @@
+
+.. _file_dds_core_policy_detail_CorePolicy.hpp:
+
+File CorePolicy.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_policy_detail>` (``dds/core/policy/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/policy/detail/CorePolicy.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_policy_detail_CorePolicy.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/policy/detail/CorePolicyImpl.hpp`` (:ref:`file_dds_core_policy_detail_CorePolicyImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/core/policy/Policy.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_policy_Policy.hpp`)
+
+- ``org/eclipse/cyclonedds/core/policy/PolicyDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__policy`
+
+- :ref:`namespace_dds__core__policy__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a30c33c986fe7c332673216178a58ec0a`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a1956ddda74ac930155e53b098385072a`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a96d33a47c220a33f10500e5f411bcf3f`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a9a6f0594a956f3b29cb58bfb10850a1f`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1ad56f0685e375e474c06947818d7b780f`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1ab7b59dce6a26b71bae7d9bf37bd05882`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a4bafe0bcdc8a837146002eff2449fdf9`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a319791963d9b60ad922f0afe3add40ea`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a7a1eca519692f777346edf66a075b410`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a25203ba91c0e262f6a693828244d1f7e`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a3696c4bef204c8441377dad48b09bad6`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1afc5b57ffa7b65d7eb64eac849f23fb9e`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a95cf276ef838e31d8809ab150f4d8121`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a27a51e99c536620292589c793d386e7b`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1aca35722c815131d97a43bd114e320de2`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1abbb1ef9374dfabb4bab428d8a1689020`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1ae7687217b0f3639bb8cdbe9934c42c97`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1ad9bb3541ff1e1006f77ab2f355b09bcd`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a8490875a5df59a2e07b5a0fbd2858925`
+
+- :ref:`exhale_typedef_detail_2CorePolicy_8hpp_1a092c94c42812b7c8bb2aab75789c636b`
+

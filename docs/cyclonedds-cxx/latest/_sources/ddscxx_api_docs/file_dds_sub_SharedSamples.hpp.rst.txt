@@ -1,0 +1,58 @@
+
+.. _file_dds_sub_SharedSamples.hpp:
+
+File SharedSamples.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/SharedSamples.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_SharedSamples.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``dds/sub/LoanedSamples.hpp`` (:ref:`file_dds_sub_LoanedSamples.hpp`)
+
+- ``dds/sub/Sample.hpp`` (:ref:`file_dds_sub_Sample.hpp`)
+
+- ``dds/sub/detail/SharedSamples.hpp`` (:ref:`file_dds_sub_detail_SharedSamples.hpp`)
+
+- ``dds/sub/detail/SharedSamplesImpl.hpp`` (:ref:`file_dds_sub_detail_SharedSamplesImpl.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1SharedSamples`
+

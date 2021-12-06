@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderImpl_8hpp_1acb4c61c72e0d47aea594a30ae4d11293:
+
+Function dds::sub::instance
+===========================
+
+- Defined in :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::instance(const dds::core::InstanceHandle&)

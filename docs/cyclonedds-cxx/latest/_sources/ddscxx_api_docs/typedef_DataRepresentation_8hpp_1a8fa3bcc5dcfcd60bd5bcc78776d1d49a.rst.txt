@@ -1,0 +1,13 @@
+.. _exhale_typedef_DataRepresentation_8hpp_1a8fa3bcc5dcfcd60bd5bcc78776d1d49a:
+
+Typedef org::eclipse::cyclonedds::topic::DataRepresentationId_t
+===============================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_DataRepresentation.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: org::eclipse::cyclonedds::topic::DataRepresentationId_t

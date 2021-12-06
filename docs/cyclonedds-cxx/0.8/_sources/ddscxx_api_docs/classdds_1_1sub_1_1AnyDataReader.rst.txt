@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1sub_1_1AnyDataReader:
+
+Class AnyDataReader
+===================
+
+- Defined in :ref:`file_dds_sub_AnyDataReader.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Entity`` (:ref:`exhale_class_classdds_1_1core_1_1Entity`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::AnyDataReader
+   :members:
+   :protected-members:
+   :undoc-members:

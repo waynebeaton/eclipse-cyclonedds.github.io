@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2sub_2detail_2find_8hpp_1ae417a646f34109cbb000fc1c22611e28:
+
+Template Function dds::sub::find(const dds::sub::Subscriber&, const std::string&, FwdIterator, uint32_t)
+========================================================================================================
+
+- Defined in :ref:`file_dds_sub_detail_find.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::find(const dds::sub::Subscriber&, const std::string&, FwdIterator, uint32_t)

@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderImpl_8hpp_1a9b67094740bb444f70ddc332a76b1635:
+
+Function dds::sub::next_instance
+================================
+
+- Defined in :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::next_instance(const dds::core::InstanceHandle&)

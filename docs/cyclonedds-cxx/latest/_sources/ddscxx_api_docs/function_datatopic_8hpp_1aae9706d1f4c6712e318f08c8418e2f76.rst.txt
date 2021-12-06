@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1aae9706d1f4c6712e318f08c8418e2f76:
+
+Template Function sertype_serialize_into
+========================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: sertype_serialize_into(const ddsi_sertype *, const void *, void *, size_t)

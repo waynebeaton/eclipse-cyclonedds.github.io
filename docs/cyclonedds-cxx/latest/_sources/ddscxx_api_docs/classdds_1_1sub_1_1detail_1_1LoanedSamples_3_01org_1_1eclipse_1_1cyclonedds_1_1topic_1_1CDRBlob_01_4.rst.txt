@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1LoanedSamples_3_01org_1_1eclipse_1_1cyclonedds_1_1topic_1_1CDRBlob_01_4:
+
+Template Class LoanedSamples< org::eclipse::cyclonedds::topic::CDRBlob >
+========================================================================
+
+- Defined in :ref:`file_dds_sub_detail_LoanedSamples.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::LoanedSamples< org::eclipse::cyclonedds::topic::CDRBlob >
+   :members:
+   :protected-members:
+   :undoc-members:

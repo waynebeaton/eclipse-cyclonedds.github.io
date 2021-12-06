@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1status_1_1LivelinessChangedStatus:
+
+Class LivelinessChangedStatus
+=============================
+
+- Defined in :ref:`file_dds_core_status_Status.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Value`` (:ref:`exhale_class_classdds_1_1core_1_1Value`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::status::LivelinessChangedStatus
+   :members:
+   :protected-members:
+   :undoc-members:

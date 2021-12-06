@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1aa9a0234644917bfef65aef8991ffae64:
+
+Template Function serdata_to_sample
+===================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_to_sample(const ddsi_serdata *, void *, void **, void *)

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Function dds::sub::find(const dds::sub::Subscriber&amp;, const dds::topic::TopicDescription&amp;, BinIterator) &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Template Function dds::sub::find(const dds::sub::Subscriber&amp;, const dds::topic::TopicDescription&amp;, BinIterator)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/function_dds_2sub_2detail_2find_8hpp_1a5f8daa4a2dcc0b1dea9f4dfe5b556603.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="template-function-dds-sub-find-const-dds-sub-subscriber-const-dds-topic-topicdescription-biniterator">
+<span id="exhale-function-dds-2sub-2detail-2find-8hpp-1a5f8daa4a2dcc0b1dea9f4dfe5b556603"></span><h1>Template Function dds::sub::find(const dds::sub::Subscriber&amp;, const dds::topic::TopicDescription&amp;, BinIterator)<a class="headerlink" href="#template-function-dds-sub-find-const-dds-sub-subscriber-const-dds-topic-topicdescription-biniterator" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds_sub_detail_find.hpp.html#file-dds-sub-detail-find-hpp"><span class="std std-ref">File find.hpp</span></a></p></li>
+</ul>
+<section id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I000EN3dds3sub4findE8uint32_tRKN3dds3sub10SubscriberERKN3dds5topic16TopicDescriptionE11BinIterator">
+<span id="_CPPv3I000EN3dds3sub4findERKN3dds3sub10SubscriberERKN3dds5topic16TopicDescriptionE11BinIterator"></span><span id="_CPPv2I000EN3dds3sub4findERKN3dds3sub10SubscriberERKN3dds5topic16TopicDescriptionE11BinIterator"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">READER</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BinIterator</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="dds_2sub_2detail_2find_8hpp_1a5f8daa4a2dcc0b1dea9f4dfe5b556603"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">find</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub10SubscriberE" title="dds::sub::Subscriber"><span class="n"><span class="pre">Subscriber</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">sub</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic16TopicDescriptionE" title="dds::topic::TopicDescription"><span class="n"><span class="pre">TopicDescription</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">topic_description</span></span>, <a class="reference internal" href="../ddscxx.html#_CPPv4I000EN3dds3sub4findE8uint32_tRKN3dds3sub10SubscriberERKN3dds5topic16TopicDescriptionE11BinIterator" title="dds::sub::find::BinIterator"><span class="n"><span class="pre">BinIterator</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">begin</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>This function retrieves a previously-created <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> belonging to the <a class="reference internal" href="classdds_1_1sub_1_1Subscriber.html#classdds_1_1sub_1_1Subscriber"><span class="std std-ref">Subscriber</span></a> that is attached to a Topic with a matching topic_name. If no such <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> exists, the operation will return an empty container.</p>
+<p>The use of this operation on the built-in <a class="reference internal" href="classdds_1_1sub_1_1Subscriber.html#classdds_1_1sub_1_1Subscriber"><span class="std std-ref">Subscriber</span></a> allows access to the built-in <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> entities for the built-in topics (see Builtin Topics).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sub</strong> – the <a class="reference internal" href="classdds_1_1sub_1_1Subscriber.html#classdds_1_1sub_1_1Subscriber"><span class="std std-ref">Subscriber</span></a> for which to find a <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> </p></li>
+<li><p><strong>topic_description</strong> – the topic description to find </p></li>
+<li><p><strong>begin</strong> – a back inserting iterator pointing to the start of a container in which to put the DataReaders </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the total number of elements returned </p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

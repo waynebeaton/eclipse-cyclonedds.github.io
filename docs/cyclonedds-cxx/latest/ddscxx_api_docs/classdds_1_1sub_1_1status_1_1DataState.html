@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class DataState &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class DataState</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classdds_1_1sub_1_1status_1_1DataState.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-datastate">
+<span id="exhale-class-classdds-1-1sub-1-1status-1-1datastate"></span><h1>Class DataState<a class="headerlink" href="#class-datastate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds_sub_status_DataState.hpp.html#file-dds-sub-status-datastate-hpp"><span class="std std-ref">File DataState.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataStateE">
+<span id="_CPPv3N3dds3sub6status9DataStateE"></span><span id="_CPPv2N3dds3sub6status9DataStateE"></span><span id="dds::sub::status::DataState"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DataState</span></span></span><br /></dt>
+<dd><p>Class to hold sample <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> information. </p>
+<p>The <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> is part of <a class="reference internal" href="classdds_1_1sub_1_1SampleInfo.html#classdds_1_1sub_1_1SampleInfo"><span class="std std-ref">dds::sub::SampleInfo</span></a> but can also be used as data filter for <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReaders</span></a>.</p>
+<p>The <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> contains the following:<ul class="simple">
+<li><p>The sample_state of the Data value (i.e., if the sample has already been READ or NOT_READ by that same <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>).</p></li>
+<li><p>The view_state of the related instance (i.e., if the instance is NEW, or NOT_NEW for that <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>).</p></li>
+<li><p>The instance_state of the related instance (i.e., if the instance is ALIVE, NOT_ALIVE_DISPOSED, or NOT_ALIVE_NO_WRITERS).</p></li>
+</ul>
+</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p>for more information: SampleInfo </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState9DataStateEv">
+<span id="_CPPv3N3dds3sub6status9DataState9DataStateEv"></span><span id="_CPPv2N3dds3sub6status9DataState9DataStateEv"></span><span id="dds::sub::status::DataState::DataState"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a3df1ad8c03505bb1e895a231b46f9571"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataState</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Construct a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState_1a54d1b565329d7303a8307f872f51dff9"><span class="std std-ref">SampleState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState_1affdebb400acd0f6c0997e0278ab912b8"><span class="std std-ref">ViewState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState_1ab9736345dd32695b377e8eb58ada7b06"><span class="std std-ref">InstanceState::any</span></a> </p></li>
+</ul>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState9DataStateERKN3dds3sub6status11SampleStateE">
+<span id="_CPPv3N3dds3sub6status9DataState9DataStateERKN3dds3sub6status11SampleStateE"></span><span id="_CPPv2N3dds3sub6status9DataState9DataStateERKN3dds3sub6status11SampleStateE"></span><span id="dds::sub::status::DataState::DataState__dds::sub::status::SampleStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a40f66b747a15976f1cae80d8cab39f0f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataState</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status11SampleStateE" title="dds::sub::status::SampleState"><span class="n"><span class="pre">SampleState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ss</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Construct a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p>Given <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> ss</p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState_1affdebb400acd0f6c0997e0278ab912b8"><span class="std std-ref">ViewState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState_1ab9736345dd32695b377e8eb58ada7b06"><span class="std std-ref">InstanceState::any</span></a></p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ss</strong> – the <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> to construct <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> from </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState9DataStateERKN3dds3sub6status9ViewStateE">
+<span id="_CPPv3N3dds3sub6status9DataState9DataStateERKN3dds3sub6status9ViewStateE"></span><span id="_CPPv2N3dds3sub6status9DataState9DataStateERKN3dds3sub6status9ViewStateE"></span><span id="dds::sub::status::DataState::DataState__dds::sub::status::ViewStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a99d2be1ece59fe24168f3597ea767cfa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataState</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9ViewStateE" title="dds::sub::status::ViewState"><span class="n"><span class="pre">ViewState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vs</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Construct a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState_1a54d1b565329d7303a8307f872f51dff9"><span class="std std-ref">SampleState::any</span></a></p></li>
+<li><p>Given <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> vs</p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState_1ab9736345dd32695b377e8eb58ada7b06"><span class="std std-ref">InstanceState::any</span></a></p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vs</strong> – the <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> to construct <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> from </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState9DataStateERKN3dds3sub6status13InstanceStateE">
+<span id="_CPPv3N3dds3sub6status9DataState9DataStateERKN3dds3sub6status13InstanceStateE"></span><span id="_CPPv2N3dds3sub6status9DataState9DataStateERKN3dds3sub6status13InstanceStateE"></span><span id="dds::sub::status::DataState::DataState__dds::sub::status::InstanceStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1abff87065b8089abbbf46ec18925c2c1b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataState</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status13InstanceStateE" title="dds::sub::status::InstanceState"><span class="n"><span class="pre">InstanceState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Construct a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState_1a54d1b565329d7303a8307f872f51dff9"><span class="std std-ref">SampleState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState_1affdebb400acd0f6c0997e0278ab912b8"><span class="std std-ref">ViewState::any</span></a></p></li>
+<li><p>Given <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> is</p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> to construct <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> from </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState9DataStateERKN3dds3sub6status11SampleStateERKN3dds3sub6status9ViewStateERKN3dds3sub6status13InstanceStateE">
+<span id="_CPPv3N3dds3sub6status9DataState9DataStateERKN3dds3sub6status11SampleStateERKN3dds3sub6status9ViewStateERKN3dds3sub6status13InstanceStateE"></span><span id="_CPPv2N3dds3sub6status9DataState9DataStateERKN3dds3sub6status11SampleStateERKN3dds3sub6status9ViewStateERKN3dds3sub6status13InstanceStateE"></span><span id="dds::sub::status::DataState::DataState__dds::sub::status::SampleStateCR.dds::sub::status::ViewStateCR.dds::sub::status::InstanceStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a06d9301bda5e3ec3adc8885c9b65f10a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataState</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status11SampleStateE" title="dds::sub::status::SampleState"><span class="n"><span class="pre">SampleState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ss</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9ViewStateE" title="dds::sub::status::ViewState"><span class="n"><span class="pre">ViewState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status13InstanceStateE" title="dds::sub::status::InstanceState"><span class="n"><span class="pre">InstanceState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Construct a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p>Given <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> ss</p></li>
+<li><p>Given <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> vs</p></li>
+<li><p>Given <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> is</p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ss</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> </p></li>
+<li><p><strong>vs</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> </p></li>
+<li><p><strong>is</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataStatelsERKN3dds3sub6status11SampleStateE">
+<span id="_CPPv3N3dds3sub6status9DataStatelsERKN3dds3sub6status11SampleStateE"></span><span id="_CPPv2N3dds3sub6status9DataStatelsERKN3dds3sub6status11SampleStateE"></span><span id="dds::sub::status::DataState::lshift-operator__dds::sub::status::SampleStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a1800937c40b226c75eb508c9edae906b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;&lt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status11SampleStateE" title="dds::sub::status::SampleState"><span class="n"><span class="pre">SampleState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ss</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ss</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataStatelsERKN3dds3sub6status13InstanceStateE">
+<span id="_CPPv3N3dds3sub6status9DataStatelsERKN3dds3sub6status13InstanceStateE"></span><span id="_CPPv2N3dds3sub6status9DataStatelsERKN3dds3sub6status13InstanceStateE"></span><span id="dds::sub::status::DataState::lshift-operator__dds::sub::status::InstanceStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a97de0333f86c9be3cf2b5ef1f7c1de67"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;&lt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status13InstanceStateE" title="dds::sub::status::InstanceState"><span class="n"><span class="pre">InstanceState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataStatelsERKN3dds3sub6status9ViewStateE">
+<span id="_CPPv3N3dds3sub6status9DataStatelsERKN3dds3sub6status9ViewStateE"></span><span id="_CPPv2N3dds3sub6status9DataStatelsERKN3dds3sub6status9ViewStateE"></span><span id="dds::sub::status::DataState::lshift-operator__dds::sub::status::ViewStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a7ddef9f8d01057c6656ec23e9319e8a5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;&lt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9ViewStateE" title="dds::sub::status::ViewState"><span class="n"><span class="pre">ViewState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vs</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vs</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataStatersERN3dds3sub6status11SampleStateE">
+<span id="_CPPv3NK3dds3sub6status9DataStatersERN3dds3sub6status11SampleStateE"></span><span id="_CPPv2NK3dds3sub6status9DataStatersERN3dds3sub6status11SampleStateE"></span><span id="dds::sub::status::DataState::rshift-operator__dds::sub::status::SampleStateRC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a2a251e8511c7bf4159057afb13a33230"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;&gt;</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status11SampleStateE" title="dds::sub::status::SampleState"><span class="n"><span class="pre">SampleState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ss</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ss</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataStatersERN3dds3sub6status13InstanceStateE">
+<span id="_CPPv3NK3dds3sub6status9DataStatersERN3dds3sub6status13InstanceStateE"></span><span id="_CPPv2NK3dds3sub6status9DataStatersERN3dds3sub6status13InstanceStateE"></span><span id="dds::sub::status::DataState::rshift-operator__dds::sub::status::InstanceStateRC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1ac165583ddafe39fc3be310f8b2543eef"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;&gt;</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status13InstanceStateE" title="dds::sub::status::InstanceState"><span class="n"><span class="pre">InstanceState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataStatersERN3dds3sub6status9ViewStateE">
+<span id="_CPPv3NK3dds3sub6status9DataStatersERN3dds3sub6status9ViewStateE"></span><span id="_CPPv2NK3dds3sub6status9DataStatersERN3dds3sub6status9ViewStateE"></span><span id="dds::sub::status::DataState::rshift-operator__dds::sub::status::ViewStateRC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a3b5a51c10eda84198046c096ac1b0306"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;&gt;</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9ViewStateE" title="dds::sub::status::ViewState"><span class="n"><span class="pre">ViewState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vs</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataStateeqERK9DataState">
+<span id="_CPPv3NK3dds3sub6status9DataStateeqERK9DataState"></span><span id="_CPPv2NK3dds3sub6status9DataStateeqERK9DataState"></span><span id="dds::sub::status::DataState::eq-operator__DataStateCRC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a2343d0d4cf5f224e531e4f5a1b8f8f97"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">o</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Check if this <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> is equal with another</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>true if equal </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataStateneERK9DataState">
+<span id="_CPPv3NK3dds3sub6status9DataStateneERK9DataState"></span><span id="_CPPv2NK3dds3sub6status9DataStateneERK9DataState"></span><span id="dds::sub::status::DataState::neq-operator__DataStateCRC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a6595ee385436491567e981395627e5c5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">!=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">o</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Check if this <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> is not equal with another</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>true if not equal </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataState12sample_stateEv">
+<span id="_CPPv3NK3dds3sub6status9DataState12sample_stateEv"></span><span id="_CPPv2NK3dds3sub6status9DataState12sample_stateEv"></span><span id="dds::sub::status::DataState::sample_stateC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1ad80511d20bd25ca8804021d8791f692f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status11SampleStateE" title="dds::sub::status::SampleState"><span class="n"><span class="pre">SampleState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">sample_state</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState12sample_stateERKN3dds3sub6status11SampleStateE">
+<span id="_CPPv3N3dds3sub6status9DataState12sample_stateERKN3dds3sub6status11SampleStateE"></span><span id="_CPPv2N3dds3sub6status9DataState12sample_stateERKN3dds3sub6status11SampleStateE"></span><span id="dds::sub::status::DataState::sample_state__dds::sub::status::SampleStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1affc83f55e65dbf18fd19b9cca557e434"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sample_state</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status11SampleStateE" title="dds::sub::status::SampleState"><span class="n"><span class="pre">SampleState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ss</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ss</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState"><span class="std std-ref">SampleState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataState14instance_stateEv">
+<span id="_CPPv3NK3dds3sub6status9DataState14instance_stateEv"></span><span id="_CPPv2NK3dds3sub6status9DataState14instance_stateEv"></span><span id="dds::sub::status::DataState::instance_stateC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a2aabedf2e7986995dfef7a2de26ee713"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status13InstanceStateE" title="dds::sub::status::InstanceState"><span class="n"><span class="pre">InstanceState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">instance_state</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState14instance_stateERKN3dds3sub6status13InstanceStateE">
+<span id="_CPPv3N3dds3sub6status9DataState14instance_stateERKN3dds3sub6status13InstanceStateE"></span><span id="_CPPv2N3dds3sub6status9DataState14instance_stateERKN3dds3sub6status13InstanceStateE"></span><span id="dds::sub::status::DataState::instance_state__dds::sub::status::InstanceStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a247b2831dd29eb106edcb31104746e03"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">instance_state</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status13InstanceStateE" title="dds::sub::status::InstanceState"><span class="n"><span class="pre">InstanceState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState"><span class="std std-ref">InstanceState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub6status9DataState10view_stateEv">
+<span id="_CPPv3NK3dds3sub6status9DataState10view_stateEv"></span><span id="_CPPv2NK3dds3sub6status9DataState10view_stateEv"></span><span id="dds::sub::status::DataState::view_stateC"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a89f3ca8b30e106650b7fe0395f223480"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9ViewStateE" title="dds::sub::status::ViewState"><span class="n"><span class="pre">ViewState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">view_state</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState10view_stateERKN3dds3sub6status9ViewStateE">
+<span id="_CPPv3N3dds3sub6status9DataState10view_stateERKN3dds3sub6status9ViewStateE"></span><span id="_CPPv2N3dds3sub6status9DataState10view_stateERKN3dds3sub6status9ViewStateE"></span><span id="dds::sub::status::DataState::view_state__dds::sub::status::ViewStateCR"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a53b959438668853729f6471b0c9df518"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">view_state</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6statusE" title="dds::sub::status"><span class="n"><span class="pre">status</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9ViewStateE" title="dds::sub::status::ViewState"><span class="n"><span class="pre">ViewState</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vs</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vs</strong> – <a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState"><span class="std std-ref">ViewState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState3anyEv">
+<span id="_CPPv3N3dds3sub6status9DataState3anyEv"></span><span id="_CPPv2N3dds3sub6status9DataState3anyEv"></span><span id="dds::sub::status::DataState::any"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a02dd70ef45d53be6ccf28429a8480af4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">any</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Return a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState_1a54d1b565329d7303a8307f872f51dff9"><span class="std std-ref">SampleState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState_1affdebb400acd0f6c0997e0278ab912b8"><span class="std std-ref">ViewState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState_1ab9736345dd32695b377e8eb58ada7b06"><span class="std std-ref">InstanceState::any</span></a></p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the any <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState8new_dataEv">
+<span id="_CPPv3N3dds3sub6status9DataState8new_dataEv"></span><span id="_CPPv2N3dds3sub6status9DataState8new_dataEv"></span><span id="dds::sub::status::DataState::new_data"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1ab7de639659d8c924c237211c6bb36fd3"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">new_data</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Return a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState_1a6e49d2e4fafd3cf4b17937aa48abfb0b"><span class="std std-ref">SampleState::not_read</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState_1affdebb400acd0f6c0997e0278ab912b8"><span class="std std-ref">ViewState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState_1a81a3a00bc6f3262ed5da3fdeffe20d88"><span class="std std-ref">InstanceState::alive</span></a></p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the new_data <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState8any_dataEv">
+<span id="_CPPv3N3dds3sub6status9DataState8any_dataEv"></span><span id="_CPPv2N3dds3sub6status9DataState8any_dataEv"></span><span id="dds::sub::status::DataState::any_data"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1a82cdbd6d371c7def50b63d1cbf3fbaf2"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">any_data</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Return a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState_1a54d1b565329d7303a8307f872f51dff9"><span class="std std-ref">SampleState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState_1affdebb400acd0f6c0997e0278ab912b8"><span class="std std-ref">ViewState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState_1a81a3a00bc6f3262ed5da3fdeffe20d88"><span class="std std-ref">InstanceState::alive</span></a></p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the any_data <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub6status9DataState12new_instanceEv">
+<span id="_CPPv3N3dds3sub6status9DataState12new_instanceEv"></span><span id="_CPPv2N3dds3sub6status9DataState12new_instanceEv"></span><span id="dds::sub::status::DataState::new_instance"></span><span class="target" id="classdds_1_1sub_1_1status_1_1DataState_1ad14326c8d3ac460590b8af2dcb1479c7"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub6status9DataStateE" title="dds::sub::status::DataState"><span class="n"><span class="pre">DataState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">new_instance</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> instance.</p>
+<p>Return a <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> with:<ul class="simple">
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1SampleState.html#classdds_1_1sub_1_1status_1_1SampleState_1a54d1b565329d7303a8307f872f51dff9"><span class="std std-ref">SampleState::any</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1ViewState.html#classdds_1_1sub_1_1status_1_1ViewState_1a673f45f3f83d1cf753052659409e29b5"><span class="std std-ref">ViewState::new_view</span></a></p></li>
+<li><p><a class="reference internal" href="classdds_1_1sub_1_1status_1_1InstanceState.html#classdds_1_1sub_1_1status_1_1InstanceState_1a81a3a00bc6f3262ed5da3fdeffe20d88"><span class="std std-ref">InstanceState::alive</span></a></p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the new_instance <a class="reference internal" href="#classdds_1_1sub_1_1status_1_1DataState"><span class="std std-ref">DataState</span></a> </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

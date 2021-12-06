@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1DataReaderListener:
+
+Template Class DataReaderListener
+=================================
+
+- Defined in :ref:`file_dds_sub_DataReader.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::DataReaderListener
+   :members:
+   :protected-members:
+   :undoc-members:

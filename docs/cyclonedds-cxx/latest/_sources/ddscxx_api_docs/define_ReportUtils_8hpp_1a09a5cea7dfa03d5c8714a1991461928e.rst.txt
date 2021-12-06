@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a09a5cea7dfa03d5c8714a1991461928e:
+
+Define ISOCPP_IMMUTABLE_POLICY_ERROR
+====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_IMMUTABLE_POLICY_ERROR

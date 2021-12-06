@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1aae3db83f149c77e66101e7618ed8a9a6:
+
+Function dds::core::xtypes::annotation::Mutable
+===============================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::Mutable()

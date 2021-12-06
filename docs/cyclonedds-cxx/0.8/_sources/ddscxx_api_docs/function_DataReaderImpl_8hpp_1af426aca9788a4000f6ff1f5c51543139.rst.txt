@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderImpl_8hpp_1af426aca9788a4000f6ff1f5c51543139:
+
+Template Function dds::sub::take
+================================
+
+- Defined in :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::take(SELECTOR&)

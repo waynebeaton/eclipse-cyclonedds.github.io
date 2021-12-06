@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2macros_8hpp_1acc1a8cee355b89214063c77eb0855152:
+
+Define OMG_DDS_STATIC_ASSERT_DETAIL
+===================================
+
+- Defined in :ref:`file_dds_core_detail_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_STATIC_ASSERT_DETAIL

@@ -1,0 +1,54 @@
+
+.. _file_dds_core_detail_array.hpp:
+
+File array.hpp
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_detail>` (``dds/core/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/detail/array.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_detail_array.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``array`` (:ref:`file_dds_core_array.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_array.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__detail`
+

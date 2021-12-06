@@ -1,0 +1,38 @@
+.. _dir_dds_topic_detail:
+
+
+Directory detail
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic>` (``dds/topic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/topic/detail``
+
+
+Files
+-----
+
+- :ref:`file_dds_topic_detail_AnyTopic.hpp`
+- :ref:`file_dds_topic_detail_AnyTopicImpl.hpp`
+- :ref:`file_dds_topic_detail_BuiltinTopic.hpp`
+- :ref:`file_dds_topic_detail_BuiltinTopicImpl.hpp`
+- :ref:`file_dds_topic_detail_BuiltinTopicKey.hpp`
+- :ref:`file_dds_topic_detail_BuiltinTopicKeyImpl.hpp`
+- :ref:`file_dds_topic_detail_ContentFilteredTopic.hpp`
+- :ref:`file_dds_topic_detail_ContentFilteredTopicImpl.hpp`
+- :ref:`file_dds_topic_detail_ddstopic.hpp`
+- :ref:`file_dds_topic_detail_discovery.hpp`
+- :ref:`file_dds_topic_detail_Filter.hpp`
+- :ref:`file_dds_topic_detail_FilterImpl.hpp`
+- :ref:`file_dds_topic_detail_find.hpp`
+- :ref:`file_dds_topic_detail_MultiTopic.hpp`
+- :ref:`file_dds_topic_detail_Topic.hpp`
+- :ref:`file_dds_topic_detail_TopicDescription.hpp`
+- :ref:`file_dds_topic_detail_TopicDescriptionImpl.hpp`
+- :ref:`file_dds_topic_detail_TopicImpl.hpp`
+- :ref:`file_dds_topic_detail_TopicInstanceImpl.hpp`
+
+

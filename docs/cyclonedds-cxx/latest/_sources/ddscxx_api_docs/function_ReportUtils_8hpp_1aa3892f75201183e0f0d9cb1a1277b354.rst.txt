@@ -1,0 +1,13 @@
+.. _exhale_function_ReportUtils_8hpp_1aa3892f75201183e0f0d9cb1a1277b354:
+
+Function org::eclipse::cyclonedds::core::utils::throw_exception
+===============================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::utils::throw_exception(int32_t, const char *, int32_t, const char *, const char *, ...)

@@ -1,0 +1,13 @@
+.. _exhale_typedef_Annotations_8hpp_1a5b99d6fdd05d10a01b0aa588f34cde57:
+
+Typedef dds::core::xtypes::BitBoundAnnotation
+=============================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::xtypes::BitBoundAnnotation

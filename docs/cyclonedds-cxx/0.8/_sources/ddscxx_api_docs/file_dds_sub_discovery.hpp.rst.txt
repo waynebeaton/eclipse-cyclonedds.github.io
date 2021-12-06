@@ -1,0 +1,65 @@
+
+.. _file_dds_sub_discovery.hpp:
+
+File discovery.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/discovery.hpp``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_discovery.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/domain/DomainParticipant.hpp`` (:ref:`file_dds_domain_DomainParticipant.hpp`)
+
+- ``dds/sub/DataReader.hpp`` (:ref:`file_dds_sub_DataReader.hpp`)
+
+- ``dds/sub/detail/discovery.hpp`` (:ref:`file_dds_sub_detail_discovery.hpp`)
+
+- ``dds/topic/BuiltinTopic.hpp`` (:ref:`file_dds_topic_BuiltinTopic.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_dds_2sub_2discovery_8hpp_1a23a3ef8f425ebdeb5a52541fa7e16f91`
+

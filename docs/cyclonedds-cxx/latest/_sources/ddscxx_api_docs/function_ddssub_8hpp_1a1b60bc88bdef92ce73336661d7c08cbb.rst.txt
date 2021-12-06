@@ -1,0 +1,13 @@
+.. _exhale_function_ddssub_8hpp_1a1b60bc88bdef92ce73336661d7c08cbb:
+
+Function operator<<(std::ostream&, const dds::sub::SampleInfo&)
+===============================================================
+
+- Defined in :ref:`file_dds_sub_ddssub.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: operator<<(std::ostream&, const dds::sub::SampleInfo&)

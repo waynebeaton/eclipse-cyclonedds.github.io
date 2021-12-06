@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderImpl_8hpp_1a53986725bd72eb728eee991ab64ac841:
+
+Template Function dds::sub::read
+================================
+
+- Defined in :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::read(SELECTOR&)

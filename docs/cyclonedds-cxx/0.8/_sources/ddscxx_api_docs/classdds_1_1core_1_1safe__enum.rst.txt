@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1safe__enum:
+
+Template Class safe_enum
+========================
+
+- Defined in :ref:`file_dds_core_SafeEnumeration.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public def``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::safe_enum
+   :members:
+   :protected-members:
+   :undoc-members:

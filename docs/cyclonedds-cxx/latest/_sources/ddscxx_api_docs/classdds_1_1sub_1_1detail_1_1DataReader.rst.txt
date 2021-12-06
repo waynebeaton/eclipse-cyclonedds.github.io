@@ -1,0 +1,36 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1DataReader:
+
+Template Class DataReader
+=========================
+
+- Defined in :ref:`file_dds_sub_detail_DataReader.hpp`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader_1_1ManipulatorSelector`
+- :ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader_1_1Selector`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public org::eclipse::cyclonedds::sub::AnyDataReaderDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1AnyDataReaderDelegate`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::DataReader
+   :members:
+   :protected-members:
+   :undoc-members:

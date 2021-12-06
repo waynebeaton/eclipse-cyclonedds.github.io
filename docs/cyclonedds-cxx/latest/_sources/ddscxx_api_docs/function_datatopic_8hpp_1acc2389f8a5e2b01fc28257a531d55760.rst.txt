@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1acc2389f8a5e2b01fc28257a531d55760:
+
+Template Function serdata_get_keyhash
+=====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_get_keyhash(const ddsi_serdata *, struct ddsi_keyhash *, bool)

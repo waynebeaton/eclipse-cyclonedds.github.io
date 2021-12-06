@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1ab4f32e71b1e253d26ad80ca808e7866e:
+
+Define OS_PRETTY_FUNCTION
+=========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OS_PRETTY_FUNCTION

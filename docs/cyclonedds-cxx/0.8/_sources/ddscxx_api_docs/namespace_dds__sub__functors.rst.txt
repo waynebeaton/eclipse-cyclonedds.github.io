@@ -1,0 +1,20 @@
+
+.. _namespace_dds__sub__functors:
+
+Namespace dds::sub::functors
+============================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds__sub__functors__detail`

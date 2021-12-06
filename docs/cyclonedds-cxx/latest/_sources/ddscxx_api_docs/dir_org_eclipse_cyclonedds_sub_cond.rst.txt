@@ -1,0 +1,21 @@
+.. _dir_org_eclipse_cyclonedds_sub_cond:
+
+
+Directory cond
+==============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_sub>` (``org/eclipse/cyclonedds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``org/eclipse/cyclonedds/sub/cond``
+
+
+Files
+-----
+
+- :ref:`file_org_eclipse_cyclonedds_sub_cond_QueryConditionDelegate.hpp`
+- :ref:`file_org_eclipse_cyclonedds_sub_cond_ReadConditionDelegate.hpp`
+
+

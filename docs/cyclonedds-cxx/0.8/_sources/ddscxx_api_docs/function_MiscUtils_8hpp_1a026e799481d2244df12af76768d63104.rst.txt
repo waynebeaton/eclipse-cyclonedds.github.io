@@ -1,0 +1,13 @@
+.. _exhale_function_MiscUtils_8hpp_1a026e799481d2244df12af76768d63104:
+
+Function org::eclipse::cyclonedds::core::convertDuration(const dds::core::Duration&)
+====================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::convertDuration(const dds::core::Duration&)

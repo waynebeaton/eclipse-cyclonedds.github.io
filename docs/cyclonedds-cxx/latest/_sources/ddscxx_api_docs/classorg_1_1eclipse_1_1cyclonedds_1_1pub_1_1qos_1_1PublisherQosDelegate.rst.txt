@@ -1,0 +1,16 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1qos_1_1PublisherQosDelegate:
+
+Class PublisherQosDelegate
+==========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_pub_qos_PublisherQosDelegate.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::pub::qos::PublisherQosDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

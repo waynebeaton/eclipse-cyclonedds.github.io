@@ -1,0 +1,65 @@
+
+.. _file_dds_core_ddscore.hpp:
+
+File ddscore.hpp
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/ddscore.hpp``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_ddscore.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Duration.hpp`` (:ref:`file_dds_core_Duration.hpp`)
+
+- ``dds/core/Entity.hpp`` (:ref:`file_dds_core_Entity.hpp`)
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/core/Time.hpp`` (:ref:`file_dds_core_Time.hpp`)
+
+- ``dds/core/array.hpp`` (:ref:`file_dds_core_array.hpp`)
+
+- ``dds/core/cond/GuardCondition.hpp`` (:ref:`file_dds_core_cond_GuardCondition.hpp`)
+
+- ``dds/core/cond/StatusCondition.hpp`` (:ref:`file_dds_core_cond_StatusCondition.hpp`)
+
+- ``dds/core/cond/WaitSet.hpp`` (:ref:`file_dds_core_cond_WaitSet.hpp`)
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``dds/core/detail/ddscore.hpp`` (:ref:`file_dds_core_detail_ddscore.hpp`)
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_dds.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+

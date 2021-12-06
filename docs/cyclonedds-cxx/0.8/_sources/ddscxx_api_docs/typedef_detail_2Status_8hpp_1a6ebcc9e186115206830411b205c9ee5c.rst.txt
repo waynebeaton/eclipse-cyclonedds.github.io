@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Status_8hpp_1a6ebcc9e186115206830411b205c9ee5c:
+
+Typedef dds::core::status::detail::PublicationMatchedStatus
+===========================================================
+
+- Defined in :ref:`file_dds_core_status_detail_Status.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::status::detail::PublicationMatchedStatus

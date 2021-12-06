@@ -1,0 +1,52 @@
+
+.. _file_dds_pub_detail_AnyDataWriterImpl.hpp:
+
+File AnyDataWriterImpl.hpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub_detail>` (``dds/pub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/pub/detail/AnyDataWriterImpl.hpp``)
+-----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_pub_detail_AnyDataWriterImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/pub/AnyDataWriter.hpp`` (:ref:`file_dds_pub_AnyDataWriter.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_pub_detail_AnyDataWriter.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__pub`
+

@@ -1,0 +1,59 @@
+
+.. _file_dds_core_policy_detail_QosPolicyCount.hpp:
+
+File QosPolicyCount.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_policy_detail>` (``dds/core/policy/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/policy/detail/QosPolicyCount.hpp``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_policy_detail_QosPolicyCount.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/policy/detail/QosPolicyCountImpl.hpp`` (:ref:`file_dds_core_policy_detail_QosPolicyCountImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/core/policy/QosPolicyCountDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_policy_QosPolicyCountDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__policy`
+
+- :ref:`namespace_dds__core__policy__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2QosPolicyCount_8hpp_1af95081184349400e6d07a09a1c9d61d7`
+

@@ -1,0 +1,124 @@
+
+.. _program_listing_file_dds_core_xtypes_StructType.hpp:
+
+Program Listing for File StructType.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_xtypes_StructType.hpp>` (``dds/core/xtypes/StructType.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /* Copyright 2010, Object Management Group, Inc.
+   * Copyright 2010, PrismTech, Corp.
+   * Copyright 2010, Real-Time Innovations, Inc.
+   * All rights reserved.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   *     http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   */
+   #ifndef OMG_DDS_CORE_XTYPES_T_STRUCT_TYPE_HPP_
+   #define OMG_DDS_CORE_XTYPES_T_STRUCT_TYPE_HPP_
+   
+   #include <dds/core/xtypes/DynamicType.hpp>
+   #include <dds/core/xtypes/MemberType.hpp>
+   #include <dds/core/xtypes/PrimitiveTypes.hpp>
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace xtypes
+   {
+   
+   class StructType;
+   
+   
+   class StructForwardDeclaration;
+   
+   template <typename T>
+   bool isFinal(const StructType<T>& s);
+   
+   template <typename T>
+   bool isExtensible(const StructType<T>& s);
+   
+   template <typename T>
+   bool isMutable(const StructType<T>& s);
+   
+   template <typename T>
+   bool isNested(const StructType<T>& s);
+   }
+   }
+   }
+   
+   class dds::core::xtypes::StructForwardDeclaration : public dds::core::xtypes::DynamicType
+   {
+   public:
+       StructForwardDeclaration(const std::string& name);
+   };
+   
+   class dds::core::xtypes::StructType : public dds::core::xtypes::DynamicType
+   {
+   public:
+   
+       StructType(const std::string& name);
+   
+       StructType(
+           const std::string& name,
+           const StructType& parent,
+           const std::vector<MemberType>& members);
+   
+       template <typename MemberIter>
+       StructType(
+           const std::string& name,
+           const StructType& parent,
+           const MemberIter& begin,
+           const MemberIter& end);
+   
+       StructType(
+           const std::string& name,
+           const StructType& parent,
+           const std::vector<MemberType>& members,
+           const Annotation& annotation);
+   
+       StructType(
+           const std::string& name,
+           const StructType& parent,
+           const std::vector<MemberType>& members,
+           const std::vector<Annotation>& annotations);
+   
+       template <typename AnnotationIter, typename MemberIter>
+       StructType(
+           const std::string& name,
+           const StructType& parent,
+           const MemberIter& begin,
+           const MemberIter& end,
+           const AnnotationIter& begin,
+           const AnnotationIter& end);
+   public:
+       StructType parent() const;
+       const std::vector<MemberType>& members() const;
+       const MemberType& member(uint32_t id) const;
+       const MemberType& member(const std::string& name) const;
+   
+       const std::vector<Annotation>& annotations() const;
+   
+       StructType add_member(const MemberType& member) const ;
+       StructType remove_member(const MemberType& member) const;
+   
+       StructType add_annotation(const Annotation& annotation) const;
+       StructType remove_annotation(const Annotation& annotation) const;
+   };
+   
+   
+   #endif /* OMG_DDS_CORE_XTYPES_T_STRUCT_TYPE_HPP_ */

@@ -1,0 +1,63 @@
+
+.. _file_dds_core_policy_QosPolicyCount.hpp:
+
+File QosPolicyCount.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_policy>` (``dds/core/policy``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/policy/QosPolicyCount.hpp``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_policy_QosPolicyCount.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Value.hpp`` (:ref:`file_dds_core_Value.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_policy_detail_QosPolicyCountImpl.hpp`
+
+- :ref:`file_dds_core_status_Status.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__policy`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1policy_1_1QosPolicyCount`
+

@@ -1,0 +1,118 @@
+
+.. _namespace_dds__sub:
+
+Namespace dds::sub
+==================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds__sub__cond`
+
+- :ref:`namespace_dds__sub__detail`
+
+- :ref:`namespace_dds__sub__functors`
+
+- :ref:`namespace_dds__sub__qos`
+
+- :ref:`namespace_dds__sub__status`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1AnyDataReader`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1AnyDataReaderListener`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1CoherentAccess`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader_1_1ManipulatorSelector`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader_1_1Selector`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReaderListener`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1GenerationCount`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1LoanedSamples`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1NoOpAnyDataReaderListener`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1NoOpDataReaderListener`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1NoOpSubscriberListener`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1Query`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1Rank`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1Sample`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1SampleInfo`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1SampleRef`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1SharedSamples`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1Subscriber`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1SubscriberListener`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_dds_2sub_2find_8hpp_1a931b33491a5e3285d82bf5d7e8e9c20b`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1a16e03ba42cb0185fa54f9ad8161eb835`
+
+- :ref:`exhale_function_dds_2sub_2detail_2find_8hpp_1ae417a646f34109cbb000fc1c22611e28`
+
+- :ref:`exhale_function_dds_2sub_2detail_2find_8hpp_1a697179af03fb6e0a2a24c1985b0ab9f8`
+
+- :ref:`exhale_function_dds_2sub_2detail_2find_8hpp_1a6426623ca61494f4f7204d4d8044d939`
+
+- :ref:`exhale_function_dds_2sub_2detail_2find_8hpp_1a5f8daa4a2dcc0b1dea9f4dfe5b556603`
+
+- :ref:`exhale_function_dds_2sub_2detail_2find_8hpp_1a01ee49d195544beb6e137e663581e0b0`
+
+- :ref:`exhale_function_dds_2sub_2detail_2find_8hpp_1ae124a5b51be0dc5a466d3b59864dbabe`
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1a97fc517c3537d7e9c028d3c742657fcb`
+
+- :ref:`exhale_function_dds_2sub_2discovery_8hpp_1a23a3ef8f425ebdeb5a52541fa7e16f91`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1acb4c61c72e0d47aea594a30ae4d11293`
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1a649ddd1d7be291d7aa022b1c3d000af1`
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1acdc95da29c9640bea999c22ba74fe9ba`
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1a319e8bde87b965b606d561856ac7a325`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1ac16381f51fb0535a1e29eef285249a2d`
+
+- :ref:`exhale_function_LoanedSamples_8hpp_1af0d95acb416765982b8abf4234060fc8`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1a9b67094740bb444f70ddc332a76b1635`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1a53986725bd72eb728eee991ab64ac841`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1adda957dedf2a7b74c01048e79d1491f8`
+
+- :ref:`exhale_function_DataReaderImpl_8hpp_1af426aca9788a4000f6ff1f5c51543139`

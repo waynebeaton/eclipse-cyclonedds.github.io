@@ -1,0 +1,13 @@
+.. _exhale_function_MiscUtils_8hpp_1a414c394b952f43c14d10ee583e5b50bd:
+
+Function org::eclipse::cyclonedds::core::convertStringSeq(const dds::core::StringSeq&, char \*\*&)
+==================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::convertStringSeq(const dds::core::StringSeq&, char **&)

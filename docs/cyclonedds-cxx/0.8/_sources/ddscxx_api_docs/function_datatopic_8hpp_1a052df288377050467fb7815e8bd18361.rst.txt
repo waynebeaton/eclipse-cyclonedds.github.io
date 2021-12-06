@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a052df288377050467fb7815e8bd18361:
+
+Template Function serdata_from_ser
+==================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_from_ser(const ddsi_sertype *, enum ddsi_serdata_kind, const struct nn_rdata *, size_t)

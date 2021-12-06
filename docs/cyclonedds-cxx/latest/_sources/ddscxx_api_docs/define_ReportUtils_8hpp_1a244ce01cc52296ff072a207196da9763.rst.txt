@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a244ce01cc52296ff072a207196da9763:
+
+Define ISOCPP_UNSUPPORTED_ERROR
+===============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_UNSUPPORTED_ERROR

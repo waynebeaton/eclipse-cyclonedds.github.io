@@ -1,0 +1,49 @@
+.. _dir_dds_core:
+
+
+Directory core
+==============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds>` (``dds``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/core``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_core_cond`
+- :ref:`dir_dds_core_detail`
+- :ref:`dir_dds_core_policy`
+- :ref:`dir_dds_core_status`
+- :ref:`dir_dds_core_xtypes`
+
+
+Files
+-----
+
+- :ref:`file_dds_core_array.hpp`
+- :ref:`file_dds_core_BuiltinTopicTypes.hpp`
+- :ref:`file_dds_core_conformance.hpp`
+- :ref:`file_dds_core_ddscore.hpp`
+- :ref:`file_dds_core_Duration.hpp`
+- :ref:`file_dds_core_Entity.hpp`
+- :ref:`file_dds_core_EntityQos.hpp`
+- :ref:`file_dds_core_Exception.hpp`
+- :ref:`file_dds_core_InstanceHandle.hpp`
+- :ref:`file_dds_core_LengthUnlimited.hpp`
+- :ref:`file_dds_core_macros.hpp`
+- :ref:`file_dds_core_Optional.hpp`
+- :ref:`file_dds_core_QosProvider.hpp`
+- :ref:`file_dds_core_ref_traits.hpp`
+- :ref:`file_dds_core_Reference.hpp`
+- :ref:`file_dds_core_refmacros.hpp`
+- :ref:`file_dds_core_SafeEnumeration.hpp`
+- :ref:`file_dds_core_Time.hpp`
+- :ref:`file_dds_core_types.hpp`
+- :ref:`file_dds_core_Value.hpp`
+- :ref:`file_dds_core_WeakReference.hpp`
+
+

@@ -1,0 +1,21 @@
+.. _dir_dds_sub_qos:
+
+
+Directory qos
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/sub/qos``
+
+
+Files
+-----
+
+- :ref:`file_dds_sub_qos_DataReaderQos.hpp`
+- :ref:`file_dds_sub_qos_SubscriberQos.hpp`
+
+

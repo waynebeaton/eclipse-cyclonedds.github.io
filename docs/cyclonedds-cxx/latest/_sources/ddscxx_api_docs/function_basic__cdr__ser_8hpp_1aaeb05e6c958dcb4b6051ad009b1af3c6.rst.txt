@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1aaeb05e6c958dcb4b6051ad009b1af3c6:
+
+Template Function org::eclipse::cyclonedds::core::cdr::max
+==========================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::max(basic_cdr_stream&, const T&)

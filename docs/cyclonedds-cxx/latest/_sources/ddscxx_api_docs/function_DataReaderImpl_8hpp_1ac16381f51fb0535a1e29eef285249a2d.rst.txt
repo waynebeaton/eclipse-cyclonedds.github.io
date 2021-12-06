@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderImpl_8hpp_1ac16381f51fb0535a1e29eef285249a2d:
+
+Function dds::sub::max_samples
+==============================
+
+- Defined in :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::max_samples(uint32_t)

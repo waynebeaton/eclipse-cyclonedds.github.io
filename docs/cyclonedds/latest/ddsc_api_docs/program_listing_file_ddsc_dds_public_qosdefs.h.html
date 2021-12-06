@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File dds_public_qosdefs.h &mdash; CycloneDDS 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File dds_public_qosdefs.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/program_listing_file_ddsc_dds_public_qosdefs.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-dds-public-qosdefs-h">
+<span id="program-listing-file-ddsc-dds-public-qosdefs-h"></span><h1>Program Listing for File dds_public_qosdefs.h<a class="headerlink" href="#program-listing-for-file-dds-public-qosdefs-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_ddsc_dds_public_qosdefs.h.html#file-ddsc-dds-public-qosdefs-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_public_qosdefs.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2006 to 2018 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="cp">#ifndef DDS_QOSDEFS_H</span>
+<span class="cp">#define DDS_QOSDEFS_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdint.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#if defined (__cplusplus)</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="cp">#define DDS_LENGTH_UNLIMITED -1</span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_qos_policy_id</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_INVALID_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_USERDATA_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_DURABILITY_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_PRESENTATION_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_DEADLINE_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_LATENCYBUDGET_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OWNERSHIP_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_OWNERSHIPSTRENGTH_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_LIVELINESS_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_TIMEBASEDFILTER_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_PARTITION_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_RELIABILITY_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_DESTINATIONORDER_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_HISTORY_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_RESOURCELIMITS_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_ENTITYFACTORY_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_WRITERDATALIFECYCLE_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_READERDATALIFECYCLE_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_TOPICDATA_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_GROUPDATA_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_TRANSPORTPRIORITY_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_LIFESPAN_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_DURABILITYSERVICE_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_PROPERTY_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_TYPE_CONSISTENCY_ENFORCEMENT_QOS_POLICY_ID</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">DDS_DATA_REPRESENTATION_QOS_POLICY_ID</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="n">dds_qos_policy_id_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/* QoS structure is opaque */</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">struct</span> <span class="nc">dds_qos</span><span class="w"> </span><span class="n">dds_qos_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_durability_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_DURABILITY_VOLATILE</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_DURABILITY_TRANSIENT_LOCAL</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_DURABILITY_TRANSIENT</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_DURABILITY_PERSISTENT</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_durability_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_history_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_HISTORY_KEEP_LAST</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_HISTORY_KEEP_ALL</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_history_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_ownership_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_OWNERSHIP_SHARED</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_OWNERSHIP_EXCLUSIVE</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_ownership_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_liveliness_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_LIVELINESS_AUTOMATIC</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_LIVELINESS_MANUAL_BY_PARTICIPANT</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_LIVELINESS_MANUAL_BY_TOPIC</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_liveliness_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_reliability_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_RELIABILITY_BEST_EFFORT</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_RELIABILITY_RELIABLE</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_reliability_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_destination_order_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_DESTINATIONORDER_BY_RECEPTION_TIMESTAMP</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_DESTINATIONORDER_BY_SOURCE_TIMESTAMP</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_destination_order_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_presentation_access_scope_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_PRESENTATION_INSTANCE</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_PRESENTATION_TOPIC</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_PRESENTATION_GROUP</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_presentation_access_scope_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_ignorelocal_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_IGNORELOCAL_NONE</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_IGNORELOCAL_PARTICIPANT</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_IGNORELOCAL_PROCESS</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_ignorelocal_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span> <span class="nc">dds_type_consistency_kind</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_TYPE_CONSISTENCY_DISALLOW_TYPE_COERCION</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DDS_TYPE_CONSISTENCY_ALLOW_TYPE_COERCION</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">dds_type_consistency_kind_t</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="kt">int16_t</span><span class="w"> </span><span class="n">dds_data_representation_id_t</span><span class="p">;</span><span class="w"></span>
+<span class="cp">#define DDS_DATA_REPRESENTATION_XCDR1    0</span>
+<span class="cp">#define DDS_DATA_REPRESENTATION_XML      1</span>
+<span class="cp">#define DDS_DATA_REPRESENTATION_XCDR2    2</span>
+
+<span class="cp">#if defined (__cplusplus)</span>
+<span class="p">}</span><span class="w"></span>
+<span class="cp">#endif</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

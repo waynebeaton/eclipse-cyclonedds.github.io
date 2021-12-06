@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits:
+
+Template Struct dynamic_type_traits
+===================================
+
+- Defined in :ref:`file_dds_core_xtypes_PrimitiveTypes.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds::core::xtypes::dynamic_type_traits
+   :members:
+   :protected-members:
+   :undoc-members:

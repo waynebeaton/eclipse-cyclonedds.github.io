@@ -1,0 +1,16 @@
+.. _exhale_struct_structorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1lookup__topic_3_01dds_1_1topic_1_1TopicDescriptioda88cf25a45d343b4cb6e1cfadcd977e:
+
+Template Struct lookup_topic< dds::topic::TopicDescription, org::eclipse::cyclonedds::topic::TopicDescriptionDelegate >
+=======================================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_discovery.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: org::eclipse::cyclonedds::topic::lookup_topic< dds::topic::TopicDescription, org::eclipse::cyclonedds::topic::TopicDescriptionDelegate >
+   :members:
+   :protected-members:
+   :undoc-members:

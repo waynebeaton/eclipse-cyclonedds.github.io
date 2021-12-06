@@ -1,0 +1,25 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMSubscriberBuiltinTopicData:
+
+Class CMSubscriberBuiltinTopicData
+==================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_BuiltinTopic.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Value`` (:ref:`exhale_class_classdds_1_1core_1_1Value`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::topic::CMSubscriberBuiltinTopicData
+   :members:
+   :protected-members:
+   :undoc-members:

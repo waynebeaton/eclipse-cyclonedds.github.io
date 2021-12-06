@@ -1,0 +1,13 @@
+.. _exhale_function_DynamicData_8hpp_1a0829017faf30a820184e0f840f8014f5:
+
+Template Function dds::core::xtypes::value(const DDT&, uint32_t)
+================================================================
+
+- Defined in :ref:`file_dds_core_xtypes_DynamicData.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::value(const DDT&, uint32_t)

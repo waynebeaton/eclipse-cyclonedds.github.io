@@ -1,0 +1,13 @@
+.. _exhale_define_TimeHelper_8hpp_1a58c8cfc648f3acdf8e14f257cf40ed39:
+
+Define MiS
+==========
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_TimeHelper.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MiS

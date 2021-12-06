@@ -1,0 +1,74 @@
+
+.. _program_listing_file_dds_core_cond_Condition.hpp:
+
+Program Listing for File Condition.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_cond_Condition.hpp>` (``dds/core/cond/Condition.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_DDS_CORE_COND_CONDITION_HPP_
+   #define OMG_TDDS_DDS_CORE_COND_CONDITION_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/Reference.hpp>
+   #include <dds/core/cond/detail/GuardCondition.hpp>
+   #include <dds/core/cond/detail/StatusCondition.hpp>
+   #include <dds/sub/cond/detail/ReadCondition.hpp>
+   #include <dds/sub/cond/detail/QueryCondition.hpp>
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace cond
+   {
+   
+   class Condition;
+   }
+   }
+   }
+   
+   class dds::core::cond::Condition : public virtual dds::core::Reference
+   {
+   public:
+       OMG_DDS_REF_TYPE_PROTECTED_DC(Condition, dds::core::Reference)
+       OMG_DDS_EXPLICIT_REF_BASE_DECL(Condition, dds::core::cond::detail::StatusCondition)
+       OMG_DDS_EXPLICIT_REF_BASE_DECL(Condition, dds::core::cond::detail::GuardCondition)
+       OMG_DDS_EXPLICIT_REF_BASE_DECL(Condition, dds::sub::cond::detail::ReadCondition)
+       OMG_DDS_EXPLICIT_REF_BASE_DECL(Condition, dds::sub::cond::detail::QueryCondition)
+       OMG_DDS_COMPLETE_RULE_OF_FIVE_VIRTUAL_EXPLICIT(Condition)
+   
+   public:
+       template <typename Functor>
+       void handler(Functor func);
+   
+       void reset_handler();
+   
+       void dispatch();
+   
+       bool trigger_value() const;
+   
+   };
+   
+   #endif /* OMG_TDDS_DDS_CORE_CONDITION_HPP_ */

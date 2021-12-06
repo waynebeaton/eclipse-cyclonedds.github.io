@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1status_1_1SampleRejectedState:
+
+Class SampleRejectedState
+=========================
+
+- Defined in :ref:`file_dds_core_status_State.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::bitset< OMG_DDS_STATE_BIT_COUNT >``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::status::SampleRejectedState
+   :members:
+   :protected-members:
+   :undoc-members:

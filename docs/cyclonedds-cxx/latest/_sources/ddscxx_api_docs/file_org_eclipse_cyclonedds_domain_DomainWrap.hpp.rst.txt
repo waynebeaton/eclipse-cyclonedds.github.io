@@ -1,0 +1,67 @@
+
+.. _file_org_eclipse_cyclonedds_domain_DomainWrap.hpp:
+
+File DomainWrap.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_domain>` (``org/eclipse/cyclonedds/domain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/domain/DomainWrap.hpp``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_domain_DomainWrap.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/ref_traits.hpp`` (:ref:`file_dds_core_ref_traits.hpp`)
+
+- ``dds/dds.h`` (:ref:`file_dds_dds.hpp`)
+
+- ``map``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__domain`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1domain_1_1DomainWrap`
+

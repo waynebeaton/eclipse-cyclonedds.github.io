@@ -1,0 +1,13 @@
+.. _exhale_function_MiscUtils_8hpp_1acc5978c469ccdb167cab2bfcba941ba6:
+
+Function org::eclipse::cyclonedds::core::convertStatusMask(const dds::core::status::StatusMask&)
+================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::convertStatusMask(const dds::core::status::StatusMask&)

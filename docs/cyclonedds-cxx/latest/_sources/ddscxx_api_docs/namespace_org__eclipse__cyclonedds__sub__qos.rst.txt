@@ -1,0 +1,59 @@
+
+.. _namespace_org__eclipse__cyclonedds__sub__qos:
+
+Namespace org::eclipse::cyclonedds::sub::qos
+============================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1qos_1_1DataReaderQosDelegate`
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1qos_1_1SubscriberQosDelegate`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a3c7899b467a0717b52609777a8932f3c`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ac17a5b7f5919a45d5506a64ce7f768d2`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ae3f4747128e50b5b854e576746c52879`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ae4fff2a3b8833efbd8ec01c76477a28c`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ae31d494df50b2acb5e2c86fafd67f707`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a7eba0ecd1c91efe70e15a2b857ba29aa`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a0780b7861e92f6ea440bc47da4352372`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a9957caadce8b8b45276502c681a4f041`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a74b177e2025302195691c07a9fd43c30`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a833a997bf8a6f455d1b730f00074183d`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a60447a41174122def48a2824c1dabb55`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ad1a74b08d8362a927b9f4764c6901ad7`
+
+- :ref:`exhale_function_SubscriberQosDelegate_8hpp_1a298cc12334e34371976832d090bcf348`
+
+- :ref:`exhale_function_SubscriberQosDelegate_8hpp_1a13eb3e04f183b129e3610f1f47594e82`
+
+- :ref:`exhale_function_SubscriberQosDelegate_8hpp_1aa245efc84e3dc6998e70d99d23b1df13`
+
+- :ref:`exhale_function_SubscriberQosDelegate_8hpp_1a99ec4105e0f181be0390a942685c0fb0`

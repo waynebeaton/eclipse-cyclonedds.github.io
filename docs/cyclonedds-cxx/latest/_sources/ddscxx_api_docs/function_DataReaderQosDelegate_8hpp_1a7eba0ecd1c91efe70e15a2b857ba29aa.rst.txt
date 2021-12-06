@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderQosDelegate_8hpp_1a7eba0ecd1c91efe70e15a2b857ba29aa:
+
+Function org::eclipse::cyclonedds::sub::qos::DataReaderQosDelegate::policy< dds::core::policy::Liveliness >
+===========================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_qos_DataReaderQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::sub::qos::DataReaderQosDelegate::policy< dds::core::policy::Liveliness >()

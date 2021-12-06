@@ -1,0 +1,13 @@
+.. _exhale_function_TopicQosDelegate_8hpp_1a8a84cbe479ec2de3709c7fd23b6cd361:
+
+Function org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::TransportPriority >
+===============================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_qos_TopicQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::TransportPriority >()

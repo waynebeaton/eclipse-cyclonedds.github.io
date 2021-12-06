@@ -1,0 +1,31 @@
+.. _exhale_class_classdds_1_1pub_1_1NoOpAnyDataWriterListener:
+
+Class NoOpAnyDataWriterListener
+===============================
+
+- Defined in :ref:`file_dds_pub_AnyDataWriterListener.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::pub::AnyDataWriterListener`` (:ref:`exhale_class_classdds_1_1pub_1_1AnyDataWriterListener`)
+
+
+Derived Type
+************
+
+- ``public dds::pub::NoOpPublisherListener`` (:ref:`exhale_class_classdds_1_1pub_1_1NoOpPublisherListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::pub::NoOpAnyDataWriterListener
+   :members:
+   :protected-members:
+   :undoc-members:

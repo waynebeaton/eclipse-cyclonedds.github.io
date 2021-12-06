@@ -1,0 +1,13 @@
+.. _exhale_typedef_types_8hpp_1af41924828eff7595b676d2196b993482:
+
+Typedef dds::core::StringSeq
+============================
+
+- Defined in :ref:`file_dds_core_types.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::StringSeq

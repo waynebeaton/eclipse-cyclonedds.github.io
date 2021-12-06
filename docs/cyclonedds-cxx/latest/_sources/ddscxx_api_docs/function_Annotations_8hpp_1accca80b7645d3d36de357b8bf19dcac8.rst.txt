@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1accca80b7645d3d36de357b8bf19dcac8:
+
+Function dds::core::xtypes::annotation::MustUnderstand
+======================================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::MustUnderstand()

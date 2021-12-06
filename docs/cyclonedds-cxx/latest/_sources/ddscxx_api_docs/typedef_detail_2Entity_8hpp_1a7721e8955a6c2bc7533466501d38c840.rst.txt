@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Entity_8hpp_1a7721e8955a6c2bc7533466501d38c840:
+
+Typedef dds::core::detail::Entity
+=================================
+
+- Defined in :ref:`file_dds_core_detail_Entity.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::detail::Entity

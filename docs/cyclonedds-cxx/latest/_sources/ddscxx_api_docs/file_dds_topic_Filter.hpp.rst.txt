@@ -1,0 +1,65 @@
+
+.. _file_dds_topic_Filter.hpp:
+
+File Filter.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic>` (``dds/topic``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/topic/Filter.hpp``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_topic_Filter.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Value.hpp`` (:ref:`file_dds_core_Value.hpp`)
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_topic_ContentFilteredTopic.hpp`
+
+- :ref:`file_dds_topic_detail_ContentFilteredTopic.hpp`
+
+- :ref:`file_dds_topic_detail_FilterImpl.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__topic`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1topic_1_1Filter`
+

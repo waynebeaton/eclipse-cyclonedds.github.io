@@ -1,0 +1,123 @@
+
+.. _program_listing_file_dds_core_policy_detail_CorePolicy.hpp:
+
+Program Listing for File CorePolicy.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_policy_detail_CorePolicy.hpp>` (``dds/core/policy/detail/CorePolicy.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_DDS_CORE_POLICY_DETAIL_CORE_POLICY_HPP_
+   #define OMG_DDS_CORE_POLICY_DETAIL_CORE_POLICY_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   
+   #include <org/eclipse/cyclonedds/core/policy/PolicyDelegate.hpp>
+   #include <dds/core/policy/detail/CorePolicyImpl.hpp>
+   #include <org/eclipse/cyclonedds/core/policy/Policy.hpp>
+   
+   
+   namespace dds { namespace core { namespace policy { namespace detail {
+   #ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+       typedef dds::core::policy::DataRepresentation<org::eclipse::cyclonedds::core::policy::DataRepresentationDelegate>
+       DataRepresentation;
+   #endif // OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+       typedef dds::core::policy::Deadline<org::eclipse::cyclonedds::core::policy::DeadlineDelegate>
+       Deadline;
+   
+       typedef dds::core::policy::DestinationOrder<org::eclipse::cyclonedds::core::policy::DestinationOrderDelegate>
+       DestinationOrder;
+   
+       typedef dds::core::policy::Durability<org::eclipse::cyclonedds::core::policy::DurabilityDelegate>
+       Durability;
+   
+   #ifdef  OMG_DDS_PERSISTENCE_SUPPORT
+       typedef dds::core::policy::DurabilityService<org::eclipse::cyclonedds::core::policy::DurabilityServiceDelegate>
+       DurabilityService;
+   #endif  // OMG_DDS_PERSISTENCE_SUPPORT
+   
+       typedef dds::core::policy::EntityFactory<org::eclipse::cyclonedds::core::policy::EntityFactoryDelegate>
+       EntityFactory;
+   
+       typedef dds::core::policy::GroupData<org::eclipse::cyclonedds::core::policy::GroupDataDelegate>
+       GroupData;
+   
+       typedef dds::core::policy::History<org::eclipse::cyclonedds::core::policy::HistoryDelegate>
+       History;
+   
+       typedef dds::core::policy::LatencyBudget<org::eclipse::cyclonedds::core::policy::LatencyBudgetDelegate>
+       LatencyBudget;
+   
+       typedef dds::core::policy::Lifespan<org::eclipse::cyclonedds::core::policy::LifespanDelegate>
+       Lifespan;
+   
+       typedef dds::core::policy::Liveliness<org::eclipse::cyclonedds::core::policy::LivelinessDelegate>
+       Liveliness;
+   
+       typedef dds::core::policy::Ownership<org::eclipse::cyclonedds::core::policy::OwnershipDelegate>
+       Ownership;
+   
+   #ifdef  OMG_DDS_OWNERSHIP_SUPPORT
+       typedef dds::core::policy::OwnershipStrength<org::eclipse::cyclonedds::core::policy::OwnershipStrengthDelegate>
+       OwnershipStrength;
+   #endif  // OMG_DDS_OWNERSHIP_SUPPORT
+   
+       typedef dds::core::policy::Partition<org::eclipse::cyclonedds::core::policy::PartitionDelegate>
+       Partition;
+   
+       typedef dds::core::policy::Presentation<org::eclipse::cyclonedds::core::policy::PresentationDelegate>
+       Presentation;
+   
+       typedef dds::core::policy::ReaderDataLifecycle<org::eclipse::cyclonedds::core::policy::ReaderDataLifecycleDelegate>
+       ReaderDataLifecycle;
+   
+       typedef dds::core::policy::Reliability<org::eclipse::cyclonedds::core::policy::ReliabilityDelegate>
+       Reliability;
+   
+       typedef dds::core::policy::ResourceLimits<org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate>
+       ResourceLimits;
+   
+       typedef dds::core::policy::TimeBasedFilter<org::eclipse::cyclonedds::core::policy::TimeBasedFilterDelegate>
+       TimeBasedFilter;
+   
+       typedef dds::core::policy::TopicData<org::eclipse::cyclonedds::core::policy::TopicDataDelegate>
+       TopicData;
+   
+       typedef dds::core::policy::TransportPriority<org::eclipse::cyclonedds::core::policy::TransportPriorityDelegate>
+       TransportPriority;
+   
+   #ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+       typedef dds::core::policy::TypeConsistencyEnforcement<org::eclipse::cyclonedds::core::policy::TypeConsistencyEnforcementDelegate>
+       TypeConsistencyEnforcement;
+   #endif // OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+       typedef dds::core::policy::UserData<org::eclipse::cyclonedds::core::policy::UserDataDelegate>
+       UserData;
+   
+       typedef dds::core::policy::WriterDataLifecycle<org::eclipse::cyclonedds::core::policy::WriterDataLifecycleDelegate>
+       WriterDataLifecycle;
+   } } } } // namespace dds::core::policy::detail
+   
+   
+   #endif /* OMG_DDS_CORE_POLICY_DETAIL_CORE_POLICY_HPP_ */

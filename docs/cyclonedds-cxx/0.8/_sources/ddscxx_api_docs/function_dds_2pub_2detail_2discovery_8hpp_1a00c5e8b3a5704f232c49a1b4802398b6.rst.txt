@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2pub_2detail_2discovery_8hpp_1a00c5e8b3a5704f232c49a1b4802398b6:
+
+Template Function dds::pub::ignore(const dds::domain::DomainParticipant&, FwdIterator, FwdIterator)
+===================================================================================================
+
+- Defined in :ref:`file_dds_pub_detail_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::pub::ignore(const dds::domain::DomainParticipant&, FwdIterator, FwdIterator)

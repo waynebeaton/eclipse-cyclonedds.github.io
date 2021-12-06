@@ -1,0 +1,50 @@
+
+.. _program_listing_file_org_eclipse_cyclonedds_topic_hash.hpp:
+
+Program Listing for File hash.hpp
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_org_eclipse_cyclonedds_topic_hash.hpp>` (``org/eclipse/cyclonedds/topic/hash.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   
+   
+   #ifndef IDLCXX_HASH_HPP_
+   #define IDLCXX_HASH_HPP_
+   
+   #include "dds/core/macros.hpp"
+   #include "dds/ddsi/ddsi_keyhash.h"
+   #include <vector>
+   
+   namespace org
+   {
+   
+     namespace eclipse
+     {
+       namespace cyclonedds
+       {
+         namespace topic
+         {
+           bool OMG_DDS_API simple_key(const std::vector<unsigned char>& in, ddsi_keyhash_t& out);
+   
+           bool OMG_DDS_API complex_key(const std::vector<unsigned char>& in, ddsi_keyhash_t& out);
+         }
+       }
+     }
+   }
+   
+   #endif /* IDLCXX_HASH_HPP_ */

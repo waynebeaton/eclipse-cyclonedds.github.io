@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2AnyTopic_8hpp_1a426cbbdc0822886b2c0d39970e386cac:
+
+Typedef dds::topic::detail::AnyTopic
+====================================
+
+- Defined in :ref:`file_dds_topic_detail_AnyTopic.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::topic::detail::AnyTopic

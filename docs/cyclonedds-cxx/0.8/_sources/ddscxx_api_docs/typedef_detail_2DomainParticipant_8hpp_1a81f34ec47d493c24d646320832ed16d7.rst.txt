@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2DomainParticipant_8hpp_1a81f34ec47d493c24d646320832ed16d7:
+
+Typedef dds::domain::detail::DomainParticipant
+==============================================
+
+- Defined in :ref:`file_dds_domain_detail_DomainParticipant.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::domain::detail::DomainParticipant

@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2topic_2detail_2discovery_8hpp_1a7584c02a5a5f4d6c5f465d2e93912e3d:
+
+Template Function dds::topic::discover(const dds::domain::DomainParticipant&, FwdIterator, uint32_t)
+====================================================================================================
+
+- Defined in :ref:`file_dds_topic_detail_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::topic::discover(const dds::domain::DomainParticipant&, FwdIterator, uint32_t)

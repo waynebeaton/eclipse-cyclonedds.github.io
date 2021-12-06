@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1core_1_1Time:
+
+Class Time
+==========
+
+- Defined in :ref:`file_dds_core_Time.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::Time
+   :members:
+   :protected-members:
+   :undoc-members:

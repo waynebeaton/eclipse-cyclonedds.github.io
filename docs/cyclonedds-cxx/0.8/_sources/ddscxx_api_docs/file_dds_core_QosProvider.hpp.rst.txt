@@ -1,0 +1,73 @@
+
+.. _file_dds_core_QosProvider.hpp:
+
+File QosProvider.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/QosProvider.hpp``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_QosProvider.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``dds/domain/qos/DomainParticipantQos.hpp`` (:ref:`file_dds_domain_qos_DomainParticipantQos.hpp`)
+
+- ``dds/pub/qos/DataWriterQos.hpp`` (:ref:`file_dds_pub_qos_DataWriterQos.hpp`)
+
+- ``dds/pub/qos/PublisherQos.hpp`` (:ref:`file_dds_pub_qos_PublisherQos.hpp`)
+
+- ``dds/sub/qos/DataReaderQos.hpp`` (:ref:`file_dds_sub_qos_DataReaderQos.hpp`)
+
+- ``dds/sub/qos/SubscriberQos.hpp`` (:ref:`file_dds_sub_qos_SubscriberQos.hpp`)
+
+- ``dds/topic/qos/TopicQos.hpp`` (:ref:`file_dds_topic_qos_TopicQos.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_detail_QosProviderImpl.hpp`
+
+- :ref:`file_dds_dds.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1QosProvider`
+

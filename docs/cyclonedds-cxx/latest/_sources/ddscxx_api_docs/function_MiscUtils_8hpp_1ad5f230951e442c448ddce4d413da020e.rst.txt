@@ -1,0 +1,13 @@
+.. _exhale_function_MiscUtils_8hpp_1ad5f230951e442c448ddce4d413da020e:
+
+Function org::eclipse::cyclonedds::core::convertStatusMask(const uint32_t)
+==========================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::convertStatusMask(const uint32_t)

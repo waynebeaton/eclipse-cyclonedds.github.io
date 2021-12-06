@@ -1,0 +1,13 @@
+.. _exhale_function_MemberType_8hpp_1a87f2fc3eac8512f409d85f911e891b64:
+
+Template Function dds::core::xtypes::hasBitbound
+================================================
+
+- Defined in :ref:`file_dds_core_xtypes_MemberType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::hasBitbound(const MemberType<T>&)

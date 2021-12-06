@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2macros_8hpp_1a6215581cad079445b41795be6a324023:
+
+Define OMG_DDS_DEFAULT_STATE_BIT_COUNT_DETAIL
+=============================================
+
+- Defined in :ref:`file_dds_core_detail_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_DEFAULT_STATE_BIT_COUNT_DETAIL

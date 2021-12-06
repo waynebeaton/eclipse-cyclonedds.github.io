@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2sub_2detail_2discovery_8hpp_1acdc95da29c9640bea999c22ba74fe9ba:
+
+Template Function dds::sub::matched_publications(const dds::sub::DataReader<T>&)
+================================================================================
+
+- Defined in :ref:`file_dds_sub_detail_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::matched_publications(const dds::sub::DataReader<T>&)

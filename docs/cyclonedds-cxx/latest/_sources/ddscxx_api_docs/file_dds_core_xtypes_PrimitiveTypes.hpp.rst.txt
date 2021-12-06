@@ -1,0 +1,76 @@
+
+.. _file_dds_core_xtypes_PrimitiveTypes.hpp:
+
+File PrimitiveTypes.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/PrimitiveTypes.hpp``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_PrimitiveTypes.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/xtypes/DynamicType.hpp`` (:ref:`file_dds_core_xtypes_DynamicType.hpp`)
+
+- ``dds/core/xtypes/TypeKind.hpp`` (:ref:`file_dds_core_xtypes_TypeKind.hpp`)
+
+- ``dds/core/xtypes/detail/PrimitiveTypes.hpp`` (:ref:`file_dds_core_xtypes_detail_PrimitiveTypes.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_xtypes_StructType.hpp`
+
+- :ref:`file_dds_core_xtypes_UnionType.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__xtypes`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1PrimitiveType`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_PrimitiveTypes_8hpp_1ad5116c787c0ea00c197b492eaec0dc5f`
+

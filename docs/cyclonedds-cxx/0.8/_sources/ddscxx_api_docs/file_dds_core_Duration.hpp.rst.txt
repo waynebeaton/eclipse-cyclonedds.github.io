@@ -1,0 +1,84 @@
+
+.. _file_dds_core_Duration.hpp:
+
+File Duration.hpp
+=================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/Duration.hpp``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_Duration.hpp.rst
+
+
+
+Detailed Description
+--------------------
+
+This class represents a time interval. 
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_cond_WaitSet.hpp`
+
+- :ref:`file_dds_core_ddscore.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_cond_WaitSetDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1Duration`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Duration_8hpp_1aa1c5f82736e712a15d59e5782c3b40cf`
+
+- :ref:`exhale_function_Duration_8hpp_1a0bc8656330379372ad77eef173e9c345`
+
+- :ref:`exhale_function_Duration_8hpp_1a1baee1c7032afe4b8178e3a88ed2475f`
+

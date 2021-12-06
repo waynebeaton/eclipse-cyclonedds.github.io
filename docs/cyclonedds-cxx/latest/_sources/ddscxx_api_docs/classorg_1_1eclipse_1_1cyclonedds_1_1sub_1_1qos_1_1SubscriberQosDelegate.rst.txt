@@ -1,0 +1,16 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1qos_1_1SubscriberQosDelegate:
+
+Class SubscriberQosDelegate
+===========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_qos_SubscriberQosDelegate.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::sub::qos::SubscriberQosDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

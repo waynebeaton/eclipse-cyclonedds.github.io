@@ -1,0 +1,129 @@
+
+.. _program_listing_file_dds_sub_detail_SubscriberImpl.hpp:
+
+Program Listing for File SubscriberImpl.hpp
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_sub_detail_SubscriberImpl.hpp>` (``dds/sub/detail/SubscriberImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_SUB_TSUBSCRIBER_IMPL_HPP_
+   #define CYCLONEDDS_DDS_SUB_TSUBSCRIBER_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/sub/Subscriber.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace sub
+   {
+   
+   
+   Subscriber::Subscriber(const ::dds::domain::DomainParticipant& dp)
+       : ::dds::core::Reference(new DELEGATE(dp,
+                                                       dp.default_subscriber_qos(),
+                                                       NULL,
+                                                       dds::core::status::StatusMask::none()))
+   {
+       this->delegate()->init(this->impl_);
+   }
+   
+   
+   Subscriber::Subscriber(const ::dds::domain::DomainParticipant& dp,
+                                      const dds::sub::qos::SubscriberQos& qos,
+                                      dds::sub::SubscriberListener* listener,
+                                      const dds::core::status::StatusMask& mask)
+       : ::dds::core::Reference(new DELEGATE(dp, qos, listener, mask))
+   {
+       this->delegate()->init(this->impl_);
+   }
+   
+   
+   void Subscriber::notify_datareaders()
+   {
+       this->delegate()->notify_datareaders();
+   }
+   
+   
+   void Subscriber::listener(Listener* listener,
+                                        const dds::core::status::StatusMask& event_mask)
+   {
+       return this->delegate()->listener(listener, event_mask);
+   }
+   
+   
+   typename Subscriber::Listener* Subscriber::listener() const
+   {
+       return this->delegate()->listener();
+   }
+   
+   
+   
+   const dds::sub::qos::SubscriberQos& Subscriber::qos() const
+   {
+       return this->delegate()->qos();
+   }
+   
+   
+   void Subscriber::qos(const dds::sub::qos::SubscriberQos& sqos)
+   {
+       this->delegate()->qos(sqos);
+   }
+   
+   
+   dds::sub::qos::DataReaderQos Subscriber::default_datareader_qos() const
+   {
+       return this->delegate()->default_datareader_qos();
+   }
+   
+   
+   Subscriber& Subscriber::default_datareader_qos(
+       const dds::sub::qos::DataReaderQos& qos)
+   {
+       this->delegate()->default_datareader_qos(qos);
+       return *this;
+   }
+   
+   
+   const dds::domain::DomainParticipant& Subscriber::participant() const
+   {
+       return this->delegate()->participant();
+   }
+   
+   
+   Subscriber& Subscriber::operator << (const dds::sub::qos::SubscriberQos& qos)
+   {
+       this->qos(qos);
+       return *this;
+   }
+   
+   
+   const Subscriber& Subscriber::operator >> (dds::sub::qos::SubscriberQos& qos) const
+   {
+       qos = this->qos();
+       return *this;
+   }
+   
+   }
+   }
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_SUB_TSUBSCRIBER_IMPL_HPP_ */

@@ -1,0 +1,13 @@
+.. _exhale_function_detail_2StructType_8hpp_1ac9d8fb84588eeadd859b4fe09ee8953d:
+
+Template Function dds::core::xtypes::detail::isNested
+=====================================================
+
+- Defined in :ref:`file_dds_core_xtypes_detail_StructType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::detail::isNested(const StructType<T>&)

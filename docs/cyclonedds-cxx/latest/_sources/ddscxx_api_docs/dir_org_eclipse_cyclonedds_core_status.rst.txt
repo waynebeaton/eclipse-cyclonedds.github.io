@@ -1,0 +1,20 @@
+.. _dir_org_eclipse_cyclonedds_core_status:
+
+
+Directory status
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core>` (``org/eclipse/cyclonedds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``org/eclipse/cyclonedds/core/status``
+
+
+Files
+-----
+
+- :ref:`file_org_eclipse_cyclonedds_core_status_StatusDelegate.hpp`
+
+

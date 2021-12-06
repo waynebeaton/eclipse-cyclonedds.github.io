@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2conformance_8hpp_1a628f7b220db70426b6f189161b042689:
+
+Define OMG_DDS_HAS_PRETTY_PRINT_COUT
+====================================
+
+- Defined in :ref:`file_dds_core_detail_conformance.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_HAS_PRETTY_PRINT_COUT

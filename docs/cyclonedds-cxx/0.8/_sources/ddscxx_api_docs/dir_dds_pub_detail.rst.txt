@@ -1,0 +1,32 @@
+.. _dir_dds_pub_detail:
+
+
+Directory detail
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub>` (``dds/pub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/pub/detail``
+
+
+Files
+-----
+
+- :ref:`file_dds_pub_detail_AnyDataWriter.hpp`
+- :ref:`file_dds_pub_detail_AnyDataWriterImpl.hpp`
+- :ref:`file_dds_pub_detail_CoherentSet.hpp`
+- :ref:`file_dds_pub_detail_CoherentSetImpl.hpp`
+- :ref:`file_dds_pub_detail_DataWriter.hpp`
+- :ref:`file_dds_pub_detail_DataWriterImpl.hpp`
+- :ref:`file_dds_pub_detail_ddspub.hpp`
+- :ref:`file_dds_pub_detail_discovery.hpp`
+- :ref:`file_dds_pub_detail_find.hpp`
+- :ref:`file_dds_pub_detail_Publisher.hpp`
+- :ref:`file_dds_pub_detail_PublisherImpl.hpp`
+- :ref:`file_dds_pub_detail_SuspendedPublication.hpp`
+- :ref:`file_dds_pub_detail_SuspendedPublicationImpl.hpp`
+
+

@@ -1,0 +1,69 @@
+
+.. _namespace_dds__core__xtypes__detail:
+
+Namespace dds::core::xtypes::detail
+===================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1Annotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1BitBoundAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1BitsetAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1CollectionType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1DynamicType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1ExtensibilityAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1IdAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1KeyAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1MapType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1MustUnderstandAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1NestedAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1SequenceType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1SharedAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1StringType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1StructType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1TypeProvider`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1UnionCase`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1UnionType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1VerbatimAnnotation`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1a5b1cf846f95a0b4338a718f390e8b69f`
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1abf3a2ddd7ea02dd481bfd3aa4619330a`
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1a674297efa8db87f6346516ca9e78faf0`
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1ac9d8fb84588eeadd859b4fe09ee8953d`

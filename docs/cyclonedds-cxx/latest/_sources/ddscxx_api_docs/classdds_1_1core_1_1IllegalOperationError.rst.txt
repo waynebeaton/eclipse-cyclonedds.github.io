@@ -1,0 +1,26 @@
+.. _exhale_class_classdds_1_1core_1_1IllegalOperationError:
+
+Class IllegalOperationError
+===========================
+
+- Defined in :ref:`file_dds_core_Exception.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public dds::core::Exception`` (:ref:`exhale_class_classdds_1_1core_1_1Exception`)
+- ``public logic_error``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::IllegalOperationError
+   :members:
+   :protected-members:
+   :undoc-members:

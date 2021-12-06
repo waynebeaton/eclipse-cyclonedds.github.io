@@ -1,0 +1,13 @@
+.. _exhale_function_DataReaderImpl_8hpp_1adda957dedf2a7b74c01048e79d1491f8:
+
+Function dds::sub::state
+========================
+
+- Defined in :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::state(const dds::sub::status::DataState&)

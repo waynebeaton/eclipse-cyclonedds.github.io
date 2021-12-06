@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2conformance_8hpp_1a8abe14249704651f38b6e832bafe9823:
+
+Define OMG_DDS_OWNERSHIP_SUPPORT
+================================
+
+- Defined in :ref:`file_dds_core_detail_conformance.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_OWNERSHIP_SUPPORT

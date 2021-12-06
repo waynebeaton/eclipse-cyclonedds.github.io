@@ -1,0 +1,49 @@
+
+.. _file_dds_sub_cond_QueryCondition.hpp:
+
+File QueryCondition.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_cond>` (``dds/sub/cond``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/cond/QueryCondition.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_cond_QueryCondition.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``dds/sub/cond/ReadCondition.hpp`` (:ref:`file_dds_sub_cond_ReadCondition.hpp`)
+
+- ``dds/sub/cond/detail/QueryCondition.hpp`` (:ref:`file_dds_sub_cond_detail_QueryCondition.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_cond_detail_QueryConditionImpl.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+
+

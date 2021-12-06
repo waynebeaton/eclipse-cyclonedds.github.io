@@ -1,0 +1,13 @@
+.. _exhale_typedef_Annotations_8hpp_1a3c569ec49e2adeede775ffd61bccbe3d:
+
+Typedef dds::core::xtypes::IdAnnotation
+=======================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::xtypes::IdAnnotation

@@ -1,0 +1,13 @@
+.. _exhale_function_ListenerDispatcher_8hpp_1a09cb98a78e476c5f034a7cc5b6b9c7b3:
+
+Function callback_on_data_readers
+=================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: callback_on_data_readers(dds_entity_t, void *)

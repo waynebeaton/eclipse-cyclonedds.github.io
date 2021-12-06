@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1a83b19e0388290a065209764356ce2c84:
+
+Function dds::core::xtypes::annotation::BitBound
+================================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::BitBound(uint32_t)

@@ -1,0 +1,30 @@
+.. _dir_dds_domain:
+
+
+Directory domain
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds>` (``dds``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/domain``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_domain_detail`
+- :ref:`dir_dds_domain_qos`
+
+
+Files
+-----
+
+- :ref:`file_dds_domain_ddsdomain.hpp`
+- :ref:`file_dds_domain_discovery.hpp`
+- :ref:`file_dds_domain_DomainParticipant.hpp`
+- :ref:`file_dds_domain_DomainParticipantListener.hpp`
+- :ref:`file_dds_domain_find.hpp`
+
+

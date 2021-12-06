@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a3af6b1817131709338c11bc9abf063ad:
+
+Template Function sertype_free
+==============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: sertype_free(ddsi_sertype *)

@@ -1,0 +1,16 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1FilterDelegate:
+
+Class FilterDelegate
+====================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_FilterDelegate.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::topic::FilterDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

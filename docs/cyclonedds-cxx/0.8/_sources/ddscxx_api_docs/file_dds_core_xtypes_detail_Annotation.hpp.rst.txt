@@ -1,0 +1,75 @@
+
+.. _file_dds_core_xtypes_detail_Annotation.hpp:
+
+File Annotation.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes_detail>` (``dds/core/xtypes/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/detail/Annotation.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_detail_Annotation.hpp.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__xtypes`
+
+- :ref:`namespace_dds__core__xtypes__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1Annotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1BitBoundAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1BitsetAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1ExtensibilityAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1IdAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1KeyAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1MustUnderstandAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1NestedAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1SharedAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1VerbatimAnnotation`
+

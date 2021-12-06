@@ -1,0 +1,13 @@
+.. _exhale_define_macros_8hpp_1a785efc94a0709f725c5e3819b9301909:
+
+Define OMG_DDS_DEFAULT_STATUS_COUNT
+===================================
+
+- Defined in :ref:`file_dds_core_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_DEFAULT_STATUS_COUNT

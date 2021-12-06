@@ -1,0 +1,125 @@
+
+.. _program_listing_file_dds_core_Reference.hpp:
+
+Program Listing for File Reference.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_Reference.hpp>` (``dds/core/Reference.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_DDS_CORE_REFERENCE_HPP_
+   #define OMG_DDS_CORE_REFERENCE_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Inc.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/types.hpp>
+   #include <dds/core/refmacros.hpp>
+   #include <dds/core/Exception.hpp>
+   
+   
+   namespace dds
+   {
+   namespace core
+   {
+   
+   
+   class Reference
+   {
+   public:
+       DECLARE_TYPE_TRAITS(DELEGATE)
+   
+       
+       explicit Reference(dds::core::null_type&);
+   
+   public:
+       explicit Reference(const Reference& ref);
+   
+       explicit Reference(Reference&& ref);
+   
+       explicit Reference(const Reference& ref);
+   
+       explicit Reference(DELEGATE_T* p);
+       explicit Reference(const DELEGATE_REF_T& p);
+   public:
+       ~Reference();
+   
+   public:
+       operator DELEGATE_REF_T() const;
+       template <typename R>
+       bool operator==(const R& ref) const;
+   
+       template <typename R>
+       bool operator!=(const R& ref) const;
+   
+       Reference& operator=(const Reference& that);
+   
+       template <typename R>
+       Reference& operator=(const R& rhs);
+   
+       Reference& operator=(const Reference& other) = default;
+   
+       Reference& operator=(Reference&& other) = default;
+   
+       Reference&
+       operator=(const null_type);
+   
+       bool is_nil() const;
+   
+       bool
+       operator==(const null_type) const;
+   
+       bool operator!=(const null_type nil) const;
+   
+   private:
+       // -- disallow dynamic allocation for reference types
+       void* operator new(size_t);
+   
+   
+   
+   public:
+       const DELEGATE_REF_T& delegate() const;
+       DELEGATE_REF_T& delegate();
+       DELEGATE* operator->();
+   
+       const DELEGATE* operator->() const;
+   
+       operator DELEGATE_REF_T& ();
+       operator const DELEGATE_REF_T& () const;
+   protected:
+       Reference() {}
+   
+       void set_ref(DELEGATE_T* p);
+   
+   protected:
+       DELEGATE_REF_T impl_;
+   };
+   
+   
+   }
+   } /* namespace dds / namespace core */
+   
+   
+   template <class D> bool operator == (dds::core::null_type, const dds::core::Reference& r);
+   
+   template <class D> bool operator != (dds::core::null_type, const dds::core::Reference& r);
+   
+   #endif /* OMG_DDS_CORE_REFERENCE_HPP_ */

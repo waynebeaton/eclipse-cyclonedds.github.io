@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1abaef7edbab789a99695a619f39cd8b5c:
+
+Template Function sertype_get_serialized_size
+=============================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: sertype_get_serialized_size(const ddsi_sertype *, const void *)

@@ -1,0 +1,129 @@
+
+.. _program_listing_file_dds_pub_detail_AnyDataWriterImpl.hpp:
+
+Program Listing for File AnyDataWriterImpl.hpp
+==============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_pub_detail_AnyDataWriterImpl.hpp>` (``dds/pub/detail/AnyDataWriterImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef OMG_DDS_PUB_DETAIL_TANYDATAWRITER_HPP_
+   #define OMG_DDS_PUB_DETAIL_TANYDATAWRITER_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/pub/AnyDataWriter.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace pub
+   {
+   
+   
+   const dds::pub::Publisher&
+   AnyDataWriter::publisher() const
+   {
+       return this->delegate()->publisher();
+   }
+   
+   
+   const dds::topic::TopicDescription&
+   AnyDataWriter::topic_description() const
+   {
+       return this->delegate()->topic_description();
+   }
+   
+   
+   dds::pub::qos::DataWriterQos
+   AnyDataWriter::qos() const
+   {
+       return this->delegate()->qos();
+   }
+   
+   
+   void
+   AnyDataWriter::qos(const dds::pub::qos::DataWriterQos& qos)
+   {
+       this->delegate()->qos(qos);
+   }
+   
+   
+   AnyDataWriter&
+   AnyDataWriter::operator << (const dds::pub::qos::DataWriterQos& qos)
+   {
+       this->delegate()->qos(qos);
+       return *this;
+   }
+   
+   
+   const AnyDataWriter&
+   AnyDataWriter::operator >> (dds::pub::qos::DataWriterQos& qos) const
+   {
+       qos = this->delegate()->qos();
+       return *this;
+   }
+   
+   
+   void
+   AnyDataWriter::wait_for_acknowledgments(const dds::core::Duration& timeout)
+   {
+       this->delegate()->wait_for_acknowledgments(timeout);
+   }
+   
+   
+   const ::dds::core::status::LivelinessLostStatus
+   AnyDataWriter::liveliness_lost_status()
+   {
+       return this->delegate()->liveliness_lost_status();
+   }
+   
+   
+   const ::dds::core::status::OfferedDeadlineMissedStatus
+   AnyDataWriter::offered_deadline_missed_status()
+   {
+       return this->delegate()->offered_deadline_missed_status();
+   }
+   
+   
+   const ::dds::core::status::OfferedIncompatibleQosStatus
+   AnyDataWriter::offered_incompatible_qos_status()
+   {
+       return this->delegate()->offered_incompatible_qos_status();
+   }
+   
+   
+   const ::dds::core::status::PublicationMatchedStatus
+   AnyDataWriter::publication_matched_status()
+   {
+       return this->delegate()->publication_matched_status();
+   }
+   
+   
+   void
+   AnyDataWriter::assert_liveliness()
+   {
+       this->delegate()->assert_liveliness();
+   }
+   
+   }
+   }
+   // End of implementation
+   
+   #endif /* OMG_DDS_PUB_DETAIL_TANYDATAWRITER_HPP_ */

@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Subscriber_8hpp_1ae89e237f62ddd7ce0295c7306e6a371c:
+
+Typedef dds::sub::detail::Subscriber
+====================================
+
+- Defined in :ref:`file_dds_sub_detail_Subscriber.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::Subscriber

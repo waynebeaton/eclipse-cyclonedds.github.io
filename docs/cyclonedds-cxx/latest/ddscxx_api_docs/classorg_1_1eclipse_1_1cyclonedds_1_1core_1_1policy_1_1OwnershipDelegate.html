@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class OwnershipDelegate &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class OwnershipDelegate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-ownershipdelegate">
+<span id="exhale-class-classorg-1-1eclipse-1-1cyclonedds-1-1core-1-1policy-1-1ownershipdelegate"></span><h1>Class OwnershipDelegate<a class="headerlink" href="#class-ownershipdelegate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp.html#file-org-eclipse-cyclonedds-core-policy-policydelegate-hpp"><span class="std std-ref">File PolicyDelegate.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateE"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4coreE" title="org::eclipse::cyclonedds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policyE" title="org::eclipse::cyclonedds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">OwnershipDelegate</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate17OwnershipDelegateERK17OwnershipDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate17OwnershipDelegateERK17OwnershipDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate17OwnershipDelegateERK17OwnershipDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::OwnershipDelegate__OwnershipDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1a983311d2805ac9798ef2c84ac35f25a0"></span><span class="sig-name descname"><span class="n"><span class="pre">OwnershipDelegate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate17OwnershipDelegateERK17OwnershipDelegate" title="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::OwnershipDelegate"><span class="n"><span class="pre">OwnershipDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate17OwnershipDelegateEN3dds4core6policy13OwnershipKind4TypeE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate17OwnershipDelegateEN3dds4core6policy13OwnershipKind4TypeE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate17OwnershipDelegateEN3dds4core6policy13OwnershipKind4TypeE"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::OwnershipDelegate__dds::core::policy::OwnershipKind::Type"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1abcba95de0892838d32112460f576d81f"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OwnershipDelegate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13OwnershipKindE" title="dds::core::policy::OwnershipKind"><span class="n"><span class="pre">OwnershipKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13OwnershipKind4TypeE" title="dds::core::policy::OwnershipKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">kind</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateaSERK17OwnershipDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateaSERK17OwnershipDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateaSERK17OwnershipDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::assign-operator__OwnershipDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1a1aaceae3b8c79654ed68e121d0bff3a7"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateE" title="org::eclipse::cyclonedds::core::policy::OwnershipDelegate"><span class="n"><span class="pre">OwnershipDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateE" title="org::eclipse::cyclonedds::core::policy::OwnershipDelegate"><span class="n"><span class="pre">OwnershipDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate4kindEN3dds4core6policy13OwnershipKind4TypeE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate4kindEN3dds4core6policy13OwnershipKind4TypeE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate4kindEN3dds4core6policy13OwnershipKind4TypeE"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::kind__dds::core::policy::OwnershipKind::Type"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1a21d43a69539f93f4fadcb168e9cc20fc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kind</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13OwnershipKindE" title="dds::core::policy::OwnershipKind"><span class="n"><span class="pre">OwnershipKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13OwnershipKind4TypeE" title="dds::core::policy::OwnershipKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">kind</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate4kindEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate4kindEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate4kindEv"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::kindC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1af402275638e71c92c04524b6053e9a74"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13OwnershipKindE" title="dds::core::policy::OwnershipKind"><span class="n"><span class="pre">OwnershipKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy13OwnershipKind4TypeE" title="dds::core::policy::OwnershipKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kind</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegateeqERK17OwnershipDelegate">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegateeqERK17OwnershipDelegate"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegateeqERK17OwnershipDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::eq-operator__OwnershipDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1ac29fba721f35cbf4a5774ff8346ff5dd"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegateE" title="org::eclipse::cyclonedds::core::policy::OwnershipDelegate"><span class="n"><span class="pre">OwnershipDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate5checkEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate5checkEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate5checkEv"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::checkC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1a03dc16ec108323084559a86114a066f1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate14set_iso_policyEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy17OwnershipDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::set_iso_policy__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1a3718f9a72969e3a11aea3e83e0d86677"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_iso_policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate12set_c_policyEP9dds_qos_t">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate12set_c_policyEP9dds_qos_t"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy17OwnershipDelegate12set_c_policyEP9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::OwnershipDelegate::set_c_policy__dds_qos_tPC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1OwnershipDelegate_1aa52eb099af70b7444ad9f44e59a091b4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_c_policy</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

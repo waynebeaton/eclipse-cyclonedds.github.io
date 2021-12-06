@@ -1,0 +1,64 @@
+
+.. _file_dds_core_ref_traits.hpp:
+
+File ref_traits.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/ref_traits.hpp``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_ref_traits.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/ref_traits.hpp`` (:ref:`file_dds_core_detail_ref_traits.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_refmacros.hpp`
+
+- :ref:`file_dds_sub_LoanedSamples.hpp`
+
+- :ref:`file_dds_topic_AnyTopic.hpp`
+
+- :ref:`file_dds_topic_Topic.hpp`
+
+- :ref:`file_dds_topic_detail_Topic.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainWrap.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+

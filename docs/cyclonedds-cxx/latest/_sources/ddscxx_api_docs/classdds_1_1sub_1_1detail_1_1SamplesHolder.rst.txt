@@ -1,0 +1,28 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1SamplesHolder:
+
+Class SamplesHolder
+===================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public dds::sub::detail::CDRSamplesHolder`` (:ref:`exhale_class_classdds_1_1sub_1_1detail_1_1CDRSamplesHolder`)
+- ``public dds::sub::detail::LoanedSamplesHolder< T >`` (:ref:`exhale_class_classdds_1_1sub_1_1detail_1_1LoanedSamplesHolder`)
+- ``public dds::sub::detail::SamplesBIIteratorHolder< T, SamplesBIIterator >`` (:ref:`exhale_class_classdds_1_1sub_1_1detail_1_1SamplesBIIteratorHolder`)
+- ``public dds::sub::detail::SamplesFWInteratorHolder< T, SamplesFWIterator >`` (:ref:`exhale_class_classdds_1_1sub_1_1detail_1_1SamplesFWInteratorHolder`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::SamplesHolder
+   :members:
+   :protected-members:
+   :undoc-members:

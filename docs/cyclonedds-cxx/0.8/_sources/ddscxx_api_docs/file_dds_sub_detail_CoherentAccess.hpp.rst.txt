@@ -1,0 +1,57 @@
+
+.. _file_dds_sub_detail_CoherentAccess.hpp:
+
+File CoherentAccess.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/CoherentAccess.hpp``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_CoherentAccess.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/detail/CoherentAccessImpl.hpp`` (:ref:`file_dds_sub_detail_CoherentAccessImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/sub/CoherentAccessDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_sub_CoherentAccessDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+- :ref:`namespace_dds__sub__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2CoherentAccess_8hpp_1aeb7ca81d3a43f68bfacb2a7c328ae7a1`
+

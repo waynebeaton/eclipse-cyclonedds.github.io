@@ -1,0 +1,57 @@
+
+.. _file_dds_pub_detail_SuspendedPublication.hpp:
+
+File SuspendedPublication.hpp
+=============================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub_detail>` (``dds/pub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/pub/detail/SuspendedPublication.hpp``)
+--------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_pub_detail_SuspendedPublication.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/pub/detail/SuspendedPublicationImpl.hpp`` (:ref:`file_dds_pub_detail_SuspendedPublicationImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/pub/SuspendedPublicationDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_pub_SuspendedPublicationDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__pub`
+
+- :ref:`namespace_dds__pub__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2SuspendedPublication_8hpp_1ac5bd022b2d2f8fbb640bed2a7fb532f5`
+

@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1a35b1f9af50beccf70e0c648bdf839085:
+
+Template Function org::eclipse::cyclonedds::core::cdr::read_string
+==================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::read_string(basic_cdr_stream&, T&, size_t)

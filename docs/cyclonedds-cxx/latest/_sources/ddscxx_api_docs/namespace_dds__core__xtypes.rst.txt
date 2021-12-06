@@ -1,0 +1,155 @@
+
+.. _namespace_dds__core__xtypes:
+
+Namespace dds::core::xtypes
+===========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds__core__xtypes__annotation`
+
+- :ref:`namespace_dds__core__xtypes__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1AnnotationKind`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits_3_01int16__t_01_4`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits_3_01int32__t_01_4`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits_3_01uint16__t_01_4`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits_3_01uint32__t_01_4`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1dynamic__type__traits_3_01uint8__t_01_4`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1xtypes_1_1ExtensibilityKind`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1Annotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1BitBoundAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1BitsetAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1CollectionType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1DynamicData`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1ExtensibilityAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1IdAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1KeyAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1MapType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1MemberType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1MustUnderstandAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1NestedAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1PrimitiveType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1SequenceType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1SharedAnnotation`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1StringType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1StructForwardDeclaration`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1StructType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1TypeProvider`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1UnionCase`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1UnionForwardDeclaration`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1UnionType`
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1VerbatimAnnotation`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_MemberType_8hpp_1afc3eb265ff63866f14a4449bfc2acb69`
+
+- :ref:`exhale_function_MemberType_8hpp_1a15010e111c6b15660859737c68a9e82e`
+
+- :ref:`exhale_function_MemberType_8hpp_1a87f2fc3eac8512f409d85f911e891b64`
+
+- :ref:`exhale_function_MemberType_8hpp_1ac08bdf5e8a495676f0d18208121f522e`
+
+- :ref:`exhale_function_MemberType_8hpp_1ab069ae7c9d98f0a4462f75e85bd45578`
+
+- :ref:`exhale_function_StructType_8hpp_1abb408f35d05245049e0e6cd749ffa531`
+
+- :ref:`exhale_function_StructType_8hpp_1a943aaed9eb182660cfe2f0f9882f5d1f`
+
+- :ref:`exhale_function_MemberType_8hpp_1a1dcfa7c75ba0977d33e2962b3d48ad1c`
+
+- :ref:`exhale_function_MemberType_8hpp_1a6cbe203452994133edf200e4d4c9b7b7`
+
+- :ref:`exhale_function_StructType_8hpp_1ab4ea1fd3f293974fb6add2b0dc54f416`
+
+- :ref:`exhale_function_StructType_8hpp_1a50a672237049567e3e00403cbabdc13d`
+
+- :ref:`exhale_function_MemberType_8hpp_1a7be5f035692f12014716432f1f22c55b`
+
+- :ref:`exhale_function_MemberType_8hpp_1a1a0aafffdc81785d0b42b0926bb031af`
+
+- :ref:`exhale_function_PrimitiveTypes_8hpp_1ad5116c787c0ea00c197b492eaec0dc5f`
+
+- :ref:`exhale_function_DynamicData_8hpp_1ab6f1dc9d04f98051f9fdde495b233b2a`
+
+- :ref:`exhale_function_DynamicData_8hpp_1a0829017faf30a820184e0f840f8014f5`
+
+- :ref:`exhale_function_DynamicData_8hpp_1aba51a2b59abac6ea83654a1b5c0acb5f`
+
+- :ref:`exhale_function_DynamicData_8hpp_1aec3265c78c301682764e98c346bfd5bb`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_Annotations_8hpp_1abbd1f1deb80d242b0ed7e721be3adb2e`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a5b99d6fdd05d10a01b0aa588f34cde57`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1ab02d22728d60a61450f4bd267c3819e3`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a41321e5572dee1809aaa3dc5ea43261c`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a3c569ec49e2adeede775ffd61bccbe3d`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a88cf8bcbf902355621663c1d9e774f51`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a3818c64301e9d68d06d9d73b85555248`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1ab40fc2bb23e666ec8b70bd75f18f5a27`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a71d3fe7ccbc0e8ae3d7864e45bd32013`
+
+- :ref:`exhale_typedef_Annotations_8hpp_1a0a7923f8a17b159ddd820f09fc26fd0c`

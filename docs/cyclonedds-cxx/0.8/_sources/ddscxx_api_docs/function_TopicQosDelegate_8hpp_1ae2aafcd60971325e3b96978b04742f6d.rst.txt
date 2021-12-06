@@ -1,0 +1,13 @@
+.. _exhale_function_TopicQosDelegate_8hpp_1ae2aafcd60971325e3b96978b04742f6d:
+
+Function org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::TopicData >
+=======================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_qos_TopicQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::TopicData >()

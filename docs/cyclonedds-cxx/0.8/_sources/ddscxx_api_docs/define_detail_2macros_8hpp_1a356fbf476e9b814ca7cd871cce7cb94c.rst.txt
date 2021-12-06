@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2macros_8hpp_1a356fbf476e9b814ca7cd871cce7cb94c:
+
+Define OSPL_DEFAULT_TO_CXX11
+============================
+
+- Defined in :ref:`file_dds_core_detail_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OSPL_DEFAULT_TO_CXX11

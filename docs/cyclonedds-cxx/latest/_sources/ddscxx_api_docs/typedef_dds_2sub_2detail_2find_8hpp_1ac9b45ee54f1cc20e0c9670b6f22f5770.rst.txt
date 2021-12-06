@@ -1,0 +1,13 @@
+.. _exhale_typedef_dds_2sub_2detail_2find_8hpp_1ac9b45ee54f1cc20e0c9670b6f22f5770:
+
+Typedef dds::sub::detail::base_readers_vector
+=============================================
+
+- Defined in :ref:`file_dds_sub_detail_find.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::base_readers_vector

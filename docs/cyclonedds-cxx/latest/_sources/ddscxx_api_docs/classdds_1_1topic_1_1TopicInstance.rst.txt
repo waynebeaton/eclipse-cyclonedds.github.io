@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1topic_1_1TopicInstance:
+
+Template Class TopicInstance
+============================
+
+- Defined in :ref:`file_dds_topic_TopicInstance.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::TopicInstance
+   :members:
+   :protected-members:
+   :undoc-members:

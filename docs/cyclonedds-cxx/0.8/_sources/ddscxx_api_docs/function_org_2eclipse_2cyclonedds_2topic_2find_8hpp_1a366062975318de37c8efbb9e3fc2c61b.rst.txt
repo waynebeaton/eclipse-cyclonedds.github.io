@@ -1,0 +1,13 @@
+.. _exhale_function_org_2eclipse_2cyclonedds_2topic_2find_8hpp_1a366062975318de37c8efbb9e3fc2c61b:
+
+Function org::eclipse::cyclonedds::topic::find_topic_description
+================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_find.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::topic::find_topic_description(const dds::domain::DomainParticipant&, const std::string&)

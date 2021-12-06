@@ -1,0 +1,71 @@
+
+.. _file_dds_topic_detail_discovery.hpp:
+
+File discovery.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic_detail>` (``dds/topic/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/topic/detail/discovery.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_topic_detail_discovery.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/topic/AnyTopic.hpp`` (:ref:`file_dds_topic_AnyTopic.hpp`)
+
+- ``dds/topic/Topic.hpp`` (:ref:`file_dds_topic_Topic.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/discovery.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_discovery.hpp`)
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_topic_discovery.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__topic`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_dds_2topic_2detail_2discovery_8hpp_1a8316e297a52572d99ad0edcf93674a68`
+
+- :ref:`exhale_function_dds_2topic_2detail_2discovery_8hpp_1a7584c02a5a5f4d6c5f465d2e93912e3d`
+
+- :ref:`exhale_function_dds_2topic_2detail_2discovery_8hpp_1a62826d0fe35c15fd1f85a97bacc8c005`
+
+- :ref:`exhale_function_dds_2topic_2detail_2discovery_8hpp_1a9359593a7f780c664b8dd2ca49e4cdea`
+

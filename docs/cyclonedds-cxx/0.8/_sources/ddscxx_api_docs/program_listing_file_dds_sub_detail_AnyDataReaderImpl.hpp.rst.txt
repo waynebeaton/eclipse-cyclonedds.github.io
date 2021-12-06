@@ -1,0 +1,140 @@
+
+.. _program_listing_file_dds_sub_detail_AnyDataReaderImpl.hpp:
+
+Program Listing for File AnyDataReaderImpl.hpp
+==============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_sub_detail_AnyDataReaderImpl.hpp>` (``dds/sub/detail/AnyDataReaderImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef OMG_DDS_SUB_DETAIL_TANYDATAREADER_HPP_
+   #define OMG_DDS_SUB_DETAIL_TANYDATAREADER_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   
+   #include <dds/sub/AnyDataReader.hpp>
+   #include <dds/topic/TopicDescription.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace sub
+   {
+   
+   
+   const dds::sub::Subscriber&
+   AnyDataReader::subscriber() const
+   {
+       return this->delegate()->subscriber();
+   }
+   
+   
+   const dds::topic::TopicDescription&
+   AnyDataReader::topic_description() const
+   {
+       return this->delegate()->topic_description();
+   }
+   
+   
+   void
+   AnyDataReader::wait_for_historical_data(const dds::core::Duration& timeout)
+   {
+       this->delegate()->wait_for_historical_data(timeout);
+   }
+   
+   
+   
+   dds::sub::qos::DataReaderQos
+   AnyDataReader::qos() const
+   {
+       return this->delegate()->qos();
+   }
+   
+   
+   void
+   AnyDataReader::qos(const dds::sub::qos::DataReaderQos& qos)
+   {
+       this->delegate()->qos(qos);
+   }
+   
+   
+   AnyDataReader&
+   AnyDataReader::operator << (const dds::sub::qos::DataReaderQos& qos)
+   {
+       this->delegate()->qos(qos);
+       return *this;
+   }
+   
+   
+   const AnyDataReader&
+   AnyDataReader::operator >> (dds::sub::qos::DataReaderQos& qos) const
+   {
+       qos = this->delegate()->qos();
+       return *this;
+   }
+   
+   
+   
+   dds::core::status::LivelinessChangedStatus
+   AnyDataReader::liveliness_changed_status()
+   {
+       return this->delegate()->liveliness_changed_status();
+   }
+   
+   
+   dds::core::status::SampleRejectedStatus
+   AnyDataReader::sample_rejected_status()
+   {
+       return this->delegate()->sample_rejected_status();
+   }
+   
+   
+   dds::core::status::SampleLostStatus
+   AnyDataReader::sample_lost_status()
+   {
+       return this->delegate()->sample_lost_status();
+   }
+   
+   
+   dds::core::status::RequestedDeadlineMissedStatus
+   AnyDataReader::requested_deadline_missed_status()
+   {
+       return this->delegate()->requested_deadline_missed_status();
+   }
+   
+   
+   dds::core::status::RequestedIncompatibleQosStatus
+   AnyDataReader::requested_incompatible_qos_status()
+   {
+       return this->delegate()->requested_incompatible_qos_status();
+   }
+   
+   
+   dds::core::status::SubscriptionMatchedStatus
+   AnyDataReader::subscription_matched_status()
+   {
+       return this->delegate()->subscription_matched_status();
+   }
+   
+   }
+   }
+   // End of implementation
+   
+   #endif /* OMG_DDS_SUB_DETAIL_TANYDATAREADER_HPP_ */

@@ -1,0 +1,274 @@
+
+.. _program_listing_file_org_eclipse_cyclonedds_core_policy_Policy.hpp:
+
+Program Listing for File Policy.hpp
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_org_eclipse_cyclonedds_core_policy_Policy.hpp>` (``org/eclipse/cyclonedds/core/policy/Policy.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   
+   
+   #ifndef CYCLONEDDS_CORE_POLICY_TPOLICY_HPP_
+   #define CYCLONEDDS_CORE_POLICY_TPOLICY_HPP_
+   
+   #include <org/eclipse/cyclonedds/core/policy/ProprietaryPolicyKind.hpp>
+   
+   namespace org
+   {
+   namespace eclipse
+   {
+   namespace cyclonedds
+   {
+   namespace core
+   {
+   namespace policy
+   {
+   
+   
+   class Share : public dds::core::Value
+   {
+   public:
+       Share() { }
+   
+       Share(const std::string& name, bool enable) : dds::core::Value(name, enable) { }
+   
+       Share(const Share& other) : dds::core::Value(other.delegate()) { }
+   
+   public:
+       Share& name(const std::string& name)
+       {
+           this->delegate().name(name);
+           return *this;
+       }
+   
+       std::string name() const
+       {
+           return this->delegate().name();
+       }
+   
+       Share& enable(bool enable)
+       {
+           this->delegate().enable(enable);
+           return *this;
+       }
+   
+       bool enable() const
+       {
+           return this->delegate().enable();
+       }
+   };
+   
+   
+   
+   
+   
+   class ProductData : public dds::core::Value
+   {
+   public:
+       ProductData() { }
+   
+       ProductData(const std::string& name) : dds::core::Value(name) { }
+   
+       ProductData(const ProductData& other) : dds::core::Value(other.delegate()) { }
+   
+   public:
+       ProductData& name(const std::string& name)
+       {
+           this->delegate().name(name);
+           return *this;
+       }
+   
+       std::string name() const
+       {
+           return this->delegate().name();
+       }
+   };
+   
+   
+   
+   class SubscriptionKey : public dds::core::Value
+   {
+   public:
+       SubscriptionKey() { }
+   
+       explicit SubscriptionKey(bool use_key_list, const std::string& key) :
+           dds::core::Value(use_key_list, key) { }
+   
+       explicit SubscriptionKey(bool use_key_list, const dds::core::StringSeq& keys) :
+           dds::core::Value(use_key_list, keys) { }
+   
+   
+       SubscriptionKey(const SubscriptionKey& other) :
+           dds::core::Value(other.delegate()) { }
+   
+   public:
+       SubscriptionKey& key(const std::string& key)
+       {
+           this->delegate().key(key);
+           return *this;
+       }
+   
+       SubscriptionKey& key(const dds::core::StringSeq& keys)
+       {
+           this->delegate().key(keys);
+           return *this;
+       }
+   
+       const dds::core::StringSeq key() const
+       {
+           return this->delegate().key();
+       }
+   
+       SubscriptionKey& use_key_list(bool use_key_list)
+       {
+           this->delegate().use_key_list(use_key_list);
+           return *this;
+       }
+   
+       bool use_key_list() const
+       {
+           return this->delegate().use_key_list();
+       }
+   };
+   
+   
+   class TReaderLifespan : public dds::core::Value
+   {
+   public:
+       TReaderLifespan() { }
+   
+       explicit TReaderLifespan(bool used, const dds::core::Duration& duration) :
+           dds::core::Value(used, duration) { }
+   
+       TReaderLifespan(const TReaderLifespan& other) :
+           dds::core::Value(other.delegate()) { }
+   
+   
+   public:
+         TReaderLifespan& used(bool used)
+         {
+             this->delegate().used(used);
+             return *this;
+         }
+   
+         bool used() const
+         {
+             return this->delegate().used();
+         }
+   
+       TReaderLifespan& duration(const dds::core::Duration& duration)
+       {
+           this->delegate().duration(duration);
+           return *this;
+       }
+   
+       const dds::core::Duration duration() const
+       {
+           return this->delegate().duration();
+       }
+   };
+   
+   
+   
+   
+   class TScheduling : public dds::core::Value
+   {
+   public:
+       TScheduling() { }
+   
+       TScheduling(const org::eclipse::cyclonedds::core::policy::SchedulingKind::Type& scheduling_kind,
+                   const org::eclipse::cyclonedds::core::policy::SchedulingPriorityKind::Type& scheduling_priority_kind,
+                   int32_t scheduling_priority)
+           : dds::core::Value(scheduling_kind, scheduling_priority_kind, scheduling_priority)
+       {
+       }
+   
+       TScheduling(const TScheduling& other)
+           : dds::core::Value(other.delegate())
+       {
+       }
+   
+   public:
+       TScheduling& scheduling_kind(const org::eclipse::cyclonedds::core::policy::SchedulingKind::Type& scheduling_kind)
+       {
+           this->delegate().scheduling_kind(scheduling_kind);
+           return *this;
+       }
+   
+       org::eclipse::cyclonedds::core::policy::SchedulingKind::Type scheduling_kind() const
+       {
+           return this->delegate().scheduling_kind();
+       }
+   
+       TScheduling& scheduling_kind(const org::eclipse::cyclonedds::core::policy::SchedulingPriorityKind::Type& scheduling_priority_kind)
+       {
+           this->delegate().scheduling_priority_kind(scheduling_priority_kind);
+           return *this;
+       }
+   
+       org::eclipse::cyclonedds::core::policy::SchedulingPriorityKind::Type scheduling_priority_kind() const
+       {
+           return this->delegate().scheduling_priority_kind();
+       }
+   
+       TScheduling& scheduling_priority(int32_t scheduling_priority)
+       {
+           this->delegate().scheduling_priority(scheduling_priority);
+           return *this;
+       }
+   
+       int32_t scheduling_priority() const
+       {
+           return this->delegate().scheduling_priority();
+       }
+   };
+   
+   
+   class TListenerScheduling : public org::eclipse::cyclonedds::core::policy::TScheduling
+   {
+   public:
+       TListenerScheduling() { }
+       explicit TListenerScheduling(const org::eclipse::cyclonedds::core::policy::SchedulingKind::Type& scheduling_kind,
+                                    const org::eclipse::cyclonedds::core::policy::SchedulingPriorityKind::Type& scheduling_priority_kind,
+                                    int32_t scheduling_priority)
+           : org::eclipse::cyclonedds::core::policy::TScheduling(scheduling_kind, scheduling_priority_kind, scheduling_priority)
+       {
+       }
+   };
+   
+   
+   class TWatchdogScheduling : public org::eclipse::cyclonedds::core::policy::TScheduling
+   {
+   public:
+       TWatchdogScheduling() { }
+       explicit TWatchdogScheduling(const org::eclipse::cyclonedds::core::policy::SchedulingKind::Type& scheduling_kind,
+                                    const org::eclipse::cyclonedds::core::policy::SchedulingPriorityKind::Type& scheduling_priority_kind,
+                                    int32_t scheduling_priority)
+           : org::eclipse::cyclonedds::core::policy::TScheduling(scheduling_kind, scheduling_priority_kind, scheduling_priority)
+       {
+       }
+   };
+   
+   
+   }
+   }
+   }
+   }
+   }
+   
+   #endif /* CYCLONEDDS_CORE_POLICY_TPOLICY_HPP_ */

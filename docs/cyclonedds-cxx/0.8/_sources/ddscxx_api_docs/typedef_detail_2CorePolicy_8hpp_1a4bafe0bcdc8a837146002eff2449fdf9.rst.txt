@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2CorePolicy_8hpp_1a4bafe0bcdc8a837146002eff2449fdf9:
+
+Typedef dds::core::policy::detail::LatencyBudget
+================================================
+
+- Defined in :ref:`file_dds_core_policy_detail_CorePolicy.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::policy::detail::LatencyBudget

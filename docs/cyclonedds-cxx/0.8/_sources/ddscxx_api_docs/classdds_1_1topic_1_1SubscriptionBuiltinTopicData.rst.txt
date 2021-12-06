@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1topic_1_1SubscriptionBuiltinTopicData:
+
+Class SubscriptionBuiltinTopicData
+==================================
+
+- Defined in :ref:`file_dds_topic_BuiltinTopic.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Value`` (:ref:`exhale_class_classdds_1_1core_1_1Value`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::SubscriptionBuiltinTopicData
+   :members:
+   :protected-members:
+   :undoc-members:

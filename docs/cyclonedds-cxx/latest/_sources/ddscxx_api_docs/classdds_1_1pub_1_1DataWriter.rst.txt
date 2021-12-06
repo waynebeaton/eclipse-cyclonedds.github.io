@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1pub_1_1DataWriter:
+
+Template Class DataWriter
+=========================
+
+- Defined in :ref:`file_dds_pub_DataWriter.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::pub::AnyDataWriter`` (:ref:`exhale_class_classdds_1_1pub_1_1AnyDataWriter`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::pub::DataWriter
+   :members:
+   :protected-members:
+   :undoc-members:

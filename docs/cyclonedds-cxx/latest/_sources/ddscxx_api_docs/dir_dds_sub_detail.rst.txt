@@ -1,0 +1,48 @@
+.. _dir_dds_sub_detail:
+
+
+Directory detail
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/sub/detail``
+
+
+Files
+-----
+
+- :ref:`file_dds_sub_detail_AnyDataReader.hpp`
+- :ref:`file_dds_sub_detail_AnyDataReaderImpl.hpp`
+- :ref:`file_dds_sub_detail_CoherentAccess.hpp`
+- :ref:`file_dds_sub_detail_CoherentAccessImpl.hpp`
+- :ref:`file_dds_sub_detail_DataReader.hpp`
+- :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+- :ref:`file_dds_sub_detail_ddssub.hpp`
+- :ref:`file_dds_sub_detail_discovery.hpp`
+- :ref:`file_dds_sub_detail_find.hpp`
+- :ref:`file_dds_sub_detail_GenerationCount.hpp`
+- :ref:`file_dds_sub_detail_GenerationCountImpl.hpp`
+- :ref:`file_dds_sub_detail_LoanedSamples.hpp`
+- :ref:`file_dds_sub_detail_LoanedSamplesImpl.hpp`
+- :ref:`file_dds_sub_detail_Manipulators.hpp`
+- :ref:`file_dds_sub_detail_Query.hpp`
+- :ref:`file_dds_sub_detail_QueryImpl.hpp`
+- :ref:`file_dds_sub_detail_Rank.hpp`
+- :ref:`file_dds_sub_detail_RankImpl.hpp`
+- :ref:`file_dds_sub_detail_Sample.hpp`
+- :ref:`file_dds_sub_detail_SampleImpl.hpp`
+- :ref:`file_dds_sub_detail_SampleInfo.hpp`
+- :ref:`file_dds_sub_detail_SampleInfoImpl.hpp`
+- :ref:`file_dds_sub_detail_SampleRef.hpp`
+- :ref:`file_dds_sub_detail_SampleRefImpl.hpp`
+- :ref:`file_dds_sub_detail_SamplesHolder.hpp`
+- :ref:`file_dds_sub_detail_SharedSamples.hpp`
+- :ref:`file_dds_sub_detail_SharedSamplesImpl.hpp`
+- :ref:`file_dds_sub_detail_Subscriber.hpp`
+- :ref:`file_dds_sub_detail_SubscriberImpl.hpp`
+
+

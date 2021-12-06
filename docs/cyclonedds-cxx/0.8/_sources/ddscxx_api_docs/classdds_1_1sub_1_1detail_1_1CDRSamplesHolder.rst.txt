@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1CDRSamplesHolder:
+
+Class CDRSamplesHolder
+======================
+
+- Defined in :ref:`file_dds_sub_detail_SamplesHolder.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::sub::detail::SamplesHolder`` (:ref:`exhale_class_classdds_1_1sub_1_1detail_1_1SamplesHolder`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::CDRSamplesHolder
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1afdd0bcbf4a6453be8a010d8cf3c5c292:
+
+Template Function org::eclipse::cyclonedds::core::cdr::max_swapped
+==================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::max_swapped(basic_cdr_stream&, const T&)

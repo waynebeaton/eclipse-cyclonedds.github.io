@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class CMDataReaderBuiltinTopicDataDelegate &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class CMDataReaderBuiltinTopicDataDelegate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-cmdatareaderbuiltintopicdatadelegate">
+<span id="exhale-class-classorg-1-1eclipse-1-1cyclonedds-1-1topic-1-1cmdatareaderbuiltintopicdatadelegate"></span><h1>Class CMDataReaderBuiltinTopicDataDelegate<a class="headerlink" href="#class-cmdatareaderbuiltintopicdatadelegate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_topic_BuiltinTopicDelegate.hpp.html#file-org-eclipse-cyclonedds-topic-builtintopicdelegate-hpp"><span class="std std-ref">File BuiltinTopicDelegate.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegateE">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegateE"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegateE"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds5topicE" title="org::eclipse::cyclonedds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CMDataReaderBuiltinTopicDataDelegate</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate3keyEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate3keyEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate3keyEv"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::keyC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a6730204fbcd6506c8351391fa1e5a203"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic15BuiltinTopicKeyE" title="dds::topic::BuiltinTopicKey"><span class="n"><span class="pre">BuiltinTopicKey</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">key</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate3keyEPK7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate3keyEPK7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate3keyEPK7int32_t"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::key__int32_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a2ed5e105c42fcf7db630079a25fff9c3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">key</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">key</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate14subscriber_keyEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate14subscriber_keyEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate14subscriber_keyEv"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::subscriber_keyC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a3b719f9da004f6d29e6a2af791c566b4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic15BuiltinTopicKeyE" title="dds::topic::BuiltinTopicKey"><span class="n"><span class="pre">BuiltinTopicKey</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">subscriber_key</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate14subscriber_keyEPK7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate14subscriber_keyEPK7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate14subscriber_keyEPK7int32_t"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::subscriber_key__int32_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a7ef5891843c5ab39a7ed3f1f130c5ce6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">subscriber_key</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">key</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4nameEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4nameEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4nameEv"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::nameC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1ac835376cf79f208924f93174c59a37c2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4nameEPKc">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4nameEPKc"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4nameEPKc"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::name__cCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a0fa2c5086085d59e19573cbdfa51bad8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate7historyEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate7historyEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate7historyEv"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::historyC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a576570fac4a0179b4684567fda79fe9d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy7HistoryE" title="dds::core::policy::History"><span class="n"><span class="pre">History</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">history</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate7historyEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate7historyEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate7historyEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::history__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1ad95cc4159f539795e7132057c58c357e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">history</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">policy</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15resource_limitsEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15resource_limitsEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15resource_limitsEv"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::resource_limitsC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1ac8d4bb80f048d04df54809fa39c73f30"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14ResourceLimitsE" title="dds::core::policy::ResourceLimits"><span class="n"><span class="pre">ResourceLimits</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">resource_limits</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15resource_limitsEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15resource_limitsEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15resource_limitsEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::resource_limits__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a77a52712f336c98354619f487b9e6c9e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resource_limits</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">policy</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate21reader_data_lifecycleEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate21reader_data_lifecycleEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate21reader_data_lifecycleEv"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::reader_data_lifecycleC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a2b64be6f87e1af0b3a8ee3e2c493a9ea"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy19ReaderDataLifecycleE" title="dds::core::policy::ReaderDataLifecycle"><span class="n"><span class="pre">ReaderDataLifecycle</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">reader_data_lifecycle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate21reader_data_lifecycleEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate21reader_data_lifecycleEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate21reader_data_lifecycleEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::reader_data_lifecycle__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a3c651998c9ce607fed0dc4ab822f7ed4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reader_data_lifecycle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">policy</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegateeqERK36CMDataReaderBuiltinTopicDataDelegate">
+<span id="_CPPv3NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegateeqERK36CMDataReaderBuiltinTopicDataDelegate"></span><span id="_CPPv2NK3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegateeqERK36CMDataReaderBuiltinTopicDataDelegate"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::eq-operator__CMDataReaderBuiltinTopicDataDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1aaeb4542ffb2a1a010bae38be0074eb06"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegateE" title="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate"><span class="n"><span class="pre">CMDataReaderBuiltinTopicDataDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4key_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4key_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate4key_E"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::key___dds::topic::BuiltinTopicKey"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a88e679ee8d49fd2937679f67fe0761f8"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic15BuiltinTopicKeyE" title="dds::topic::BuiltinTopicKey"><span class="n"><span class="pre">BuiltinTopicKey</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">key_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15subscriber_key_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15subscriber_key_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate15subscriber_key_E"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::subscriber_key___dds::topic::BuiltinTopicKey"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1aaedd9a6c6dcac47cede772847b04a1b7"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topicE" title="dds::topic"><span class="n"><span class="pre">topic</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds5topic15BuiltinTopicKeyE" title="dds::topic::BuiltinTopicKey"><span class="n"><span class="pre">BuiltinTopicKey</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">subscriber_key_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate5name_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate5name_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate5name_E"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::name___ss"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a6218a69fe17a03c96002181375ac0771"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate8history_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate8history_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate8history_E"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::history___dds::core::policy::History"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a05a13be5934946e6ce9eaccf6bac8fac"></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy7HistoryE" title="dds::core::policy::History"><span class="n"><span class="pre">History</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">history_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate16resource_limits_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate16resource_limits_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate16resource_limits_E"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::resource_limits___dds::core::policy::ResourceLimits"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1a31a4a6af7ff418c8a2fbd89557fd0a9c"></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14ResourceLimitsE" title="dds::core::policy::ResourceLimits"><span class="n"><span class="pre">ResourceLimits</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resource_limits_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate22reader_data_lifecycle_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate22reader_data_lifecycle_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds5topic36CMDataReaderBuiltinTopicDataDelegate22reader_data_lifecycle_E"></span><span id="org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicDataDelegate::reader_data_lifecycle___dds::core::policy::ReaderDataLifecycle"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicDataDelegate_1aee0c34b240e7e2d68a181014b2a96e1e"></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy19ReaderDataLifecycleE" title="dds::core::policy::ReaderDataLifecycle"><span class="n"><span class="pre">ReaderDataLifecycle</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reader_data_lifecycle_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

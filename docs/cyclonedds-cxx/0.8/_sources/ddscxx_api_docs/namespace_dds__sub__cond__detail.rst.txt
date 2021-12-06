@@ -1,0 +1,22 @@
+
+.. _namespace_dds__sub__cond__detail:
+
+Namespace dds::sub::cond::detail
+================================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2QueryCondition_8hpp_1a5df8c946d6bbe6384f2c2d7e6f20857d`
+
+- :ref:`exhale_typedef_detail_2ReadCondition_8hpp_1ae26930f37d8be0dd2200223583ad661b`

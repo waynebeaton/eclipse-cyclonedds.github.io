@@ -1,0 +1,59 @@
+
+.. _file_dds_core_EntityQos.hpp:
+
+File EntityQos.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/EntityQos.hpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_EntityQos.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Value.hpp`` (:ref:`file_dds_core_Value.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_detail_EntityQosImpl.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1EntityQos`
+

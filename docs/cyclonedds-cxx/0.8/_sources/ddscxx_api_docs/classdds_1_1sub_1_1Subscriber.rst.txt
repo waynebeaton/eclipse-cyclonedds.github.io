@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1sub_1_1Subscriber:
+
+Class Subscriber
+================
+
+- Defined in :ref:`file_dds_sub_Subscriber.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Entity`` (:ref:`exhale_class_classdds_1_1core_1_1Entity`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::Subscriber
+   :members:
+   :protected-members:
+   :undoc-members:

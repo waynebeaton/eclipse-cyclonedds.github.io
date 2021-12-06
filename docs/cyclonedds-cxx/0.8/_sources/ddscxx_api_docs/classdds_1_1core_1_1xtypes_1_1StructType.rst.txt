@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1xtypes_1_1StructType:
+
+Class StructType
+================
+
+- Defined in :ref:`file_dds_core_xtypes_StructType.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public DynamicType``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::xtypes::StructType
+   :members:
+   :protected-members:
+   :undoc-members:

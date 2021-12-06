@@ -1,0 +1,13 @@
+.. _exhale_function_cdr__stream_8hpp_1a1b7d503af658607c62adabc35a500b31:
+
+Function org::eclipse::cyclonedds::core::cdr::native_endianness
+===============================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::native_endianness()

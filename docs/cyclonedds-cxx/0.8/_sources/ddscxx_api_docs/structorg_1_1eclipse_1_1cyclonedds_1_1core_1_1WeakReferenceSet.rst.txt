@@ -1,0 +1,16 @@
+.. _exhale_struct_structorg_1_1eclipse_1_1cyclonedds_1_1core_1_1WeakReferenceSet:
+
+Template Struct WeakReferenceSet
+================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_WeakReferenceSet.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: org::eclipse::cyclonedds::core::WeakReferenceSet
+   :members:
+   :protected-members:
+   :undoc-members:

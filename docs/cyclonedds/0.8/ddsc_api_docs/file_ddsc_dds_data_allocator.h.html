@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File dds_data_allocator.h &mdash; CycloneDDS 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>File dds_data_allocator.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/file_ddsc_dds_data_allocator.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-dds-data-allocator-h">
+<span id="file-ddsc-dds-data-allocator-h"></span><h1>File dds_data_allocator.h<a class="headerlink" href="#file-dds-data-allocator-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="dir_ddsc.html#dir-ddsc"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">ddsc</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-ddsc-dds-data-allocator-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_data_allocator.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id3">Classes</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id4">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id5">Defines</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id6">Typedefs</a></p></li>
+</ul>
+</div>
+<section id="definition-ddsc-dds-data-allocator-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_data_allocator.h</span></code>)<a class="headerlink" href="#definition-ddsc-dds-data-allocator-h" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_ddsc_dds_data_allocator.h.html">Program Listing for File dds_data_allocator.h</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">dds/dds.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dds/ddsrt/attributes.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dds/export.h</span></code></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structdds__data__allocator.html#exhale-struct-structdds-data-allocator"><span class="std std-ref">Struct dds_data_allocator</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_dds__data__allocator_8h_1a221a95d416988cb4dac2aea88d811770.html#exhale-function-dds-data-allocator-8h-1a221a95d416988cb4dac2aea88d811770"><span class="std std-ref">Function dds_data_allocator_alloc</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__data__allocator_8h_1ace1d75e0c50e2cc853a592d14c774b80.html#exhale-function-dds-data-allocator-8h-1ace1d75e0c50e2cc853a592d14c774b80"><span class="std std-ref">Function dds_data_allocator_fini</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__data__allocator_8h_1aad32840a3ff5772149f75431cb31008f.html#exhale-function-dds-data-allocator-8h-1aad32840a3ff5772149f75431cb31008f"><span class="std std-ref">Function dds_data_allocator_free</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__data__allocator_8h_1a80558424eb6b4e686850009a7dff2524.html#exhale-function-dds-data-allocator-8h-1a80558424eb6b4e686850009a7dff2524"><span class="std std-ref">Function dds_data_allocator_init</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__data__allocator_8h_1a67ae99fbc3f6b9b96d6210ddd23a285f.html#exhale-function-dds-data-allocator-8h-1a67ae99fbc3f6b9b96d6210ddd23a285f"><span class="std std-ref">Function dds_data_allocator_init_heap</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__data__allocator_8h_1af9b390386aff8ed9ba1ad8477a22339f.html#exhale-function-dds-data-allocator-8h-1af9b390386aff8ed9ba1ad8477a22339f"><span class="std std-ref">Function dds_is_loan_available</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__data__allocator_8h_1afcd1711d9cdf1233dc32fabbcaa615fd.html#exhale-function-dds-data-allocator-8h-1afcd1711d9cdf1233dc32fabbcaa615fd"><span class="std std-ref">Function is_loan_available</span></a></p></li>
+</ul>
+</section>
+<section id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_dds__data__allocator_8h_1a3e573761f28377b47977bcd02727ff99.html#exhale-define-dds-data-allocator-8h-1a3e573761f28377b47977bcd02727ff99"><span class="std std-ref">Define DDS_DATA_ALLOCATOR_MAX_SIZE</span></a></p></li>
+</ul>
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_dds__data__allocator_8h_1af953cdc1c40606789d17326be32f93c7.html#exhale-typedef-dds-data-allocator-8h-1af953cdc1c40606789d17326be32f93c7"><span class="std std-ref">Typedef dds_data_allocator_t</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

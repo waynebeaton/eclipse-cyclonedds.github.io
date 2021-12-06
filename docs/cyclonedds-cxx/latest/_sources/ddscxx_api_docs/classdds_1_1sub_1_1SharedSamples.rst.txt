@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1SharedSamples:
+
+Template Class SharedSamples
+============================
+
+- Defined in :ref:`file_dds_sub_SharedSamples.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::SharedSamples
+   :members:
+   :protected-members:
+   :undoc-members:

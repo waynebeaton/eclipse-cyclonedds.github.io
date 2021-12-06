@@ -1,0 +1,82 @@
+
+.. _file_dds_sub_LoanedSamples.hpp:
+
+File LoanedSamples.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/LoanedSamples.hpp``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_LoanedSamples.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/ref_traits.hpp`` (:ref:`file_dds_core_ref_traits.hpp`)
+
+- ``dds/sub/SampleRef.hpp`` (:ref:`file_dds_sub_SampleRef.hpp`)
+
+- ``dds/sub/detail/LoanedSamples.hpp`` (:ref:`file_dds_sub_detail_LoanedSamples.hpp`)
+
+- ``dds/sub/detail/LoanedSamplesImpl.hpp`` (:ref:`file_dds_sub_detail_LoanedSamplesImpl.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_SharedSamples.hpp`
+
+- :ref:`file_dds_sub_DataReader.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_dds_sub_detail_DataReader.hpp`
+
+- :ref:`file_dds_sub_detail_SamplesHolder.hpp`
+
+- :ref:`file_dds_sub_detail_SharedSamples.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1LoanedSamples`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_LoanedSamples_8hpp_1af0d95acb416765982b8abf4234060fc8`
+

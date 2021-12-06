@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1ab6d3b7559911542bea7134c7107e804b:
+
+Define ISOCPP_PRECONDITION_NOT_MET_ERROR
+========================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_PRECONDITION_NOT_MET_ERROR

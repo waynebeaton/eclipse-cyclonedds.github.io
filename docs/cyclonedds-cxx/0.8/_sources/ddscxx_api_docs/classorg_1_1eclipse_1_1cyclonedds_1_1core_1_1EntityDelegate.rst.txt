@@ -1,0 +1,36 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1EntityDelegate:
+
+Class EntityDelegate
+====================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public org::eclipse::cyclonedds::core::DDScObjectDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1DDScObjectDelegate`)
+
+
+Derived Types
+*************
+
+- ``public org::eclipse::cyclonedds::domain::DomainParticipantDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1domain_1_1DomainParticipantDelegate`)
+- ``public org::eclipse::cyclonedds::pub::AnyDataWriterDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1AnyDataWriterDelegate`)
+- ``public org::eclipse::cyclonedds::pub::PublisherDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1PublisherDelegate`)
+- ``public org::eclipse::cyclonedds::sub::AnyDataReaderDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1AnyDataReaderDelegate`)
+- ``public org::eclipse::cyclonedds::sub::SubscriberDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1SubscriberDelegate`)
+- ``public org::eclipse::cyclonedds::topic::AnyTopicDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1AnyTopicDelegate`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::core::EntityDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

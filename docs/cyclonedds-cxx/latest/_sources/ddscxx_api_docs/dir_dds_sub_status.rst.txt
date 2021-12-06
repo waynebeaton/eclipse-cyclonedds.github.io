@@ -1,0 +1,25 @@
+.. _dir_dds_sub_status:
+
+
+Directory status
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/sub/status``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_sub_status_detail`
+
+
+Files
+-----
+
+- :ref:`file_dds_sub_status_DataState.hpp`
+
+

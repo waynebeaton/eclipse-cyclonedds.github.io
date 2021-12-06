@@ -1,0 +1,13 @@
+.. _exhale_function_ReportUtils_8hpp_1aba99e1a2157d7a8d8db2615853f2a5e8:
+
+Function org::eclipse::cyclonedds::core::utils::check_ddsc_result_and_throw_exception
+=====================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::utils::check_ddsc_result_and_throw_exception(dds_return_t, const char *, int32_t, const char *, const char *, ...)

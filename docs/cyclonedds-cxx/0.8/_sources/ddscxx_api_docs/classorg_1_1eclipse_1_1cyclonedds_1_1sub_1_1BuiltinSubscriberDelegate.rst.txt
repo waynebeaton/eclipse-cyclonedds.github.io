@@ -1,0 +1,25 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1BuiltinSubscriberDelegate:
+
+Class BuiltinSubscriberDelegate
+===============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_BuiltinSubscriberDelegate.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public org::eclipse::cyclonedds::sub::SubscriberDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1SubscriberDelegate`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::sub::BuiltinSubscriberDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

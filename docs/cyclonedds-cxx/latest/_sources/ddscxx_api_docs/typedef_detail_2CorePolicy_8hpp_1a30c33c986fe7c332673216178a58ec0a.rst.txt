@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2CorePolicy_8hpp_1a30c33c986fe7c332673216178a58ec0a:
+
+Typedef dds::core::policy::detail::Deadline
+===========================================
+
+- Defined in :ref:`file_dds_core_policy_detail_CorePolicy.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::policy::detail::Deadline

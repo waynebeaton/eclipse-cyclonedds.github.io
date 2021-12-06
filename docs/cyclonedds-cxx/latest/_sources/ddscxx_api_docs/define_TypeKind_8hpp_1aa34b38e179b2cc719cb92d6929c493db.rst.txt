@@ -1,0 +1,13 @@
+.. _exhale_define_TypeKind_8hpp_1aa34b38e179b2cc719cb92d6929c493db:
+
+Define OMG_DDS_TYPE_OBJECT_HPP_
+===============================
+
+- Defined in :ref:`file_dds_core_xtypes_TypeKind.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_TYPE_OBJECT_HPP_

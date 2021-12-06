@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2SampleInfo_8hpp_1a87ae4c5941a83ec170b78df004c67ace:
+
+Typedef dds::sub::detail::SampleInfo
+====================================
+
+- Defined in :ref:`file_dds_sub_detail_SampleInfo.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::SampleInfo

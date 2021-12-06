@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2AnyDataWriter_8hpp_1ab311d7c7ce147b8e997654685f3cc6fa:
+
+Typedef dds::pub::detail::AnyDataWriter
+=======================================
+
+- Defined in :ref:`file_dds_pub_detail_AnyDataWriter.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::pub::detail::AnyDataWriter

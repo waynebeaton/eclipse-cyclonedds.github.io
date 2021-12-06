@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1sub_1_1status_1_1SampleState:
+
+Class SampleState
+=================
+
+- Defined in :ref:`file_dds_sub_status_DataState.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::bitset< OMG_DDS_STATE_BIT_COUNT >``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::status::SampleState
+   :members:
+   :protected-members:
+   :undoc-members:

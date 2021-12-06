@@ -1,0 +1,132 @@
+
+.. _file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp:
+
+File basic_cdr_ser.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core_cdr>` (``org/eclipse/cyclonedds/core/cdr``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/cdr/basic_cdr_ser.hpp``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``algorithm``
+
+- ``array`` (:ref:`file_dds_core_array.hpp`)
+
+- ``cdr_stream.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`)
+
+- ``cstring``
+
+- ``dds/core/Exception.hpp`` (:ref:`file_dds_core_Exception.hpp`)
+
+- ``org/eclipse/cyclonedds/core/type_helpers.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_type_helpers.hpp`)
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core__cdr`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cdr_1_1basic__cdr__stream`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1aaeb05e6c958dcb4b6051ad009b1af3c6`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1ac22bf2b68706d2b865d439b27da0e267`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1ad439ee5e08d9610e67711f3ea9b8f14e`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a8466fb3fdbe875977680a76388cc83de`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a6ba6c47dea271fddaafe86beade5e35e`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1afdd0bcbf4a6453be8a010d8cf3c5c292`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a0cd9f8f417a649b469778d993aba64cf`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a70ef9d67b82829f3ab3912a4f636ff15`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a3103ced95fc9f1cf570285665441d964`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a648a8941d4619c5bbc10253c6c03bd1a`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a4aea0e38a2449953b8d7ab58040deac0`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1aadf6a68d16f761919b3f75bc0bc5f617`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a4a65d65bf34f612e5eae96ab1600f545`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1aa30be5bd51d17937e27aed4ec6ad1037`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a12c2e6e30402e6b1ccb71ca08e86826b`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a35b1f9af50beccf70e0c648bdf839085`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a7c9c24ef15e26740e53d884543c8bd8a`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a5903cf88ed09ba62c834bb3eb9876e00`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a804fc8ce165e56bdc80e5c651a520919`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1ae9bfe2169cddc901b67910add5dfc78e`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a07313d8e0724ba182eaa2c2c12b2a8c6`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1a7f697adf038cf6ff0179322e63068972`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1ad6b85aeef83054aeed8e5895454918eb`
+
+- :ref:`exhale_function_basic__cdr__ser_8hpp_1ae6590be4c1087b94a00e90a63bc4eff3`
+

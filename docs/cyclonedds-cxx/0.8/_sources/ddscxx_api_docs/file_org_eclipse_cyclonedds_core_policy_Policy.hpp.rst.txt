@@ -1,0 +1,77 @@
+
+.. _file_org_eclipse_cyclonedds_core_policy_Policy.hpp:
+
+File Policy.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core_policy>` (``org/eclipse/cyclonedds/core/policy``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/policy/Policy.hpp``)
+--------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_policy_Policy.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``org/eclipse/cyclonedds/core/policy/ProprietaryPolicyKind.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_policy_ProprietaryPolicyKind.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_policy_detail_CorePolicy.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core__policy`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ProductData`
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1Share`
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1SubscriptionKey`
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TListenerScheduling`
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TReaderLifespan`
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TScheduling`
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TWatchdogScheduling`
+

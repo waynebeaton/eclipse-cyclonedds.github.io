@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2CorePolicy_8hpp_1a092c94c42812b7c8bb2aab75789c636b:
+
+Typedef dds::core::policy::detail::WriterDataLifecycle
+======================================================
+
+- Defined in :ref:`file_dds_core_policy_detail_CorePolicy.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::policy::detail::WriterDataLifecycle

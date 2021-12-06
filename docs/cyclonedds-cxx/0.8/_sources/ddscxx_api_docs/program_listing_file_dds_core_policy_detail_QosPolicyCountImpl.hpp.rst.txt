@@ -1,0 +1,73 @@
+
+.. _program_listing_file_dds_core_policy_detail_QosPolicyCountImpl.hpp:
+
+Program Listing for File QosPolicyCountImpl.hpp
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_policy_detail_QosPolicyCountImpl.hpp>` (``dds/core/policy/detail/QosPolicyCountImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_CORE_POLICY_TQOSPOLICYCOUNT_IMPL_HPP_
+   #define CYCLONEDDS_DDS_CORE_POLICY_TQOSPOLICYCOUNT_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/core/policy/QosPolicyCount.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace policy
+   {
+   
+   
+   QosPolicyCount::QosPolicyCount(QosPolicyId policy_id, int32_t count) : dds::core::Value(policy_id, count) { }
+   
+   #if defined(__GNUC__) && (__GNUC__ >= 10)
+   _Pragma("GCC diagnostic push")
+   _Pragma("GCC diagnostic ignored \"-Wanalyzer-null-dereference\"")
+   #endif
+   
+   
+   QosPolicyCount::QosPolicyCount(const QosPolicyCount& other) : dds::core::Value(other.policy_id(), other.count()) { }
+   
+   #if defined(__GNUC__) && (__GNUC__ >= 10)
+   _Pragma("GCC diagnostic pop")
+   #endif
+   
+    QosPolicyId QosPolicyCount::policy_id() const
+   {
+       return this->delegate().policy_id();
+   }
+   
+   
+   int32_t QosPolicyCount::count() const
+   {
+       return this->delegate().count();
+   }
+   
+   }
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_CORE_POLICY_TQOSPOLICYCOUNT_IMPL_HPP_ */

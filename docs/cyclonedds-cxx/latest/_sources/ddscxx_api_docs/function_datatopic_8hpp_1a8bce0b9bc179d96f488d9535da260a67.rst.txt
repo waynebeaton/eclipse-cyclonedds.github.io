@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a8bce0b9bc179d96f488d9535da260a67:
+
+Template Function serdata_eqkey
+===============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_eqkey(const ddsi_serdata *, const ddsi_serdata *)

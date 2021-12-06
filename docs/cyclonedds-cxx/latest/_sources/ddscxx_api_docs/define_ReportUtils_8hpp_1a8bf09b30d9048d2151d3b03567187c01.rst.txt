@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1a8bf09b30d9048d2151d3b03567187c01:
+
+Define ISOCPP_NO_DATA_ERROR
+===========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_NO_DATA_ERROR

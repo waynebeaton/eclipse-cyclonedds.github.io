@@ -1,0 +1,57 @@
+
+.. _file_dds_pub_detail_Publisher.hpp:
+
+File Publisher.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub_detail>` (``dds/pub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/pub/detail/Publisher.hpp``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_pub_detail_Publisher.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/pub/detail/PublisherImpl.hpp`` (:ref:`file_dds_pub_detail_PublisherImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/pub/PublisherDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__pub`
+
+- :ref:`namespace_dds__pub__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2Publisher_8hpp_1a85cf171dedbae36d36969cb53dc244bd`
+

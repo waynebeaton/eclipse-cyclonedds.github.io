@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1a0cd9f8f417a649b469778d993aba64cf:
+
+Template Function org::eclipse::cyclonedds::core::cdr::move
+===========================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::move(basic_cdr_stream&, const T&)

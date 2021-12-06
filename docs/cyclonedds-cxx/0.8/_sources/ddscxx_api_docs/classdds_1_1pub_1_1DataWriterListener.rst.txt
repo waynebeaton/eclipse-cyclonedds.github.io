@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1pub_1_1DataWriterListener:
+
+Template Class DataWriterListener
+=================================
+
+- Defined in :ref:`file_dds_pub_detail_DataWriter.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public dds::pub::NoOpDataWriterListener< T >`` (:ref:`exhale_class_classdds_1_1pub_1_1NoOpDataWriterListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::pub::DataWriterListener
+   :members:
+   :protected-members:
+   :undoc-members:

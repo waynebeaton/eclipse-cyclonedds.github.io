@@ -1,0 +1,664 @@
+
+.. _program_listing_file_dds_core_policy_CorePolicy.hpp:
+
+Program Listing for File CorePolicy.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_policy_CorePolicy.hpp>` (``dds/core/policy/CorePolicy.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_CORE_POLICY_CORE_POLICY_HPP_
+   #define OMG_TDDS_CORE_POLICY_CORE_POLICY_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/detail/conformance.hpp>
+   #include <dds/core/LengthUnlimited.hpp>
+   #include <dds/core/detail/Value.hpp>
+   #include <dds/core/policy/PolicyKind.hpp>
+   
+   //==============================================================================
+   // DDS Policy Classes
+   namespace dds
+   {
+   namespace core
+   {
+   namespace policy
+   {
+   
+   //==============================================================================
+   class UserData : public dds::core::Value
+   {
+   public:
+       UserData();
+   
+       explicit UserData(const dds::core::ByteSeq& sequence);
+   
+       UserData(const uint8_t* value_begin, const uint8_t* value_end);
+   
+       UserData(const UserData& other);
+   
+       UserData& operator=(const UserData& other) = default;
+   
+   public:
+       UserData& value(const dds::core::ByteSeq& sequence);
+   
+       template <typename OCTET_ITER>
+       UserData& value(OCTET_ITER begin, OCTET_ITER end);
+   
+       const dds::core::ByteSeq value() const;
+   
+       const uint8_t* begin() const;
+   
+       const uint8_t* end() const;
+   };
+   
+   //==============================================================================
+   
+   class GroupData : public dds::core::Value
+   {
+   public:
+       GroupData();
+   
+       explicit GroupData(const dds::core::ByteSeq& sequence);
+   
+       GroupData(const GroupData& other);
+   
+       GroupData& operator=(const GroupData& other) = default;
+   
+       GroupData(const uint8_t* value_begin, const uint8_t* value_end);
+   
+   public:
+       GroupData& value(const dds::core::ByteSeq& sequence);
+   
+       template <typename OCTET_ITER>
+       GroupData& value(OCTET_ITER begin, OCTET_ITER end);
+   
+       const dds::core::ByteSeq value() const;
+   
+       const uint8_t* begin() const;
+   
+       const uint8_t* end() const;
+   };
+   
+   //==============================================================================
+   
+   class TopicData : public dds::core::Value
+   {
+   public:
+       TopicData();
+   
+       explicit TopicData(const dds::core::ByteSeq& sequence);
+   
+       TopicData(const TopicData& other);
+   
+       TopicData(const uint8_t* value_begin, const uint8_t* value_end);
+   
+       TopicData& operator=(const TopicData& other) = default;
+   
+   public:
+       TopicData& value(const dds::core::ByteSeq& sequence);
+   
+       template <typename OCTET_ITER>
+       TopicData& value(OCTET_ITER begin, OCTET_ITER end);
+   
+       const dds::core::ByteSeq value() const;
+   
+       const uint8_t* begin() const;
+   
+       const uint8_t* end() const;
+   };
+   
+   
+   //==============================================================================
+   
+   class EntityFactory : public dds::core::Value
+   {
+   public:
+       explicit EntityFactory(bool autoenable_created_entities = true);
+   
+       EntityFactory(const EntityFactory& other);
+   
+       EntityFactory& operator=(const EntityFactory& other) = default;
+   
+   public:
+       EntityFactory& autoenable_created_entities(bool autoenable_created_entities);
+   
+       bool autoenable_created_entities() const;
+   
+   public:
+       static EntityFactory AutoEnable();
+   
+       static EntityFactory ManuallyEnable();
+   };
+   
+   //==============================================================================
+   
+   class TransportPriority : public dds::core::Value
+   {
+   public:
+       explicit TransportPriority(int32_t priority = 0);
+   
+       TransportPriority(const TransportPriority& other);
+   
+       TransportPriority& operator=(const TransportPriority& other) = default;
+   
+   public:
+       TransportPriority& value(int32_t priority);
+   
+       int32_t value() const;
+   };
+   
+   //==============================================================================
+   
+   class Lifespan : public dds::core::Value
+   {
+   public:
+       explicit Lifespan(const dds::core::Duration& duration = dds::core::Duration::infinite());
+   
+       Lifespan(const Lifespan& other);
+   
+       Lifespan& operator=(const Lifespan& other) = default;
+   
+   public:
+       Lifespan& duration(const dds::core::Duration& duration);
+   
+       const dds::core::Duration duration() const;
+   };
+   
+   //==============================================================================
+   
+   class Deadline : public dds::core::Value
+   {
+   public:
+       explicit Deadline(const dds::core::Duration& period = dds::core::Duration::infinite());
+   
+       Deadline(const Deadline& other);
+   
+       Deadline& operator=(const Deadline& other) = default;
+   
+   public:
+       Deadline& period(const dds::core::Duration& period);
+   
+       const dds::core::Duration period() const;
+   };
+   
+   //==============================================================================
+   
+   class LatencyBudget : public dds::core::Value
+   {
+   public:
+       explicit LatencyBudget(const dds::core::Duration& duration = dds::core::Duration::zero());
+   
+       LatencyBudget(const LatencyBudget& other);
+   
+       LatencyBudget& operator=(const LatencyBudget& other) = default;
+   
+   public:
+       LatencyBudget& duration(const dds::core::Duration& duration);
+   
+       const dds::core::Duration duration() const;
+   };
+   
+   //==============================================================================
+   
+   class TimeBasedFilter : public dds::core::Value
+   {
+   public:
+       explicit TimeBasedFilter(
+           const dds::core::Duration& period = dds::core::Duration::zero());
+   
+       TimeBasedFilter(const TimeBasedFilter& other);
+   
+       TimeBasedFilter& operator=(const TimeBasedFilter& other) = default;
+   
+   public:
+       TimeBasedFilter& minimum_separation(const dds::core::Duration& period);
+   
+       const dds::core::Duration minimum_separation() const;
+   };
+   
+   
+   //==============================================================================
+   
+   class Partition : public dds::core::Value
+   {
+   public:
+       explicit Partition(const std::string& name = "");
+   
+       explicit Partition(const dds::core::StringSeq& names);
+   
+       Partition(const Partition& other);
+   
+       Partition& operator=(const Partition& other) = default;
+   
+   public:
+       Partition& name(const std::string& name);
+   
+       Partition& name(const dds::core::StringSeq& names);
+   
+       const dds::core::StringSeq name() const;
+   };
+   
+   //==============================================================================
+   #ifdef OMG_DDS_OWNERSHIP_SUPPORT
+   
+   class Ownership : public dds::core::Value
+   {
+   public:
+       #   if defined (__SUNPRO_CC) && defined(SHARED)
+   #       undef SHARED
+       #   endif
+   
+       explicit Ownership(
+           dds::core::policy::OwnershipKind::Type kind = dds::core::policy::OwnershipKind::SHARED);
+   
+       Ownership(const Ownership& other);
+   
+       Ownership& operator=(const Ownership& other) = default;
+   
+   public:
+       Ownership& kind(dds::core::policy::OwnershipKind::Type kind);
+   
+       dds::core::policy::OwnershipKind::Type kind() const;
+   
+   public:
+       static Ownership Exclusive();
+   
+       static Ownership Shared();
+   };
+   
+   
+   //==============================================================================
+   
+   class OwnershipStrength : public dds::core::Value
+   {
+   public:
+       explicit OwnershipStrength(int32_t strength = 0);
+   
+       OwnershipStrength(const OwnershipStrength& other);
+   
+       OwnershipStrength& operator=(const OwnershipStrength& other) = default;
+   
+   public:
+       int32_t value() const;
+   
+       OwnershipStrength& value(int32_t strength);
+   };
+   
+   #endif  // OMG_DDS_OWNERSHIP_SUPPORT
+   //==============================================================================
+   
+   class WriterDataLifecycle : public dds::core::Value
+   {
+   public:
+       explicit WriterDataLifecycle(bool autodispose_unregistered_instances = true);
+   
+       WriterDataLifecycle(const WriterDataLifecycle& other);
+   
+       WriterDataLifecycle& operator=(const WriterDataLifecycle& other) = default;
+   
+   public:
+       bool autodispose_unregistered_instances() const;
+   
+       WriterDataLifecycle& autodispose_unregistered_instances(
+           bool autodispose_unregistered_instances);
+   
+   public:
+       static WriterDataLifecycle AutoDisposeUnregisteredInstances();
+   
+       static WriterDataLifecycle ManuallyDisposeUnregisteredInstances();
+   
+   };
+   
+   //==============================================================================
+   
+   class ReaderDataLifecycle : public dds::core::Value
+   {
+   public:
+       ReaderDataLifecycle(
+           const dds::core::Duration& autopurge_nowriter_samples_delay = dds::core::Duration::infinite(),
+           const dds::core::Duration& autopurge_disposed_samples_delay = dds::core::Duration::infinite());
+   
+       ReaderDataLifecycle(const ReaderDataLifecycle& other);
+   
+       ReaderDataLifecycle& operator=(const ReaderDataLifecycle& other) = default;
+   public:
+       const dds::core::Duration autopurge_nowriter_samples_delay() const;
+   
+       ReaderDataLifecycle& autopurge_nowriter_samples_delay(
+           const dds::core::Duration& autopurge_nowriter_samples_delay);
+   
+       const dds::core::Duration autopurge_disposed_samples_delay() const;
+   
+       ReaderDataLifecycle& autopurge_disposed_samples_delay(
+           const dds::core::Duration& autopurge_disposed_samples_delay);
+   
+   public:
+       static ReaderDataLifecycle NoAutoPurgeDisposedSamples();
+   
+       static ReaderDataLifecycle AutoPurgeDisposedSamples(
+           const dds::core::Duration& autopurge_disposed_samples_delay);
+   
+   };
+   
+   //==============================================================================
+   
+   class Durability : public dds::core::Value
+   {
+   public:
+       explicit Durability(
+           dds::core::policy::DurabilityKind::Type kind = dds::core::policy::DurabilityKind::VOLATILE);
+   
+       Durability(const Durability& other);
+   
+       Durability& operator=(const Durability& other) = default;
+   
+   public:
+       Durability& kind(dds::core::policy::DurabilityKind::Type kind);
+   
+       dds::core::policy::DurabilityKind::Type  kind() const;
+   
+   public:
+       static Durability Volatile();
+   
+       static Durability TransientLocal();
+   
+       static Durability Transient();
+   
+       static Durability Persistent();
+   };
+   
+   //==============================================================================
+   
+   class Presentation : public dds::core::Value
+   {
+   public:
+       Presentation(
+           dds::core::policy::PresentationAccessScopeKind::Type access_scope
+           = dds::core::policy::PresentationAccessScopeKind::INSTANCE,
+           bool coherent_access = false,
+           bool ordered_access = false);
+   
+       Presentation(const Presentation& other);
+   
+       Presentation& operator=(const Presentation& other) = default;
+   
+   public:
+       Presentation& access_scope(dds::core::policy::PresentationAccessScopeKind::Type access_scope);
+   
+       dds::core::policy::PresentationAccessScopeKind::Type access_scope() const;
+   
+       Presentation& coherent_access(bool coherent_access);
+   
+       bool coherent_access() const;
+   
+       Presentation& ordered_access(bool ordered_access);
+   
+       bool ordered_access() const;
+   
+   public:
+       static Presentation GroupAccessScope(bool coherent_access = false, bool ordered_access = false);
+   
+       static Presentation InstanceAccessScope(bool coherent_access = false, bool ordered_access = false);
+   
+       static Presentation TopicAccessScope(bool coherent_access = false, bool ordered_access = false);
+   };
+   
+   //==============================================================================
+   
+   class Reliability : public dds::core::Value
+   {
+   public:
+       Reliability(
+           dds::core::policy::ReliabilityKind::Type kind = dds::core::policy::ReliabilityKind::BEST_EFFORT,
+           const dds::core::Duration& max_blocking_time = dds::core::Duration::from_millisecs(100));
+   
+       Reliability(const Reliability& other);
+   
+       Reliability& operator=(const Reliability& other) = default;
+   
+   public:
+       Reliability& kind(dds::core::policy::ReliabilityKind::Type kind);
+   
+       dds::core::policy::ReliabilityKind::Type kind() const;
+   
+       Reliability& max_blocking_time(const dds::core::Duration& max_blocking_time);
+   
+       const dds::core::Duration max_blocking_time() const;
+   
+   public:
+       static Reliability Reliable(const dds::core::Duration& max_blocking_time = dds::core::Duration::from_millisecs(100));
+   
+       static Reliability BestEffort(const dds::core::Duration& max_blocking_time = dds::core::Duration::from_millisecs(100));
+   
+   };
+   
+   //==============================================================================
+   
+   class DestinationOrder : public dds::core::Value
+   {
+   public:
+       explicit DestinationOrder(
+           dds::core::policy::DestinationOrderKind::Type kind
+           = dds::core::policy::DestinationOrderKind::BY_RECEPTION_TIMESTAMP);
+   
+       DestinationOrder(const DestinationOrder& other);
+   
+       DestinationOrder& operator=(const DestinationOrder& other) = default;
+   
+   public:
+       DestinationOrder& kind(dds::core::policy::DestinationOrderKind::Type kind);
+   
+       dds::core::policy::DestinationOrderKind::Type kind() const;
+   
+   public:
+       static DestinationOrder SourceTimestamp();
+   
+       static DestinationOrder ReceptionTimestamp();
+   };
+   
+   //==============================================================================
+   
+   class History : public dds::core::Value
+   {
+   public:
+       History(dds::core::policy::HistoryKind::Type kind = dds::core::policy::HistoryKind::KEEP_LAST,
+                int32_t depth = 1);
+   
+       History(const History& other);
+   
+       History& operator=(const History& other) = default;
+   
+   public:
+       dds::core::policy::HistoryKind::Type kind() const;
+   
+       History& kind(dds::core::policy::HistoryKind::Type kind);
+   
+       int32_t depth() const;
+   
+       History& depth(int32_t depth);
+   
+   public:
+       static History KeepAll();
+   
+       static History KeepLast(uint32_t depth);
+   };
+   
+   //==============================================================================
+   
+   class ResourceLimits : public dds::core::Value
+   {
+   public:
+       ResourceLimits(int32_t max_samples = dds::core::LENGTH_UNLIMITED,
+                       int32_t max_instances = dds::core::LENGTH_UNLIMITED,
+                       int32_t max_samples_per_instance = dds::core::LENGTH_UNLIMITED);
+   
+       ResourceLimits(const ResourceLimits& other);
+   
+       ResourceLimits& operator=(const ResourceLimits& other) = default;
+   
+   public:
+       ResourceLimits& max_samples(int32_t max_samples);
+   
+       int32_t max_samples() const;
+   
+       ResourceLimits& max_instances(int32_t max_instances);
+   
+       int32_t max_instances() const;
+   
+       ResourceLimits& max_samples_per_instance(int32_t max_samples_per_instance);
+   
+       int32_t max_samples_per_instance() const;
+   };
+   
+   //==============================================================================
+   
+   class Liveliness : public dds::core::Value
+   {
+   public:
+       Liveliness(
+           dds::core::policy::LivelinessKind::Type kind = dds::core::policy::LivelinessKind::AUTOMATIC,
+           const dds::core::Duration& lease_duration = dds::core::Duration::infinite());
+   
+       Liveliness(const Liveliness& other);
+   
+       Liveliness& operator=(const Liveliness& other) = default;
+   
+   public:
+       Liveliness& kind(dds::core::policy::LivelinessKind::Type kind);
+   
+       dds::core::policy::LivelinessKind::Type kind() const;
+   
+       Liveliness& lease_duration(const dds::core::Duration& lease_duration);
+   
+       const dds::core::Duration lease_duration() const;
+   
+   public:
+       static Liveliness Automatic(const dds::core::Duration& lease_duration = dds::core::Duration::infinite());
+   
+       static Liveliness ManualByParticipant(const dds::core::Duration& lease_duration = dds::core::Duration::infinite());
+   
+       static Liveliness ManualByTopic(const dds::core::Duration& lease_duration = dds::core::Duration::infinite());
+   };
+   
+   
+   //==============================================================================
+   #ifdef OMG_DDS_PERSISTENCE_SUPPORT
+   
+   class DurabilityService : public dds::core::Value
+   {
+   public:
+       DurabilityService(
+           const dds::core::Duration& service_cleanup_delay = dds::core::Duration::zero(),
+           dds::core::policy::HistoryKind::Type history_kind = dds::core::policy::HistoryKind::KEEP_LAST,
+           int32_t history_depth = 1,
+           int32_t max_samples = dds::core::LENGTH_UNLIMITED,
+           int32_t max_instances = dds::core::LENGTH_UNLIMITED,
+           int32_t max_samples_per_instance = dds::core::LENGTH_UNLIMITED);
+   
+       DurabilityService(const DurabilityService& other);
+   
+       DurabilityService& operator=(const DurabilityService& other) = default;
+   
+   public:
+       DurabilityService& service_cleanup_delay(const dds::core::Duration& service_cleanup_delay);
+   
+       const dds::core::Duration service_cleanup_delay() const;
+   
+       DurabilityService& history_kind(dds::core::policy::HistoryKind::Type history_kind);
+   
+       dds::core::policy::HistoryKind::Type history_kind() const;
+   
+       DurabilityService& history_depth(int32_t history_depth);
+   
+       int32_t history_depth() const;
+   
+       DurabilityService& max_samples(int32_t max_samples);
+   
+       int32_t max_samples() const;
+   
+       DurabilityService& max_instances(int32_t max_instances);
+   
+       int32_t max_instances() const;
+   
+       DurabilityService& max_samples_per_instance(int32_t max_samples_per_instance);
+   
+       int32_t max_samples_per_instance() const;
+   };
+   
+   #endif  // OMG_DDS_PERSISTENCE_SUPPORT
+   
+   //==============================================================================
+   
+   //============================================================================
+   
+   #ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+   
+   class DataRepresentation : public dds::core::Value
+   {
+   
+   public:
+       explicit DataRepresentation(
+           const dds::core::policy::DataRepresentationIdSeq& value);
+   
+       DataRepresentation(const DataRepresentation& other)
+           : dds::core::Value(other.value())
+       { }
+   public:
+       DataRepresentation& value(const dds::core::policy::DataRepresentationIdSeq& value);
+   
+       const dds::core::policy::DataRepresentationIdSeq value() const;
+   
+       dds::core::policy::DataRepresentationIdSeq&
+   };
+   
+   #endif  // defined(OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT)
+   
+   
+   //============================================================================
+   
+   #ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+   
+   class TypeConsistencyEnforcement : public dds::core::Value
+   {
+   public:
+       explicit TypeConsistencyEnforcement(dds::core::policy::TypeConsistencyEnforcementKind::Type kind);
+   
+   public:
+       TypeConsistencyEnforcement& kind(dds::core::policy::TypeConsistencyEnforcementKind::Type kind);
+       dds::core::policy::TypeConsistencyEnforcementKind::Type  kind() const;
+   };
+   
+   #endif  // defined(OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT)
+   
+   
+   //==============================================================================
+   
+   
+   }
+   }
+   }
+   
+   #endif /* OMG_TDDS_CORE_POLICY_CORE_POLICY_HPP_ */

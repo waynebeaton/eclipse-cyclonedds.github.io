@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2conformance_8hpp_1ae02a7f506691c69a1d8d6adae05035ae:
+
+Define OMG_DDS_PERSISTENCE_SUPPORT
+==================================
+
+- Defined in :ref:`file_dds_core_detail_conformance.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_PERSISTENCE_SUPPORT

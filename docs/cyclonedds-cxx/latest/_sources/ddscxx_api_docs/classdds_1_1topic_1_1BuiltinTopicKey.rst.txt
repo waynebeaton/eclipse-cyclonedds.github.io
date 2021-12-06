@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1topic_1_1BuiltinTopicKey:
+
+Class BuiltinTopicKey
+=====================
+
+- Defined in :ref:`file_dds_topic_BuiltinTopicKey.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Value`` (:ref:`exhale_class_classdds_1_1core_1_1Value`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::BuiltinTopicKey
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1core_1_1detail_1_1KeyedStringTopicType:
+
+Class KeyedStringTopicType
+==========================
+
+- Defined in :ref:`file_dds_core_detail_BuiltinTopicTypes.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::detail::KeyedStringTopicType
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,29 @@
+.. _dir_dds_core_xtypes_detail:
+
+
+Directory detail
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/core/xtypes/detail``
+
+
+Files
+-----
+
+- :ref:`file_dds_core_xtypes_detail_Annotation.hpp`
+- :ref:`file_dds_core_xtypes_detail_CollectionTypes.hpp`
+- :ref:`file_dds_core_xtypes_detail_DynamicData.hpp`
+- :ref:`file_dds_core_xtypes_detail_DynamicType.hpp`
+- :ref:`file_dds_core_xtypes_detail_MemberType.hpp`
+- :ref:`file_dds_core_xtypes_detail_PrimitiveTypes.hpp`
+- :ref:`file_dds_core_xtypes_detail_StructType.hpp`
+- :ref:`file_dds_core_xtypes_detail_TypeProvider.hpp`
+- :ref:`file_dds_core_xtypes_detail_UnionCase.hpp`
+- :ref:`file_dds_core_xtypes_detail_UnionType.hpp`
+
+

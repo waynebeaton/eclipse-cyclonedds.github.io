@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1acc8edf88f95f687031c9ca7e9a5b0b82:
+
+Variable org::eclipse::cyclonedds::core::utils::invalid_argument_code
+=====================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::invalid_argument_code

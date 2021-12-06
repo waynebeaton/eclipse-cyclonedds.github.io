@@ -1,0 +1,13 @@
+.. _exhale_typedef_Annotations_8hpp_1a3818c64301e9d68d06d9d73b85555248:
+
+Typedef dds::core::xtypes::MustUnderstandAnnotation
+===================================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::xtypes::MustUnderstandAnnotation

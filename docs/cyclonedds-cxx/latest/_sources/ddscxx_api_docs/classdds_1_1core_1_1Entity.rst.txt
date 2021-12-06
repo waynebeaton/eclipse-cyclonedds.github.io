@@ -1,0 +1,36 @@
+.. _exhale_class_classdds_1_1core_1_1Entity:
+
+Class Entity
+============
+
+- Defined in :ref:`file_dds_core_Entity.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Reference`` (:ref:`exhale_class_classdds_1_1core_1_1Reference`)
+
+
+Derived Types
+*************
+
+- ``public dds::domain::DomainParticipant`` (:ref:`exhale_class_classdds_1_1domain_1_1DomainParticipant`)
+- ``public dds::pub::AnyDataWriter`` (:ref:`exhale_class_classdds_1_1pub_1_1AnyDataWriter`)
+- ``public dds::pub::Publisher`` (:ref:`exhale_class_classdds_1_1pub_1_1Publisher`)
+- ``public dds::sub::AnyDataReader`` (:ref:`exhale_class_classdds_1_1sub_1_1AnyDataReader`)
+- ``public dds::sub::Subscriber`` (:ref:`exhale_class_classdds_1_1sub_1_1Subscriber`)
+- ``public dds::topic::AnyTopic`` (:ref:`exhale_class_classdds_1_1topic_1_1AnyTopic`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::Entity
+   :members:
+   :protected-members:
+   :undoc-members:

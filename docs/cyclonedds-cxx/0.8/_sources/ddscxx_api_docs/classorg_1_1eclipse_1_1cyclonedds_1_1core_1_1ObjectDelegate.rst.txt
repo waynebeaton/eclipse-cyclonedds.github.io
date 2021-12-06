@@ -1,0 +1,25 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1ObjectDelegate:
+
+Class ObjectDelegate
+====================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ObjectDelegate.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public org::eclipse::cyclonedds::core::DDScObjectDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1DDScObjectDelegate`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::core::ObjectDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

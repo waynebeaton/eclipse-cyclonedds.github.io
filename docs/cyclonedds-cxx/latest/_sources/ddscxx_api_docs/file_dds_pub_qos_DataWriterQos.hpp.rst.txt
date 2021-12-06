@@ -1,0 +1,62 @@
+
+.. _file_dds_pub_qos_DataWriterQos.hpp:
+
+File DataWriterQos.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_pub_qos>` (``dds/pub/qos``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/pub/qos/DataWriterQos.hpp``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_pub_qos_DataWriterQos.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/EntityQosImpl.hpp`` (:ref:`file_dds_core_detail_EntityQosImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/pub/qos/DataWriterQosDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_pub_qos_DataWriterQosDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_QosProvider.hpp`
+
+- :ref:`file_dds_pub_AnyDataWriter.hpp`
+
+- :ref:`file_dds_pub_Publisher.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_QosProviderDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_AnyDataWriterDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1pub_1_1qos_1_1DataWriterQos`
+

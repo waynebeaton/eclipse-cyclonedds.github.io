@@ -1,0 +1,81 @@
+
+.. _file_dds_sub_SampleInfo.hpp:
+
+File SampleInfo.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/SampleInfo.hpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_SampleInfo.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``dds/core/Time.hpp`` (:ref:`file_dds_core_Time.hpp`)
+
+- ``dds/core/Value.hpp`` (:ref:`file_dds_core_Value.hpp`)
+
+- ``dds/sub/GenerationCount.hpp`` (:ref:`file_dds_sub_GenerationCount.hpp`)
+
+- ``dds/sub/Rank.hpp`` (:ref:`file_dds_sub_Rank.hpp`)
+
+- ``dds/sub/status/DataState.hpp`` (:ref:`file_dds_sub_status_DataState.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_Sample.hpp`
+
+- :ref:`file_dds_sub_SampleRef.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_dds_sub_detail_Sample.hpp`
+
+- :ref:`file_dds_sub_detail_SampleRef.hpp`
+
+- :ref:`file_dds_sub_detail_SampleInfoImpl.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1SampleInfo`
+

@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a9be0d0c74745a4ab7764b9ced8cead99:
+
+Template Function sertype_equal
+===============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: sertype_equal(const ddsi_sertype *, const ddsi_sertype *)

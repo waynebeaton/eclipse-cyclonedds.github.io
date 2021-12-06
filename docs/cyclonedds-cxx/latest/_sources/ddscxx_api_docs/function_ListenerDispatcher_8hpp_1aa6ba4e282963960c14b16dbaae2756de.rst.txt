@@ -1,0 +1,13 @@
+.. _exhale_function_ListenerDispatcher_8hpp_1aa6ba4e282963960c14b16dbaae2756de:
+
+Function callback_on_sample_rejected
+====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: callback_on_sample_rejected(dds_entity_t, dds_sample_rejected_status_t, void *)

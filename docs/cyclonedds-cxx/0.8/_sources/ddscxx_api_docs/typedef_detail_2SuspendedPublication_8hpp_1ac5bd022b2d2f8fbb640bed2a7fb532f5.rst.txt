@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2SuspendedPublication_8hpp_1ac5bd022b2d2f8fbb640bed2a7fb532f5:
+
+Typedef dds::pub::detail::SuspendedPublication
+==============================================
+
+- Defined in :ref:`file_dds_pub_detail_SuspendedPublication.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::pub::detail::SuspendedPublication

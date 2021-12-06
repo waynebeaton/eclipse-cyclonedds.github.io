@@ -1,0 +1,134 @@
+
+.. _program_listing_file_dds_core_detail_QosProviderImpl.hpp:
+
+Program Listing for File QosProviderImpl.hpp
+============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_detail_QosProviderImpl.hpp>` (``dds/core/detail/QosProviderImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_CORE_DETAIL_TQOSPROVIDERIMPL_HPP_
+   #define CYCLONEDDS_DDS_CORE_DETAIL_TQOSPROVIDERIMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/core/QosProvider.hpp>
+   
+   // Implementation
+   namespace dds
+   {
+   namespace core
+   {
+   
+   
+   QosProvider::QosProvider(const std::string& uri, const std::string& profile)
+       : Reference(new DELEGATE(uri, profile)) { }
+   
+   
+   QosProvider::QosProvider(const std::string& uri)
+       : Reference(new DELEGATE(uri)) { }
+   
+   
+   dds::domain::qos::DomainParticipantQos
+   QosProvider::participant_qos()
+   {
+       return this->delegate()->participant_qos(NULL);
+   }
+   
+   
+   dds::domain::qos::DomainParticipantQos
+   QosProvider::participant_qos(const std::string& id)
+   {
+       return this->delegate()->participant_qos(id.c_str());
+   }
+   
+   
+   dds::topic::qos::TopicQos
+   QosProvider::topic_qos()
+   {
+       return this->delegate()->topic_qos(NULL);
+   }
+   
+   
+   dds::topic::qos::TopicQos
+   QosProvider::topic_qos(const std::string& id)
+   {
+       return this->delegate()->topic_qos(id.c_str());
+   }
+   
+   
+   
+   dds::sub::qos::SubscriberQos
+   QosProvider::subscriber_qos()
+   {
+       return this->delegate()->subscriber_qos(NULL);
+   }
+   
+   
+   dds::sub::qos::SubscriberQos
+   QosProvider::subscriber_qos(const std::string& id)
+   {
+       return this->delegate()->subscriber_qos(id.c_str());
+   }
+   
+   
+   dds::sub::qos::DataReaderQos
+   QosProvider::datareader_qos()
+   {
+       return this->delegate()->datareader_qos(NULL);
+   }
+   
+   
+   dds::sub::qos::DataReaderQos
+   QosProvider::datareader_qos(const std::string& id)
+   {
+       return this->delegate()->datareader_qos(id.c_str());
+   }
+   
+   
+   dds::pub::qos::PublisherQos
+   QosProvider::publisher_qos()
+   {
+       return this->delegate()->publisher_qos(NULL);
+   }
+   
+   
+   dds::pub::qos::PublisherQos
+   QosProvider::publisher_qos(const std::string& id)
+   {
+       return this->delegate()->publisher_qos(id.c_str());
+   }
+   
+   
+   dds::pub::qos::DataWriterQos
+   QosProvider::datawriter_qos()
+   {
+       return this->delegate()->datawriter_qos(NULL);
+   }
+   
+   
+   dds::pub::qos::DataWriterQos
+   QosProvider::datawriter_qos(const std::string& id)
+   {
+       return this->delegate()->datawriter_qos(id.c_str());
+   }
+   }
+   }
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_CORE_DETAIL_TQOSPROVIDERIMPL_HPP_ */

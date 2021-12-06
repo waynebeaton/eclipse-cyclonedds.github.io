@@ -1,0 +1,60 @@
+
+.. _program_listing_file_dds_pub_detail_CoherentSetImpl.hpp:
+
+Program Listing for File CoherentSetImpl.hpp
+============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_pub_detail_CoherentSetImpl.hpp>` (``dds/pub/detail/CoherentSetImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_PUB_TCOHERENTSET_IMPL_HPP_
+   #define CYCLONEDDS_DDS_PUB_TCOHERENTSET_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/pub/CoherentSet.hpp>
+   #include <org/eclipse/cyclonedds/core/ReportUtils.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace pub
+   {
+   
+   
+   CoherentSet::CoherentSet(const dds::pub::Publisher& pub) : dds::core::Value(pub)  {  }
+   
+   
+   void CoherentSet::end()
+   {
+       this->delegate().end();
+   }
+   
+   
+   CoherentSet::~CoherentSet()
+   {
+       this->delegate().end();
+   }
+   
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_PUB_TCOHERENTSET_HPP_ */

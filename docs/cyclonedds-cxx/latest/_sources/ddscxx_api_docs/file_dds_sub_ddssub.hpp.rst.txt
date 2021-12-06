@@ -1,0 +1,96 @@
+
+.. _file_dds_sub_ddssub.hpp:
+
+File ddssub.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/ddssub.hpp``)
+-----------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_ddssub.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``dds/sub/AnyDataReader.hpp`` (:ref:`file_dds_sub_AnyDataReader.hpp`)
+
+- ``dds/sub/AnyDataReaderListener.hpp`` (:ref:`file_dds_sub_AnyDataReaderListener.hpp`)
+
+- ``dds/sub/CoherentAccess.hpp`` (:ref:`file_dds_sub_CoherentAccess.hpp`)
+
+- ``dds/sub/DataReader.hpp`` (:ref:`file_dds_sub_DataReader.hpp`)
+
+- ``dds/sub/DataReaderListener.hpp`` (:ref:`file_dds_sub_DataReaderListener.hpp`)
+
+- ``dds/sub/GenerationCount.hpp`` (:ref:`file_dds_sub_GenerationCount.hpp`)
+
+- ``dds/sub/LoanedSamples.hpp`` (:ref:`file_dds_sub_LoanedSamples.hpp`)
+
+- ``dds/sub/Query.hpp`` (:ref:`file_dds_sub_Query.hpp`)
+
+- ``dds/sub/Rank.hpp`` (:ref:`file_dds_sub_Rank.hpp`)
+
+- ``dds/sub/SampleInfo.hpp`` (:ref:`file_dds_sub_SampleInfo.hpp`)
+
+- ``dds/sub/SharedSamples.hpp`` (:ref:`file_dds_sub_SharedSamples.hpp`)
+
+- ``dds/sub/Subscriber.hpp`` (:ref:`file_dds_sub_Subscriber.hpp`)
+
+- ``dds/sub/SubscriberListener.hpp`` (:ref:`file_dds_sub_SubscriberListener.hpp`)
+
+- ``dds/sub/cond/QueryCondition.hpp`` (:ref:`file_dds_sub_cond_QueryCondition.hpp`)
+
+- ``dds/sub/cond/ReadCondition.hpp`` (:ref:`file_dds_sub_cond_ReadCondition.hpp`)
+
+- ``dds/sub/detail/ddssub.hpp`` (:ref:`file_dds_sub_detail_ddssub.hpp`)
+
+- ``dds/sub/discovery.hpp`` (:ref:`file_dds_sub_discovery.hpp`)
+
+- ``dds/sub/find.hpp`` (:ref:`file_dds_sub_find.hpp`)
+
+- ``dds/sub/qos/DataReaderQos.hpp`` (:ref:`file_dds_sub_qos_DataReaderQos.hpp`)
+
+- ``dds/sub/qos/SubscriberQos.hpp`` (:ref:`file_dds_sub_qos_SubscriberQos.hpp`)
+
+- ``dds/sub/status/DataState.hpp`` (:ref:`file_dds_sub_status_DataState.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_dds.hpp`
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ddssub_8hpp_1a75edfa52c671f8d3730fc573e6c377fb`
+
+- :ref:`exhale_function_ddssub_8hpp_1af3431963d446f436e6398873f9c3e01e`
+
+- :ref:`exhale_function_ddssub_8hpp_1a1b60bc88bdef92ce73336661d7c08cbb`
+

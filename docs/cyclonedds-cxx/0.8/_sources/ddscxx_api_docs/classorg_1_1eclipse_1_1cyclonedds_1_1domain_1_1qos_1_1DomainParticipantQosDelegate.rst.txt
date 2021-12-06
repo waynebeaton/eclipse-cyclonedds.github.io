@@ -1,0 +1,16 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1domain_1_1qos_1_1DomainParticipantQosDelegate:
+
+Class DomainParticipantQosDelegate
+==================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_domain_qos_DomainParticipantQosDelegate.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::domain::qos::DomainParticipantQosDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

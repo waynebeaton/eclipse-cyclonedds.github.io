@@ -1,0 +1,13 @@
+.. _exhale_function_LoanedSamples_8hpp_1af0d95acb416765982b8abf4234060fc8:
+
+Template Function dds::sub::move
+================================
+
+- Defined in :ref:`file_dds_sub_LoanedSamples.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::sub::move(LoanedSamples<T, D>&)

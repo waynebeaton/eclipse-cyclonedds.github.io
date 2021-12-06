@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2macros_8hpp_1a9d10daa6a45693488d70d2302a068ad0:
+
+Define DDSCXX_WARNING_MSVC_ON
+=============================
+
+- Defined in :ref:`file_dds_core_detail_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DDSCXX_WARNING_MSVC_ON

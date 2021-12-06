@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1NoOpDataReaderListener:
+
+Template Class NoOpDataReaderListener
+=====================================
+
+- Defined in :ref:`file_dds_sub_DataReaderListener.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::NoOpDataReaderListener
+   :members:
+   :protected-members:
+   :undoc-members:

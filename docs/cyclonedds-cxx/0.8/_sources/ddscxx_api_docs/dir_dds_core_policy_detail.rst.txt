@@ -1,0 +1,23 @@
+.. _dir_dds_core_policy_detail:
+
+
+Directory detail
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_policy>` (``dds/core/policy``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/core/policy/detail``
+
+
+Files
+-----
+
+- :ref:`file_dds_core_policy_detail_CorePolicy.hpp`
+- :ref:`file_dds_core_policy_detail_CorePolicyImpl.hpp`
+- :ref:`file_dds_core_policy_detail_QosPolicyCount.hpp`
+- :ref:`file_dds_core_policy_detail_QosPolicyCountImpl.hpp`
+
+

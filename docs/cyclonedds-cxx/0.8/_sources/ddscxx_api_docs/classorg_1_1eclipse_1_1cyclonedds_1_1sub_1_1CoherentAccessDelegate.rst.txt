@@ -1,0 +1,16 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1CoherentAccessDelegate:
+
+Class CoherentAccessDelegate
+============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_CoherentAccessDelegate.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::sub::CoherentAccessDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

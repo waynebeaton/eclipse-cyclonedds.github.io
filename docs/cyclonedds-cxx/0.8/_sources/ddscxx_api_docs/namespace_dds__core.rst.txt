@@ -1,0 +1,122 @@
+
+.. _namespace_dds__core:
+
+Namespace dds::core
+===================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds__core__cond`
+
+- :ref:`namespace_dds__core__detail`
+
+- :ref:`namespace_dds__core__policy`
+
+- :ref:`namespace_dds__core__status`
+
+- :ref:`namespace_dds__core__xtypes`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structdds_1_1core_1_1is__base__of`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1is__same`
+
+- :ref:`exhale_struct_structdds_1_1core_1_1smart__ptr__traits`
+
+- :ref:`exhale_class_classdds_1_1core_1_1AlreadyClosedError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Duration`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Entity`
+
+- :ref:`exhale_class_classdds_1_1core_1_1EntityQos`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Error`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Exception`
+
+- :ref:`exhale_class_classdds_1_1core_1_1IllegalOperationError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1ImmutablePolicyError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InconsistentPolicyError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InstanceHandle`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InvalidArgumentError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InvalidDataError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InvalidDowncastError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1NotEnabledError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1null__type`
+
+- :ref:`exhale_class_classdds_1_1core_1_1NullReferenceError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1optional`
+
+- :ref:`exhale_class_classdds_1_1core_1_1OutOfResourcesError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1PreconditionNotMetError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1QosProvider`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Reference`
+
+- :ref:`exhale_class_classdds_1_1core_1_1safe__enum`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Time`
+
+- :ref:`exhale_class_classdds_1_1core_1_1TimeoutError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1UnsupportedError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Value`
+
+- :ref:`exhale_class_classdds_1_1core_1_1WeakReference`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Duration_8hpp_1aa1c5f82736e712a15d59e5782c3b40cf`
+
+- :ref:`exhale_function_Duration_8hpp_1a0bc8656330379372ad77eef173e9c345`
+
+- :ref:`exhale_function_Duration_8hpp_1a1baee1c7032afe4b8178e3a88ed2475f`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_types_8hpp_1af64219b65f7ff337e91052779680aef9`
+
+- :ref:`exhale_typedef_types_8hpp_1af41924828eff7595b676d2196b993482`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_LengthUnlimited_8hpp_1a7f73c3110972d4a0180c20434664f661`
+
+- :ref:`exhale_variable_types_8hpp_1a22c3217bb51dfe3db2887417da74d917`

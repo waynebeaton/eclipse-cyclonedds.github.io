@@ -1,0 +1,25 @@
+.. _exhale_struct_structdds_1_1core_1_1is__base__of:
+
+Template Struct is_base_of
+==========================
+
+- Defined in :ref:`file_dds_core_detail_ref_traits.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::is_base_of< T1, T2 >``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds::core::is_base_of
+   :members:
+   :protected-members:
+   :undoc-members:

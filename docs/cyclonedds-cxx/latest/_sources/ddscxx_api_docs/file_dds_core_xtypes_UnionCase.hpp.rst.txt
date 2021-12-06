@@ -1,0 +1,54 @@
+
+.. _file_dds_core_xtypes_UnionCase.hpp:
+
+File UnionCase.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/UnionCase.hpp``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_UnionCase.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``dds/core/xtypes/MemberType.hpp`` (:ref:`file_dds_core_xtypes_MemberType.hpp`)
+
+- ``dds/core/xtypes/detail/UnionCase.hpp`` (:ref:`file_dds_core_xtypes_detail_UnionCase.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_xtypes_UnionType.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1UnionCase`
+

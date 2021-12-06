@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing Eclipse Cyclone DDS &mdash; CycloneDDS 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Building Eclipse Cyclone DDS applications" href="helloworld.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="index.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing Eclipse Cyclone DDS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#system-requirements">System requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux-and-macos">Linux and macOS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#post-install-steps">Post install steps</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#paths">Paths</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#windowssetlibpath">Paths</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#test-your-installation">Test your installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">&lt;no title&gt;</a> &raquo;</li>
+      <li>Installing Eclipse Cyclone DDS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/GettingStartedGuide/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installing-eclipse-cyclone-dds">
+<h1>Installing Eclipse Cyclone DDS<a class="headerlink" href="#installing-eclipse-cyclone-dds" title="Permalink to this headline"></a></h1>
+<section id="system-requirements">
+<span id="systemrequirements"></span><h2>System requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline"></a></h2>
+<p>At the time of writing, Eclipse Cyclone DDS is known to run on Linux, macOS and Windows. The build-process is not yet able to generate native packages.</p>
+</section>
+<section id="linux-and-macos">
+<h2>Linux and macOS<a class="headerlink" href="#linux-and-macos" title="Permalink to this headline"></a></h2>
+<section id="post-install-steps">
+<span id="copylinuxexamplestouserfriendlylocation"></span><h3>Post install steps<a class="headerlink" href="#post-install-steps" title="Permalink to this headline"></a></h3>
+<p>The installation package installs examples in system directories.  In order to have a better user
+experience when building the Eclipse Cyclone DDS examples, it is advised to copy the examples to a
+user-defined location.  This is to be able to build the examples natively and experiment with the
+example source code.</p>
+<p>For this, the installation package provides the vdds_install_examples
+script, located in /usr/bin.</p>
+<p>Create an user writable directory where the examples should go. Navigate
+to that directory and execute the script. Answer ‘yes’ to the questions
+and the examples will be installed in the current location.</p>
+<p>Type <code class="code docutils literal notranslate"><span class="pre">vdds_install_examples</span> <span class="pre">-h</span></code> for more information.</p>
+<section id="paths">
+<span id="linuxsetlibpath"></span><h4>Paths<a class="headerlink" href="#paths" title="Permalink to this headline"></a></h4>
+<p>To be able to run Eclipse Cyclone DDS executables, the required libraries (like libddsc.so) need to
+be available to the executables.  Normally, these are installed in system default locations and it
+works out-of-the-box. However, if they are not installed in those locations, it is possible that the
+library search path has to be changed.  This can be achieved by executing the command:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">export</span><span class="w"> </span><span class="n">LD_LIBRARY_PATH</span><span class="o">=&lt;</span><span class="n">install_dir</span><span class="o">&gt;/</span><span class="nl">lib</span><span class="p">:</span><span class="n">$LD_LIBRARY_PATH</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline"></a></h2>
+<section id="windowssetlibpath">
+<span id="id1"></span><h3>Paths<a class="headerlink" href="#windowssetlibpath" title="Permalink to this headline"></a></h3>
+<p>To be able to run Eclipse Cyclone DDS executables, the required libraries (like ddsc.dll) need to be
+available to the executables.  Normally, these are installed in system default locations and it
+works out-of-the-box. However, if they are not installed on those locations, it is possible that the
+library search path has to be changed.  This can be achieved by executing the command:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">set</span><span class="w"> </span><span class="n">PATH</span><span class="o">=&lt;</span><span class="n">install_dir</span><span class="o">&gt;/</span><span class="n">bin</span><span class="p">;</span><span class="o">%</span><span class="n">PATH</span><span class="o">%</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="test-your-installation">
+<span id="testyourinstallation"></span><h2>Test your installation<a class="headerlink" href="#test-your-installation" title="Permalink to this headline"></a></h2>
+<p>Eclipse Cyclone DDS includes a simple <a class="reference internal" href="helloworld.html#helloworld"><span class="std std-ref">Hello World!</span></a> application which can be run
+in order to test your installation. The <em>Hello World!</em> application consists of two executables: a so
+called HelloworldPublisher and a HelloworldSubscriber.</p>
+<p>To run the example application, please open two console windows and navigate to the appropriate
+directory in both console windows. Run the HelloworldSubscriber in one of the console windows by the
+typing following command:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Windows</dt>
+<dd class="field-odd"><p><code class="code docutils literal notranslate"><span class="pre">HelloworldSubscriber.exe</span></code></p>
+</dd>
+<dt class="field-even">Linux</dt>
+<dd class="field-even"><p><code class="code docutils literal notranslate"><span class="pre">./HelloworldSubscriber</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
+<p>and the HelloworldPublisher in the other console window by typing:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Windows</dt>
+<dd class="field-odd"><p><code class="code docutils literal notranslate"><span class="pre">HelloworldPublisher.exe</span></code></p>
+</dd>
+<dt class="field-even">Linux</dt>
+<dd class="field-even"><p><code class="code docutils literal notranslate"><span class="pre">./HelloworldPublisher</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
+<p>The output HelloworldPublisher should look like</p>
+<img alt="../_images/HelloworldPublisherWindows.png" src="../_images/HelloworldPublisherWindows.png" />
+<p>while the HelloworldSubscriber will be looking like this</p>
+<img alt="../_images/HelloworldSubscriberWindows.png" src="../_images/HelloworldSubscriberWindows.png" />
+<p>For more information on how to build this application your own and the code which has
+been used, please have a look at the <a class="reference internal" href="helloworld.html#helloworld"><span class="std std-ref">Hello World!</span></a> chapter.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="helloworld.html" class="btn btn-neutral float-right" title="Building Eclipse Cyclone DDS applications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

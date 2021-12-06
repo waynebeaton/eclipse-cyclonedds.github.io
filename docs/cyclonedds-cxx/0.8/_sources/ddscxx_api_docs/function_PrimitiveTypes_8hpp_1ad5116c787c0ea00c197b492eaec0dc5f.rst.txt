@@ -1,0 +1,13 @@
+.. _exhale_function_PrimitiveTypes_8hpp_1ad5116c787c0ea00c197b492eaec0dc5f:
+
+Template Function dds::core::xtypes::PrimitiveType
+==================================================
+
+- Defined in :ref:`file_dds_core_xtypes_PrimitiveTypes.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::PrimitiveType()

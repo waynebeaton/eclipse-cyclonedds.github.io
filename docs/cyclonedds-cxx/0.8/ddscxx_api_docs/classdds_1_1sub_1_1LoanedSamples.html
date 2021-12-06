@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Class LoanedSamples &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Template Class LoanedSamples</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classdds_1_1sub_1_1LoanedSamples.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="template-class-loanedsamples">
+<span id="exhale-class-classdds-1-1sub-1-1loanedsamples"></span><h1>Template Class LoanedSamples<a class="headerlink" href="#template-class-loanedsamples" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds_sub_LoanedSamples.hpp.html#file-dds-sub-loanedsamples-hpp"><span class="std std-ref">File LoanedSamples.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3dds3sub13LoanedSamplesE">
+<span id="_CPPv3I0EN3dds3sub13LoanedSamplesE"></span><span id="_CPPv2I0EN3dds3sub13LoanedSamplesE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classdds_1_1sub_1_1LoanedSamples"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3subE" title="dds::sub"><span class="n"><span class="pre">sub</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">LoanedSamples</span></span></span><br /></dt>
+<dd><p>This class encapsulates and automates the management of loaned samples. </p>
+<p>It is a container which is used to hold samples which have been read or taken by the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a>. Samples are effectively “loaned” from the <a class="reference internal" href="classdds_1_1sub_1_1DataReader.html#classdds_1_1sub_1_1DataReader"><span class="std std-ref">DataReader</span></a> to avoid the need to copy the data. When the <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> container goes out of scope the loan is automatically returned.</p>
+<p><a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> maintains a ref count so that the loan will only be returned once all copies of the same <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> have been destroyed.</p>
+<p><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1anchor_dds_sub_loanedsamples_example"></span><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">dds</span><span class="o">::</span><span class="n">domain</span><span class="o">::</span><span class="n">DomainParticipant</span><span class="w"> </span><span class="nf">participant</span><span class="p">(</span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">domain</span><span class="o">::</span><span class="n">default_id</span><span class="p">());</span><span class="w"></span>
+<span class="n">dds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">Topic</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">topic</span><span class="p">(</span><span class="n">participant</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TopicName&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="nf">subscriber</span><span class="p">(</span><span class="n">participant</span><span class="p">);</span><span class="w"></span>
+<span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">DataReader</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">reader</span><span class="p">(</span><span class="n">subscriber</span><span class="p">,</span><span class="w"> </span><span class="n">topic</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// Assume there is data to read</span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">LoanedSamples</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;</span><span class="w"> </span><span class="n">samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">reader</span><span class="p">.</span><span class="n">read</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">LoanedSamples</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;::</span><span class="n">const_iterator</span><span class="w"> </span><span class="n">it</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">samples</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">samples</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">it</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">Sample</span><span class="o">&lt;</span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">sample</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">it</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">Foo</span><span class="o">::</span><span class="n">Bar</span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sample</span><span class="p">.</span><span class="n">data</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">sub</span><span class="o">::</span><span class="n">SampleInfo</span><span class="o">&amp;</span><span class="w"> </span><span class="n">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sample</span><span class="p">.</span><span class="n">info</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Use sample data and meta information.</span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">function</span><span class="p">(</span><span class="n">samples</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="c1">// LoanedSamples out of scope. Whether the loan is returned, depends what the reference</span>
+<span class="c1">// count of the LoanedSamples is. That again, depends on what the function() did with it.</span>
+<span class="c1">// Maybe function() stored the LoanedSamples, maybe not. Whatever the case, LoanedSamples</span>
+<span class="c1">// takes care of the loan and resource handling.</span>
+</pre></div>
+</div>
+</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p>for more information: DataSample </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p>for more information: SampleInfo </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p>for more information: Subscription </p>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamples8DataTypeE">
+<span id="_CPPv3N3dds3sub13LoanedSamples8DataTypeE"></span><span id="_CPPv2N3dds3sub13LoanedSamples8DataTypeE"></span><span id="dds::sub::LoanedSamples::DataType"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1afe48529c78d1e85e1dc15b73f2091173"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13LoanedSamplesE" title="dds::sub::LoanedSamples::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataType</span></span></span><br /></dt>
+<dd><p>Convenience typedef for the type of the data sample. </p>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamples14const_iteratorE">
+<span id="_CPPv3N3dds3sub13LoanedSamples14const_iteratorE"></span><span id="_CPPv2N3dds3sub13LoanedSamples14const_iteratorE"></span><span id="dds::sub::LoanedSamples::const_iterator"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1abe27648835cfd1566770207e76526b6a"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="n"><span class="pre">DELEGATE</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13LoanedSamplesE" title="dds::sub::LoanedSamples::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">const_iterator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">const_iterator</span></span></span><br /></dt>
+<dd><p>Convenience typedef for the iterator over the loaned samples. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamples13LoanedSamplesEv">
+<span id="_CPPv3N3dds3sub13LoanedSamples13LoanedSamplesEv"></span><span id="_CPPv2N3dds3sub13LoanedSamples13LoanedSamplesEv"></span><span id="dds::sub::LoanedSamples::LoanedSamples"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1a771e5c08d4d4e2d18e0bd909a0b53309"></span><span class="sig-name descname"><span class="n"><span class="pre">LoanedSamples</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> instance. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamplesD0Ev">
+<span id="_CPPv3N3dds3sub13LoanedSamplesD0Ev"></span><span id="_CPPv2N3dds3sub13LoanedSamplesD0Ev"></span><span id="dds::sub::LoanedSamples::~LoanedSamples"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1a5d507aa00146b87c7664d0e511ead416"></span><span class="sig-name descname"><span class="n"><span class="pre">~LoanedSamples</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Implicitly return the loan if this is the last object with a reference to the contained loan. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamples13LoanedSamplesERK13LoanedSamples">
+<span id="_CPPv3N3dds3sub13LoanedSamples13LoanedSamplesERK13LoanedSamples"></span><span id="_CPPv2N3dds3sub13LoanedSamples13LoanedSamplesERK13LoanedSamples"></span><span id="dds::sub::LoanedSamples::LoanedSamples__LoanedSamplesCR"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1a73f811ee324fce7b5fa5c3fe3f14c662"></span><span class="sig-name descname"><span class="n"><span class="pre">LoanedSamples</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub13LoanedSamples13LoanedSamplesERK13LoanedSamples" title="dds::sub::LoanedSamples::LoanedSamples"><span class="n"><span class="pre">LoanedSamples</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Copies a <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> instance.</p>
+<p><p>No actual data samples are copied.</p>
+<p>Just references and reference counts are updated.</p>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamples13LoanedSamplesERR13LoanedSamples">
+<span id="_CPPv3N3dds3sub13LoanedSamples13LoanedSamplesERR13LoanedSamples"></span><span id="_CPPv2N3dds3sub13LoanedSamples13LoanedSamplesERR13LoanedSamples"></span><span id="dds::sub::LoanedSamples::LoanedSamples__LoanedSamplesRR"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1af3f948bca0ea0f50a07e31d93831acb2"></span><span class="sig-name descname"><span class="n"><span class="pre">LoanedSamples</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub13LoanedSamples13LoanedSamplesERR13LoanedSamples" title="dds::sub::LoanedSamples::LoanedSamples"><span class="n"><span class="pre">LoanedSamples</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Move-constructs a <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> instance.</p>
+<p><p>No actual data samples are copied.</p>
+<p>Just references and reference counts are updated.</p>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamplesaSERK13LoanedSamples">
+<span id="_CPPv3N3dds3sub13LoanedSamplesaSERK13LoanedSamples"></span><span id="_CPPv2N3dds3sub13LoanedSamplesaSERK13LoanedSamples"></span><span id="dds::sub::LoanedSamples::assign-operator__LoanedSamplesCR"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1a0bc5661cd1b03c204e6b6d0631cb0080"></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13LoanedSamplesE" title="dds::sub::LoanedSamples"><span class="n"><span class="pre">LoanedSamples</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13LoanedSamplesE" title="dds::sub::LoanedSamples"><span class="n"><span class="pre">LoanedSamples</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><br /></dt>
+<dd><p>Copy-assigns a <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> instance to another.</p>
+<p><p>No actual data samples are copied.</p>
+<p>Just references and reference counts are updated.</p>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds3sub13LoanedSamplesaSERR13LoanedSamples">
+<span id="_CPPv3N3dds3sub13LoanedSamplesaSERR13LoanedSamples"></span><span id="_CPPv2N3dds3sub13LoanedSamplesaSERR13LoanedSamples"></span><span id="dds::sub::LoanedSamples::assign-operator__LoanedSamplesRR"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1a0ba6aba049af6c224fe83ae451efd121"></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13LoanedSamplesE" title="dds::sub::LoanedSamples"><span class="n"><span class="pre">LoanedSamples</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv4I0EN3dds3sub13LoanedSamplesE" title="dds::sub::LoanedSamples"><span class="n"><span class="pre">LoanedSamples</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><br /></dt>
+<dd><p>Move-assigns a <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> instance to another.</p>
+<p><p>No actual data samples are copied.</p>
+<p>Just references and reference counts are updated.</p>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub13LoanedSamples5beginEv">
+<span id="_CPPv3NK3dds3sub13LoanedSamples5beginEv"></span><span id="_CPPv2NK3dds3sub13LoanedSamples5beginEv"></span><span id="dds::sub::LoanedSamples::beginC"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1aae6474bf5ff79f78d4b3d0404928a03a"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub13LoanedSamples14const_iteratorE" title="dds::sub::LoanedSamples::const_iterator"><span class="n"><span class="pre">const_iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Gets an iterator pointing to the first sample in the <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> container.</p>
+<p>See <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples_1anchor_dds_sub_loanedsamples_example"><span class="std std-ref">example</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>an iterator pointing to the first sample </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub13LoanedSamples3endEv">
+<span id="_CPPv3NK3dds3sub13LoanedSamples3endEv"></span><span id="_CPPv2NK3dds3sub13LoanedSamples3endEv"></span><span id="dds::sub::LoanedSamples::endC"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1a48bce93776983039e2e0cbfeea482519"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds3sub13LoanedSamples14const_iteratorE" title="dds::sub::LoanedSamples::const_iterator"><span class="n"><span class="pre">const_iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">end</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Gets an iterator pointing to the end of the <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> container.</p>
+<p>See <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples_1anchor_dds_sub_loanedsamples_example"><span class="std std-ref">example</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>an iterator pointing to the end of the container </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds3sub13LoanedSamples6lengthEv">
+<span id="_CPPv3NK3dds3sub13LoanedSamples6lengthEv"></span><span id="_CPPv2NK3dds3sub13LoanedSamples6lengthEv"></span><span id="dds::sub::LoanedSamples::lengthC"></span><span class="target" id="classdds_1_1sub_1_1LoanedSamples_1a96544ef44117e0a3b9140c5cdafea972"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">length</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Gets the number of samples within the <a class="reference internal" href="#classdds_1_1sub_1_1LoanedSamples"><span class="std std-ref">LoanedSamples</span></a> container.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the number of samples </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

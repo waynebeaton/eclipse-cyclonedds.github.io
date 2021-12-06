@@ -1,0 +1,13 @@
+.. _exhale_typedef_Annotations_8hpp_1abbd1f1deb80d242b0ed7e721be3adb2e:
+
+Typedef dds::core::xtypes::Annotation
+=====================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::xtypes::Annotation

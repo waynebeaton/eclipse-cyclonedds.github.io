@@ -1,0 +1,75 @@
+
+.. _file_dds_sub_status_DataState.hpp:
+
+File DataState.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_status>` (``dds/sub/status``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/status/DataState.hpp``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_status_DataState.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``bitset``
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_SampleInfo.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_dds_sub_detail_find.hpp`
+
+- :ref:`file_dds_sub_status_detail_DataStateImpl.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+- :ref:`namespace_dds__sub__status`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1status_1_1DataState`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1status_1_1InstanceState`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1status_1_1SampleState`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1status_1_1ViewState`
+

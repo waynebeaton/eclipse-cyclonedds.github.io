@@ -1,0 +1,56 @@
+
+.. _file_dds_core_xtypes_TypeKind.hpp:
+
+File TypeKind.hpp
+=================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes>` (``dds/core/xtypes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/TypeKind.hpp``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_TypeKind.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``bitset``
+
+- ``dds/core/SafeEnumeration.hpp`` (:ref:`file_dds_core_SafeEnumeration.hpp`)
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_xtypes_PrimitiveTypes.hpp`
+
+- :ref:`file_dds_core_xtypes_detail_PrimitiveTypes.hpp`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_TypeKind_8hpp_1aa34b38e179b2cc719cb92d6929c493db`
+

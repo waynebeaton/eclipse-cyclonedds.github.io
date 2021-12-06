@@ -1,0 +1,21 @@
+.. _dir_org_eclipse_cyclonedds_pub_qos:
+
+
+Directory qos
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_pub>` (``org/eclipse/cyclonedds/pub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``org/eclipse/cyclonedds/pub/qos``
+
+
+Files
+-----
+
+- :ref:`file_org_eclipse_cyclonedds_pub_qos_DataWriterQosDelegate.hpp`
+- :ref:`file_org_eclipse_cyclonedds_pub_qos_PublisherQosDelegate.hpp`
+
+

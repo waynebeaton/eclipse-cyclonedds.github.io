@@ -1,0 +1,13 @@
+.. _exhale_function_DomainParticipantQosDelegate_8hpp_1a6dea6ddb2e89cec362860c51e13dd6ac:
+
+Function org::eclipse::cyclonedds::domain::qos::DomainParticipantQosDelegate::policy< dds::core::policy::EntityFactory >
+========================================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_domain_qos_DomainParticipantQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::domain::qos::DomainParticipantQosDelegate::policy< dds::core::policy::EntityFactory >()

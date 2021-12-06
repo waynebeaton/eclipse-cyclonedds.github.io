@@ -1,0 +1,73 @@
+
+.. _file_org_eclipse_cyclonedds_core_QosProviderDelegate.hpp:
+
+File QosProviderDelegate.hpp
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core>` (``org/eclipse/cyclonedds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/QosProviderDelegate.hpp``)
+--------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_QosProviderDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/domain/qos/DomainParticipantQos.hpp`` (:ref:`file_dds_domain_qos_DomainParticipantQos.hpp`)
+
+- ``dds/pub/qos/DataWriterQos.hpp`` (:ref:`file_dds_pub_qos_DataWriterQos.hpp`)
+
+- ``dds/pub/qos/PublisherQos.hpp`` (:ref:`file_dds_pub_qos_PublisherQos.hpp`)
+
+- ``dds/sub/qos/DataReaderQos.hpp`` (:ref:`file_dds_sub_qos_DataReaderQos.hpp`)
+
+- ``dds/sub/qos/SubscriberQos.hpp`` (:ref:`file_dds_sub_qos_SubscriberQos.hpp`)
+
+- ``dds/topic/qos/TopicQos.hpp`` (:ref:`file_dds_topic_qos_TopicQos.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_detail_QosProvider.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1QosProviderDelegate`
+

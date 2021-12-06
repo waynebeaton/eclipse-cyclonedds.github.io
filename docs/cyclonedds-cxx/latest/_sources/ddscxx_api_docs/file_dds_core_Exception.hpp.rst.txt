@@ -1,0 +1,97 @@
+
+.. _file_dds_core_Exception.hpp:
+
+File Exception.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/Exception.hpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_Exception.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/macros.hpp`` (:ref:`file_dds_core_macros.hpp`)
+
+- ``stdexcept``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_Reference.hpp`
+
+- :ref:`file_dds_core_detail_ref_traits.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1AlreadyClosedError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Error`
+
+- :ref:`exhale_class_classdds_1_1core_1_1Exception`
+
+- :ref:`exhale_class_classdds_1_1core_1_1IllegalOperationError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1ImmutablePolicyError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InconsistentPolicyError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InvalidArgumentError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InvalidDataError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1InvalidDowncastError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1NotEnabledError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1NullReferenceError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1OutOfResourcesError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1PreconditionNotMetError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1TimeoutError`
+
+- :ref:`exhale_class_classdds_1_1core_1_1UnsupportedError`
+

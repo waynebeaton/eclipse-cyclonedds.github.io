@@ -1,0 +1,57 @@
+
+.. _file_dds_core_detail_InstanceHandle.hpp:
+
+File InstanceHandle.hpp
+=======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_detail>` (``dds/core/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/detail/InstanceHandle.hpp``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_detail_InstanceHandle.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/InstanceHandleImpl.hpp`` (:ref:`file_dds_core_detail_InstanceHandleImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/core/InstanceHandleDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_InstanceHandleDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2InstanceHandle_8hpp_1a7771331d896baa75e724ca114b9d79e8`
+

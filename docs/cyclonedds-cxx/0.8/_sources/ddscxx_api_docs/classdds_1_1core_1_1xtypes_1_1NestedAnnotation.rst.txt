@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1xtypes_1_1NestedAnnotation:
+
+Class NestedAnnotation
+======================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotation.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::xtypes::Annotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1Annotation`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::xtypes::NestedAnnotation
+   :members:
+   :protected-members:
+   :undoc-members:

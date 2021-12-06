@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1a8d7ce68a1074784c996fd4782dddfd67:
+
+Function dds::core::xtypes::annotation::Extensibility
+=====================================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::Extensibility(dds::core::xtypes::ExtensibilityAnnotation::ExtensibilityKind)

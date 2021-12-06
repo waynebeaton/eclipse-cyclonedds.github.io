@@ -1,0 +1,25 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cdr_1_1cdr__stream:
+
+Class cdr_stream
+================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public org::eclipse::cyclonedds::core::cdr::basic_cdr_stream`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cdr_1_1basic__cdr__stream`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::core::cdr::cdr_stream
+   :members:
+   :protected-members:
+   :undoc-members:

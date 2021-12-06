@@ -1,0 +1,252 @@
+
+.. _program_listing_file_dds_sub_DataReader.hpp:
+
+Program Listing for File DataReader.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_sub_DataReader.hpp>` (``dds/sub/DataReader.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_DDS_SUB_TDATA_READER_HPP_
+   #define OMG_DDS_SUB_TDATA_READER_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   #include <dds/core/detail/conformance.hpp>
+   #include <dds/sub/AnyDataReader.hpp>
+   #include <dds/topic/ContentFilteredTopic.hpp>
+   #include <dds/topic/TopicInstance.hpp>
+   #include <dds/sub/LoanedSamples.hpp>
+   #include <dds/sub/Subscriber.hpp>
+   
+   
+   namespace dds
+   {
+   namespace sub
+   {
+   template <typename T>
+   class DataReader;
+   
+   template <typename T>
+   class DataReaderListener;
+   }
+   }
+   
+   template <typename T>
+   class dds::sub::DataReader : public dds::sub::AnyDataReader
+   {
+   
+   public:
+       typedef ::dds::sub::DataReaderListener<T> Listener;
+   
+   public:
+   
+       class Selector
+       {
+       public:
+           Selector(DataReader& dr);
+   
+           Selector& instance(const dds::core::InstanceHandle& handle);
+   
+           Selector& next_instance(const dds::core::InstanceHandle& handle);
+   
+           Selector& state(const dds::sub::status::DataState& state);
+   
+           Selector& content(const dds::sub::Query& query);
+   
+           Selector& max_samples(uint32_t maxsamples);
+   
+           dds::sub::LoanedSamples<T> read();
+   
+           dds::sub::LoanedSamples<T> take();
+   
+           // --- Forward Iterators: --- //
+           template <typename SamplesFWIterator>
+           uint32_t
+           read(SamplesFWIterator sfit, uint32_t max_samples);
+   
+           template <typename SamplesFWIterator>
+           uint32_t
+           take(SamplesFWIterator sfit,  uint32_t max_samples);
+   
+           // --- Back-Inserting Iterators: --- //
+           template <typename SamplesBIIterator>
+           uint32_t
+           read(SamplesBIIterator sbit);
+   
+           template <typename SamplesBIIterator>
+           uint32_t
+           take(SamplesBIIterator sbit);
+   
+       private:
+           typename DELEGATE<T>::Selector impl_;
+       };
+   
+       class ManipulatorSelector
+       {
+       public:
+           ManipulatorSelector(DataReader& dr);
+   
+           bool read_mode();
+   
+           void read_mode(bool readmode);
+   
+           ManipulatorSelector& max_samples(uint32_t n);
+   
+           ManipulatorSelector& instance(const dds::core::InstanceHandle& handle);
+   
+           ManipulatorSelector& next_instance(const dds::core::InstanceHandle& handle);
+   
+           ManipulatorSelector& state(const dds::sub::status::DataState& state);
+   
+           ManipulatorSelector& content(const dds::sub::Query& query);
+   
+           ManipulatorSelector&
+           operator >>(dds::sub::LoanedSamples<T>& samples);
+   
+           ManipulatorSelector&
+           operator >> (ManipulatorSelector & (manipulator)(ManipulatorSelector&));
+   
+           template <typename Functor>
+           ManipulatorSelector
+           operator >> (Functor f);
+   
+       private:
+           typename DELEGATE<T>::ManipulatorSelector impl_;
+   
+       };
+   
+   public:
+       OMG_DDS_REF_TYPE_PROTECTED_DC_T(DataReader, dds::sub::AnyDataReader, T)
+       OMG_DDS_IMPLICIT_REF_BASE(DataReader)
+       OMG_DDS_COMPLETE_RULE_OF_FIVE_VIRTUAL_DEFAULT(DataReader)
+   
+   public:
+       DataReader(const dds::sub::Subscriber& sub,
+                  const ::dds::topic::Topic<T>& topic);
+   
+       DataReader(const dds::sub::Subscriber& sub,
+                  const ::dds::topic::Topic<T>& topic,
+                  const dds::sub::qos::DataReaderQos& qos,
+                  dds::sub::DataReaderListener<T>* listener = NULL,
+                  const dds::core::status::StatusMask& mask = ::dds::core::status::StatusMask::none());
+   
+       #ifdef OMG_DDS_CONTENT_SUBSCRIPTION_SUPPORT
+   
+       DataReader(const dds::sub::Subscriber& sub,
+                  const ::dds::topic::ContentFilteredTopic<T>& topic);
+   
+       DataReader(const dds::sub::Subscriber& sub,
+                  const ::dds::topic::ContentFilteredTopic<T>& topic,
+                  const dds::sub::qos::DataReaderQos& qos,
+                  dds::sub::DataReaderListener<T>* listener = NULL,
+                  const dds::core::status::StatusMask& mask = ::dds::core::status::StatusMask::none());
+       #endif /* OMG_DDS_CONTENT_SUBSCRIPTION_SUPPORT */
+   
+       #ifdef OMG_DDS_MULTI_TOPIC_SUPPORT
+   
+       DataReader(const dds::sub::Subscriber& sub,
+                  const ::dds::topic::MultiTopic<T>& topic);
+   
+       DataReader(const dds::sub::Subscriber& sub,
+                  const ::dds::topic::MultiTopic<T>& topic,
+                  const dds::sub::qos::DataReaderQos& qos,
+                  dds::sub::DataReaderListener<T>* listener = NULL,
+                  const dds::core::status::StatusMask& mask = ::dds::core::status::StatusMask::none());
+   
+       #endif /* OMG_DDS_MULTI_TOPIC_SUPPORT */
+   
+   public:
+       // == ReadState Management
+   
+        dds::sub::status::DataState default_filter_state();
+   
+       DataReader& default_filter_state(const dds::sub::status::DataState& state);
+   
+       //== Streaming read/take
+   
+       DataReader& operator>>(dds::sub::LoanedSamples<T>& ls);
+   
+       ManipulatorSelector
+       operator>> (ManipulatorSelector & (manipulator)(ManipulatorSelector&));
+   
+       template <typename Functor>
+       ManipulatorSelector
+       operator>> (Functor f);
+   
+   
+   public:
+       //== Loan Read/Take API ==================================================
+   
+       LoanedSamples<T> read();
+   
+       LoanedSamples<T> take();
+   
+       //== Copy Read/Take API ==================================================
+   
+       // --- Forward Iterators: --- //
+   
+       template <typename SamplesFWIterator>
+       uint32_t
+       read(SamplesFWIterator sfit,
+            uint32_t max_samples);
+   
+       template <typename SamplesFWIterator>
+       uint32_t
+       take(SamplesFWIterator sfit,
+            uint32_t max_samples);
+   
+   
+       // --- Back-Inserting Iterators: --- //
+   
+       template <typename SamplesBIIterator>
+       uint32_t
+       read(SamplesBIIterator sbit);
+   
+       template <typename SamplesBIIterator>
+       uint32_t
+       take(SamplesBIIterator sbit);
+   public:
+       //========================================================================
+       //== DSL Method for dealing with instances, content and status filters.
+   
+       Selector select();
+   
+       //========================================================================
+       //== Instance Management
+   public:
+       dds::topic::TopicInstance<T> key_value(const dds::core::InstanceHandle& h);
+   
+       T& key_value(T& sample, const dds::core::InstanceHandle& h);
+   
+       const dds::core::InstanceHandle
+       lookup_instance(const T& key) const;
+   
+   public:
+   
+       void listener(Listener* listener,
+                     const dds::core::status::StatusMask& event_mask);
+   
+       Listener* listener() const;
+   };
+   
+   
+   #endif /* OMG_DDS_SUB_TDATA_READER_HPP_ */

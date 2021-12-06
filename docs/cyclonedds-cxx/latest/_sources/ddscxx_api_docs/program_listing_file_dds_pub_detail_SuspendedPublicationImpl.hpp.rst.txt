@@ -1,0 +1,60 @@
+
+.. _program_listing_file_dds_pub_detail_SuspendedPublicationImpl.hpp:
+
+Program Listing for File SuspendedPublicationImpl.hpp
+=====================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_pub_detail_SuspendedPublicationImpl.hpp>` (``dds/pub/detail/SuspendedPublicationImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_PUB_TSUSPENDEDPUBLICATION_IMPL_HPP_
+   #define CYCLONEDDS_DDS_PUB_TSUSPENDEDPUBLICATION_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/pub/SuspendedPublication.hpp>
+   #include <org/eclipse/cyclonedds/core/ReportUtils.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace pub
+   {
+   
+   
+   SuspendedPublication::SuspendedPublication(const dds::pub::Publisher& pub) : dds::core::Value(pub) { }
+   
+   
+   void SuspendedPublication::resume()
+   {
+       this->delegate().resume();
+   }
+   
+   
+   SuspendedPublication::~SuspendedPublication()
+   {
+       this->delegate().resume();
+   }
+   
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_PUB_TSUSPENDEDPUBLICATION_IMPL_HPP_ */

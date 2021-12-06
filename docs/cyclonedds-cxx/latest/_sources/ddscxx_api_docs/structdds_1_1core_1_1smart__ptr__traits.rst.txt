@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds_1_1core_1_1smart__ptr__traits:
+
+Template Struct smart_ptr_traits
+================================
+
+- Defined in :ref:`file_dds_core_detail_ref_traits.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds::core::smart_ptr_traits
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1afe2e14916b545e0e46c3569335df463d:
+
+Function dds::core::xtypes::annotation::Final
+=============================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::Final()

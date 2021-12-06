@@ -1,0 +1,13 @@
+.. _exhale_function_TopicQosDelegate_8hpp_1a80b5b21cb7a9f1bbfdb76cb475c9db44:
+
+Function org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::Durability >
+========================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_qos_TopicQosDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::topic::qos::TopicQosDelegate::policy< dds::core::policy::Durability >()

@@ -1,0 +1,13 @@
+.. _exhale_function_cdr__stream_8hpp_1a2abeba5431b33bb140a2eff5ccca1969:
+
+Function org::eclipse::cyclonedds::core::cdr::swap_necessary
+============================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::swap_necessary(endianness)

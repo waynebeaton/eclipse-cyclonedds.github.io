@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2GenerationCount_8hpp_1a0e3f6c4161ce7dd6b0cdb2c0b5832b34:
+
+Typedef dds::sub::detail::GenerationCount
+=========================================
+
+- Defined in :ref:`file_dds_sub_detail_GenerationCount.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::GenerationCount

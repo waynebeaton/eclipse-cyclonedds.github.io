@@ -1,0 +1,128 @@
+
+.. _program_listing_file_dds_sub_detail_QueryImpl.hpp:
+
+Program Listing for File QueryImpl.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_sub_detail_QueryImpl.hpp>` (``dds/sub/detail/QueryImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_SUB_DETAIL_QUERY_IMPL_HPP_
+   #define CYCLONEDDS_DDS_SUB_DETAIL_QUERY_IMPL_HPP_
+   
+   // Implementation
+   #include <dds/sub/Query.hpp>
+   
+   
+   dds::sub::Query::Query(
+       const dds::sub::AnyDataReader& dr,
+       const std::string& expression) :
+           dds::core::Reference(new DELEGATE(AnyDataReader(dr), expression))
+   {
+   }
+   
+   
+   template<typename FWIterator>
+   dds::sub::Query::Query(
+       const dds::sub::AnyDataReader& dr,
+       const std::string& expression,
+       const FWIterator& params_begin,
+       const FWIterator& params_end) :
+           dds::core::Reference(new DELEGATE(AnyDataReader(dr), expression))
+   {
+       for (FWIterator it = params_begin; it != params_end; ++it) {
+           add_parameter(*it);
+       }
+   }
+   
+   
+   dds::sub::Query::Query(
+       const dds::sub::AnyDataReader& dr,
+       const std::string& expression,
+       const std::vector<std::string>& params) :
+           dds::core::Reference(new DELEGATE(AnyDataReader(dr), expression, params))
+   {
+   
+   }
+   
+   
+   const std::string& dds::sub::Query::expression() const
+   {
+       return this->delegate()->expression();
+   }
+   
+   
+   void dds::sub::Query::expression(const std::string& expr)
+   {
+       this->delegate()->expression(expr);
+   }
+   
+   typename dds::sub::Query::const_iterator dds::sub::Query::begin() const
+   {
+       return this->delegate()->begin();
+   }
+   
+   typename dds::sub::Query::const_iterator dds::sub::Query::end() const
+   {
+       return this->delegate()->end();
+   }
+   
+   typename dds::sub::Query::iterator dds::sub::Query::begin()
+   {
+       return this->delegate()->begin();
+   }
+   
+   typename dds::sub::Query::iterator dds::sub::Query::end()
+   {
+       return this->delegate()->end();
+   }
+   
+   
+   template<typename FWIterator>
+   void dds::sub::Query::parameters(
+       const FWIterator& begin,
+       const FWIterator end)
+   {
+       for (FWIterator it = begin; it != end; ++it) {
+           add_parameter(*it);
+       }
+   }
+   
+   
+   void dds::sub::Query::add_parameter(
+       const std::string& param)
+   {
+       this->delegate()->add_parameter(param);
+   }
+   
+   
+   uint32_t dds::sub::Query::parameters_length() const
+   {
+       return this->delegate()->parameters_length();
+   }
+   
+   
+   const dds::sub::AnyDataReader&
+   dds::sub::Query::data_reader() const
+   {
+       return this->delegate()->data_reader();
+   }
+   
+   
+   
+   
+   #endif /* CYCLONEDDS_DDS_SUB_DETAIL_QUERY_IMPL_HPP_ */

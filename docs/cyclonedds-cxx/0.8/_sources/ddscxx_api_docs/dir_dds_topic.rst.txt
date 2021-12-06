@@ -1,0 +1,40 @@
+.. _dir_dds_topic:
+
+
+Directory topic
+===============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds>` (``dds``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/topic``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_topic_detail`
+- :ref:`dir_dds_topic_qos`
+
+
+Files
+-----
+
+- :ref:`file_dds_topic_AnyTopic.hpp`
+- :ref:`file_dds_topic_AnyTopicListener.hpp`
+- :ref:`file_dds_topic_BuiltinTopic.hpp`
+- :ref:`file_dds_topic_BuiltinTopicKey.hpp`
+- :ref:`file_dds_topic_ContentFilteredTopic.hpp`
+- :ref:`file_dds_topic_ddstopic.hpp`
+- :ref:`file_dds_topic_discovery.hpp`
+- :ref:`file_dds_topic_Filter.hpp`
+- :ref:`file_dds_topic_find.hpp`
+- :ref:`file_dds_topic_MultiTopic.hpp`
+- :ref:`file_dds_topic_Topic.hpp`
+- :ref:`file_dds_topic_TopicDescription.hpp`
+- :ref:`file_dds_topic_TopicInstance.hpp`
+- :ref:`file_dds_topic_TopicListener.hpp`
+- :ref:`file_dds_topic_TopicTraits.hpp`
+
+

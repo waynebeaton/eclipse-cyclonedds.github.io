@@ -1,0 +1,13 @@
+.. _exhale_variable_types_8hpp_1a22c3217bb51dfe3db2887417da74d917:
+
+Variable dds::core::null
+========================
+
+- Defined in :ref:`file_dds_core_types.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: dds::core::null

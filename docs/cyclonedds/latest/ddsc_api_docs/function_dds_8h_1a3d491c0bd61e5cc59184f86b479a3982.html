@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Function dds_take_mask_wl &mdash; CycloneDDS 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Function dds_take_next" href="function_dds_8h_1a3cf029f0c49f42317b887836d681a5a1.html" />
+    <link rel="prev" title="Function dds_take_mask" href="function_dds_8h_1a3819e422bd99e4bff0c615492dcdf146.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a> &raquo;</li>
+          <li><a href="library_root.html">Raw C API</a> &raquo;</li>
+      <li>Function dds_take_mask_wl</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/function_dds_8h_1a3d491c0bd61e5cc59184f86b479a3982.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="function-dds-take-mask-wl">
+<span id="exhale-function-dds-8h-1a3d491c0bd61e5cc59184f86b479a3982"></span><h1>Function dds_take_mask_wl<a class="headerlink" href="#function-dds-take-mask-wl" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds.h.html#file-dds-h"><span class="std std-ref">File dds.h</span></a></p></li>
+</ul>
+<section id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv416dds_take_mask_wl12dds_entity_tPPvP17dds_sample_info_t8uint32_t8uint32_t">
+<span id="_CPPv316dds_take_mask_wl12dds_entity_tPPvP17dds_sample_info_t8uint32_t8uint32_t"></span><span id="_CPPv216dds_take_mask_wl12dds_entity_tPPvP17dds_sample_info_t8uint32_t8uint32_t"></span><span id="dds_take_mask_wl__dds_entity_t.voidPP.dds_sample_info_tP.uint32_t.uint32_t"></span><span class="target" id="dds_8h_1a3d491c0bd61e5cc59184f86b479a3982"></span><span class="n"><span class="pre">dds_return_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dds_take_mask_wl</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_dds__basic__types_8h_1aa66538468c533a9ea558b7e280677b13.html#_CPPv412dds_entity_t" title="dds_entity_t"><span class="n"><span class="pre">dds_entity_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">reader_or_condition</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buf</span></span>, <a class="reference internal" href="typedef_dds_8h_1a2e3f15a60e9c8da042fe383e0d20accb.html#_CPPv417dds_sample_info_t" title="dds_sample_info_t"><span class="n"><span class="pre">dds_sample_info_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">si</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">maxs</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">mask</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416dds_take_mask_wl12dds_entity_tPPvP17dds_sample_info_t8uint32_t8uint32_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Access loaned samples of data reader, readcondition or querycondition based on mask. </p>
+<p>When using a readcondition or querycondition, their masks are or’d with the given mask.</p>
+<p>After dds_take_mask_wl function is being called and the data has been handled, dds_return_loan function must be called to possibly free memory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reader_or_condition</strong> – <strong>[in]</strong> Reader, readcondition or querycondition entity. </p></li>
+<li><p><strong>buf</strong> – <strong>[out]</strong> An array of pointers to samples into which data is read (pointers can be NULL). </p></li>
+<li><p><strong>si</strong> – <strong>[out]</strong> Pointer to an array of <a class="reference internal" href="typedef_dds_8h_1a2e3f15a60e9c8da042fe383e0d20accb.html#dds_8h_1a2e3f15a60e9c8da042fe383e0d20accb"><span class="std std-ref">dds_sample_info_t</span></a> returned for each data value. </p></li>
+<li><p><strong>maxs</strong> – <strong>[in]</strong> Maximum number of samples to read. </p></li>
+<li><p><strong>mask</strong> – <strong>[in]</strong> Filter the data based on dds_sample_state_t|dds_view_state_t|dds_instance_state_t.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dds_return_t with the number of samples read or an error code.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><strong>&gt;=0</strong> – Number of samples read. </p></li>
+<li><p><strong>DDS_RETCODE_ERROR</strong> – An internal error has occurred. </p></li>
+<li><p><strong>DDS_RETCODE_BAD_PARAMETER</strong> – One of the given arguments is not valid. </p></li>
+<li><p><strong>DDS_RETCODE_ILLEGAL_OPERATION</strong> – The operation is invoked on an inappropriate object. </p></li>
+<li><p><strong>DDS_RETCODE_ALREADY_DELETED</strong> – The entity has already been deleted. </p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="function_dds_8h_1a3819e422bd99e4bff0c615492dcdf146.html" class="btn btn-neutral float-left" title="Function dds_take_mask" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="function_dds_8h_1a3cf029f0c49f42317b887836d681a5a1.html" class="btn btn-neutral float-right" title="Function dds_take_next" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

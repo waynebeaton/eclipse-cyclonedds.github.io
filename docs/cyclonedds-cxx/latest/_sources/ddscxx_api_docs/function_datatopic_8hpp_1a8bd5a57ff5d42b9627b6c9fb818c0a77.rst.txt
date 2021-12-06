@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1a8bd5a57ff5d42b9627b6c9fb818c0a77:
+
+Template Function serdata_print
+===============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_print(const ddsi_sertype *, const ddsi_serdata *, char *, size_t)

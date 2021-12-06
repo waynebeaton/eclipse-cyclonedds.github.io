@@ -1,0 +1,13 @@
+.. _exhale_function_Time_8hpp_1a8a333c7b790031b08eb28612cf05372d:
+
+Function operator+(const dds::core::Duration&, const dds::core::Time&)
+======================================================================
+
+- Defined in :ref:`file_dds_core_Time.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: operator+(const dds::core::Duration&, const dds::core::Time&)

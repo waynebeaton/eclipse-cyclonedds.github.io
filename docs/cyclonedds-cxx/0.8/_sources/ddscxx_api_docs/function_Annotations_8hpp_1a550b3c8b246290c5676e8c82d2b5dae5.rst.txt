@@ -1,0 +1,13 @@
+.. _exhale_function_Annotations_8hpp_1a550b3c8b246290c5676e8c82d2b5dae5:
+
+Function dds::core::xtypes::annotation::Key
+===========================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::annotation::Key()

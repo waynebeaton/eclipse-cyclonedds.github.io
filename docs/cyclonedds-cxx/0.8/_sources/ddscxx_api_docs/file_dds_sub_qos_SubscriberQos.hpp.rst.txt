@@ -1,0 +1,62 @@
+
+.. _file_dds_sub_qos_SubscriberQos.hpp:
+
+File SubscriberQos.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_qos>` (``dds/sub/qos``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/qos/SubscriberQos.hpp``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_qos_SubscriberQos.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/EntityQosImpl.hpp`` (:ref:`file_dds_core_detail_EntityQosImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/sub/qos/SubscriberQosDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_sub_qos_SubscriberQosDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_QosProvider.hpp`
+
+- :ref:`file_dds_domain_DomainParticipant.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_QosProviderDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_SubscriberDelegate.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1qos_1_1SubscriberQos`
+

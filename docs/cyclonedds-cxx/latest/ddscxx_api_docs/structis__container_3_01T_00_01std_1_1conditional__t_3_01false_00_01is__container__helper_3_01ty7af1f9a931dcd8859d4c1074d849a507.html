@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Struct is_container&lt; T, std::conditional_t&lt; false, is_container_helper&lt; typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt; T &gt;().size()), decltype(std::declval&lt; T &gt;().begin()), decltype(std::declval&lt; T &gt;().end()), decltype(std::declval&lt; T &gt;().cbegin()), decltype(std::declval&lt; T &gt;().cend()) &gt;, void &gt;&gt; &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Template Struct is_container&lt; T, std::conditional_t&lt; false, is_container_helper&lt; typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt; T &gt;().size()), decltype(std::declval&lt; T &gt;().begin()), decltype(std::declval&lt; T &gt;().end()), decltype(std::declval&lt; T &gt;().cbegin()), decltype(std::declval&lt; T &gt;().cend()) &gt;, void &gt;&gt;</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/structis__container_3_01T_00_01std_1_1conditional__t_3_01false_00_01is__container__helper_3_01ty7af1f9a931dcd8859d4c1074d849a507.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="template-struct-is-container-t-std-conditional-t-false-is-container-helper-typename-t-value-type-typename-t-size-type-typename-t-allocator-type-typename-t-iterator-typename-t-const-iterator-decltype-std-declval-t-size-decltype-std-declval-t-begin-decltype-std-declval-t-end-decltype-std-declval-t-cbegin-decltype-std-declval-t-cend-void">
+<span id="exhale-struct-structis-container-3-01t-00-01std-1-1conditional-t-3-01false-00-01is-container-helper-3-01ty7af1f9a931dcd8859d4c1074d849a507"></span><h1>Template Struct is_container&lt; T, std::conditional_t&lt; false, is_container_helper&lt; typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt; T &gt;().size()), decltype(std::declval&lt; T &gt;().begin()), decltype(std::declval&lt; T &gt;().end()), decltype(std::declval&lt; T &gt;().cbegin()), decltype(std::declval&lt; T &gt;().cend()) &gt;, void &gt;&gt;<a class="headerlink" href="#template-struct-is-container-t-std-conditional-t-false-is-container-helper-typename-t-value-type-typename-t-size-type-typename-t-allocator-type-typename-t-iterator-typename-t-const-iterator-decltype-std-declval-t-size-decltype-std-declval-t-begin-decltype-std-declval-t-end-decltype-std-declval-t-cbegin-decltype-std-declval-t-cend-void" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_core_type_helpers.hpp.html#file-org-eclipse-cyclonedds-core-type-helpers-hpp"><span class="std std-ref">File type_helpers.hpp</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
+<section id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">true_type</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE">
+<span id="_CPPv3I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE"></span><span id="_CPPv2I0E12is_containerI1TNSt13conditional_tIXfalseE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structis__container_3_01T_00_01std_1_1conditional__t_3_01false_00_01is__container__helper_3_01ty7af1f9a931dcd8859d4c1074d849a507"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">is_container</span></span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">conditional_t</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">false</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4IDpE19is_container_helper" title="is_container_helper"><span class="n"><span class="pre">is_container_helper</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value_type</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">size_type</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">allocator_type</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">iterator</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">const_iterator</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">decltype</span></span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">declval</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">decltype</span></span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">declval</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">begin</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">decltype</span></span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">declval</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">decltype</span></span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">declval</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">cbegin</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">decltype</span></span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">declval</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4I0E12is_containerI1TNSt13conditional_tIXL0EE19is_container_helperIN1T10value_typeEN1T9size_typeEN1T14allocator_typeEN1T8iteratorEN1T14const_iteratorEDTcldtclNSt7declvalI1TEEE4sizeEEDTcldtclNSt7declvalI1TEEE5beginEEDTcldtclNSt7declvalI1TEEE3endEEDTcldtclNSt7declvalI1TEEE6cbeginEEDTcldtclNSt7declvalI1TEEE4cendEEEvEEE" title="is_container&lt;T, std::conditional_t&lt;false, is_container_helper&lt;typename T::value_type, typename T::size_type, typename T::allocator_type, typename T::iterator, typename T::const_iterator, decltype(std::declval&lt;T&gt;().size()), decltype(std::declval&lt;T&gt;().begin()), decltype(std::declval&lt;T&gt;().end()), decltype(std::declval&lt;T&gt;().cbegin()), decltype(std::declval&lt;T&gt;().cend())&gt;, void&gt;&gt;::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">.</span></span><span class="n"><span class="pre">cend</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">true_type</span></span><br /></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

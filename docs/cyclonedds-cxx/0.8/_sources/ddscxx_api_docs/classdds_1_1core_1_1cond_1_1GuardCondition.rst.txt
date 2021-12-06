@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1cond_1_1GuardCondition:
+
+Class GuardCondition
+====================
+
+- Defined in :ref:`file_dds_core_cond_GuardCondition.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::cond::Condition`` (:ref:`exhale_class_classdds_1_1core_1_1cond_1_1Condition`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::cond::GuardCondition
+   :members:
+   :protected-members:
+   :undoc-members:

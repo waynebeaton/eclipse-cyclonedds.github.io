@@ -1,0 +1,13 @@
+.. _exhale_function_detail_2StructType_8hpp_1a5b1cf846f95a0b4338a718f390e8b69f:
+
+Template Function dds::core::xtypes::detail::isExtensible
+=========================================================
+
+- Defined in :ref:`file_dds_core_xtypes_detail_StructType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::detail::isExtensible(const StructType<T>&)

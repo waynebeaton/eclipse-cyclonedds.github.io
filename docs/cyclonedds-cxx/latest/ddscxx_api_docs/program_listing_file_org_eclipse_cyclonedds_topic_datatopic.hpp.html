@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File datatopic.hpp &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File datatopic.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/program_listing_file_org_eclipse_cyclonedds_topic_datatopic.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-datatopic-hpp">
+<span id="program-listing-file-org-eclipse-cyclonedds-topic-datatopic-hpp"></span><h1>Program Listing for File datatopic.hpp<a class="headerlink" href="#program-listing-for-file-datatopic-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_org_eclipse_cyclonedds_topic_datatopic.hpp.html#file-org-eclipse-cyclonedds-topic-datatopic-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">org/eclipse/cyclonedds/topic/datatopic.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2020 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#ifndef DDSCXXDATATOPIC_HPP_</span>
+<span class="cp">#define DDSCXXDATATOPIC_HPP_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstring&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;atomic&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsrt/endian.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsrt/md5.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsi/q_radmin.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsi/q_xmsg.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsi/ddsi_serdata.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;org/eclipse/cyclonedds/core/cdr/basic_cdr_ser.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsi/ddsi_keyhash.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;org/eclipse/cyclonedds/topic/hash.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/features.hpp&quot;</span><span class="cp"></span>
+
+<span class="cp">#ifdef DDSCXX_HAS_SHM</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;dds/ddsi/ddsi_shm_transport.h&quot;</span><span class="cp"></span>
+<span class="cp">#endif</span>
+
+<span class="k">constexpr</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">CDR_HEADER_SIZE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4U</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">endianness</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">native_endianness</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">swap_necessary</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">streamer</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">to_key</span><span class="p">(</span><span class="n">streamer</span><span class="o">&amp;</span><span class="w"> </span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">tokey</span><span class="p">,</span><span class="w"> </span><span class="n">ddsi_keyhash_t</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hash</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">str</span><span class="p">.</span><span class="n">reset_position</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">key_move</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">tokey</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="n">position</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">padding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">sz</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sz</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">padding</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">16</span><span class="p">)</span><span class="w"> </span><span class="n">padding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">&gt;</span><span class="w"> </span><span class="n">buffer</span><span class="p">(</span><span class="n">sz</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">padding</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">memset</span><span class="p">(</span><span class="n">buffer</span><span class="p">.</span><span class="n">data</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">sz</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0</span><span class="p">,</span><span class="w"> </span><span class="n">padding</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="n">buffer</span><span class="p">.</span><span class="n">data</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* TODO: what is key endianness to be used here?</span>
+<span class="cm">   * since, this may be different between nodes, and if this value is used</span>
+<span class="cm">   * for global lookups or the like, this</span>
+<span class="cm">   * may cause discrepancies. */</span><span class="w"></span>
+<span class="w">  </span><span class="n">key_write</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">tokey</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">fptr</span><span class="p">)(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">&gt;&amp;</span><span class="p">,</span><span class="w"> </span><span class="n">ddsi_keyhash_t</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fptr</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="k">nullptr</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">key_max</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">tokey</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">16</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//bind to unmodified function which just copies buffer into the keyhash</span>
+<span class="w">      </span><span class="n">fptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">simple_key</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//bind to MD5 hash function</span>
+<span class="w">      </span><span class="n">fptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">complex_key</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">fptr</span><span class="p">)(</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="n">hash</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">static</span><span class="w"> </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">calc_offset</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">ptrdiff_t</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">*&gt;</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">static</span><span class="w"> </span><span class="kr">inline</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">calc_offset</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="kt">ptrdiff_t</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="o">*&gt;</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">deserialize_sample_from_buffer</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">buffer</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                    </span><span class="n">T</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">sample</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                    </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata_kind</span><span class="w"> </span><span class="n">data_kind</span><span class="o">=</span><span class="n">SDK_DATA</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">endianness</span><span class="w"> </span><span class="n">stream_endianness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">endianness</span><span class="o">::</span><span class="n">big_endian</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">buffer</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mh">0x1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">stream_endianness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">endianness</span><span class="o">::</span><span class="n">little_endian</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="n">calc_offset</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="n">CDR_HEADER_SIZE</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">data_kind</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nl">SDK_KEY</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">swap_necessary</span><span class="p">(</span><span class="n">stream_endianness</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="n">key_read_swapped</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="n">key_read</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nl">SDK_DATA</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">swap_necessary</span><span class="p">(</span><span class="n">stream_endianness</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="n">read_swapped</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="n">read</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nl">SDK_EMPTY</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="n">assert</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">!</span><span class="n">str</span><span class="p">.</span><span class="n">abort_status</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="k">class</span> <span class="nc">ddscxx_sertype</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype_ops</span><span class="w"> </span><span class="n">ddscxx_sertype_ops</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddscxx_sertype</span><span class="p">();</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="k">class</span> <span class="nc">ddscxx_serdata</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">m_size</span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="p">[]</span><span class="o">&gt;</span><span class="w"> </span><span class="n">m_data</span><span class="p">{</span><span class="w"> </span><span class="k">nullptr</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddsi_keyhash_t</span><span class="w"> </span><span class="n">m_key</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">m_key_md5_hashed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">atomic</span><span class="o">&lt;</span><span class="n">T</span><span class="w"> </span><span class="o">*&gt;</span><span class="w"> </span><span class="n">m_t</span><span class="p">{</span><span class="w"> </span><span class="k">nullptr</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">hash_populated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata_ops</span><span class="w"> </span><span class="n">ddscxx_serdata_ops</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddscxx_serdata</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">ddsi_serdata_kind</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="o">~</span><span class="n">ddscxx_serdata</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">delete</span><span class="w"> </span><span class="n">m_t</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">memory_order_acquire</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">resize</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">requested_size</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">size</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_size</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="nf">data</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_data</span><span class="p">.</span><span class="n">get</span><span class="p">();</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddsi_keyhash_t</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">key</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_key</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_keyhash_t</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">key</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_key</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_key_md5_hashed</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">bool</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_key_md5_hashed</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">populate_hash</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="nf">setT</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">toset</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="n">toset</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_t</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">memory_order_acquire</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">T</span><span class="p">(</span><span class="o">*</span><span class="n">toset</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">exp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">m_t</span><span class="p">.</span><span class="n">compare_exchange_strong</span><span class="p">(</span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">memory_order_seq_cst</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">delete</span><span class="w"> </span><span class="n">t</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exp</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="o">*</span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">toset</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">t</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="nf">getT</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// check if m_t is already set</span>
+<span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="o">*</span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_t</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">memory_order_acquire</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// if m_t is not set</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">// if the data is available on iox_chunk, update and get the sample</span>
+<span class="w">      </span><span class="n">update_sample_from_iox_chunk</span><span class="p">(</span><span class="n">t</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="c1">// if its not possible to get the sample from iox_chunk</span>
+<span class="w">      </span><span class="k">if</span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// deserialize and get the sample</span>
+<span class="w">        </span><span class="n">deserialize_and_update_sample</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="n">data</span><span class="p">()),</span><span class="w"> </span><span class="n">t</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">t</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">deserialize_and_update_sample</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">*&amp;</span><span class="w"> </span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">T</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// if deserialization failed</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">deserialize_sample_from_buffer</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">kind</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">delete</span><span class="w"> </span><span class="n">t</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">exp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">m_t</span><span class="p">.</span><span class="n">compare_exchange_strong</span><span class="p">(</span><span class="n">exp</span><span class="p">,</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">memory_order_seq_cst</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">delete</span><span class="w"> </span><span class="n">t</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exp</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">update_sample_from_iox_chunk</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="o">*&amp;</span><span class="w"> </span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="cp">#ifdef DDSCXX_HAS_SHM</span>
+<span class="w">    </span><span class="c1">// if data is available on the iox_chunk (and doesn&#39;t have a serialized representation)</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">iox_chunk</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">nullptr</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">data</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">shm_data_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shm_get_data_state</span><span class="p">(</span><span class="n">iox_chunk</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// if the iox chunk has the data in serialized form</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">shm_data_state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IOX_CHUNK_CONTAINS_SERIALIZED_DATA</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="n">deserialize_and_update_sample</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="n">iox_chunk</span><span class="p">),</span><span class="w"> </span><span class="n">t</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">shm_data_state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">IOX_CHUNK_CONTAINS_RAW_DATA</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="c1">// get the chunk directly without any copy</span>
+<span class="w">          </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">iox_chunk</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="c1">// Data is in un-initialized state, which shouldn&#39;t happen</span>
+<span class="w">          </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">// data is not available on iox_chunk</span>
+<span class="w">      </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="cp">#else</span>
+<span class="w">    </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="cp">#endif  </span><span class="c1">// DDSCXX_HAS_SHM</span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">populate_hash</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hash_populated</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">to_key</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">getT</span><span class="p">(),</span><span class="w"> </span><span class="n">key</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">key_md5_hashed</span><span class="p">())</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsi_keyhash_t</span><span class="w"> </span><span class="n">buf</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_state_t</span><span class="w"> </span><span class="n">md5st</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">md5st</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_append</span><span class="p">(</span><span class="o">&amp;</span><span class="n">md5st</span><span class="p">,</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddsrt_md5_byte_t</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">key</span><span class="p">().</span><span class="n">value</span><span class="p">),</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_finish</span><span class="p">(</span><span class="o">&amp;</span><span class="n">md5st</span><span class="p">,</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">ddsrt_md5_byte_t</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">buf</span><span class="p">.</span><span class="n">value</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="p">(</span><span class="n">hash</span><span class="p">),</span><span class="w"> </span><span class="n">buf</span><span class="p">.</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">else</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="p">(</span><span class="n">hash</span><span class="p">),</span><span class="w"> </span><span class="n">key</span><span class="p">().</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">hash_populated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">serdata_eqkey</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">s_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">s_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">memcmp</span><span class="p">(</span><span class="n">s_a</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">s_b</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">uint32_t</span><span class="w"> </span><span class="n">serdata_size</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">());</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddsi_serdata</span><span class="w"> </span><span class="o">*</span><span class="n">serdata_from_ser</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">enum</span> <span class="nc">ddsi_serdata_kind</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">nn_rdata</span><span class="o">*</span><span class="w"> </span><span class="n">fragchain</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">assert</span><span class="p">(</span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">min</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">assert</span><span class="p">(</span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">maxp1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">off</span><span class="p">);</span><span class="w">    </span><span class="c1">//CDR header must be in first fragment</span>
+
+<span class="w">  </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="n">size</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">fragchain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">maxp1</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">off</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">//only copy if this fragment adds data</span>
+<span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">        </span><span class="n">NN_RMSG_PAYLOADOFF</span><span class="p">(</span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">rmsg</span><span class="p">,</span><span class="w"> </span><span class="n">NN_RDATA_PAYLOAD_OFF</span><span class="p">(</span><span class="n">fragchain</span><span class="p">));</span><span class="w"></span>
+<span class="w">      </span><span class="k">auto</span><span class="w"> </span><span class="n">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">payload</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">min</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="k">auto</span><span class="w"> </span><span class="n">n_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">maxp1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">off</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="n">memcpy</span><span class="p">(</span><span class="n">cursor</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">n_bytes</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="n">cursor</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">n_bytes</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="n">off</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">maxp1</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="n">assert</span><span class="p">(</span><span class="n">off</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">size</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">fragchain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fragchain</span><span class="o">-&gt;</span><span class="n">nextfrag</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">getT</span><span class="p">())</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="n">calc_offset</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="mi">4</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">to_key</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">getT</span><span class="p">(),</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">populate_hash</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">else</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddsi_serdata</span><span class="w"> </span><span class="o">*</span><span class="n">serdata_from_ser_iov</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">enum</span> <span class="nc">ddsi_serdata_kind</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddsrt_msg_iovlen_t</span><span class="w"> </span><span class="n">niov</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsrt_iovec_t</span><span class="o">*</span><span class="w"> </span><span class="n">iov</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="n">size</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">ddsrt_msg_iovlen_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">niov</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">n_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iov</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">iov_len</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n_bytes</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="n">n_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">off</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="n">cursor</span><span class="p">,</span><span class="w"> </span><span class="n">iov</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">iov_base</span><span class="p">,</span><span class="w"> </span><span class="n">n_bytes</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">cursor</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">n_bytes</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">off</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">n_bytes</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">getT</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="n">calc_offset</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="mi">4</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">to_key</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">populate_hash</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddsi_serdata</span><span class="w"> </span><span class="o">*</span><span class="n">serdata_from_keyhash</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">ddsi_keyhash</span><span class="o">*</span><span class="w"> </span><span class="n">keyhash</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">keyhash</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">type</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//replace with (if key_size_max &lt;= 16) then populate the data class with the key hash (key_read)</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">resize</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">requested_size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">requested_size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_data</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="cm">/* FIXME: CDR padding in DDSI makes me do this to avoid reading beyond the bounds</span>
+<span class="cm">  when copying data to network.  Should fix Cyclone to handle that more elegantly.  */</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">n_pad_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">requested_size</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">m_data</span><span class="p">.</span><span class="n">reset</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="p">[</span><span class="n">requested_size</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n_pad_bytes</span><span class="p">]);</span><span class="w"></span>
+<span class="w">  </span><span class="n">m_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">requested_size</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n_pad_bytes</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// zero the very end. The caller isn&#39;t necessarily going to overwrite it.</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">memset</span><span class="p">(</span><span class="n">calc_offset</span><span class="p">(</span><span class="n">m_data</span><span class="p">.</span><span class="n">get</span><span class="p">(),</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">ptrdiff_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">requested_size</span><span class="p">)),</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">n_pad_bytes</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddsi_serdata</span><span class="w"> </span><span class="o">*</span><span class="n">serdata_from_sample</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">typecmn</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">enum</span> <span class="nc">ddsi_serdata_kind</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">sample</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">typecmn</span><span class="p">,</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">kind</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">SDK_KEY</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">key_move</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">else</span><span class="w"></span>
+<span class="w">    </span><span class="n">move</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">abort_status</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">failure</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">sz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="n">position</span><span class="p">();</span><span class="w">  </span><span class="c1">//4 bytes extra to also include the header</span>
+<span class="w">  </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">memset</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">native_endianness</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">endianness</span><span class="o">::</span><span class="n">little_endian</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">*</span><span class="p">(</span><span class="n">ptr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="n">calc_offset</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="mi">4</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="nl">SDK_KEY</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">key_write</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="nl">SDK_DATA</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">write</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="nl">SDK_EMPTY</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">abort_status</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">failure</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">str</span><span class="p">.</span><span class="n">reset_position</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">to_key</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">setT</span><span class="p">(</span><span class="o">&amp;</span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">populate_hash</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+
+<span class="nl">failure</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">serdata_to_ser</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">off</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">buf</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">memcpy</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="n">calc_offset</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">ptrdiff_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">off</span><span class="p">)),</span><span class="w"> </span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddsi_serdata</span><span class="w"> </span><span class="o">*</span><span class="n">serdata_to_ser_ref</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">off</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">sz</span><span class="p">,</span><span class="w"> </span><span class="n">ddsrt_iovec_t</span><span class="o">*</span><span class="w"> </span><span class="n">ref</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">ref</span><span class="o">-&gt;</span><span class="n">iov_base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calc_offset</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">ptrdiff_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">off</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">ref</span><span class="o">-&gt;</span><span class="n">iov_len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">ddsrt_iov_len_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">sz</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">ddsi_serdata_ref</span><span class="p">(</span><span class="n">d</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">serdata_to_ser_unref</span><span class="p">(</span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ddsrt_iovec_t</span><span class="o">*</span><span class="w"> </span><span class="n">ref</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ref</span><span class="p">);</span><span class="w">    </span><span class="c1">// unused</span>
+<span class="w">  </span><span class="n">ddsi_serdata_unref</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">serdata_to_sample</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">sample</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">**</span><span class="w"> </span><span class="n">bufptr</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">buflim</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">bufptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">buflim</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">deserialize_sample_from_buffer</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">()),</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddsi_serdata</span><span class="w"> </span><span class="o">*</span><span class="n">serdata_to_untyped</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* Cast away const: the serialized ddsi_serdata itself is not touched: only its C++ representation</span>
+<span class="cm">   * in the C++ wrapper may initialized if this was not done before. So conceptually the const for</span>
+<span class="cm">   * ddsi_serdata is not violated.</span>
+<span class="cm">   */</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">const_cast</span><span class="o">&lt;</span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">SDK_KEY</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">getT</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">failure</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">key_move</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">t</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">abort_status</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">failure</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="n">position</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">memset</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">native_endianness</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">endianness</span><span class="o">::</span><span class="n">little_endian</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">*</span><span class="p">(</span><span class="n">ptr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="n">calc_offset</span><span class="p">(</span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="mi">4</span><span class="p">));</span><span class="w">  </span><span class="c1">//4 offset due to header field</span>
+<span class="w">  </span><span class="n">key_write</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">t</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">abort_status</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">failure</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">to_key</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">hash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">hash</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">d1</span><span class="o">-&gt;</span><span class="n">hash_populated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">d1</span><span class="p">;</span><span class="w"></span>
+
+<span class="nl">failure</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="k">delete</span><span class="w"> </span><span class="n">d1</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">serdata_untyped_to_sample</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">sample</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="o">**</span><span class="w"> </span><span class="n">bufptr</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">buflim</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">type</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">bufptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">buflim</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">deserialize_sample_from_buffer</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">()),</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="n">SDK_KEY</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">serdata_free</span><span class="p">(</span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">dcmn</span><span class="p">);</span><span class="w"></span>
+
+<span class="cp">#ifdef DDSCXX_HAS_SHM</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">iox_chunk</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">iox_subscriber</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Explicit cast to iox_subscriber is required here, since the C++ binding has no notion of</span>
+<span class="w">    </span><span class="c1">// iox subscriber, but the underlying C API expects this to be a typed iox_subscriber.</span>
+<span class="w">    </span><span class="c1">// TODO (Sumanth), Fix this when we cleanup the interfaces to not use iceoryx directly in</span>
+<span class="w">    </span><span class="c1">//  the C++ plugin</span>
+<span class="w">    </span><span class="n">free_iox_chunk</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">iox_sub_t</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">iox_subscriber</span><span class="p">),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">iox_chunk</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="cp">#endif</span>
+<span class="w">  </span><span class="k">delete</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">serdata_print</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">tpcmn</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">dcmn</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">bufsize</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">tpcmn</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">dcmn</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//implementation to follow!!!</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bufsize</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">buf</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">serdata_get_keyhash</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="k">struct</span> <span class="nc">ddsi_keyhash</span><span class="o">*</span><span class="w"> </span><span class="n">buf</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">force_md5</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">assert</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">force_md5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">key_md5_hashed</span><span class="p">())</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_state_t</span><span class="w"> </span><span class="n">md5st</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">md5st</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_append</span><span class="p">(</span><span class="o">&amp;</span><span class="n">md5st</span><span class="p">,</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">ddsrt_md5_byte_t</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">value</span><span class="p">),</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">ddsrt_md5_finish</span><span class="p">(</span><span class="o">&amp;</span><span class="n">md5st</span><span class="p">,</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">ddsrt_md5_byte_t</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">buf</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">else</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="n">buf</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">().</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#ifdef DDSCXX_HAS_SHM</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">uint32_t</span><span class="w"> </span><span class="n">serdata_iox_size</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">ddsi_serdata</span><span class="o">*</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">assert</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">T</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">-&gt;</span><span class="n">iox_size</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">-&gt;</span><span class="n">iox_size</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddsi_serdata</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">serdata_from_iox_buffer</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">struct</span> <span class="nc">ddsi_sertype</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">typecmn</span><span class="p">,</span><span class="w"> </span><span class="k">enum</span> <span class="nc">ddsi_serdata_kind</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sub</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">iox_buffer</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">typecmn</span><span class="p">,</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// serdata from the loaned sample (when using iceoryx)</span>
+<span class="w">    </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">iox_chunk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iox_buffer</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Update the iox subscriber, when constructing the serdata in the case of sample received</span>
+<span class="w">    </span><span class="c1">// from iceoryx</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sub</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">iox_subscriber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sub</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// key handling</span>
+<span class="w">    </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">d</span><span class="o">-&gt;</span><span class="n">iox_chunk</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key_md5_hashed</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">to_key</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">key</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="n">d</span><span class="o">-&gt;</span><span class="n">populate_hash</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">d</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="n">ddsi_serdata_ops</span><span class="w"> </span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">ddscxx_serdata_ops</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_eqkey</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_size</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_from_ser</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_from_ser_iov</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_from_keyhash</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_from_sample</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_to_ser</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_to_ser_ref</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_to_ser_unref</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_to_sample</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_to_untyped</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_untyped_to_sample</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_free</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_print</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_get_keyhash</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="cp">#ifdef DDSCXX_HAS_SHM</span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_iox_size</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="o">&amp;</span><span class="n">serdata_from_iox_buffer</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="cp">#endif</span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">ddscxx_serdata</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">ddsi_serdata_kind</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">ddsi_serdata</span><span class="p">{}</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">memset</span><span class="p">(</span><span class="n">m_key</span><span class="p">.</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddsi_serdata_init</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">ddscxx_sertype</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">ddscxx_sertype</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="p">{}</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">TopicTraits</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">isKeyless</span><span class="p">()</span><span class="w"> </span><span class="o">?</span><span class="w"></span>
+<span class="w">                    </span><span class="nl">DDSI_SERTYPE_FLAG_TOPICKIND_NO_KEY</span> <span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="cp">#ifdef DDSCXX_HAS_SHM</span>
+<span class="w">  </span><span class="n">flags</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="p">(</span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">TopicTraits</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">isSelfContained</span><span class="p">()</span><span class="w"> </span><span class="o">?</span><span class="w"></span>
+<span class="w">      </span><span class="nl">DDSI_SERTYPE_FLAG_FIXED_SIZE</span> <span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="cp">#endif</span>
+
+<span class="w">  </span><span class="n">ddsi_sertype_init_flags</span><span class="p">(</span><span class="w"></span>
+<span class="w">      </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">ddsi_sertype</span><span class="o">*&gt;</span><span class="p">(</span><span class="k">this</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">TopicTraits</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">getTypeName</span><span class="p">(),</span><span class="w"></span>
+<span class="w">      </span><span class="o">&amp;</span><span class="n">ddscxx_sertype</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">ddscxx_sertype_ops</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="o">&amp;</span><span class="n">ddscxx_serdata</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">ddscxx_serdata_ops</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">flags</span><span class="p">);</span><span class="w"></span>
+
+<span class="cp">#ifdef DDSCXX_HAS_SHM</span>
+<span class="w">  </span><span class="c1">// update the size of the type, if its fixed</span>
+<span class="w">  </span><span class="c1">// this needs to be done after sertype init! TODO need an API in Cyclone DDS to set this</span>
+<span class="w">  </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">iox_size</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">      </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">topic</span><span class="o">::</span><span class="n">TopicTraits</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">getSampleSize</span><span class="p">());</span><span class="w"></span>
+<span class="cp">#endif</span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">sertype_free</span><span class="p">(</span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">tpcmn</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">tp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">ddscxx_sertype</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*&gt;</span><span class="p">(</span><span class="n">tpcmn</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddsi_sertype_fini</span><span class="p">(</span><span class="n">tpcmn</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">delete</span><span class="w"> </span><span class="n">tp</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">sertype_zero_samples</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">sertype_realloc_samples</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="o">**</span><span class="w"> </span><span class="n">ptrs</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* For C++ we make one big assumption about the caller of this function:</span>
+<span class="cm">   * it can only be invoked by the ddsi_sertype_alloc_sample, and will therefore</span>
+<span class="cm">   * never be used to reallocate an existing sample collection. This is caused by</span>
+<span class="cm">   * the fact that the C++ API lets either the user specify the exact dimensions</span>
+<span class="cm">   * of his preallocated collection (in which case there is no need to realloc them),</span>
+<span class="cm">   * or if the user didn&#39;t preallocate any memory it peeks at the available</span>
+<span class="cm">   * samples prior to allocating the sample collection that is returned (so that</span>
+<span class="cm">   * again there is no need to reallocate it).</span>
+<span class="cm">   * Because of this, we can safely assume that sertype_realloc_samples can only</span>
+<span class="cm">   * be invoked by ddsi_sertype_alloc_sample, in which case oldCount is always 0,</span>
+<span class="cm">   * count is always 1 and the old pointer is always null.</span>
+<span class="cm">   */</span><span class="w"></span>
+<span class="w">  </span><span class="n">ptrs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">T</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">sertype_free_samples</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">**</span><span class="w"> </span><span class="n">ptrs</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="p">,</span><span class="w"> </span><span class="n">dds_free_op_t</span><span class="w"> </span><span class="n">op</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* For C++ we make one big assumption about the caller of this function:</span>
+<span class="cm">   * it can only be invoked by the ddsi_sertype_free_sample, and will therefore</span>
+<span class="cm">   * never be used to free an existing sample collection. This is caused by</span>
+<span class="cm">   * the fact that the C++ API lets either the user specify the exact dimensions</span>
+<span class="cm">   * of his preallocated collection (in which case there is no need to release</span>
+<span class="cm">   * it in the cyclone code base), or if the user didn&#39;t preallocate any memory it</span>
+<span class="cm">   * returns a collection of samples that will be owned by the user (in which case</span>
+<span class="cm">   * cyclone doesn&#39;t need to release the collection either).</span>
+<span class="cm">   * Because of this, we can safely assume that sertype_free_samples can only</span>
+<span class="cm">   * be invoked by ddsi_sertype_free_sample, in which case count is always 1,</span>
+<span class="cm">   * and the op flags can either be set to DDS_FREE_ALL_BIT, or to DDS_FREE_CONTENTS_BIT.</span>
+<span class="cm">   */</span><span class="w"></span>
+<span class="w">  </span><span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="n">ptrs</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">op</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">DDS_FREE_ALL_BIT</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">ptr</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="n">op</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">DDS_FREE_CONTENTS_BIT</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">sertype_equal</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">acmn</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">bcmn</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/* A bit of a guess: types with the same name &amp; type name are really the same if they have</span>
+<span class="cm">   the same type support identifier as well */</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">acmn</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">bcmn</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">uint32_t</span><span class="w"> </span><span class="n">sertype_hash</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="w"> </span><span class="n">tpcmn</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">tpcmn</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mh">0x0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">sertype_get_serialized_size</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sample</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// get the serialized size of the sample (with out serializing)</span>
+<span class="w">  </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">move</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">abort_status</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// the max value is treated as an error in the Cyclone core</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">size_t</span><span class="o">&gt;::</span><span class="n">max</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">str</span><span class="p">.</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">CDR_HEADER_SIZE</span><span class="p">;</span><span class="w">  </span><span class="c1">// Include the additional bytes for the CDR header</span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">sertype_serialize_into</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype</span><span class="o">*</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sample</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dst_buffer</span><span class="p">,</span><span class="w"></span>
+<span class="w">                            </span><span class="kt">size_t</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// cast to the type</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">sample</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// set the endianess</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">dst_buffer</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">memset</span><span class="p">(</span><span class="n">ptr</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">native_endianness</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">endianness</span><span class="o">::</span><span class="n">little_endian</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">*</span><span class="p">(</span><span class="n">ptr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// serialize the sample into the destination buffer</span>
+<span class="w">  </span><span class="n">org</span><span class="o">::</span><span class="n">eclipse</span><span class="o">::</span><span class="n">cyclonedds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">cdr</span><span class="o">::</span><span class="n">basic_cdr_stream</span><span class="w"> </span><span class="n">str</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// TODO(Sumanth), considering the header offset</span>
+<span class="w">  </span><span class="n">str</span><span class="p">.</span><span class="n">set_buffer</span><span class="p">(</span><span class="n">calc_offset</span><span class="p">(</span><span class="n">dst_buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">write</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">!</span><span class="n">str</span><span class="p">.</span><span class="n">abort_status</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="n">ddsi_sertype_ops</span><span class="w"> </span><span class="n">ddscxx_sertype</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">ddscxx_sertype_ops</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">ddsi_sertype_v0</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">nullptr</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">sertype_free</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">sertype_zero_samples</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">sertype_realloc_samples</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">sertype_free_samples</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">sertype_equal</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">sertype_hash</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="c1">// typeid_hash</span>
+<span class="w">  </span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="c1">// serialized_size</span>
+<span class="w">  </span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="c1">// serialize</span>
+<span class="w">  </span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="c1">// deserialize</span>
+<span class="w">  </span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="c1">// assignable_from</span>
+<span class="w">  </span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="c1">//derive_sertype sertype_default_derive_sertype?</span>
+<span class="w">  </span><span class="n">sertype_get_serialized_size</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">sertype_serialize_into</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// DDSCXXDATATOPIC_HPP_</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

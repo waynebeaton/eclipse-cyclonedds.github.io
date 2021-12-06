@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2WaitSet_8hpp_1a6f3074511891376d7b4cc8475fc1cf52:
+
+Typedef dds::core::cond::detail::WaitSet
+========================================
+
+- Defined in :ref:`file_dds_core_cond_detail_WaitSet.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::cond::detail::WaitSet

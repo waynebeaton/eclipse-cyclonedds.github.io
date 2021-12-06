@@ -1,0 +1,33 @@
+.. _exhale_class_classdds_1_1core_1_1cond_1_1Condition:
+
+Class Condition
+===============
+
+- Defined in :ref:`file_dds_core_cond_Condition.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Reference`` (:ref:`exhale_class_classdds_1_1core_1_1Reference`)
+
+
+Derived Types
+*************
+
+- ``public dds::core::cond::GuardCondition`` (:ref:`exhale_class_classdds_1_1core_1_1cond_1_1GuardCondition`)
+- ``public dds::core::cond::StatusCondition< T >`` (:ref:`exhale_class_classdds_1_1core_1_1cond_1_1StatusCondition`)
+- ``public dds::sub::cond::ReadCondition`` (:ref:`exhale_class_classdds_1_1sub_1_1cond_1_1ReadCondition`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::cond::Condition
+   :members:
+   :protected-members:
+   :undoc-members:

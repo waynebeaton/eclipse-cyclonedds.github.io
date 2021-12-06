@@ -1,0 +1,20 @@
+
+.. _namespace_dds__code__xtypes:
+
+Namespace dds::code::xtypes
+===========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds__code__xtypes__detail`

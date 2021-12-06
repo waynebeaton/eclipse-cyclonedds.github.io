@@ -1,0 +1,64 @@
+
+.. _file_dds_core_xtypes_detail_StructType.hpp:
+
+File StructType.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_xtypes_detail>` (``dds/core/xtypes/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/xtypes/detail/StructType.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_xtypes_detail_StructType.hpp.rst
+
+
+
+
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__xtypes`
+
+- :ref:`namespace_dds__core__xtypes__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1detail_1_1StructType`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1a5b1cf846f95a0b4338a718f390e8b69f`
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1abf3a2ddd7ea02dd481bfd3aa4619330a`
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1a674297efa8db87f6346516ca9e78faf0`
+
+- :ref:`exhale_function_detail_2StructType_8hpp_1ac9d8fb84588eeadd859b4fe09ee8953d`
+

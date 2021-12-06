@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds__statistics:
+
+Struct dds_statistics
+=====================
+
+- Defined in :ref:`file_ddsc_dds_statistics.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds_statistics
+   :members:
+   :protected-members:
+   :undoc-members:

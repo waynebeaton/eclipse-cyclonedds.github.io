@@ -1,0 +1,13 @@
+.. _exhale_define_ReportUtils_8hpp_1ae68198c18ff411242f5875876eb3d0b7:
+
+Define ISOCPP_ILLEGAL_OPERATION_ERROR
+=====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ISOCPP_ILLEGAL_OPERATION_ERROR

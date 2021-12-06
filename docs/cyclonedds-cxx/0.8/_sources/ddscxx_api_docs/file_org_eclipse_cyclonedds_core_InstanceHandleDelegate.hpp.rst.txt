@@ -1,0 +1,76 @@
+
+.. _file_org_eclipse_cyclonedds_core_InstanceHandleDelegate.hpp:
+
+File InstanceHandleDelegate.hpp
+===============================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core>` (``org/eclipse/cyclonedds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/InstanceHandleDelegate.hpp``)
+-----------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_InstanceHandleDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+- ``dds/dds.h`` (:ref:`file_dds_dds.hpp`)
+
+- ``org/eclipse/cyclonedds/core/config.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_config.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_detail_InstanceHandle.hpp`
+
+- :ref:`file_dds_core_detail_InstanceHandleImpl.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1InstanceHandleDelegate`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_InstanceHandleDelegate_8hpp_1a3016b5deb21a06d30d7297d23b941384`
+

@@ -1,0 +1,13 @@
+.. _exhale_define_MiscUtils_8hpp_1afc8d04ec2d818541ce08ea8c7235eeff:
+
+Define STATUS_MASK_CONTAINS
+===========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: STATUS_MASK_CONTAINS

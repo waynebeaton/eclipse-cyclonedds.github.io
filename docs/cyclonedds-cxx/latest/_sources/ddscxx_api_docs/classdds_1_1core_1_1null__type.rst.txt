@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1core_1_1null__type:
+
+Class null_type
+===============
+
+- Defined in :ref:`file_dds_core_types.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::null_type
+   :members:
+   :protected-members:
+   :undoc-members:

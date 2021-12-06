@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Query_8hpp_1a30e90e68f05917d94df5c60f1b72cbc0:
+
+Typedef dds::sub::detail::Query
+===============================
+
+- Defined in :ref:`file_dds_sub_detail_Query.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::Query

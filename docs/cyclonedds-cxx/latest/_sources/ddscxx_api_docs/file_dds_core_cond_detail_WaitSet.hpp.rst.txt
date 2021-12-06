@@ -1,0 +1,59 @@
+
+.. _file_dds_core_cond_detail_WaitSet.hpp:
+
+File WaitSet.hpp
+================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_cond_detail>` (``dds/core/cond/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/cond/detail/WaitSet.hpp``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_cond_detail_WaitSet.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/cond/detail/WaitSetImpl.hpp`` (:ref:`file_dds_core_cond_detail_WaitSetImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/core/cond/WaitSetDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_cond_WaitSetDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__cond`
+
+- :ref:`namespace_dds__core__cond__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_detail_2WaitSet_8hpp_1a6f3074511891376d7b4cc8475fc1cf52`
+

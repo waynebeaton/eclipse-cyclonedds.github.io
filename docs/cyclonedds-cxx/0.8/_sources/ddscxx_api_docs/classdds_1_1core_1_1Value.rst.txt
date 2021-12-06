@@ -1,0 +1,80 @@
+.. _exhale_class_classdds_1_1core_1_1Value:
+
+Class Value
+===========
+
+- Defined in :ref:`file_dds_core_Value.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public dds::core::EntityQos`` (:ref:`exhale_class_classdds_1_1core_1_1EntityQos`)
+- ``public dds::core::InstanceHandle`` (:ref:`exhale_class_classdds_1_1core_1_1InstanceHandle`)
+- ``public dds::core::optional< T >`` (:ref:`exhale_class_classdds_1_1core_1_1optional`)
+- ``public dds::core::policy::Deadline`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1Deadline`)
+- ``public dds::core::policy::DestinationOrder`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1DestinationOrder`)
+- ``public dds::core::policy::Durability`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1Durability`)
+- ``public dds::core::policy::EntityFactory`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1EntityFactory`)
+- ``public dds::core::policy::GroupData`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1GroupData`)
+- ``public dds::core::policy::History`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1History`)
+- ``public dds::core::policy::LatencyBudget`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1LatencyBudget`)
+- ``public dds::core::policy::Lifespan`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1Lifespan`)
+- ``public dds::core::policy::Liveliness`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1Liveliness`)
+- ``public dds::core::policy::Partition`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1Partition`)
+- ``public dds::core::policy::Presentation`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1Presentation`)
+- ``public dds::core::policy::QosPolicyCount`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1QosPolicyCount`)
+- ``public dds::core::policy::ReaderDataLifecycle`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1ReaderDataLifecycle`)
+- ``public dds::core::policy::Reliability`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1Reliability`)
+- ``public dds::core::policy::ResourceLimits`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1ResourceLimits`)
+- ``public dds::core::policy::TimeBasedFilter`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1TimeBasedFilter`)
+- ``public dds::core::policy::TopicData`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1TopicData`)
+- ``public dds::core::policy::TransportPriority`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1TransportPriority`)
+- ``public dds::core::policy::UserData`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1UserData`)
+- ``public dds::core::policy::WriterDataLifecycle`` (:ref:`exhale_class_classdds_1_1core_1_1policy_1_1WriterDataLifecycle`)
+- ``public dds::core::status::InconsistentTopicStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1InconsistentTopicStatus`)
+- ``public dds::core::status::LivelinessChangedStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1LivelinessChangedStatus`)
+- ``public dds::core::status::LivelinessLostStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1LivelinessLostStatus`)
+- ``public dds::core::status::OfferedDeadlineMissedStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1OfferedDeadlineMissedStatus`)
+- ``public dds::core::status::OfferedIncompatibleQosStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1OfferedIncompatibleQosStatus`)
+- ``public dds::core::status::PublicationMatchedStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1PublicationMatchedStatus`)
+- ``public dds::core::status::RequestedDeadlineMissedStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1RequestedDeadlineMissedStatus`)
+- ``public dds::core::status::RequestedIncompatibleQosStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1RequestedIncompatibleQosStatus`)
+- ``public dds::core::status::SampleLostStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleLostStatus`)
+- ``public dds::core::status::SampleRejectedStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleRejectedStatus`)
+- ``public dds::core::status::SubscriptionMatchedStatus`` (:ref:`exhale_class_classdds_1_1core_1_1status_1_1SubscriptionMatchedStatus`)
+- ``public dds::pub::CoherentSet`` (:ref:`exhale_class_classdds_1_1pub_1_1CoherentSet`)
+- ``public dds::pub::SuspendedPublication`` (:ref:`exhale_class_classdds_1_1pub_1_1SuspendedPublication`)
+- ``public dds::sub::CoherentAccess`` (:ref:`exhale_class_classdds_1_1sub_1_1CoherentAccess`)
+- ``public dds::sub::GenerationCount`` (:ref:`exhale_class_classdds_1_1sub_1_1GenerationCount`)
+- ``public dds::sub::Rank`` (:ref:`exhale_class_classdds_1_1sub_1_1Rank`)
+- ``public dds::sub::SampleInfo`` (:ref:`exhale_class_classdds_1_1sub_1_1SampleInfo`)
+- ``public dds::topic::BuiltinTopicKey`` (:ref:`exhale_class_classdds_1_1topic_1_1BuiltinTopicKey`)
+- ``public dds::topic::Filter`` (:ref:`exhale_class_classdds_1_1topic_1_1Filter`)
+- ``public dds::topic::ParticipantBuiltinTopicData`` (:ref:`exhale_class_classdds_1_1topic_1_1ParticipantBuiltinTopicData`)
+- ``public dds::topic::PublicationBuiltinTopicData`` (:ref:`exhale_class_classdds_1_1topic_1_1PublicationBuiltinTopicData`)
+- ``public dds::topic::SubscriptionBuiltinTopicData`` (:ref:`exhale_class_classdds_1_1topic_1_1SubscriptionBuiltinTopicData`)
+- ``public dds::topic::TopicBuiltinTopicData`` (:ref:`exhale_class_classdds_1_1topic_1_1TopicBuiltinTopicData`)
+- ``public org::eclipse::cyclonedds::core::policy::ProductData`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ProductData`)
+- ``public org::eclipse::cyclonedds::core::policy::Share`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1Share`)
+- ``public org::eclipse::cyclonedds::core::policy::SubscriptionKey`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1SubscriptionKey`)
+- ``public org::eclipse::cyclonedds::core::policy::TReaderLifespan`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TReaderLifespan`)
+- ``public org::eclipse::cyclonedds::core::policy::TScheduling`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TScheduling`)
+- ``public org::eclipse::cyclonedds::topic::CMDataReaderBuiltinTopicData`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataReaderBuiltinTopicData`)
+- ``public org::eclipse::cyclonedds::topic::CMDataWriterBuiltinTopicData`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMDataWriterBuiltinTopicData`)
+- ``public org::eclipse::cyclonedds::topic::CMParticipantBuiltinTopicData`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMParticipantBuiltinTopicData`)
+- ``public org::eclipse::cyclonedds::topic::CMPublisherBuiltinTopicData`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMPublisherBuiltinTopicData`)
+- ``public org::eclipse::cyclonedds::topic::CMSubscriberBuiltinTopicData`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1topic_1_1CMSubscriberBuiltinTopicData`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::Value
+   :members:
+   :protected-members:
+   :undoc-members:

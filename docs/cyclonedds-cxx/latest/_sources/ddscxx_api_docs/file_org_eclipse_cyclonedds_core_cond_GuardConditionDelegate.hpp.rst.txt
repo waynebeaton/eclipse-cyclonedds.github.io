@@ -1,0 +1,65 @@
+
+.. _file_org_eclipse_cyclonedds_core_cond_GuardConditionDelegate.hpp:
+
+File GuardConditionDelegate.hpp
+===============================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core_cond>` (``org/eclipse/cyclonedds/core/cond``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/cond/GuardConditionDelegate.hpp``)
+----------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_cond_GuardConditionDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``org/eclipse/cyclonedds/core/cond/ConditionDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_cond_ConditionDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_cond_detail_GuardConditionImpl.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core__cond`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cond_1_1GuardConditionDelegate`
+

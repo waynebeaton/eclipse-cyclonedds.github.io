@@ -1,0 +1,119 @@
+
+.. _program_listing_file_dds_core_detail_InstanceHandleImpl.hpp:
+
+Program Listing for File InstanceHandleImpl.hpp
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_detail_InstanceHandleImpl.hpp>` (``dds/core/detail/InstanceHandleImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_CORE_TINSTANCEHANDLE_IMPL_HPP_
+   #define CYCLONEDDS_DDS_CORE_TINSTANCEHANDLE_IMPL_HPP_
+   
+   #include <dds/core/detail/Value.hpp>
+   #include <org/eclipse/cyclonedds/core/InstanceHandleDelegate.hpp>
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/core/InstanceHandle.hpp>
+   
+   // Implementation
+   namespace dds
+   {
+   namespace core
+   {
+   
+   
+   InstanceHandle::InstanceHandle() { }
+   
+   
+   template <typename ARG0>
+   InstanceHandle::InstanceHandle(const ARG0& arg0) : dds::core::Value(arg0) { }
+   
+   
+   InstanceHandle::InstanceHandle(const dds::core::null_type& nullHandle) : dds::core::Value(nullHandle) { }
+   
+   
+   InstanceHandle::InstanceHandle(const InstanceHandle& other): dds::core::Value(other.delegate()) { }
+   
+   
+   InstanceHandle::InstanceHandle(InstanceHandle&& other): dds::core::Value(other.delegate()) { }
+   
+   
+   InstanceHandle& InstanceHandle::operator=(const InstanceHandle& that)
+   {
+       if(this != &that)
+       {
+           this->delegate() = that.delegate();
+       }
+       return *this;
+   }
+   
+   
+   InstanceHandle& InstanceHandle::operator=(InstanceHandle&& that)
+   {
+       if(this != &that)
+       {
+           this->delegate() = that.delegate();
+       }
+       return *this;
+   }
+   
+   
+   bool InstanceHandle::operator==(const InstanceHandle& that) const
+   {
+       return this->delegate() == that.delegate();
+   }
+   
+   
+   bool InstanceHandle::operator<(const InstanceHandle& that) const
+   {
+       return this->delegate() < that.delegate();
+   }
+   
+   
+   bool InstanceHandle::operator>(const InstanceHandle& that) const
+   {
+       return this->delegate() > that.delegate();
+   }
+   
+   
+   const InstanceHandle InstanceHandle::nil()
+   {
+       dds::core::null_type nt;
+       static InstanceHandle nil_handle(nt);
+       return nil_handle;
+   }
+   
+   
+   bool InstanceHandle::is_nil() const
+   {
+       return this->delegate().is_nil();
+   }
+   }
+   }
+   
+   inline std::ostream& operator << (std::ostream& os, const dds::core::InstanceHandle<org::eclipse::cyclonedds::core::InstanceHandleDelegate>& h)
+   {
+       os << h.delegate();
+       return os;
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_CORE_TINSTANCEHANDLE_IMPL_HPP_ */

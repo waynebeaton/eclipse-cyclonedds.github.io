@@ -1,0 +1,13 @@
+.. _exhale_define_TopicImpl_8hpp_1a8c89328e0ab6a28193eda41da3cc8a87:
+
+Define MAX_TOPIC_NAME_LEN
+=========================
+
+- Defined in :ref:`file_dds_topic_detail_TopicImpl.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MAX_TOPIC_NAME_LEN

@@ -1,0 +1,13 @@
+.. _exhale_variable_DataRepresentation_8hpp_1a2733f496bbf9cbd99a4af2d1d536d5ff:
+
+Variable org::eclipse::cyclonedds::topic::XCDR_REPRESENTATION
+=============================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_DataRepresentation.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::topic::XCDR_REPRESENTATION

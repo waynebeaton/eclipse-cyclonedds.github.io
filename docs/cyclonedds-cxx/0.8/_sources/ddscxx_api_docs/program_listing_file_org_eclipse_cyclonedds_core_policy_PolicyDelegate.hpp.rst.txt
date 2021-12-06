@@ -1,0 +1,737 @@
+
+.. _program_listing_file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp:
+
+Program Listing for File PolicyDelegate.hpp
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp>` (``org/eclipse/cyclonedds/core/policy/PolicyDelegate.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   
+   
+   #ifndef CYCLONEDDS_CORE_POLICY_POLICY_DELEGATE_HPP_
+   #define CYCLONEDDS_CORE_POLICY_POLICY_DELEGATE_HPP_
+   
+   #ifdef _WIN32
+   #pragma warning( push )
+   #pragma warning( disable : 4251 )
+   #endif
+   
+   #include <dds/core/types.hpp>
+   #include <dds/core/LengthUnlimited.hpp>
+   #include <dds/core/Duration.hpp>
+   #include <dds/core/policy/PolicyKind.hpp>
+   #include <org/eclipse/cyclonedds/core/policy/ProprietaryPolicyKind.hpp>
+   
+   #include <dds/dds.h>
+   
+   //==============================================================================
+   /*
+    * Unfortunately, there isn't an ddsc or builtin SubscriptionKey policy that
+    * is alligned the same as the idl representation. To be able to translate it
+    * as well, we have to seperately mention it...
+    */
+   struct _DDS_SubscriptionKeyQosPolicy;
+   
+   
+   //==============================================================================
+   // DDS Policy Classes
+   namespace org
+   {
+   namespace eclipse
+   {
+   namespace cyclonedds
+   {
+   namespace core
+   {
+   namespace policy
+   {
+   
+   //==============================================================================
+   
+   class OMG_DDS_API TimeBasedFilterDelegate;
+   
+   class OMG_DDS_API DeadlineDelegate
+   {
+   public:
+       DeadlineDelegate(const DeadlineDelegate& other);
+       explicit DeadlineDelegate(const dds::core::Duration& d);
+   
+       DeadlineDelegate& operator=(const DeadlineDelegate& other) = default;
+   
+       void period(const dds::core::Duration& d);
+       dds::core::Duration period() const;
+   
+       bool operator ==(const DeadlineDelegate& other) const;
+   
+       void check() const;
+       void check_against(const org::eclipse::cyclonedds::core::policy::TimeBasedFilterDelegate& filter) const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::Duration period_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API DestinationOrderDelegate
+   {
+   
+   public:
+       DestinationOrderDelegate(const DestinationOrderDelegate& other);
+       explicit DestinationOrderDelegate(dds::core::policy::DestinationOrderKind::Type kind);
+   
+       DestinationOrderDelegate& operator=(const DestinationOrderDelegate& other) = default;
+   
+       void kind(dds::core::policy::DestinationOrderKind::Type kind);
+       dds::core::policy::DestinationOrderKind::Type kind() const;
+   
+       bool operator ==(const DestinationOrderDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::policy::DestinationOrderKind::Type kind_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API DurabilityDelegate
+   {
+   public:
+       DurabilityDelegate(const DurabilityDelegate& other);
+       explicit DurabilityDelegate(dds::core::policy::DurabilityKind::Type kind);
+   
+       DurabilityDelegate& operator=(const DurabilityDelegate& other) = default;
+   
+       void kind(dds::core::policy::DurabilityKind::Type kind);
+       dds::core::policy::DurabilityKind::Type kind() const;
+   
+       bool operator ==(const DurabilityDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   public:
+       dds::core::policy::DurabilityKind::Type kind_;
+   };
+   
+   //==============================================================================
+   
+   #ifdef  OMG_DDS_PERSISTENCE_SUPPORT
+   
+   class OMG_DDS_API DurabilityServiceDelegate
+   {
+   public:
+       DurabilityServiceDelegate(const DurabilityServiceDelegate& other);
+       DurabilityServiceDelegate(const dds::core::Duration& service_cleanup_delay,
+                                 dds::core::policy::HistoryKind::Type history_kind,
+                                 int32_t history_depth,
+                                 int32_t max_samples,
+                                 int32_t max_instances,
+                                 int32_t max_samples_per_instance);
+   
+       DurabilityServiceDelegate& operator=(const DurabilityServiceDelegate& other) = default;
+   
+       void service_cleanup_delay(const dds::core::Duration& d);
+       const dds::core::Duration service_cleanup_delay() const;
+   
+       void history_kind(dds::core::policy::HistoryKind::Type kind);
+       dds::core::policy::HistoryKind::Type history_kind() const;
+   
+       void history_depth(int32_t depth);
+       int32_t history_depth() const;
+   
+       void max_samples(int32_t max_samples);
+       int32_t max_samples() const;
+   
+       void max_instances(int32_t max_instances);
+       int32_t max_instances() const;
+   
+       void max_samples_per_instance(int32_t max_samples_per_instance);
+       int32_t max_samples_per_instance() const;
+   
+       bool operator ==(const DurabilityServiceDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::Duration cleanup_delay_;
+       dds::core::policy::HistoryKind::Type history_kind_;
+       int32_t history_depth_;
+       int32_t max_samples_;
+       int32_t max_instances_;
+       int32_t max_samples_per_instance_;
+   };
+   
+   #endif  // OMG_DDS_PERSISTENCE_SUPPORT
+   
+   //==============================================================================
+   
+   class OMG_DDS_API EntityFactoryDelegate
+   {
+   public:
+       EntityFactoryDelegate(const EntityFactoryDelegate& other);
+       explicit EntityFactoryDelegate(bool auto_enable);
+   
+       void auto_enable(bool on);
+       bool auto_enable() const;
+   
+       bool operator ==(const EntityFactoryDelegate& other) const;
+   
+       EntityFactoryDelegate& operator =(const EntityFactoryDelegate& other) = default;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       bool auto_enable_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API GroupDataDelegate
+   {
+   public:
+       GroupDataDelegate();
+   
+       GroupDataDelegate(const GroupDataDelegate& other);
+   
+       GroupDataDelegate& operator=(const GroupDataDelegate& other) = default;
+   
+       explicit GroupDataDelegate(const dds::core::ByteSeq& seq);
+   
+       void value(const dds::core::ByteSeq& seq);
+   
+       const dds::core::ByteSeq& value() const;
+   
+       bool operator ==(const GroupDataDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       //@todo void v_policy(const v_builtinGroupDataPolicy& policy);
+   
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::ByteSeq value_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API ResourceLimitsDelegate;
+   
+   class OMG_DDS_API HistoryDelegate
+   {
+   public:
+       HistoryDelegate(const HistoryDelegate& other);
+       HistoryDelegate(dds::core::policy::HistoryKind::Type kind, int32_t depth);
+   
+       HistoryDelegate& operator=(const HistoryDelegate& other) = default;
+   
+       dds::core::policy::HistoryKind::Type kind() const;
+       void kind(dds::core::policy::HistoryKind::Type kind);
+   
+       int32_t depth() const;
+       void depth(int32_t depth);
+   
+       bool operator ==(const HistoryDelegate& other) const;
+   
+       void check() const;
+       void check_against(const org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate& limits) const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::policy::HistoryKind::Type kind_;
+       int32_t depth_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API LatencyBudgetDelegate
+   {
+   public:
+       LatencyBudgetDelegate(const LatencyBudgetDelegate& other);
+       explicit LatencyBudgetDelegate(const dds::core::Duration& d);
+   
+       LatencyBudgetDelegate& operator=(const LatencyBudgetDelegate& other) = default;
+   
+       void duration(const dds::core::Duration& d);
+       const dds::core::Duration duration() const;
+   
+       bool operator ==(const LatencyBudgetDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::Duration duration_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API LifespanDelegate
+   {
+   public:
+       LifespanDelegate(const LifespanDelegate& other);
+       explicit LifespanDelegate(const dds::core::Duration& d);
+       LifespanDelegate& operator=(const LifespanDelegate& other) = default;
+   
+       void duration(const dds::core::Duration& d);
+       const dds::core::Duration duration() const;
+   
+       bool operator ==(const LifespanDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::Duration duration_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API LivelinessDelegate
+   {
+   public:
+   public:
+       LivelinessDelegate(const LivelinessDelegate& other);
+       LivelinessDelegate(dds::core::policy::LivelinessKind::Type kind,
+                          dds::core::Duration lease_duration);
+   
+       LivelinessDelegate& operator=(const LivelinessDelegate& other) = default;
+   
+       void kind(dds::core::policy::LivelinessKind::Type kind);
+       dds::core::policy::LivelinessKind::Type kind() const;
+   
+       void lease_duration(const dds::core::Duration& lease_duration);
+       const dds::core::Duration lease_duration() const;
+   
+       bool operator ==(const LivelinessDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::policy::LivelinessKind::Type kind_;
+       dds::core::Duration lease_duration_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API OwnershipDelegate
+   {
+   public:
+       OwnershipDelegate(const OwnershipDelegate& other);
+       explicit OwnershipDelegate(dds::core::policy::OwnershipKind::Type kind);
+       OwnershipDelegate& operator=(const OwnershipDelegate& other) = default;
+   
+       void kind(dds::core::policy::OwnershipKind::Type kind);
+       dds::core::policy::OwnershipKind::Type kind() const;
+   
+       bool operator ==(const OwnershipDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::policy::OwnershipKind::Type kind_;
+   };
+   
+   //==============================================================================
+   
+   #ifdef  OMG_DDS_OWNERSHIP_SUPPORT
+   
+   class OMG_DDS_API OwnershipStrengthDelegate
+   {
+   public:
+       OwnershipStrengthDelegate(const OwnershipStrengthDelegate& other);
+       explicit OwnershipStrengthDelegate(int32_t s);
+   
+       OwnershipStrengthDelegate& operator=(const OwnershipStrengthDelegate& other) = default;
+   
+       int32_t strength() const;
+       void strength(int32_t s);
+   
+       bool operator ==(const OwnershipStrengthDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       int32_t strength_;
+   };
+   
+   #endif  // OMG_DDS_OWNERSHIP_SUPPORT
+   
+   //==============================================================================
+   
+   class OMG_DDS_API PartitionDelegate
+   {
+   public:
+       PartitionDelegate(const PartitionDelegate& other);
+       explicit PartitionDelegate(const std::string& partition);
+       explicit PartitionDelegate(const dds::core::StringSeq& partitions);
+   
+       PartitionDelegate& operator=(const PartitionDelegate& other) = default;
+   
+       void name(const std::string& partition);
+       void name(const dds::core::StringSeq& partitions);
+       const dds::core::StringSeq& name() const;
+   
+       bool operator ==(const PartitionDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       //@todo void v_policy(const v_builtinPartitionPolicy& policy);
+   
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::StringSeq name_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API PresentationDelegate
+   {
+   public:
+       PresentationDelegate(const PresentationDelegate& other);
+       PresentationDelegate(dds::core::policy::PresentationAccessScopeKind::Type access_scope,
+                            bool coherent_access,
+                            bool ordered_access);
+       PresentationDelegate& operator=(const PresentationDelegate& other) = default;
+   
+       void access_scope(dds::core::policy::PresentationAccessScopeKind::Type as);
+       dds::core::policy::PresentationAccessScopeKind::Type access_scope() const;
+   
+       void coherent_access(bool on);
+       bool coherent_access() const;
+   
+       void ordered_access(bool on);
+       bool ordered_access() const;
+   
+       bool operator ==(const PresentationDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::policy::PresentationAccessScopeKind::Type access_scope_;
+       bool coherent_access_;
+       bool ordered_access_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API ReaderDataLifecycleDelegate
+   {
+   public:
+       ReaderDataLifecycleDelegate(const ReaderDataLifecycleDelegate& other);
+       ReaderDataLifecycleDelegate(const dds::core::Duration& nowriter_delay,
+                                   const dds::core::Duration& disposed_samples_delay);
+   
+       const dds::core::Duration autopurge_nowriter_samples_delay() const;
+       void autopurge_nowriter_samples_delay(const dds::core::Duration& d);
+   
+       const dds::core::Duration autopurge_disposed_samples_delay() const;
+       void autopurge_disposed_samples_delay(const dds::core::Duration& d);
+   
+       bool operator ==(const ReaderDataLifecycleDelegate& other) const;
+   
+       ReaderDataLifecycleDelegate& operator =(const ReaderDataLifecycleDelegate& other) = default;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::Duration autopurge_nowriter_samples_delay_;
+       dds::core::Duration autopurge_disposed_samples_delay_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API ReaderLifespanDelegate
+   {
+   public:
+       ReaderLifespanDelegate(const ReaderLifespanDelegate& other);
+       explicit ReaderLifespanDelegate(bool used,
+                                 const dds::core::Duration& d);
+   
+       void duration(const dds::core::Duration& d);
+       const dds::core::Duration duration() const;
+   
+       void used(bool v);
+       bool used() const;
+   
+       bool operator ==(const ReaderLifespanDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       bool used_;
+       dds::core::Duration duration_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API ReliabilityDelegate
+   {
+   public:
+   public:
+       ReliabilityDelegate(const ReliabilityDelegate& other);
+       ReliabilityDelegate(dds::core::policy::ReliabilityKind::Type kind,
+                           const dds::core::Duration& max_blocking_time);
+   
+       ReliabilityDelegate& operator=(const ReliabilityDelegate& other) = default;
+   
+       void kind(dds::core::policy::ReliabilityKind::Type kind);
+       dds::core::policy::ReliabilityKind::Type kind() const;
+   
+       void max_blocking_time(const dds::core::Duration& d);
+       const dds::core::Duration max_blocking_time() const;
+   
+       bool operator ==(const ReliabilityDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::policy::ReliabilityKind::Type kind_;
+       dds::core::Duration max_blocking_time_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API ResourceLimitsDelegate
+   {
+   public:
+       ResourceLimitsDelegate(const ResourceLimitsDelegate& other);
+       ResourceLimitsDelegate(int32_t max_samples,
+                              int32_t max_instances,
+                              int32_t max_samples_per_instance);
+   
+       ResourceLimitsDelegate& operator=(const ResourceLimitsDelegate& other) = default;
+   
+       void max_samples(int32_t samples);
+       int32_t max_samples() const;
+   
+       void max_instances(int32_t max_instances);
+       int32_t max_instances() const;
+   
+       void max_samples_per_instance(int32_t max_samples_per_instance);
+       int32_t max_samples_per_instance() const;
+   
+       bool operator ==(const ResourceLimitsDelegate& other) const;
+   
+       void check() const;
+       void check_against(const org::eclipse::cyclonedds::core::policy::HistoryDelegate& history) const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       int32_t max_samples_;
+       int32_t max_instances_;
+       int32_t max_samples_per_instance_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API TimeBasedFilterDelegate
+   {
+   public:
+       TimeBasedFilterDelegate(const TimeBasedFilterDelegate& other);
+       explicit TimeBasedFilterDelegate(const dds::core::Duration& min_separation);
+       TimeBasedFilterDelegate& operator=(const TimeBasedFilterDelegate& other) = default;
+   
+       void min_separation(const dds::core::Duration& ms);
+       const dds::core::Duration min_separation() const;
+   
+       bool operator ==(const TimeBasedFilterDelegate& other) const;
+   
+       void check() const;
+       void check_against(const org::eclipse::cyclonedds::core::policy::DeadlineDelegate& deadline) const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::Duration min_sep_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API TopicDataDelegate
+   {
+   public:
+       TopicDataDelegate();
+       TopicDataDelegate(const TopicDataDelegate& other);
+       explicit TopicDataDelegate(const dds::core::ByteSeq& seq);
+   
+       TopicDataDelegate& operator=(const TopicDataDelegate& other) = default;
+   
+       void value(const dds::core::ByteSeq& seq);
+       const dds::core::ByteSeq& value() const;
+   
+       bool operator ==(const TopicDataDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       //@todo void v_policy(const v_builtinTopicDataPolicy& policy);
+   
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::ByteSeq value_;
+   
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API TransportPriorityDelegate
+   {
+   public:
+       TransportPriorityDelegate(const TransportPriorityDelegate& other);
+       TransportPriorityDelegate& operator=(const TransportPriorityDelegate& other) = default;
+       explicit TransportPriorityDelegate(int32_t prio);
+   
+       void value(int32_t prio);
+       int32_t value() const;
+   
+       bool operator ==(const TransportPriorityDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       int32_t value_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API UserDataDelegate
+   {
+   public:
+       UserDataDelegate();
+   
+       UserDataDelegate(const UserDataDelegate& other);
+   
+       UserDataDelegate& operator=(const UserDataDelegate& other) = default;
+   
+       explicit UserDataDelegate(const dds::core::ByteSeq& seq);
+   
+       void value(const dds::core::ByteSeq& seq);
+   
+       const dds::core::ByteSeq value() const;
+   
+       bool operator ==(const UserDataDelegate& other) const;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       //@todo void v_policy(const v_builtinUserDataPolicy& policy);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       dds::core::ByteSeq value_;
+   };
+   
+   //==============================================================================
+   
+   class OMG_DDS_API WriterDataLifecycleDelegate
+   {
+   public:
+       WriterDataLifecycleDelegate(const WriterDataLifecycleDelegate& other);
+       explicit WriterDataLifecycleDelegate(bool autodispose);
+   
+       bool autodispose() const;
+       void autodispose(bool b);
+   
+       bool operator ==(const WriterDataLifecycleDelegate& other) const;
+   
+       WriterDataLifecycleDelegate& operator =(const WriterDataLifecycleDelegate& other) = default;
+   
+       void check() const;
+   
+       void set_iso_policy(const dds_qos_t* qos);
+       void set_c_policy(dds_qos_t* qos) const;
+   
+   private:
+       bool autodispose_;
+   };
+   
+   
+   
+   #ifdef  OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+   class OMG_DDS_API DataRepresentationDelegate { };
+   
+   #endif  // OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+   
+   #ifdef  OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+   class OMG_DDS_API TypeConsistencyEnforcementDelegate { };
+   
+   #endif  // OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT
+   
+   }
+   }
+   }
+   }
+   }  // namespace org::eclipse::cyclonedds::core::policy
+   
+   #endif /* CYCLONEDDS_CORE_POLICY_POLICY_DELEGATE_HPP_ */

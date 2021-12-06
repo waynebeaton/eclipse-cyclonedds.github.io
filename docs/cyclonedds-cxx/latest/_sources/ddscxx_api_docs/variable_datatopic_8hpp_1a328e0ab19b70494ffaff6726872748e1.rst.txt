@@ -1,0 +1,13 @@
+.. _exhale_variable_datatopic_8hpp_1a328e0ab19b70494ffaff6726872748e1:
+
+Variable CDR_HEADER_SIZE
+========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CDR_HEADER_SIZE

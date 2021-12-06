@@ -1,0 +1,52 @@
+
+.. _file_dds_sub_detail_SampleImpl.hpp:
+
+File SampleImpl.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/SampleImpl.hpp``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_SampleImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/Sample.hpp`` (:ref:`file_dds_sub_Sample.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_detail_ddssub.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+

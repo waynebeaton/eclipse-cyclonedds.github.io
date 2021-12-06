@@ -1,0 +1,73 @@
+
+.. _file_dds_sub_Query.hpp:
+
+File Query.hpp
+==============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/Query.hpp``)
+----------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_Query.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``dds/core/types.hpp`` (:ref:`file_dds_core_types.hpp`)
+
+- ``dds/sub/AnyDataReader.hpp`` (:ref:`file_dds_sub_AnyDataReader.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_dds_sub_detail_DataReader.hpp`
+
+- :ref:`file_dds_sub_detail_Manipulators.hpp`
+
+- :ref:`file_dds_sub_detail_Query.hpp`
+
+- :ref:`file_dds_sub_detail_DataReaderImpl.hpp`
+
+- :ref:`file_dds_sub_detail_QueryImpl.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1Query`
+

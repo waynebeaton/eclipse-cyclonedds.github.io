@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2macros_8hpp_1a9c1f60c1888fa142c7915d9fb4ee7f9c:
+
+Define DDSCXX_UNUSED_ARG
+========================
+
+- Defined in :ref:`file_dds_core_detail_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DDSCXX_UNUSED_ARG

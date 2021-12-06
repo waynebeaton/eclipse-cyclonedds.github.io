@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2QueryCondition_8hpp_1a5df8c946d6bbe6384f2c2d7e6f20857d:
+
+Typedef dds::sub::cond::detail::QueryCondition
+==============================================
+
+- Defined in :ref:`file_dds_sub_cond_detail_QueryCondition.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::cond::detail::QueryCondition

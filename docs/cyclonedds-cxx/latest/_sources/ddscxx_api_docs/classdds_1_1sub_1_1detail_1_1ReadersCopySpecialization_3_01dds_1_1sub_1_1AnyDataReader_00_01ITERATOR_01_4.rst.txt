@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1sub_1_1detail_1_1ReadersCopySpecialization_3_01dds_1_1sub_1_1AnyDataReader_00_01ITERATOR_01_4:
+
+Template Class ReadersCopySpecialization< dds::sub::AnyDataReader, ITERATOR >
+=============================================================================
+
+- Defined in :ref:`file_dds_sub_detail_find.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::sub::detail::ReadersCopySpecialization< dds::sub::AnyDataReader, ITERATOR >
+   :members:
+   :protected-members:
+   :undoc-members:

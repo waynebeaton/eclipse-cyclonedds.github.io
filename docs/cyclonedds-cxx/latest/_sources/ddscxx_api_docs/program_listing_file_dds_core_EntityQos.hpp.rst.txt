@@ -1,0 +1,86 @@
+
+.. _program_listing_file_dds_core_EntityQos.hpp:
+
+Program Listing for File EntityQos.hpp
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_EntityQos.hpp>` (``dds/core/EntityQos.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_CORE_QOS_ENTITY_QOS_HPP_
+   #define OMG_TDDS_CORE_QOS_ENTITY_QOS_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/Value.hpp>
+   
+   
+   namespace dds
+   {
+   namespace core
+   {
+   
+   class EntityQos;
+   }
+   }
+   
+   class dds::core::EntityQos : public dds::core::Value
+   {
+   public:
+       EntityQos();
+   
+       EntityQos(const EntityQos& other);
+   
+       EntityQos(EntityQos&& other);
+   
+       EntityQos& operator=(const EntityQos& other) = default;
+   
+       EntityQos& operator=(EntityQos&& other) = default;
+   
+       template <typename T>
+       EntityQos(const EntityQos<T>& qos);
+   
+   public:
+       ~EntityQos() = default;
+   public:
+       template <typename POLICY>
+       EntityQos& policy(const POLICY& p);
+   
+       template <typename POLICY>
+       const POLICY& policy() const;
+   
+       template <typename POLICY>
+       POLICY& policy();
+   
+       template <typename POLICY>
+       EntityQos& operator << (const POLICY& p);
+   
+       template <typename POLICY>
+       const EntityQos& operator >> (POLICY& p) const;
+   
+       template <typename T>
+       EntityQos& operator = (const EntityQos<T>& other);
+   
+   };
+   /* namespace tdds / namespace core / namespace qos */
+   
+   #endif /* OMG_TDDS_CORE_QOS_ENTITY_QOS_HPP_ */

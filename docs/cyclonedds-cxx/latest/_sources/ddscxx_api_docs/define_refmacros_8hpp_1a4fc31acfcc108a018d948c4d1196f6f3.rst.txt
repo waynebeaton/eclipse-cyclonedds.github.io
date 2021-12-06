@@ -1,0 +1,13 @@
+.. _exhale_define_refmacros_8hpp_1a4fc31acfcc108a018d948c4d1196f6f3:
+
+Define OMG_DDS_REF_TYPE_DELEGATE_C
+==================================
+
+- Defined in :ref:`file_dds_core_refmacros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_REF_TYPE_DELEGATE_C

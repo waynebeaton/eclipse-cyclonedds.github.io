@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1a65dd890d61b841933a251f8964dc2be2:
+
+Variable org::eclipse::cyclonedds::core::utils::not_enabled_error_code
+======================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::not_enabled_error_code

@@ -1,0 +1,69 @@
+
+.. _file_dds_topic_detail_BuiltinTopic.hpp:
+
+File BuiltinTopic.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_topic_detail>` (``dds/topic/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/topic/detail/BuiltinTopic.hpp``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_topic_detail_BuiltinTopic.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/topic/Topic.hpp`` (:ref:`file_dds_topic_Topic.hpp`)
+
+- ``dds/topic/detail/BuiltinTopicImpl.hpp`` (:ref:`file_dds_topic_detail_BuiltinTopicImpl.hpp`)
+
+- ``dds/topic/detail/TopicImpl.hpp`` (:ref:`file_dds_topic_detail_TopicImpl.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/BuiltinTopic.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_BuiltinTopic.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/BuiltinTopicDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_BuiltinTopicDelegate.hpp`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__topic`
+
+- :ref:`namespace_dds__topic__detail`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_dds_2topic_2detail_2BuiltinTopic_8hpp_1a5e4d45dc2c9f4aee4afa93660987ffd7`
+
+- :ref:`exhale_typedef_dds_2topic_2detail_2BuiltinTopic_8hpp_1a7998d089e4c16774cae969104619c61f`
+
+- :ref:`exhale_typedef_dds_2topic_2detail_2BuiltinTopic_8hpp_1a97517926c0b55af96045076585b6bf8a`
+
+- :ref:`exhale_typedef_dds_2topic_2detail_2BuiltinTopic_8hpp_1a107dc148d31c1260cb4be37f3e4d92c0`
+

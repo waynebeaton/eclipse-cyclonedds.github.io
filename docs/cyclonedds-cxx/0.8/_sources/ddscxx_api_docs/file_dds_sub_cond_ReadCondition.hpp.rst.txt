@@ -1,0 +1,69 @@
+
+.. _file_dds_sub_cond_ReadCondition.hpp:
+
+File ReadCondition.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_cond>` (``dds/sub/cond``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/cond/ReadCondition.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_cond_ReadCondition.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/cond/Condition.hpp`` (:ref:`file_dds_core_cond_Condition.hpp`)
+
+- ``dds/sub/AnyDataReader.hpp`` (:ref:`file_dds_sub_AnyDataReader.hpp`)
+
+- ``dds/sub/DataReader.hpp`` (:ref:`file_dds_sub_DataReader.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_cond_QueryCondition.hpp`
+
+- :ref:`file_dds_sub_cond_detail_ReadConditionImpl.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+- :ref:`namespace_dds__sub__cond`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1cond_1_1ReadCondition`
+

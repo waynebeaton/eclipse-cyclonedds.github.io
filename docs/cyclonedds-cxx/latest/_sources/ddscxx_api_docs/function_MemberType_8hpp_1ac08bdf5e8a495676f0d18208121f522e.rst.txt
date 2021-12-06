@@ -1,0 +1,13 @@
+.. _exhale_function_MemberType_8hpp_1ac08bdf5e8a495676f0d18208121f522e:
+
+Template Function dds::core::xtypes::hasId
+==========================================
+
+- Defined in :ref:`file_dds_core_xtypes_MemberType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::hasId(const MemberType<T>&)

@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1a19bae1182f4dc9e23a8edce64d7ce457:
+
+Variable org::eclipse::cyclonedds::core::utils::no_data_error_code
+==================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::no_data_error_code

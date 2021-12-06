@@ -1,0 +1,81 @@
+
+.. _file_org_eclipse_cyclonedds_core_cond_WaitSetDelegate.hpp:
+
+File WaitSetDelegate.hpp
+========================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core_cond>` (``org/eclipse/cyclonedds/core/cond``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/cond/WaitSetDelegate.hpp``)
+---------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_cond_WaitSetDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Duration.hpp`` (:ref:`file_dds_core_Duration.hpp`)
+
+- ``dds/core/cond/Condition.hpp`` (:ref:`file_dds_core_cond_Condition.hpp`)
+
+- ``map``
+
+- ``org/eclipse/cyclonedds/core/DDScObjectDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_DDScObjectDelegate.hpp`)
+
+- ``org/eclipse/cyclonedds/core/config.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_config.hpp`)
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_cond_detail_WaitSet.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__cond`
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core__cond`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1cond_1_1WaitSetDelegate`
+

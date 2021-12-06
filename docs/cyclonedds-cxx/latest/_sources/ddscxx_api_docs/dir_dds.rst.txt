@@ -1,0 +1,25 @@
+.. _dir_dds:
+
+
+Directory dds
+=============
+
+
+*Directory path:* ``dds``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_core`
+- :ref:`dir_dds_domain`
+- :ref:`dir_dds_pub`
+- :ref:`dir_dds_sub`
+- :ref:`dir_dds_topic`
+
+
+Files
+-----
+
+- :ref:`file_dds_dds.hpp`
+
+

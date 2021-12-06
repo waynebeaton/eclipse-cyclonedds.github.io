@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2conformance_8hpp_1a97a7ef283278dc685a3e0dfe750e9acc:
+
+Define OMG_DDS_OBJECT_MODEL_SUPPORT
+===================================
+
+- Defined in :ref:`file_dds_core_detail_conformance.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_OBJECT_MODEL_SUPPORT

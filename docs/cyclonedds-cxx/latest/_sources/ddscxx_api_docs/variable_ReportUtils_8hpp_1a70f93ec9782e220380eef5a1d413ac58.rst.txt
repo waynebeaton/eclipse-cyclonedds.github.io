@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1a70f93ec9782e220380eef5a1d413ac58:
+
+Variable org::eclipse::cyclonedds::core::utils::illegal_operation_error_code
+============================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::illegal_operation_error_code

@@ -1,0 +1,51 @@
+
+.. _namespace_dds__core__status:
+
+Namespace dds::core::status
+===========================
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds__core__status__detail`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1InconsistentTopicStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1LivelinessChangedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1LivelinessLostStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1OfferedDeadlineMissedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1OfferedIncompatibleQosStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1PublicationMatchedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1RequestedDeadlineMissedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1RequestedIncompatibleQosStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleLostStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleRejectedState`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SampleRejectedStatus`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1StatusMask`
+
+- :ref:`exhale_class_classdds_1_1core_1_1status_1_1SubscriptionMatchedStatus`

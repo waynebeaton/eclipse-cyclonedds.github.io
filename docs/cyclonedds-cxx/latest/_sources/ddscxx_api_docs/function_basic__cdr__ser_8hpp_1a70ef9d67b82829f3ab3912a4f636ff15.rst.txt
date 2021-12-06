@@ -1,0 +1,13 @@
+.. _exhale_function_basic__cdr__ser_8hpp_1a70ef9d67b82829f3ab3912a4f636ff15:
+
+Template Function org::eclipse::cyclonedds::core::cdr::move_many
+================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::move_many(basic_cdr_stream&, const T *, size_t)

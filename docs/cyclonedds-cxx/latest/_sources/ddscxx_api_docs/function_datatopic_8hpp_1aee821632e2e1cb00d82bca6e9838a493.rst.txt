@@ -1,0 +1,13 @@
+.. _exhale_function_datatopic_8hpp_1aee821632e2e1cb00d82bca6e9838a493:
+
+Template Function serdata_free
+==============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_topic_datatopic.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: serdata_free(ddsi_serdata *)

@@ -1,0 +1,26 @@
+.. _dir_dds_core_status:
+
+
+Directory status
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/core/status``
+
+Subdirectories
+--------------
+
+- :ref:`dir_dds_core_status_detail`
+
+
+Files
+-----
+
+- :ref:`file_dds_core_status_State.hpp`
+- :ref:`file_dds_core_status_Status.hpp`
+
+

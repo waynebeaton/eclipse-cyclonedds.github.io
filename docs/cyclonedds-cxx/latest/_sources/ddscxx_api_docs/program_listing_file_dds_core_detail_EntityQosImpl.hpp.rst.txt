@@ -1,0 +1,108 @@
+
+.. _program_listing_file_dds_core_detail_EntityQosImpl.hpp:
+
+Program Listing for File EntityQosImpl.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_detail_EntityQosImpl.hpp>` (``dds/core/detail/EntityQosImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_CORE_TENTITYQOS_IMPL_HPP_
+   #define CYCLONEDDS_DDS_CORE_TENTITYQOS_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/core/EntityQos.hpp>
+   
+   // Implementation
+   namespace dds
+   {
+   namespace core
+   {
+   
+   
+   EntityQos::EntityQos() : dds::core::Value() { }
+   
+   
+   EntityQos::EntityQos(const EntityQos& other)
+       : dds::core::Value(other.delegate()) { }
+   
+   
+   EntityQos::EntityQos(EntityQos&& other)
+       : dds::core::Value(other.delegate()) { }
+   
+   
+   template <typename T>
+   EntityQos::EntityQos(const EntityQos<T>& qos) :
+       dds::core::Value(qos.delegate()) { }
+   
+   
+   template <typename POLICY>
+   EntityQos& EntityQos::policy(const POLICY& p)
+   {
+       this->dds::core::Value::delegate().policy(p);
+       return *this;
+   }
+   
+   
+   template <typename POLICY>
+   const POLICY& EntityQos::policy() const
+   {
+       return this->delegate().template policy<POLICY>();
+   }
+   
+   
+   template <typename POLICY>
+   POLICY& EntityQos::policy()
+   {
+       return this->delegate().template policy<POLICY>();
+   }
+   
+   
+   template <typename POLICY>
+   EntityQos& EntityQos::operator << (const POLICY& p)
+   {
+       this->policy(p);
+       return *this;
+   }
+   
+   
+   template <typename POLICY>
+   const EntityQos& EntityQos::operator >> (POLICY& p) const
+   {
+       p = this->policy<POLICY>();
+       return *this;
+   }
+   
+   
+   template <typename T>
+   EntityQos& EntityQos::operator = (const EntityQos<T>& other)
+   {
+       if(this != reinterpret_cast<const EntityQos*>(&other))
+       {
+           this->d_ = other.delegate();
+       }
+       return *this;
+   }
+   
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_CORE_TENTITYQOS_IMPL_HPP_ */

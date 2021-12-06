@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2macros_8hpp_1a6cd20d83f0a984530a7f04eaee0972f0:
+
+Define OSPL_ENUM_LABEL
+======================
+
+- Defined in :ref:`file_dds_core_detail_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OSPL_ENUM_LABEL

@@ -1,0 +1,13 @@
+.. _exhale_function_ReportUtils_8hpp_1ae9369310f141f2ee568eb4ed90cd8ae7:
+
+Function org::eclipse::cyclonedds::core::utils::report
+======================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::utils::report(int32_t, int32_t, const char *, int32_t, const char *, const char *, ...)

@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1topic_1_1NoOpTopicListener:
+
+Template Class NoOpTopicListener
+================================
+
+- Defined in :ref:`file_dds_topic_TopicListener.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::topic::TopicListener< T >`` (:ref:`exhale_class_classdds_1_1topic_1_1TopicListener`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::NoOpTopicListener
+   :members:
+   :protected-members:
+   :undoc-members:

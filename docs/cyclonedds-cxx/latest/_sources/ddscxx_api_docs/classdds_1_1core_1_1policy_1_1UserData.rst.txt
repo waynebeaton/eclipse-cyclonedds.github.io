@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1policy_1_1UserData:
+
+Class UserData
+==============
+
+- Defined in :ref:`file_dds_core_policy_CorePolicy.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Value`` (:ref:`exhale_class_classdds_1_1core_1_1Value`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::policy::UserData
+   :members:
+   :protected-members:
+   :undoc-members:

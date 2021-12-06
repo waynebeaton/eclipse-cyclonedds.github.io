@@ -1,0 +1,13 @@
+.. _exhale_typedef_Annotations_8hpp_1a0a7923f8a17b159ddd820f09fc26fd0c:
+
+Typedef dds::core::xtypes::VerbatimAnnotation
+=============================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::xtypes::VerbatimAnnotation

@@ -1,0 +1,16 @@
+.. _exhale_class_classdds_1_1core_1_1WeakReference:
+
+Template Class WeakReference
+============================
+
+- Defined in :ref:`file_dds_core_WeakReference.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::WeakReference
+   :members:
+   :protected-members:
+   :undoc-members:

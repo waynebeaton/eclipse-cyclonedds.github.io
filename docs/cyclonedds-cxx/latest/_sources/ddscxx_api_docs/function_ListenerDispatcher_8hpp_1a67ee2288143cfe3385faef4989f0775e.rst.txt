@@ -1,0 +1,13 @@
+.. _exhale_function_ListenerDispatcher_8hpp_1a67ee2288143cfe3385faef4989f0775e:
+
+Function callback_on_publication_matched
+========================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: callback_on_publication_matched(dds_entity_t, dds_publication_matched_status_t, void *)

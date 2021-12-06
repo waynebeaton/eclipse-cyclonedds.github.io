@@ -1,0 +1,83 @@
+
+.. _file_dds_sub_DataReader.hpp:
+
+File DataReader.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub>` (``dds/sub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/DataReader.hpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_DataReader.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``dds/sub/AnyDataReader.hpp`` (:ref:`file_dds_sub_AnyDataReader.hpp`)
+
+- ``dds/sub/LoanedSamples.hpp`` (:ref:`file_dds_sub_LoanedSamples.hpp`)
+
+- ``dds/sub/Subscriber.hpp`` (:ref:`file_dds_sub_Subscriber.hpp`)
+
+- ``dds/topic/ContentFilteredTopic.hpp`` (:ref:`file_dds_topic_ContentFilteredTopic.hpp`)
+
+- ``dds/topic/TopicInstance.hpp`` (:ref:`file_dds_topic_TopicInstance.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_cond_ReadCondition.hpp`
+
+- :ref:`file_dds_sub_ddssub.hpp`
+
+- :ref:`file_dds_sub_detail_discovery.hpp`
+
+- :ref:`file_dds_sub_detail_find.hpp`
+
+- :ref:`file_dds_sub_discovery.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader_1_1ManipulatorSelector`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReader_1_1Selector`
+
+- :ref:`exhale_class_classdds_1_1sub_1_1DataReaderListener`
+

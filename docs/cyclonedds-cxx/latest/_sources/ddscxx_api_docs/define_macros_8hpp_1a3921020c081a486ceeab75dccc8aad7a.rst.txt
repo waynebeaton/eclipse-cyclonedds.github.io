@@ -1,0 +1,13 @@
+.. _exhale_define_macros_8hpp_1a3921020c081a486ceeab75dccc8aad7a:
+
+Define OMG_DDS_API
+==================
+
+- Defined in :ref:`file_dds_core_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OMG_DDS_API

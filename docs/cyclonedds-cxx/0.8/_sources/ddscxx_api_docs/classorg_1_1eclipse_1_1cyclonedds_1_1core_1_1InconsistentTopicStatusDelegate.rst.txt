@@ -1,0 +1,16 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1InconsistentTopicStatusDelegate:
+
+Class InconsistentTopicStatusDelegate
+=====================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_status_StatusDelegate.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::core::InconsistentTopicStatusDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

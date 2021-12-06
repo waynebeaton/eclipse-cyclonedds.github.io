@@ -1,0 +1,32 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TScheduling:
+
+Class TScheduling
+=================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_policy_Policy.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Value`` (:ref:`exhale_class_classdds_1_1core_1_1Value`)
+
+
+Derived Types
+*************
+
+- ``public org::eclipse::cyclonedds::core::policy::TListenerScheduling`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TListenerScheduling`)
+- ``public org::eclipse::cyclonedds::core::policy::TWatchdogScheduling`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1TWatchdogScheduling`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::core::policy::TScheduling
+   :members:
+   :protected-members:
+   :undoc-members:

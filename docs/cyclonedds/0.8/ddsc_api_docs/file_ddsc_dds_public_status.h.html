@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File dds_public_status.h &mdash; CycloneDDS 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>File dds_public_status.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/file_ddsc_dds_public_status.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-dds-public-status-h">
+<span id="file-ddsc-dds-public-status-h"></span><h1>File dds_public_status.h<a class="headerlink" href="#file-dds-public-status-h" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="dir_ddsc.html#dir-ddsc"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">ddsc</span></code>)</p>
+<p>DDS C Communication Status API.</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-ddsc-dds-public-status-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_public_status.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#detailed-description" id="id2">Detailed Description</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id3">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id4">Included By</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id6">Enums</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id7">Functions</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id8">Typedefs</a></p></li>
+</ul>
+</div>
+<section id="definition-ddsc-dds-public-status-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">ddsc/dds_public_status.h</span></code>)<a class="headerlink" href="#definition-ddsc-dds-public-status-h" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_ddsc_dds_public_status.h.html">Program Listing for File dds_public_status.h</a></li>
+</ul>
+</div>
+</section>
+<section id="detailed-description">
+<h2>Detailed Description<a class="headerlink" href="#detailed-description" title="Permalink to this headline"></a></h2>
+<p>This header file defines the public API of the Communication Status in the Eclipse Cyclone DDS C language binding.</p>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">dds/export.h</span></code></p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_dds.h.html#file-dds-h"><span class="std std-ref">File dds.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_ddsc_dds_public_listener.h.html#file-ddsc-dds-public-listener-h"><span class="std std-ref">File dds_public_listener.h</span></a></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structdds__inconsistent__topic__status.html#exhale-struct-structdds-inconsistent-topic-status"><span class="std std-ref">Struct dds_inconsistent_topic_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__liveliness__changed__status.html#exhale-struct-structdds-liveliness-changed-status"><span class="std std-ref">Struct dds_liveliness_changed_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__liveliness__lost__status.html#exhale-struct-structdds-liveliness-lost-status"><span class="std std-ref">Struct dds_liveliness_lost_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__offered__deadline__missed__status.html#exhale-struct-structdds-offered-deadline-missed-status"><span class="std std-ref">Struct dds_offered_deadline_missed_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__offered__incompatible__qos__status.html#exhale-struct-structdds-offered-incompatible-qos-status"><span class="std std-ref">Struct dds_offered_incompatible_qos_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__publication__matched__status.html#exhale-struct-structdds-publication-matched-status"><span class="std std-ref">Struct dds_publication_matched_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__requested__deadline__missed__status.html#exhale-struct-structdds-requested-deadline-missed-status"><span class="std std-ref">Struct dds_requested_deadline_missed_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__requested__incompatible__qos__status.html#exhale-struct-structdds-requested-incompatible-qos-status"><span class="std std-ref">Struct dds_requested_incompatible_qos_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__sample__lost__status.html#exhale-struct-structdds-sample-lost-status"><span class="std std-ref">Struct dds_sample_lost_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__sample__rejected__status.html#exhale-struct-structdds-sample-rejected-status"><span class="std std-ref">Struct dds_sample_rejected_status</span></a></p></li>
+<li><p><a class="reference internal" href="structdds__subscription__matched__status.html#exhale-struct-structdds-subscription-matched-status"><span class="std std-ref">Struct dds_subscription_matched_status</span></a></p></li>
+</ul>
+</section>
+<section id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_dds__public__status_8h_1af0b69a9cb68027e5b84a509b8809c5ed.html#exhale-enum-dds-public-status-8h-1af0b69a9cb68027e5b84a509b8809c5ed"><span class="std std-ref">Enum dds_sample_rejected_status_kind</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1a3f09f775d29244bb65ced311b552e59f.html#exhale-function-dds-public-status-8h-1a3f09f775d29244bb65ced311b552e59f"><span class="std std-ref">Function dds_get_inconsistent_topic_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1a1ebab5d0594cc8a347ab60e7b18c3c65.html#exhale-function-dds-public-status-8h-1a1ebab5d0594cc8a347ab60e7b18c3c65"><span class="std std-ref">Function dds_get_liveliness_changed_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1a40b217cf86449a417c6055840b25d151.html#exhale-function-dds-public-status-8h-1a40b217cf86449a417c6055840b25d151"><span class="std std-ref">Function dds_get_liveliness_lost_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1abb85d7f85e94cb2f5ecd93e1820158c9.html#exhale-function-dds-public-status-8h-1abb85d7f85e94cb2f5ecd93e1820158c9"><span class="std std-ref">Function dds_get_offered_deadline_missed_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1a68e5dc362b8aeabc45a8a5f27a195c7e.html#exhale-function-dds-public-status-8h-1a68e5dc362b8aeabc45a8a5f27a195c7e"><span class="std std-ref">Function dds_get_offered_incompatible_qos_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1ad602557b20b541fcf7e43017d11db8ec.html#exhale-function-dds-public-status-8h-1ad602557b20b541fcf7e43017d11db8ec"><span class="std std-ref">Function dds_get_publication_matched_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1ab1be1d343a491917e73117d594138a0e.html#exhale-function-dds-public-status-8h-1ab1be1d343a491917e73117d594138a0e"><span class="std std-ref">Function dds_get_requested_deadline_missed_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1aa406cf5ea87f760f2cc71a681e295de9.html#exhale-function-dds-public-status-8h-1aa406cf5ea87f760f2cc71a681e295de9"><span class="std std-ref">Function dds_get_requested_incompatible_qos_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1ad0dedd5e383366565e52646277f02bfd.html#exhale-function-dds-public-status-8h-1ad0dedd5e383366565e52646277f02bfd"><span class="std std-ref">Function dds_get_sample_lost_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1a11d7558fa602520e1354c17215f54c0c.html#exhale-function-dds-public-status-8h-1a11d7558fa602520e1354c17215f54c0c"><span class="std std-ref">Function dds_get_sample_rejected_status</span></a></p></li>
+<li><p><a class="reference internal" href="function_dds__public__status_8h_1a319dbe8418924bac901f8d9323e56e9b.html#exhale-function-dds-public-status-8h-1a319dbe8418924bac901f8d9323e56e9b"><span class="std std-ref">Function dds_get_subscription_matched_status</span></a></p></li>
+</ul>
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1a73818fefd01699d7ef3624b1be3168b0.html#exhale-typedef-dds-public-status-8h-1a73818fefd01699d7ef3624b1be3168b0"><span class="std std-ref">Typedef dds_inconsistent_topic_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1ad6b6ac185b7a01afaf296377b17e018b.html#exhale-typedef-dds-public-status-8h-1ad6b6ac185b7a01afaf296377b17e018b"><span class="std std-ref">Typedef dds_liveliness_changed_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1ad6faa739af549b82cf8e64e065ca3db2.html#exhale-typedef-dds-public-status-8h-1ad6faa739af549b82cf8e64e065ca3db2"><span class="std std-ref">Typedef dds_liveliness_lost_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1af35db6a90a0159e6f471679397cde13d.html#exhale-typedef-dds-public-status-8h-1af35db6a90a0159e6f471679397cde13d"><span class="std std-ref">Typedef dds_offered_deadline_missed_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1addbc3c05f3dc412f596d28ebbb0248f0.html#exhale-typedef-dds-public-status-8h-1addbc3c05f3dc412f596d28ebbb0248f0"><span class="std std-ref">Typedef dds_offered_incompatible_qos_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1a122f5a18f9dbbb422c82f6ac457735bf.html#exhale-typedef-dds-public-status-8h-1a122f5a18f9dbbb422c82f6ac457735bf"><span class="std std-ref">Typedef dds_publication_matched_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1aca96b4f764e881e8324e2c4615771463.html#exhale-typedef-dds-public-status-8h-1aca96b4f764e881e8324e2c4615771463"><span class="std std-ref">Typedef dds_requested_deadline_missed_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1aa35f9042cb84c849977ac2a760d2fd77.html#exhale-typedef-dds-public-status-8h-1aa35f9042cb84c849977ac2a760d2fd77"><span class="std std-ref">Typedef dds_requested_incompatible_qos_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1a20954c3116b3d2444856234ceb443365.html#exhale-typedef-dds-public-status-8h-1a20954c3116b3d2444856234ceb443365"><span class="std std-ref">Typedef dds_sample_lost_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1a6007aa14755892b9a558cf26855e4c5e.html#exhale-typedef-dds-public-status-8h-1a6007aa14755892b9a558cf26855e4c5e"><span class="std std-ref">Typedef dds_sample_rejected_status_t</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_dds__public__status_8h_1a19462213111877cc6ff94c496831c815.html#exhale-typedef-dds-public-status-8h-1a19462213111877cc6ff94c496831c815"><span class="std std-ref">Typedef dds_subscription_matched_status_t</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

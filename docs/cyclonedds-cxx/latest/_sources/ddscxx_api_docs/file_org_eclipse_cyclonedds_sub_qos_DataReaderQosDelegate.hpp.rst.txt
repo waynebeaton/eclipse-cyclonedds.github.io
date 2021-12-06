@@ -1,0 +1,96 @@
+
+.. _file_org_eclipse_cyclonedds_sub_qos_DataReaderQosDelegate.hpp:
+
+File DataReaderQosDelegate.hpp
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_sub_qos>` (``org/eclipse/cyclonedds/sub/qos``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/sub/qos/DataReaderQosDelegate.hpp``)
+-------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_sub_qos_DataReaderQosDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/detail/conformance.hpp`` (:ref:`file_dds_core_detail_conformance.hpp`)
+
+- ``org/eclipse/cyclonedds/topic/qos/TopicQosDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_topic_qos_TopicQosDelegate.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_qos_DataReaderQos.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__sub`
+
+- :ref:`namespace_org__eclipse__cyclonedds__sub__qos`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1qos_1_1DataReaderQosDelegate`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a3c7899b467a0717b52609777a8932f3c`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ac17a5b7f5919a45d5506a64ce7f768d2`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ae3f4747128e50b5b854e576746c52879`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ae4fff2a3b8833efbd8ec01c76477a28c`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ae31d494df50b2acb5e2c86fafd67f707`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a7eba0ecd1c91efe70e15a2b857ba29aa`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a0780b7861e92f6ea440bc47da4352372`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a9957caadce8b8b45276502c681a4f041`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a74b177e2025302195691c07a9fd43c30`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a833a997bf8a6f455d1b730f00074183d`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1a60447a41174122def48a2824c1dabb55`
+
+- :ref:`exhale_function_DataReaderQosDelegate_8hpp_1ad1a74b08d8362a927b9f4764c6901ad7`
+

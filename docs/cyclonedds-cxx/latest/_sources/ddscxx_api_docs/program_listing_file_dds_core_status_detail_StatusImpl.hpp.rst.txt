@@ -1,0 +1,345 @@
+
+.. _program_listing_file_dds_core_status_detail_StatusImpl.hpp:
+
+Program Listing for File StatusImpl.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_status_detail_StatusImpl.hpp>` (``dds/core/status/detail/StatusImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_CORE_STATUS_TSTATUS_IMPL_HPP_
+   #define CYCLONEDDS_DDS_CORE_STATUS_TSTATUS_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/core/status/Status.hpp>
+   // Implementation
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace status
+   {
+   
+   //InconsistentTopicStatus
+   
+   
+   InconsistentTopicStatus::InconsistentTopicStatus() : dds::core::Value() { }
+   
+   
+   int32_t InconsistentTopicStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t InconsistentTopicStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   //SampleLostStatus
+   
+   
+   SampleLostStatus::SampleLostStatus() : dds::core::Value() {}
+   
+   
+   int32_t SampleLostStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t SampleLostStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   //SampleRejectedStatus
+   
+   
+   SampleRejectedStatus::SampleRejectedStatus() : dds::core::Value() { }
+   
+   
+   int32_t SampleRejectedStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t SampleRejectedStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   
+   const dds::core::status::SampleRejectedState SampleRejectedStatus::last_reason() const
+   {
+       return this->delegate().last_reason();
+   }
+   
+   
+   const dds::core::InstanceHandle SampleRejectedStatus::last_instance_handle() const
+   {
+       return this->delegate().last_instance_handle();
+   }
+   //LivelinessLostStatus
+   
+   LivelinessLostStatus::LivelinessLostStatus() : dds::core::Value() { }
+   
+   
+   int32_t LivelinessLostStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t LivelinessLostStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   //LivelinessChangedStatus
+   
+   
+   LivelinessChangedStatus::LivelinessChangedStatus() : dds::core::Value() { }
+   
+   
+   int32_t LivelinessChangedStatus::alive_count() const
+   {
+       return this->delegate().alive_count();
+   }
+   
+   
+   int32_t LivelinessChangedStatus::not_alive_count() const
+   {
+       return this->delegate().not_alive_count();
+   }
+   
+   
+   int32_t LivelinessChangedStatus::alive_count_change() const
+   {
+       return this->delegate().alive_count_change();
+   }
+   
+   
+   int32_t LivelinessChangedStatus::not_alive_count_change() const
+   {
+       return this->delegate().not_alive_count_change();
+   }
+   
+   
+   const dds::core::InstanceHandle LivelinessChangedStatus::last_publication_handle() const
+   {
+       return this->delegate().last_publication_handle();
+   }
+   
+   //OfferedDeadlineMissedStatus
+   
+   
+   OfferedDeadlineMissedStatus::OfferedDeadlineMissedStatus() : dds::core::Value() { }
+   
+   
+   int32_t OfferedDeadlineMissedStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t OfferedDeadlineMissedStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   
+   const dds::core::InstanceHandle OfferedDeadlineMissedStatus::last_instance_handle() const
+   {
+       return this->delegate().last_instance_handle();
+   }
+   
+   //RequestedDeadlineMissedStatus
+   
+   
+   RequestedDeadlineMissedStatus::RequestedDeadlineMissedStatus() : dds::core::Value() { }
+   
+   
+   int32_t RequestedDeadlineMissedStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t RequestedDeadlineMissedStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   
+   const dds::core::InstanceHandle RequestedDeadlineMissedStatus::last_instance_handle() const
+   {
+       return this->delegate().last_instance_handle();
+   }
+   
+   //OfferedIncompatibleQosStatus
+   
+   
+   OfferedIncompatibleQosStatus::OfferedIncompatibleQosStatus() : dds::core::Value() { }
+   
+   
+   int32_t OfferedIncompatibleQosStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t OfferedIncompatibleQosStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   
+   dds::core::policy::QosPolicyId OfferedIncompatibleQosStatus::last_policy_id() const
+   {
+       return this->delegate().last_policy_id();
+   }
+   
+   
+   const dds::core::policy::QosPolicyCountSeq OfferedIncompatibleQosStatus::policies() const
+   {
+       return this->delegate().policies();
+   }
+   
+   
+   const dds::core::policy::QosPolicyCountSeq& OfferedIncompatibleQosStatus::policies(dds::core::policy::QosPolicyCountSeq& dst) const
+   {
+       return this->delegate().policies(dst);
+   }
+   
+   //RequestedIncompatibleQosStatus
+   
+   
+   RequestedIncompatibleQosStatus::RequestedIncompatibleQosStatus() : dds::core::Value() { }
+   
+   
+   int32_t RequestedIncompatibleQosStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t RequestedIncompatibleQosStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   
+   dds::core::policy::QosPolicyId RequestedIncompatibleQosStatus::last_policy_id() const
+   {
+       return this->delegate().last_policy_id();
+   }
+   
+   
+   const dds::core::policy::QosPolicyCountSeq RequestedIncompatibleQosStatus::policies() const
+   {
+       return this->delegate().policies();
+   }
+   
+   
+   const dds::core::policy::QosPolicyCountSeq& RequestedIncompatibleQosStatus::policies(dds::core::policy::QosPolicyCountSeq& dst) const
+   {
+       return this->delegate().policies(dst);
+   }
+   
+   //PublicationMatchedStatus
+   
+   
+   PublicationMatchedStatus::PublicationMatchedStatus() : dds::core::Value() { }
+   
+   
+   int32_t PublicationMatchedStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t PublicationMatchedStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   
+   int32_t PublicationMatchedStatus::current_count() const
+   {
+       return this->delegate().current_count();
+   }
+   
+   
+   int32_t PublicationMatchedStatus::current_count_change() const
+   {
+       return this->delegate().current_count_change();
+   }
+   
+   
+   const dds::core::InstanceHandle PublicationMatchedStatus::last_subscription_handle() const
+   {
+       return this->delegate().last_subscription_handle();
+   }
+   
+   //SubscriptionMatchedStatus
+   
+   
+   SubscriptionMatchedStatus::SubscriptionMatchedStatus() : dds::core::Value() { }
+   
+   
+   int32_t SubscriptionMatchedStatus::total_count() const
+   {
+       return this->delegate().total_count();
+   }
+   
+   
+   int32_t SubscriptionMatchedStatus::total_count_change() const
+   {
+       return this->delegate().total_count_change();
+   }
+   
+   
+   int32_t SubscriptionMatchedStatus::current_count() const
+   {
+       return this->delegate().current_count();
+   }
+   
+   
+   int32_t SubscriptionMatchedStatus::current_count_change() const
+   {
+       return this->delegate().current_count_change();
+   }
+   
+   
+   const dds::core::InstanceHandle SubscriptionMatchedStatus::last_publication_handle() const
+   {
+       return this->delegate().last_publication_handle();
+   }
+   
+   }
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_CORE_STATUS_TSTATUS_IMPL_HPP_ */

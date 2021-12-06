@@ -1,0 +1,54 @@
+
+.. _file_dds_core_status_detail_StatusImpl.hpp:
+
+File StatusImpl.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_status_detail>` (``dds/core/status/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/status/detail/StatusImpl.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_status_detail_StatusImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/status/Status.hpp`` (:ref:`file_dds_core_status_Status.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_status_detail_Status.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+
+- :ref:`namespace_dds__core__status`
+

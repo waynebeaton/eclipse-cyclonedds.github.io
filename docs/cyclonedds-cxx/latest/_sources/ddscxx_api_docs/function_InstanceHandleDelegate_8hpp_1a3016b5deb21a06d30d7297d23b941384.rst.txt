@@ -1,0 +1,13 @@
+.. _exhale_function_InstanceHandleDelegate_8hpp_1a3016b5deb21a06d30d7297d23b941384:
+
+Function operator<<(std::ostream&, const org::eclipse::cyclonedds::core::InstanceHandleDelegate&)
+=================================================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_InstanceHandleDelegate.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: operator<<(std::ostream&, const org::eclipse::cyclonedds::core::InstanceHandleDelegate&)

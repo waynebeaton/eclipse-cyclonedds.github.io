@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2topic_2detail_2discovery_8hpp_1a8316e297a52572d99ad0edcf93674a68:
+
+Template Function dds::topic::discover(const dds::domain::DomainParticipant&, const std::string&, const dds::core::Duration&)
+=============================================================================================================================
+
+- Defined in :ref:`file_dds_topic_detail_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::topic::discover(const dds::domain::DomainParticipant&, const std::string&, const dds::core::Duration&)

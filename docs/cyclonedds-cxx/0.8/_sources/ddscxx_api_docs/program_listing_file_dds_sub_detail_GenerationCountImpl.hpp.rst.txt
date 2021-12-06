@@ -1,0 +1,63 @@
+
+.. _program_listing_file_dds_sub_detail_GenerationCountImpl.hpp:
+
+Program Listing for File GenerationCountImpl.hpp
+================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_sub_detail_GenerationCountImpl.hpp>` (``dds/sub/detail/GenerationCountImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_SUB_DETAIL_TGENERATIONCOUNT_IMPL_HPP_
+   #define CYCLONEDDS_DDS_SUB_DETAIL_TGENERATIONCOUNT_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/sub/GenerationCount.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace sub
+   {
+   
+   
+   GenerationCount::GenerationCount() { }
+   
+   
+   GenerationCount::GenerationCount(int32_t dgc, int32_t nwgc)
+       : dds::core::Value(dgc, nwgc) { }
+   
+   
+   int32_t GenerationCount::disposed() const
+   {
+       return this->delegate().disposed();
+   }
+   
+   
+   inline int32_t GenerationCount::no_writers() const
+   {
+       return this->delegate().no_writers();
+   }
+   
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_SUB_DETAIL_TGENERATIONCOUNT_IMPL_HPP_ */

@@ -1,0 +1,13 @@
+.. _exhale_function_MemberType_8hpp_1a15010e111c6b15660859737c68a9e82e:
+
+Template Function dds::core::xtypes::getId
+==========================================
+
+- Defined in :ref:`file_dds_core_xtypes_MemberType.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::core::xtypes::getId(const MemberType<T>&)

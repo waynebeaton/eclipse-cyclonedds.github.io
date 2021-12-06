@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File CorePolicy.hpp &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File CorePolicy.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/program_listing_file_dds_core_policy_CorePolicy.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-corepolicy-hpp">
+<span id="program-listing-file-dds-core-policy-corepolicy-hpp"></span><h1>Program Listing for File CorePolicy.hpp<a class="headerlink" href="#program-listing-for-file-corepolicy-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_dds_core_policy_CorePolicy.hpp.html#file-dds-core-policy-corepolicy-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">dds/core/policy/CorePolicy.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef OMG_TDDS_CORE_POLICY_CORE_POLICY_HPP_</span>
+<span class="cp">#define OMG_TDDS_CORE_POLICY_CORE_POLICY_HPP_</span>
+
+<span class="cm">/* Copyright 2010, Object Management Group, Inc.</span>
+<span class="cm"> * Copyright 2010, PrismTech, Corp.</span>
+<span class="cm"> * Copyright 2010, Real-Time Innovations, Inc.</span>
+<span class="cm"> * All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="cm"> * you may not use this file except in compliance with the License.</span>
+<span class="cm"> * You may obtain a copy of the License at</span>
+<span class="cm"> *</span>
+<span class="cm"> *     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="cm"> *</span>
+<span class="cm"> * Unless required by applicable law or agreed to in writing, software</span>
+<span class="cm"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="cm"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="cm"> * See the License for the specific language governing permissions and</span>
+<span class="cm"> * limitations under the License.</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/detail/conformance.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/LengthUnlimited.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/detail/Value.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/policy/PolicyKind.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">//==============================================================================</span>
+<span class="c1">// DDS Policy Classes</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">dds</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">core</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">policy</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+<span class="k">class</span> <span class="nc">UserData</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">UserData</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">UserData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">UserData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_begin</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_end</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">UserData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">OCTET_ITER</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">begin</span><span class="p">,</span><span class="w"> </span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">end</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="w"> </span><span class="nf">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="nf">begin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="nf">end</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">GroupData</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">GroupData</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">GroupData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">GroupData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">GroupData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_begin</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_end</span><span class="p">);</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">OCTET_ITER</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">begin</span><span class="p">,</span><span class="w"> </span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">end</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="w"> </span><span class="nf">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="nf">begin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="nf">end</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">TopicData</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">TopicData</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">TopicData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">TopicData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">TopicData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_begin</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_end</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">OCTET_ITER</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">begin</span><span class="p">,</span><span class="w"> </span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">end</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="w"> </span><span class="nf">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="nf">begin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="nf">end</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">EntityFactory</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">EntityFactory</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">autoenable_created_entities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">EntityFactory</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityFactory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">EntityFactory</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityFactory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">EntityFactory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autoenable_created_entities</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">autoenable_created_entities</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">autoenable_created_entities</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">EntityFactory</span><span class="w"> </span><span class="n">AutoEnable</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">EntityFactory</span><span class="w"> </span><span class="nf">ManuallyEnable</span><span class="p">();</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">TransportPriority</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">TransportPriority</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">priority</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">TransportPriority</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TransportPriority</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">TransportPriority</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TransportPriority</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">TransportPriority</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">priority</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">Lifespan</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">Lifespan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Lifespan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">duration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">Deadline</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">Deadline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Deadline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">period</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">period</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">period</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">LatencyBudget</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">LatencyBudget</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">zero</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">LatencyBudget</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">duration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">TimeBasedFilter</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">TimeBasedFilter</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">zero</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">TimeBasedFilter</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TimeBasedFilter</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">TimeBasedFilter</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TimeBasedFilter</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">TimeBasedFilter</span><span class="o">&amp;</span><span class="w"> </span><span class="n">minimum_separation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">period</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">minimum_separation</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">Partition</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">Partition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">Partition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">StringSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">names</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Partition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">name</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">StringSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">names</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">StringSeq</span><span class="w"> </span><span class="nf">name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+<span class="cp">#ifdef OMG_DDS_OWNERSHIP_SUPPORT</span>
+
+<span class="k">class</span> <span class="nc">Ownership</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="cp">#   if defined (__SUNPRO_CC) &amp;&amp; defined(SHARED)</span>
+<span class="cp">#       undef SHARED</span>
+<span class="w">    </span><span class="cp">#   endif</span>
+
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">Ownership</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">SHARED</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Ownership</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="nf">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Ownership</span><span class="w"> </span><span class="n">Exclusive</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Ownership</span><span class="w"> </span><span class="nf">Shared</span><span class="p">();</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">OwnershipStrength</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">OwnershipStrength</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">strength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">OwnershipStrength</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">OwnershipStrength</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">OwnershipStrength</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">OwnershipStrength</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">OwnershipStrength</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">value</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">strength</span><span class="p">);</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// OMG_DDS_OWNERSHIP_SUPPORT</span>
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">WriterDataLifecycle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">autodispose_unregistered_instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">WriterDataLifecycle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">WriterDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">autodispose_unregistered_instances</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">WriterDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">autodispose_unregistered_instances</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">autodispose_unregistered_instances</span><span class="p">);</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="w"> </span><span class="n">AutoDisposeUnregisteredInstances</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="w"> </span><span class="nf">ManuallyDisposeUnregisteredInstances</span><span class="p">();</span><span class="w"></span>
+
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">ReaderDataLifecycle</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">ReaderDataLifecycle</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_nowriter_samples_delay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">(),</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ReaderDataLifecycle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">autopurge_nowriter_samples_delay</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">autopurge_disposed_samples_delay</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">autopurge_disposed_samples_delay</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="p">);</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="w"> </span><span class="n">NoAutoPurgeDisposedSamples</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="w"> </span><span class="nf">AutoPurgeDisposedSamples</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="p">);</span><span class="w"></span>
+
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">Durability</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">Durability</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">VOLATILE</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Durability</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w">  </span><span class="nf">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Durability</span><span class="w"> </span><span class="n">Volatile</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Durability</span><span class="w"> </span><span class="nf">TransientLocal</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Durability</span><span class="w"> </span><span class="nf">Transient</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Durability</span><span class="w"> </span><span class="nf">Persistent</span><span class="p">();</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">Presentation</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Presentation</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">access_scope</span><span class="w"></span>
+<span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">INSTANCE</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Presentation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">access_scope</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">access_scope</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="nf">access_scope</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">coherent_access</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">coherent_access</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">ordered_access</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">ordered_access</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Presentation</span><span class="w"> </span><span class="n">GroupAccessScope</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Presentation</span><span class="w"> </span><span class="nf">InstanceAccessScope</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Presentation</span><span class="w"> </span><span class="nf">TopicAccessScope</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">Reliability</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Reliability</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">BEST_EFFORT</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">from_millisecs</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Reliability</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="nf">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">max_blocking_time</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">max_blocking_time</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Reliability</span><span class="w"> </span><span class="n">Reliable</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">from_millisecs</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Reliability</span><span class="w"> </span><span class="nf">BestEffort</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">from_millisecs</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span><span class="w"></span>
+
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">DestinationOrder</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="w"></span>
+<span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">BY_RECEPTION_TIMESTAMP</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DestinationOrder</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="nf">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="w"> </span><span class="n">SourceTimestamp</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="w"> </span><span class="nf">ReceptionTimestamp</span><span class="p">();</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">History</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">History</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">KEEP_LAST</span><span class="p">,</span><span class="w"></span>
+<span class="w">             </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">depth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">History</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">depth</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">depth</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">depth</span><span class="p">);</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">History</span><span class="w"> </span><span class="n">KeepAll</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">History</span><span class="w"> </span><span class="nf">KeepLast</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">depth</span><span class="p">);</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">ResourceLimits</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">ResourceLimits</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">LENGTH_UNLIMITED</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">LENGTH_UNLIMITED</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">LENGTH_UNLIMITED</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ResourceLimits</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_samples</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">max_samples</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">max_instances</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">max_instances</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">max_samples_per_instance</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">max_samples_per_instance</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="k">class</span> <span class="nc">Liveliness</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Liveliness</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">AUTOMATIC</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Liveliness</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="nf">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">lease_duration</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">lease_duration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Liveliness</span><span class="w"> </span><span class="n">Automatic</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Liveliness</span><span class="w"> </span><span class="nf">ManualByParticipant</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">Liveliness</span><span class="w"> </span><span class="nf">ManualByTopic</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">infinite</span><span class="p">());</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+
+<span class="c1">//==============================================================================</span>
+<span class="cp">#ifdef OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+<span class="k">class</span> <span class="nc">DurabilityService</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">DurabilityService</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">service_cleanup_delay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">::</span><span class="n">zero</span><span class="p">(),</span><span class="w"></span>
+<span class="w">        </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">history_kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">KEEP_LAST</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">history_depth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">LENGTH_UNLIMITED</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">LENGTH_UNLIMITED</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">LENGTH_UNLIMITED</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DurabilityService</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">service_cleanup_delay</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">service_cleanup_delay</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="nf">service_cleanup_delay</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">history_kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">history_kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="nf">history_kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">history_depth</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">history_depth</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">history_depth</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">max_samples</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">max_samples</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">max_instances</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">max_instances</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">max_samples_per_instance</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="nf">max_samples_per_instance</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+<span class="c1">//==============================================================================</span>
+
+<span class="c1">//============================================================================</span>
+
+<span class="cp">#ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT</span>
+
+
+<span class="k">class</span> <span class="nc">DataRepresentation</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">DataRepresentation</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DataRepresentationIdSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">DataRepresentation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DataRepresentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">value</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">DataRepresentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DataRepresentationIdSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DataRepresentationIdSeq</span><span class="w"> </span><span class="nf">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DataRepresentationIdSeq</span><span class="o">&amp;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// defined(OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT)</span>
+
+
+<span class="c1">//============================================================================</span>
+
+<span class="cp">#ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT</span>
+
+
+<span class="k">class</span> <span class="nc">TypeConsistencyEnforcement</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">TypeConsistencyEnforcement</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TypeConsistencyEnforcementKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">TypeConsistencyEnforcement</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TypeConsistencyEnforcementKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TypeConsistencyEnforcementKind</span><span class="o">::</span><span class="n">Type</span><span class="w">  </span><span class="nf">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// defined(OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT)</span>
+
+
+<span class="c1">//==============================================================================</span>
+
+
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#endif </span><span class="cm">/* OMG_TDDS_CORE_POLICY_CORE_POLICY_HPP_ */</span><span class="cp"></span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

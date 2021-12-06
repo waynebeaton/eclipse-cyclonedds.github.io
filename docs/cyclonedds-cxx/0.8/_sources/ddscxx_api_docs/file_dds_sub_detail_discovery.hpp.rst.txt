@@ -1,0 +1,65 @@
+
+.. _file_dds_sub_detail_discovery.hpp:
+
+File discovery.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_sub_detail>` (``dds/sub/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/sub/detail/discovery.hpp``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_sub_detail_discovery.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/sub/DataReader.hpp`` (:ref:`file_dds_sub_DataReader.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_sub_discovery.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__sub`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1a97fc517c3537d7e9c028d3c742657fcb`
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1a649ddd1d7be291d7aa022b1c3d000af1`
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1a319e8bde87b965b606d561856ac7a325`
+
+- :ref:`exhale_function_dds_2sub_2detail_2discovery_8hpp_1acdc95da29c9640bea999c22ba74fe9ba`
+

@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds__topic__filter:
+
+Struct dds_topic_filter
+=======================
+
+- Defined in :ref:`file_dds.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds_topic_filter
+   :members:
+   :protected-members:
+   :undoc-members:

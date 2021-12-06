@@ -1,0 +1,39 @@
+.. _exhale_class_classdds_1_1core_1_1xtypes_1_1Annotation:
+
+Class Annotation
+================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotation.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Reference`` (:ref:`exhale_class_classdds_1_1core_1_1Reference`)
+
+
+Derived Types
+*************
+
+- ``public dds::core::xtypes::BitBoundAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1BitBoundAnnotation`)
+- ``public dds::core::xtypes::BitsetAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1BitsetAnnotation`)
+- ``public dds::core::xtypes::ExtensibilityAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1ExtensibilityAnnotation`)
+- ``public dds::core::xtypes::IdAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1IdAnnotation`)
+- ``public dds::core::xtypes::KeyAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1KeyAnnotation`)
+- ``public dds::core::xtypes::MustUnderstandAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1MustUnderstandAnnotation`)
+- ``public dds::core::xtypes::NestedAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1NestedAnnotation`)
+- ``public dds::core::xtypes::SharedAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1SharedAnnotation`)
+- ``public dds::core::xtypes::VerbatimAnnotation`` (:ref:`exhale_class_classdds_1_1core_1_1xtypes_1_1VerbatimAnnotation`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::xtypes::Annotation
+   :members:
+   :protected-members:
+   :undoc-members:

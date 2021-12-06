@@ -1,0 +1,13 @@
+.. _exhale_define_detail_2macros_8hpp_1a632c5ad2c05f410c56cfedb82abe2832:
+
+Define OSPL_DDS_FINAL
+=====================
+
+- Defined in :ref:`file_dds_core_detail_macros.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: OSPL_DDS_FINAL

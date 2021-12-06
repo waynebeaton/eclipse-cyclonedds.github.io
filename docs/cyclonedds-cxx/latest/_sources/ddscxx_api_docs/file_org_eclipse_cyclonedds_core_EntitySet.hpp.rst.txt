@@ -1,0 +1,79 @@
+
+.. _file_org_eclipse_cyclonedds_core_EntitySet.hpp:
+
+File EntitySet.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_core>` (``org/eclipse/cyclonedds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/core/EntitySet.hpp``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_core_EntitySet.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/InstanceHandle.hpp`` (:ref:`file_dds_core_InstanceHandle.hpp`)
+
+- ``memory``
+
+- ``org/eclipse/cyclonedds/core/EntityDelegate.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_EntityDelegate.hpp`)
+
+- ``org/eclipse/cyclonedds/core/Mutex.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_Mutex.hpp`)
+
+- ``org/eclipse/cyclonedds/core/WeakReferenceSet.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_WeakReferenceSet.hpp`)
+
+- ``set``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_pub_PublisherDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_sub_SubscriberDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__core`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1EntitySet`
+

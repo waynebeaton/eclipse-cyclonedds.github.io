@@ -1,0 +1,100 @@
+
+.. _program_listing_file_dds_core_xtypes_CollectionTypes.hpp:
+
+Program Listing for File CollectionTypes.hpp
+============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_xtypes_CollectionTypes.hpp>` (``dds/core/xtypes/CollectionTypes.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /* Copyright 2010, Object Management Group, Inc.
+   * Copyright 2010, PrismTech, Corp.
+   * Copyright 2010, Real-Time Innovations, Inc.
+   * All rights reserved.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   *     http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   */
+   #ifndef OMG_DDS_CORE_XTYPES_T_COLLECTION_TYPES_HPP_
+   #define OMG_DDS_CORE_XTYPES_T_COLLECTION_TYPES_HPP_
+   
+   #include <dds/core/xtypes/DynamicType.hpp>
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace xtypes
+   {
+   
+   
+   class CollectionType;
+   
+   
+   class MapType;
+   
+   
+   class SequenceType;
+   
+   template <typename CHAR_T, template <typename C> class DELEGATE>
+   class StringType;
+   }
+   }
+   }
+   
+   
+   class dds::core::xtypes::CollectionType : public dds::core::xtypes::DynamicType
+   {
+   public:
+       const uint32_t UNBOUNDED = 0xFFFFFFFF;
+   
+   protected:
+       CollectionType(const std::string& name, TypeKind kind);
+   public:
+       uint32_t bounds() const;
+   };
+   
+   
+   
+   class dds::core::xtypes::MapType : public dds::core::xtypes::CollectionType
+   {
+   public:
+       MapType(const DyanmicType& key_type, const DynamicType& value_type);
+       MapType(const DyanmicType& key_type, const DynamicType& value_type, uint32_t bounds);
+   public:
+       const DyanmicType& key_type();
+       const DynamicType& value_type();
+   };
+   
+   
+   class dds::core::xtypes::SequenceType : public dds::core::xtypes::CollectionType
+   {
+   public:
+       SequenceType(const DynamicType& type);
+   
+       SequenceType(const DynamicType& type, uint32_t bounds);
+   public:
+       const DyanmicType& key_type() const;
+   };
+   
+   template <typename CHAR_T, template <typename C> class DELEGATE>
+   class dds::core::xtypes::StringType : public dds::core::xtypes::CollectionType
+   {
+   public:
+       StringType(uint32_t bounds);
+   };
+   
+   
+   #endif /* OMG_DDS_CORE_XTYPES_T_COLLECTION_TYPES_HPP_ */

@@ -1,0 +1,13 @@
+.. _exhale_function_cdr__stream_8hpp_1a573a2fe8a993f6cade6db110a62b949b:
+
+Template Function org::eclipse::cyclonedds::core::cdr::byte_swap
+================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: org::eclipse::cyclonedds::core::cdr::byte_swap(T&)

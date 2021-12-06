@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Status_8hpp_1a214a1a54e33bb735dedeca76c87c42a7:
+
+Typedef dds::core::status::detail::LivelinessLostStatus
+=======================================================
+
+- Defined in :ref:`file_dds_core_status_detail_Status.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::status::detail::LivelinessLostStatus

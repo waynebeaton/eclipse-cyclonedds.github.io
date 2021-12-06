@@ -1,0 +1,13 @@
+.. _exhale_typedef_ScopedLock_8hpp_1aefcc652393e10d3128f63720f6d30b61:
+
+Typedef org::eclipse::cyclonedds::core::ScopedMutexLock
+=======================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ScopedLock.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: org::eclipse::cyclonedds::core::ScopedMutexLock

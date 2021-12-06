@@ -1,0 +1,68 @@
+
+.. _program_listing_file_dds_core_cond_GuardCondition.hpp:
+
+Program Listing for File GuardCondition.hpp
+===========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_cond_GuardCondition.hpp>` (``dds/core/cond/GuardCondition.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef OMG_TDDS_CORE_COND_GUARD_CONDITION_HPP_
+   #define OMG_TDDS_CORE_COND_GUARD_CONDITION_HPP_
+   
+   /* Copyright 2010, Object Management Group, Inc.
+    * Copyright 2010, PrismTech, Corp.
+    * Copyright 2010, Real-Time Innovations, Inc.
+    * All rights reserved.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    */
+   
+   #include <dds/core/cond/Condition.hpp>
+   
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace cond
+   {
+   
+   class GuardCondition;
+   }
+   }
+   }
+   
+   class dds::core::cond::GuardCondition : public dds::core::cond::Condition
+   {
+   public:
+       OMG_DDS_REF_TYPE_NO_DC(GuardCondition, dds::core::cond::Condition)
+       OMG_DDS_EXPLICIT_REF_BASE(GuardCondition, dds::core::cond::Condition)
+   
+   public:
+       GuardCondition();
+   
+       template <typename FUN>
+       GuardCondition(FUN functor);
+   
+   public:
+   
+       void trigger_value(bool value);
+   
+       bool trigger_value();
+   };
+   
+   #endif /* OMG_TDDS_CORE_GUARD_CONDITION_HPP_ */

@@ -1,0 +1,13 @@
+.. _exhale_enum_cdr__stream_8hpp_1a444d382e62d5c1a8aae02e272efb1d9b:
+
+Enum serialization_status
+=========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_cdr_cdr_stream.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: org::eclipse::cyclonedds::core::cdr::serialization_status

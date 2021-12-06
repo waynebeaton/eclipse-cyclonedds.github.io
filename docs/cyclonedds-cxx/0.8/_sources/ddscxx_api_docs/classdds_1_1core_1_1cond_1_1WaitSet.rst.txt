@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1core_1_1cond_1_1WaitSet:
+
+Class WaitSet
+=============
+
+- Defined in :ref:`file_dds_core_cond_WaitSet.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Reference`` (:ref:`exhale_class_classdds_1_1core_1_1Reference`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::cond::WaitSet
+   :members:
+   :protected-members:
+   :undoc-members:

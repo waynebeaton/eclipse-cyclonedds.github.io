@@ -1,0 +1,25 @@
+.. _exhale_struct_structdds_1_1core_1_1is__same:
+
+Template Struct is_same
+=======================
+
+- Defined in :ref:`file_dds_core_detail_ref_traits.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::is_same< T1, T1 >``
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds::core::is_same
+   :members:
+   :protected-members:
+   :undoc-members:

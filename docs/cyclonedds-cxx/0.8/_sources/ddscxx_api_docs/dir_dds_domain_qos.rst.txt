@@ -1,0 +1,20 @@
+.. _dir_dds_domain_qos:
+
+
+Directory qos
+=============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_domain>` (``dds/domain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``dds/domain/qos``
+
+
+Files
+-----
+
+- :ref:`file_dds_domain_qos_DomainParticipantQos.hpp`
+
+

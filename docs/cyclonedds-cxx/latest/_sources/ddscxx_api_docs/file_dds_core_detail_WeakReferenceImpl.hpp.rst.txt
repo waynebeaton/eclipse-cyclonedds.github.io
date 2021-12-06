@@ -1,0 +1,56 @@
+
+.. _file_dds_core_detail_WeakReferenceImpl.hpp:
+
+File WeakReferenceImpl.hpp
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_detail>` (``dds/core/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/detail/WeakReferenceImpl.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_detail_WeakReferenceImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/WeakReference.hpp`` (:ref:`file_dds_core_WeakReference.hpp`)
+
+- ``dds/core/detail/ReferenceImpl.hpp`` (:ref:`file_dds_core_detail_ReferenceImpl.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_org_eclipse_cyclonedds_core_EntityRegistry.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_domain_DomainParticipantDelegate.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_dds`
+
+- :ref:`namespace_dds__core`
+

@@ -1,0 +1,26 @@
+.. _exhale_class_classdds_1_1core_1_1InvalidArgumentError:
+
+Class InvalidArgumentError
+==========================
+
+- Defined in :ref:`file_dds_core_Exception.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public dds::core::Exception`` (:ref:`exhale_class_classdds_1_1core_1_1Exception`)
+- ``public invalid_argument``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::core::InvalidArgumentError
+   :members:
+   :protected-members:
+   :undoc-members:

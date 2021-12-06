@@ -1,0 +1,26 @@
+.. _exhale_class_classdds_1_1topic_1_1AnyTopic:
+
+Class AnyTopic
+==============
+
+- Defined in :ref:`file_dds_topic_AnyTopic.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Types
+**********
+
+- ``public dds::core::Entity`` (:ref:`exhale_class_classdds_1_1core_1_1Entity`)
+- ``public dds::topic::TopicDescription`` (:ref:`exhale_class_classdds_1_1topic_1_1TopicDescription`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::topic::AnyTopic
+   :members:
+   :protected-members:
+   :undoc-members:

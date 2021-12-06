@@ -1,0 +1,13 @@
+.. _exhale_typedef_detail_2Rank_8hpp_1ae5b0a2b9a6132d940c1857541febadc6:
+
+Typedef dds::sub::detail::Rank
+==============================
+
+- Defined in :ref:`file_dds_sub_detail_Rank.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::sub::detail::Rank

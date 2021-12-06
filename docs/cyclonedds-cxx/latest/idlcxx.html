@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Containers &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Eclipse Cyclone DDS C++ API Reference" href="ddscxx.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Custom Containers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sequences">Sequences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strings">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arrays">Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unions">Unions</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Custom Containers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/idlcxx.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="custom-containers">
+<h1>Custom Containers<a class="headerlink" href="#custom-containers" title="Permalink to this headline"></a></h1>
+<p>IDLCXX allows users to supply their own container classes, replacing the default containers
+used for IDL sequences (bounded and unbounded), strings (bounded and unbounded), arrays and
+unions. All custom containers templates are set through the -f command line option, followed
+by the option to be set, an equals sign and the value to set it to. Each template can have a
+varying number of tags, which are indicated by the following strings:</p>
+<ul class="simple">
+<li><p>{TYPE}: will replace type names in sequences and arrays</p></li>
+<li><p>{BOUND}: will replace maximum size values in bounded sequences and strings</p></li>
+<li><p>{DIMENSION}: will replace size in arrays</p></li>
+</ul>
+<p>For example, to set a custom container for the bounded sequence, you need to add the following
+to the command line options of idlc:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>-f bounded-sequence-template<span class="o">=</span><span class="s2">&quot;company_name::special_bounded_sequence_impl&lt;{TYPE}, {BOUND}&gt;&quot;</span>
+</pre></div>
+</div>
+<p>Supplying this command line option would convert the following IDL code:</p>
+<div class="highlight-IDL notranslate"><div class="highlight"><pre><span></span>sequence<span class="o">&lt;</span><span class="nb">long</span>,<span class="mi">255</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>to the following C++ code:</p>
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="n">company_name</span><span class="o">::</span><span class="n">special_bounded_sequence_impl</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="o">&gt;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For each template the ordering of the tags is not important, the generator will replace based
+on tags, not positions, all other text is inserted into the generated code verbatim. This allows
+for custom allocators and the like to be added as well.</p>
+<p>More information on all command line options can be retrieved by running idlc with the -h option,
+while loading the idlcxx library:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>idlc -l libdidlcxx.so -h
+</pre></div>
+</div>
+<section id="sequences">
+<h2>Sequences<a class="headerlink" href="#sequences" title="Permalink to this headline"></a></h2>
+<p>The default container used for both bounded and unbounded IDL sequences is std::vector.
+The custom containers for bounded and unbounded sequences can be defined independently.
+Any user-supplied container class intended to be used in place of std::vector is expected
+to adhere to the following interface, with the same effect as these functions have in
+std::vector:</p>
+<ul class="simple">
+<li><p>size</p></li>
+<li><p>resize</p></li>
+<li><p>data</p></li>
+<li><p>operator==</p></li>
+<li><p>operator[]</p></li>
+<li><p>copy assignment operator</p></li>
+<li><p>copy constructor</p></li>
+</ul>
+<p>The command line options for custom sequence containers are:</p>
+<ul class="simple">
+<li><p>bounded-sequence-template</p>
+<ul>
+<li><p>template used for bounded sequences instead of std::vector</p></li>
+<li><p>replaced tags: {TYPE}, {BOUND}</p></li>
+</ul>
+</li>
+<li><p>bounded-sequence-include</p>
+<ul>
+<li><p>header to include if bounded-sequence-template is used</p></li>
+</ul>
+</li>
+<li><p>sequence-template</p>
+<ul>
+<li><p>template used for sequences instead of std::vector</p></li>
+<li><p>replaced tags: {TYPE}</p></li>
+</ul>
+</li>
+<li><p>sequence-include</p>
+<ul>
+<li><p>header to include if sequence-template is used</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="strings">
+<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this headline"></a></h2>
+<p>The default container used for both bounded and unbounded IDL strings is std::string.
+The custom containers for bounded and unbounded strings can be defined independently.
+Any user-supplied container class intended to be used in place of std::string is expected
+to adhere to the following interface, with the same effect as these functions have in
+std::string:</p>
+<ul class="simple">
+<li><p>length</p></li>
+<li><p>assign</p>
+<ul>
+<li><p>the variant taking an input pointer and a length</p></li>
+</ul>
+</li>
+<li><p>operator==</p></li>
+<li><p>copy assignment operator</p></li>
+<li><p>copy constructor</p></li>
+</ul>
+<p>The command line options for custom string containers are:</p>
+<ul class="simple">
+<li><p>bounded-string-template</p>
+<ul>
+<li><p>template to use for strings instead of std::string</p></li>
+<li><p>replaced tags: {BOUND}</p></li>
+</ul>
+</li>
+<li><p>bounded-string-include</p>
+<ul>
+<li><p>header to include if bounded-string-template is used</p></li>
+</ul>
+</li>
+<li><p>string-template</p>
+<ul>
+<li><p>template to use for strings instead of std::string</p></li>
+<li><p>replaced tags: none</p></li>
+</ul>
+</li>
+<li><p>string-include</p>
+<ul>
+<li><p>header to include if string-template is used</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="arrays">
+<h2>Arrays<a class="headerlink" href="#arrays" title="Permalink to this headline"></a></h2>
+<p>The default container used for IDL arrays is std::array.
+Any user-supplied container class intended to be used in place of std::array is expected
+to adhere to the following interface, with the same effect as these functions have in
+std::array:</p>
+<ul class="simple">
+<li><p>support auto-range for loops</p>
+<ul>
+<li><p>having begin() and end() functions returning iterators to the begin and end of the array</p></li>
+</ul>
+</li>
+<li><p>the function data()</p></li>
+</ul>
+<p>The command line options for custom array containers are:</p>
+<ul class="simple">
+<li><p>array-template</p>
+<ul>
+<li><p>template to use for arrays instead of std::array</p></li>
+<li><p>replaced tags: {TYPE}, {DIMENSION}</p></li>
+</ul>
+</li>
+<li><p>array-include</p>
+<ul>
+<li><p>header to include if template for array-template is used</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="unions">
+<h2>Unions<a class="headerlink" href="#unions" title="Permalink to this headline"></a></h2>
+<p>IDL unions use the std::variant class by default as the container for the union values.
+The only function needed from the custom union container is the templated getter function:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span><span class="n">T</span><span class="w"> </span><span class="n">get</span><span class="p">(</span><span class="n">variant</span><span class="o">&amp;</span><span class="w"> </span><span class="n">var</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The command line options for custom variant containers are:</p>
+<ul class="simple">
+<li><p>union-getter-template</p>
+<ul>
+<li><p>template to use for reading the value of a variant, copied verbatim</p></li>
+</ul>
+</li>
+<li><p>union-template</p>
+<ul>
+<li><p>template to use for unions instead of std::variant, copied verbatim</p></li>
+</ul>
+</li>
+<li><p>union-include</p>
+<ul>
+<li><p>header to include if template for union-template is used</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ddscxx.html" class="btn btn-neutral float-left" title="Eclipse Cyclone DDS C++ API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

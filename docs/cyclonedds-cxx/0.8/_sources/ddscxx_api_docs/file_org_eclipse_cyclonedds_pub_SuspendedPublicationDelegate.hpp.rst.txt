@@ -1,0 +1,63 @@
+
+.. _file_org_eclipse_cyclonedds_pub_SuspendedPublicationDelegate.hpp:
+
+File SuspendedPublicationDelegate.hpp
+=====================================
+
+|exhale_lsh| :ref:`Parent directory <dir_org_eclipse_cyclonedds_pub>` (``org/eclipse/cyclonedds/pub``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``org/eclipse/cyclonedds/pub/SuspendedPublicationDelegate.hpp``)
+----------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_org_eclipse_cyclonedds_pub_SuspendedPublicationDelegate.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/pub/Publisher.hpp`` (:ref:`file_dds_pub_Publisher.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_pub_detail_SuspendedPublication.hpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_org`
+
+- :ref:`namespace_org__eclipse`
+
+- :ref:`namespace_org__eclipse__cyclonedds`
+
+- :ref:`namespace_org__eclipse__cyclonedds__pub`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1pub_1_1SuspendedPublicationDelegate`
+

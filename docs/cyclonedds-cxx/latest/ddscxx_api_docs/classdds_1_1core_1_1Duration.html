@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Duration &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class Duration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classdds_1_1core_1_1Duration.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-duration">
+<span id="exhale-class-classdds-1-1core-1-1duration"></span><h1>Class Duration<a class="headerlink" href="#class-duration" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds_core_Duration.hpp.html#file-dds-core-duration-hpp"><span class="std std-ref">File Duration.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8DurationE">
+<span id="_CPPv3N3dds4core8DurationE"></span><span id="_CPPv2N3dds4core8DurationE"></span><span id="dds::core::Duration"></span><span class="target" id="classdds_1_1core_1_1Duration"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">Duration</span></span></span><br /></dt>
+<dd><p><a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> represents a time interval and can -<ul class="simple">
+<li><p>Can be incremented by durations expressed as seconds, nanoseconds milliseconds, or <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> objects.</p></li>
+<li><p>Can be converted to and from Durations expressed in milliseconds (or other units) as integer types. </p></li>
+</ul>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration8DurationEv">
+<span id="_CPPv3N3dds4core8Duration8DurationEv"></span><span id="_CPPv2N3dds4core8Duration8DurationEv"></span><span id="dds::core::Duration::Duration"></span><span class="target" id="classdds_1_1core_1_1Duration_1ad43bddd3aff3df995ff670055d6d31a4"></span><span class="sig-name descname"><span class="n"><span class="pre">Duration</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> elapsing the default amount of time (zero seconds). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration8DurationE7int32_t8uint32_t">
+<span id="_CPPv3N3dds4core8Duration8DurationE7int32_t8uint32_t"></span><span id="_CPPv2N3dds4core8Duration8DurationE7int32_t8uint32_t"></span><span id="dds::core::Duration::Duration__int32_t.uint32_t"></span><span class="target" id="classdds_1_1core_1_1Duration_1a4796a4c52aff7c0a2adb4c61a932ff7e"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Duration</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sec</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nanosec</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> elapsing a specific amount of time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sec</strong> – Amount of seconds for the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a>. </p></li>
+<li><p><strong>nanosec</strong> – Amount of nanoseconds for the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a>. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8Duration3secEv">
+<span id="_CPPv3NK3dds4core8Duration3secEv"></span><span id="_CPPv2NK3dds4core8Duration3secEv"></span><span id="dds::core::Duration::secC"></span><span class="target" id="classdds_1_1core_1_1Duration_1a4bd729f9457e4431228719cebcd32b10"></span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sec</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get seconds part of the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>number of seconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration3secE7int64_t">
+<span id="_CPPv3N3dds4core8Duration3secE7int64_t"></span><span id="_CPPv2N3dds4core8Duration3secE7int64_t"></span><span id="dds::core::Duration::sec__int64_t"></span><span class="target" id="classdds_1_1core_1_1Duration_1ade048ac66061a92138f8a61dc1562dec"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sec</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">s</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set number of seconds </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – number of seconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8Duration7nanosecEv">
+<span id="_CPPv3NK3dds4core8Duration7nanosecEv"></span><span id="_CPPv2NK3dds4core8Duration7nanosecEv"></span><span id="dds::core::Duration::nanosecC"></span><span class="target" id="classdds_1_1core_1_1Duration_1afde0a44c966ef659221f5f3f5d129e78"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nanosec</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get nanoseconds part of the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>number of nanoseconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration7nanosecE8uint32_t">
+<span id="_CPPv3N3dds4core8Duration7nanosecE8uint32_t"></span><span id="_CPPv2N3dds4core8Duration7nanosecE8uint32_t"></span><span id="dds::core::Duration::nanosec__uint32_t"></span><span class="target" id="classdds_1_1core_1_1Duration_1ad06df4446475692aaaba9265208dc18f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nanosec</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ns</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Set number of nanoseconds </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ns</strong> – number of nanoseconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8Duration7compareERK8Duration">
+<span id="_CPPv3NK3dds4core8Duration7compareERK8Duration"></span><span id="_CPPv2NK3dds4core8Duration7compareERK8Duration"></span><span id="dds::core::Duration::compare__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1aa6cca67a269d389031087a0db1d0864d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compare</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">that</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns an integer value for a comparison of two Durations: 1 if this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is greater than the comparator (that) -1 if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is less than the comparator (that) 0 if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> matches the comparator (that)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>that</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to compare</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>comparison result </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationgtERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationgtERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationgtERK8Duration"></span><span id="dds::core::Duration::gt-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1ab62cbce9843f7a3faedfd16714fd39ab"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">that</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns true if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is greater than the comparator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>that</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to compare </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>comparison result </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationgeERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationgeERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationgeERK8Duration"></span><span id="dds::core::Duration::gte-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1a776b597eafd7f975f109f724f71e3eaf"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">that</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns true if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is greater than or equal to the comparator </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>that</strong> – the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to compare </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>true if that is larger than or equal to this </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationneERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationneERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationneERK8Duration"></span><span id="dds::core::Duration::neq-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1ad8ad768d75d28b491a16d6c3a76de14b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">!=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">that</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns true if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is not equal to the comparator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>that</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to compare </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>comparison result </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationeqERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationeqERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationeqERK8Duration"></span><span id="dds::core::Duration::eq-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1a8e2844d5bd55753ff36d7fed0fcd9f77"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">that</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns true if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is equal to the comparator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>that</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to compare </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>comparison result </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationleERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationleERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationleERK8Duration"></span><span id="dds::core::Duration::lte-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1a93446021dca74bac6b8029610086cd10"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">that</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns true if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is less than or equal to the comparator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>that</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to compare </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>comparison result </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationltERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationltERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationltERK8Duration"></span><span id="dds::core::Duration::lt-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1a908cd662208f5b934cb0b5b7d6fb6464"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">that</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns true if the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> is less than the comparator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>that</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to compare </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>comparison result </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8DurationpLERK8Duration">
+<span id="_CPPv3N3dds4core8DurationpLERK8Duration"></span><span id="_CPPv2N3dds4core8DurationpLERK8Duration"></span><span id="dds::core::Duration::add-assign-operator__DurationCR"></span><span class="target" id="classdds_1_1core_1_1Duration_1a4daee48f43f43efa4b66cfc9ebd15da0"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">a_ti</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Add a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>a_ti</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to add </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> + a_ti </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8DurationmIERK8Duration">
+<span id="_CPPv3N3dds4core8DurationmIERK8Duration"></span><span id="_CPPv2N3dds4core8DurationmIERK8Duration"></span><span id="dds::core::Duration::sub-assign-operator__DurationCR"></span><span class="target" id="classdds_1_1core_1_1Duration_1a4ee7b6bbf9a54e3b9a8865bb2232915e"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">a_ti</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Subtract a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> from this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>a_ti</strong> – <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to subtract </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> - a_ti </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8DurationmLE8uint64_t">
+<span id="_CPPv3N3dds4core8DurationmLE8uint64_t"></span><span id="_CPPv2N3dds4core8DurationmLE8uint64_t"></span><span id="dds::core::Duration::mul-assign-operator__uint64_t"></span><span class="target" id="classdds_1_1core_1_1Duration_1a25341b6768cf8d7597d1c4cd16045fda"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*=</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">factor</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Multiply this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> by a factor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>factor</strong> – the factor to multiply this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> by </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> * factor </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationplERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationplERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationplERK8Duration"></span><span id="dds::core::Duration::add-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1ac5f18c342efe4cc611d3b6b78a2aaf20"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Add a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> to <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> + other </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8DurationmiERK8Duration">
+<span id="_CPPv3NK3dds4core8DurationmiERK8Duration"></span><span id="_CPPv2NK3dds4core8DurationmiERK8Duration"></span><span id="dds::core::Duration::sub-operator__DurationCRC"></span><span class="target" id="classdds_1_1core_1_1Duration_1a63f7f86dcf9c42007ecaf0f8d775c8e8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Subtract a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> from <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> - other </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8Duration12to_millisecsEv">
+<span id="_CPPv3NK3dds4core8Duration12to_millisecsEv"></span><span id="_CPPv2NK3dds4core8Duration12to_millisecsEv"></span><span id="dds::core::Duration::to_millisecsC"></span><span class="target" id="classdds_1_1core_1_1Duration_1a9d3429276d3ef21adce930df618f5182"></span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">to_millisecs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> in milliseconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the duration in milliseconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8Duration12to_microsecsEv">
+<span id="_CPPv3NK3dds4core8Duration12to_microsecsEv"></span><span id="_CPPv2NK3dds4core8Duration12to_microsecsEv"></span><span id="dds::core::Duration::to_microsecsC"></span><span class="target" id="classdds_1_1core_1_1Duration_1acce83aa6bb39a8d53ca78ff5ea9d1358"></span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">to_microsecs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> in micro-seconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the duration in micro-seconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3dds4core8Duration7to_secsEv">
+<span id="_CPPv3NK3dds4core8Duration7to_secsEv"></span><span id="_CPPv2NK3dds4core8Duration7to_secsEv"></span><span id="dds::core::Duration::to_secsC"></span><span class="target" id="classdds_1_1core_1_1Duration_1adb07f141f543f8d9e3c9bcadde530981"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">to_secs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns this <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> in seconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the duration in seconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration4zeroEv">
+<span id="_CPPv3N3dds4core8Duration4zeroEv"></span><span id="_CPPv2N3dds4core8Duration4zeroEv"></span><span id="dds::core::Duration::zero"></span><span class="target" id="classdds_1_1core_1_1Duration_1a13e5a16bfd89582288f51b7487c2234d"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zero</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> elapsing zero seconds. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration8infiniteEv">
+<span id="_CPPv3N3dds4core8Duration8infiniteEv"></span><span id="_CPPv2N3dds4core8Duration8infiniteEv"></span><span id="dds::core::Duration::infinite"></span><span class="target" id="classdds_1_1core_1_1Duration_1a5a1d1924d04f70d5bc3bab5b1de521b2"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">infinite</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create an infinite <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration14from_microsecsE7int64_t">
+<span id="_CPPv3N3dds4core8Duration14from_microsecsE7int64_t"></span><span id="_CPPv2N3dds4core8Duration14from_microsecsE7int64_t"></span><span id="dds::core::Duration::from_microsecs__int64_t"></span><span class="target" id="classdds_1_1core_1_1Duration_1a0c2af60df444461d27b2a00ac1c78fb4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">from_microsecs</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">microseconds</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> from a number of microseconds </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>microseconds</strong> – number of microseconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration14from_millisecsE7int64_t">
+<span id="_CPPv3N3dds4core8Duration14from_millisecsE7int64_t"></span><span id="_CPPv2N3dds4core8Duration14from_millisecsE7int64_t"></span><span id="dds::core::Duration::from_millisecs__int64_t"></span><span class="target" id="classdds_1_1core_1_1Duration_1ac4d51447780d8cedf9ee0ebb78863c98"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">from_millisecs</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">milliseconds</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> from a number of milliseconds </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>milliseconds</strong> – number of milliseconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3dds4core8Duration9from_secsEd">
+<span id="_CPPv3N3dds4core8Duration9from_secsEd"></span><span id="_CPPv2N3dds4core8Duration9from_secsEd"></span><span id="dds::core::Duration::from_secs__double"></span><span class="target" id="classdds_1_1core_1_1Duration_1ac53939b473dd0707bdf067acea6b6a89"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core8DurationE" title="dds::core::Duration"><span class="n"><span class="pre">Duration</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">from_secs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">seconds</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classdds_1_1core_1_1Duration"><span class="std std-ref">Duration</span></a> from a number of seconds </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>seconds</strong> – number of seconds </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

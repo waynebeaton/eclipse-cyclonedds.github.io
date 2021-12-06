@@ -1,0 +1,503 @@
+
+.. _program_listing_file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp:
+
+Program Listing for File basic_cdr_ser.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_org_eclipse_cyclonedds_core_cdr_basic_cdr_ser.hpp>` (``org/eclipse/cyclonedds/core/cdr/basic_cdr_ser.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2021 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef BASIC_CDR_SERIALIZATION_HPP_
+   #define BASIC_CDR_SERIALIZATION_HPP_
+   
+   #include "cdr_stream.hpp"
+   #include <org/eclipse/cyclonedds/core/type_helpers.hpp>
+   #include <dds/core/Exception.hpp>
+   #include <array>
+   #include <vector>
+   #include <string>
+   #include <cstring>
+   #include <algorithm>
+   
+   namespace org {
+   namespace eclipse {
+   namespace cyclonedds {
+   namespace core {
+   namespace cdr {
+   
+   class basic_cdr_stream : public cdr_stream {
+   public:
+     basic_cdr_stream(uint64_t ignore_faults = 0x0) : cdr_stream(8, ignore_faults) { ; }
+   };
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void read(basic_cdr_stream &str, T& toread)
+   {
+     if (str.abort_status())
+       return;
+   
+     str.align(sizeof(T), false);
+   
+     toread = *static_cast<T*>(str.get_cursor());
+   
+     str.incr_position(sizeof(T));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void read_swapped(basic_cdr_stream &str, T& toread)
+   {
+     read(str, toread);
+   
+     byte_swap(toread);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void read_many(basic_cdr_stream &str, T *out, size_t N)
+   {
+     if (str.abort_status() || N == 0)
+       return;
+   
+     str.align(sizeof(T), false);
+   
+     T *in = static_cast<T*>(str.get_cursor());
+   
+     memcpy(out, in, sizeof(T)*N);
+   
+     str.incr_position(sizeof(T)*N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void read_many_swapped(basic_cdr_stream &str, T *out, size_t N)
+   {
+     if (str.abort_status() || N == 0)
+       return;
+   
+     str.align(sizeof(T), false);
+   
+     T *in = static_cast<T*>(str.get_cursor());
+     for (size_t i = 0; i < N; i++, out++, in++) {
+       *out = *in;
+       byte_swap(*out);
+     }
+   
+     str.incr_position(sizeof(T)*N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void write(basic_cdr_stream& str, const T& towrite)
+   {
+     if (str.abort_status())
+       return;
+   
+     str.align(sizeof(T), true);
+   
+     auto out = static_cast<T*>(str.get_cursor());
+   
+     *out = towrite;
+   
+     str.incr_position(sizeof(T));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void write_swapped(basic_cdr_stream& str, const T& towrite)
+   {
+     if (str.abort_status())
+       return;
+   
+     str.align(sizeof(T), true);
+   
+     auto out = static_cast<T*>(str.get_cursor());
+   
+     *out = towrite;
+   
+     byte_swap(*out);
+   
+     str.incr_position(sizeof(T));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void write_many(basic_cdr_stream& str, const T* in, size_t N)
+   {
+     if (str.abort_status() || N == 0)
+       return;
+   
+     str.align(sizeof(T), true);
+   
+     T *out = static_cast<T*>(str.get_cursor());
+   
+     memcpy(out, in, sizeof(T)*N);
+   
+     str.incr_position(sizeof(T)*N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void write_many_swapped(basic_cdr_stream& str, const T* in, size_t N)
+   {
+     if (str.abort_status() || N == 0)
+       return;
+   
+     str.align(sizeof(T), true);
+   
+     T *out = static_cast<T*>(str.get_cursor());
+     for (size_t i = 0; i < N; i++, out++, in++) {
+       *out = *in;
+       byte_swap(*out);
+     }
+   
+     str.incr_position(sizeof(T)*N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void move(basic_cdr_stream& str, const T& toincr)
+   {
+     if (str.abort_status())
+       return;
+   
+     (void)toincr;
+   
+     str.align(sizeof(T), false);
+   
+     str.incr_position(sizeof(T));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void move_swapped(basic_cdr_stream& str, const T& toincr)
+   {
+     move(str, toincr);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void move_many(basic_cdr_stream& str, const T* toincr, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     (void)toincr;
+   
+     str.align(sizeof(T), false);
+   
+     str.incr_position(sizeof(T)*N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void move_many_swapped(basic_cdr_stream& str, const T* toincr, size_t N)
+   {
+     move_many(str, toincr, N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void max(basic_cdr_stream& str, const T& max_sz)
+   {
+     if (str.abort_status())
+       return;
+   
+     if (str.position() == SIZE_MAX)
+       return;
+   
+     move(str, max_sz);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void max_swapped(basic_cdr_stream& str, const T& max_sz)
+   {
+     max(str, max_sz);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void max_many(basic_cdr_stream& str, const T* max_sz, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     if (str.position() == SIZE_MAX)
+       return;
+   
+     move_many(str, max_sz, N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_arithmetic<T>::value && !std::is_enum<T>::value, bool> = true >
+   inline void max_many_swapped(basic_cdr_stream& str, const T* max_sz, size_t N)
+   {
+     max_many(str, max_sz, N);
+   }
+   
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void read(basic_cdr_stream& str, T& toread) {
+     read(str, *reinterpret_cast<uint32_t*>(&toread));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void read_swapped(basic_cdr_stream& str, T& toread) {
+     read_swapped(str, *reinterpret_cast<uint32_t*>(&toread));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void read_many(basic_cdr_stream& str, T* toread, size_t N) {
+     read_many(str, reinterpret_cast<uint32_t*>(toread), N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void read_many_swapped(basic_cdr_stream& str, T* toread, size_t N) {
+     read_many_swapped(str, reinterpret_cast<uint32_t*>(toread), N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void write(basic_cdr_stream& str, const T& towrite) {
+     write(str, uint32_t(towrite));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void write_swapped(basic_cdr_stream& str, const T& towrite) {
+     write_swapped(str, uint32_t(towrite));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void write_many(basic_cdr_stream& str, const T* towrite, size_t N) {
+     write_many(str, static_cast<uint32_t*>(towrite), N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void write_many_swapped(basic_cdr_stream& str, const T* towrite, size_t N) {
+     write_many_swapped(str, static_cast<uint32_t*>(towrite), N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void move(basic_cdr_stream& str, const T& toincr) {
+     move(str, uint32_t(toincr));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void move_swapped(basic_cdr_stream& str, const T& toincr) {
+     move_swapped(str, uint32_t(toincr));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void move_many(basic_cdr_stream& str, const T* toincr, size_t N) {
+     move_many(str, static_cast<uint32_t*>(toincr), N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void move_many_swapped(basic_cdr_stream& str, const T* toincr, size_t N) {
+     move_many_swapped(str, static_cast<uint32_t*>(toincr), N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void max(basic_cdr_stream& str, const T& max_sz) {
+     max(str, uint32_t(max_sz));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void max_swapped(basic_cdr_stream& str, const T& max_sz) {
+     max_swapped(str, uint32_t(max_sz));
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void max_many(basic_cdr_stream& str, const T* max_sz, size_t N) {
+     max_many(str, static_cast<uint32_t*>(max_sz), N);
+   }
+   
+   template<typename T, std::enable_if_t<std::is_enum<T>::value && !std::is_arithmetic<T>::value, bool> = true >
+   inline void max_many_swapped(basic_cdr_stream& str, const T* max_sz, size_t N) {
+     max_many_swapped(str, static_cast<uint32_t*>(max_sz), N);
+   }
+   
+   template<typename T>
+   void read_string(basic_cdr_stream& str, T& toread, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     uint32_t string_length = 0;
+   
+     read(str, string_length);
+   
+     if (string_length == 0 &&
+         str.status(serialization_status::illegal_field_value))
+         return;
+   
+     //the string length in the CDR stream includes the terminating NULL
+     //therefore the checks on the string length decrease it by 1
+   
+     if (N &&
+         string_length - 1 > N &&
+         str.status(serialization_status::read_bound_exceeded))
+         return;
+   
+     auto cursor = str.get_cursor();
+     toread.assign(static_cast<char*>(cursor), std::min<size_t>(string_length - 1, N ? N : SIZE_MAX));  //remove 1 for terminating NULL
+   
+     str.incr_position(string_length);
+   
+     //aligned to chars
+     str.alignment(1);
+   }
+   
+   template<typename T>
+   void read_string_swapped(basic_cdr_stream& str, T& toread, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     uint32_t string_length = 0;
+   
+     read_swapped(str, string_length);
+   
+     if (string_length == 0 &&
+         str.status(serialization_status::illegal_field_value))
+         return;
+   
+     //the string length in the CDR stream includes the terminating NULL
+     //therefore the checks on the string length decrease it by 1
+   
+     if (N &&
+         string_length - 1 > N &&
+         str.status(serialization_status::read_bound_exceeded))
+         return;
+   
+     auto cursor = str.get_cursor();
+     toread.assign(static_cast<char*>(cursor), std::min<size_t>(string_length - 1, N ? N : SIZE_MAX));  //remove 1 for terminating NULL
+   
+     str.incr_position(string_length);
+   
+     //aligned to chars
+     str.alignment(1);
+   }
+   
+   template<typename T>
+   void write_string(basic_cdr_stream& str, const T& towrite, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     size_t string_length = towrite.length();
+     if (N &&
+         string_length > N) {
+       if (str.status(serialization_status::write_bound_exceeded))
+         return;
+     }
+   
+     //add 1 extra for terminating NULL
+     string_length++;
+   
+     write(str, uint32_t(string_length));
+   
+     memcpy(str.get_cursor(), towrite.c_str(), string_length);
+   
+     str.incr_position(string_length);
+   
+     //aligned to chars
+     str.alignment(1);
+   }
+   
+   template<typename T>
+   void write_string_swapped(basic_cdr_stream& str, const T& towrite, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     size_t string_length = towrite.length();
+     if (N &&
+         string_length > N) {
+       if (str.status(serialization_status::write_bound_exceeded))
+         return;
+     }
+   
+     //add 1 extra for terminating NULL
+     string_length++;
+   
+     write_swapped(str, uint32_t(string_length));
+   
+     memcpy(str.get_cursor(), towrite.c_str(), string_length);
+   
+     str.incr_position(string_length);
+   
+     //aligned to chars
+     str.alignment(1);
+   }
+   
+   template<typename T>
+   void move_string(basic_cdr_stream& str, const T& toincr, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     size_t string_length = toincr.length();
+   
+     if (N &&
+         string_length > N) {
+       if (str.status(serialization_status::move_bound_exceeded))
+         return;
+     }
+   
+     //add 1 extra for terminating NULL
+     string_length++;
+     move(str, uint32_t(string_length));
+   
+     str.incr_position(string_length);
+   
+     //aligned to chars
+     str.alignment(1);
+   }
+   
+   template<typename T>
+   inline void move_string_swapped(basic_cdr_stream& str, const T& toincr, size_t N)
+   {
+     move_string(str, toincr, N);
+   }
+   
+   template<typename T>
+   void max_string(basic_cdr_stream& str, const T& max_sz, size_t N)
+   {
+     if (str.abort_status())
+       return;
+   
+     (void)max_sz;
+   
+     if (str.position() == SIZE_MAX)
+       return;
+   
+     if (N == 0)
+     {
+       //unbounded string, theoretical length unlimited
+       str.position(SIZE_MAX);
+     }
+     else
+     {
+       //length field
+       max(str, uint32_t(0));
+   
+       //bounded string, length maximum N+1 characters
+       str.incr_position(N + 1);
+   
+       //aligned to chars
+       str.alignment(1);
+     }
+   }
+   
+   template<typename T>
+   inline void max_string_swapped(basic_cdr_stream& str, const T& max_sz, size_t N)
+   {
+     max_string(str, max_sz, N);
+   }
+   
+   }
+   }
+   }
+   }
+   }  /* namespace org / eclipse / cyclonedds / core / cdr */
+   #endif

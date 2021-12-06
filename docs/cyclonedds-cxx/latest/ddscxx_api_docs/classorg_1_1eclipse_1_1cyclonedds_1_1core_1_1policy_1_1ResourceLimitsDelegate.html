@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class ResourceLimitsDelegate &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class ResourceLimitsDelegate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-resourcelimitsdelegate">
+<span id="exhale-class-classorg-1-1eclipse-1-1cyclonedds-1-1core-1-1policy-1-1resourcelimitsdelegate"></span><h1>Class ResourceLimitsDelegate<a class="headerlink" href="#class-resourcelimitsdelegate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp.html#file-org-eclipse-cyclonedds-core-policy-policydelegate-hpp"><span class="std std-ref">File PolicyDelegate.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4coreE" title="org::eclipse::cyclonedds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policyE" title="org::eclipse::cyclonedds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate22ResourceLimitsDelegateERK22ResourceLimitsDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate22ResourceLimitsDelegateERK22ResourceLimitsDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate22ResourceLimitsDelegateERK22ResourceLimitsDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::ResourceLimitsDelegate__ResourceLimitsDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a33aafdef15ff95e5f088e88cb4eecae2"></span><span class="sig-name descname"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate22ResourceLimitsDelegateERK22ResourceLimitsDelegate" title="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::ResourceLimitsDelegate"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate22ResourceLimitsDelegateE7int32_t7int32_t7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate22ResourceLimitsDelegateE7int32_t7int32_t7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate22ResourceLimitsDelegateE7int32_t7int32_t7int32_t"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::ResourceLimitsDelegate__int32_t.int32_t.int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1aa66cd3e9f75a8103748d64cde84a9548"></span><span class="sig-name descname"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_samples</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_instances</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_samples_per_instance</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateaSERK22ResourceLimitsDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateaSERK22ResourceLimitsDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateaSERK22ResourceLimitsDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::assign-operator__ResourceLimitsDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a87bde5978290bc46112a9e61a6e4ccea"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE" title="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE" title="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate11max_samplesE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate11max_samplesE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate11max_samplesE7int32_t"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::max_samples__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1aba81e03f52af7241f0f20dabfacd8d1b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_samples</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">samples</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate11max_samplesEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate11max_samplesEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate11max_samplesEv"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::max_samplesC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a2b1603799823da327237f2f3dd5a2e19"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_samples</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13max_instancesE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13max_instancesE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13max_instancesE7int32_t"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::max_instances__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a376a5b7f997ec06a27c976e592f81907"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_instances</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_instances</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13max_instancesEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13max_instancesEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13max_instancesEv"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::max_instancesC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1ac344e389cfd1098b8596fb1af865681c"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_instances</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate24max_samples_per_instanceE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate24max_samples_per_instanceE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate24max_samples_per_instanceE7int32_t"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::max_samples_per_instance__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a194c0c7e80ff53b45e0fe4d3b0517be6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_samples_per_instance</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_samples_per_instance</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate24max_samples_per_instanceEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate24max_samples_per_instanceEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate24max_samples_per_instanceEv"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::max_samples_per_instanceC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a01a19da983d875c4c4b196b89d19861b"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_samples_per_instance</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateeqERK22ResourceLimitsDelegate">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateeqERK22ResourceLimitsDelegate"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateeqERK22ResourceLimitsDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::eq-operator__ResourceLimitsDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a473d0d3f7130df7a822d2d96acd60b23"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE" title="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate5checkEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate5checkEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate5checkEv"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::checkC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a10ec46cc8db50c67788b8f502844af91"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13check_againstERKN3org7eclipse10cyclonedds4core6policy15HistoryDelegateE">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13check_againstERKN3org7eclipse10cyclonedds4core6policy15HistoryDelegateE"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate13check_againstERKN3org7eclipse10cyclonedds4core6policy15HistoryDelegateE"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::check_against__org::eclipse::cyclonedds::core::policy::HistoryDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a3aa6960f7f7a2405f032fe8e6461b26b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check_against</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4coreE" title="org::eclipse::cyclonedds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policyE" title="org::eclipse::cyclonedds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegateE" title="org::eclipse::cyclonedds::core::policy::HistoryDelegate"><span class="n"><span class="pre">HistoryDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">history</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate14set_iso_policyEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::set_iso_policy__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1a54053d7d4aabb38a1a74df354b146bda"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_iso_policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate12set_c_policyEP9dds_qos_t">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate12set_c_policyEP9dds_qos_t"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegate12set_c_policyEP9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate::set_c_policy__dds_qos_tPC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1ResourceLimitsDelegate_1ae585cc9692c95eda7abadd77dcdbe5a6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_c_policy</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

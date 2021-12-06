@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File ReportUtils.hpp &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File ReportUtils.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/program_listing_file_org_eclipse_cyclonedds_core_ReportUtils.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-reportutils-hpp">
+<span id="program-listing-file-org-eclipse-cyclonedds-core-reportutils-hpp"></span><h1>Program Listing for File ReportUtils.hpp<a class="headerlink" href="#program-listing-for-file-reportutils-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_org_eclipse_cyclonedds_core_ReportUtils.hpp.html#file-org-eclipse-cyclonedds-core-reportutils-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">org/eclipse/cyclonedds/core/ReportUtils.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+
+
+<span class="cp">#ifndef CYCLONEDDS_CORE_REPORT_UTILS_HPP_</span>
+<span class="cp">#define CYCLONEDDS_CORE_REPORT_UTILS_HPP_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;org/eclipse/cyclonedds/core/config.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/Exception.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/dds.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ios&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdarg.h&gt;</span><span class="cp"></span>
+
+<span class="c1">//#define _OS_WARNING 2</span>
+<span class="c1">//#define _OS_ERROR 4</span>
+
+<span class="cp">#define ISOCPP_ERROR                       org::eclipse::cyclonedds::core::utils::error_code</span>
+<span class="cp">#define ISOCPP_UNSUPPORTED_ERROR           org::eclipse::cyclonedds::core::utils::unsupported_error_code</span>
+<span class="cp">#define ISOCPP_INVALID_ARGUMENT_ERROR      org::eclipse::cyclonedds::core::utils::invalid_argument_code</span>
+<span class="cp">#define ISOCPP_PRECONDITION_NOT_MET_ERROR  org::eclipse::cyclonedds::core::utils::precondition_not_met_error_code</span>
+<span class="cp">#define ISOCPP_OUT_OF_RESOURCES_ERROR      org::eclipse::cyclonedds::core::utils::out_of_resources_error_code</span>
+<span class="cp">#define ISOCPP_NOT_ENABLED_ERROR           org::eclipse::cyclonedds::core::utils::not_enabled_error_code</span>
+<span class="cp">#define ISOCPP_IMMUTABLE_POLICY_ERROR      org::eclipse::cyclonedds::core::utils::immutable_policy_error_code</span>
+<span class="cp">#define ISOCPP_INCONSISTENT_POLICY_ERROR   org::eclipse::cyclonedds::core::utils::inconsistent_policy_error_code</span>
+<span class="cp">#define ISOCPP_ALREADY_CLOSED_ERROR        org::eclipse::cyclonedds::core::utils::already_closed_error_code</span>
+<span class="cp">#define ISOCPP_TIMEOUT_ERROR               org::eclipse::cyclonedds::core::utils::timeout_error_code</span>
+<span class="cp">#define ISOCPP_NO_DATA_ERROR               org::eclipse::cyclonedds::core::utils::no_data_error_code</span>
+<span class="cp">#define ISOCPP_ILLEGAL_OPERATION_ERROR     org::eclipse::cyclonedds::core::utils::illegal_operation_error_code</span>
+<span class="cp">#define ISOCPP_NULL_REFERENCE_ERROR        org::eclipse::cyclonedds::core::utils::null_reference_error_code</span>
+
+<span class="cm">/* \brief OS_FUNCTION provides undecorated function name of current function</span>
+<span class="cm"> *</span>
+<span class="cm"> * Behavior of OS_FUNCTION outside a function is undefined. Note that</span>
+<span class="cm"> * implementations differ across compilers and compiler versions. It might be</span>
+<span class="cm"> * implemented as either a string literal or a constant variable.</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#if defined(__STDC_VERSION__) &amp;&amp; (__STDC_VERSION__ &gt;= 199901)</span>
+<span class="cp">#   define OS_FUNCTION __func__</span>
+<span class="cp">#elif defined(__cplusplus) &amp;&amp; (__cplusplus &gt;= 201103)</span>
+<span class="cp">#   define OS_FUNCTION __func__</span>
+<span class="cp">#elif defined(__GNUC__)</span>
+<span class="cp">#   define OS_FUNCTION __FUNCTION__</span>
+<span class="cp">#elif defined(__clang__)</span>
+<span class="cp">#   define OS_FUNCTION __FUNCTION__</span>
+<span class="cp">#elif defined(__ghs__)</span>
+<span class="cp">#   define OS_FUNCTION __FUNCTION__</span>
+<span class="cp">#elif (defined(__SUNPRO_C) || defined(__SUNPRO_CC))</span>
+<span class="cm">/* Solaris Studio had support for __func__ before it supported __FUNCTION__.</span>
+<span class="cm">   Compiler flag -features=extensions is required on older versions. */</span><span class="w"></span>
+<span class="cp">#   define OS_FUNCTION __func__</span>
+<span class="cp">#elif defined(__FUNCTION__)</span>
+<span class="cm">/* Visual Studio */</span><span class="w"></span>
+<span class="cp">#   define OS_FUNCTION __FUNCTION__</span>
+<span class="cp">#elif defined(__vxworks)</span>
+<span class="cm">/* At least versions 2.9.6 and 3.3.4 of the GNU C Preprocessor only define</span>
+<span class="cm">   __GNUC__ if the entire GNU C compiler is in use. VxWorks 5.5 targets invoke</span>
+<span class="cm">   the preprocessor separately resulting in __GNUC__ not being defined. */</span><span class="w"></span>
+<span class="cp">#   define OS_FUNCTION __FUNCTION__</span>
+<span class="cp">#else</span>
+<span class="cp">#   warning &quot;OS_FUNCTION is not supported&quot;</span>
+<span class="cp">#endif</span>
+
+<span class="cm">/* \brief OS_PRETTY_FUNCTION provides function signature of current function</span>
+<span class="cm"> *</span>
+<span class="cm"> * See comments on OS_FUNCTION for details.</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#if defined(__GNUC__)</span>
+<span class="cp">#   define OS_PRETTY_FUNCTION __PRETTY_FUNCTION__</span>
+<span class="cp">#elif defined(__clang__)</span>
+<span class="cp">#   define OS_PRETTY_FUNCTION __PRETTY_FUNCTION__</span>
+<span class="cp">#elif defined(__ghs__)</span>
+<span class="cp">#   define OS_PRETTY_FUNCTION __PRETTY_FUNCTION__</span>
+<span class="cp">#elif (defined(__SUNPRO_C) &amp;&amp; __SUNPRO_C &gt;= 0x5100)</span>
+<span class="cm">/* Solaris Studio supports __PRETTY_FUNCTION__ in C since version 12.1 */</span><span class="w"></span>
+<span class="cp">#   define OS_PRETTY_FUNCTION __PRETTY_FUNCTION__</span>
+<span class="cp">#elif (defined(__SUNPRO_CC) &amp;&amp; __SUNPRO_CC &gt;= 0x5120)</span>
+<span class="cm">/* Solaris Studio supports __PRETTY_FUNCTION__ in C++ since version 12.3 */</span><span class="w"></span>
+<span class="cp">#   define OS_PRETTY_FUNCTION __PRETTY_FUNCTION__</span>
+<span class="cp">#elif defined(__FUNCSIG__)</span>
+<span class="cm">/* Visual Studio */</span><span class="w"></span>
+<span class="cp">#   define OS_PRETTY_FUNCTION __FUNCSIG__</span>
+<span class="cp">#elif defined(__vxworks)</span>
+<span class="cm">/* See comments on __vxworks macro above. */</span><span class="w"></span>
+<span class="cp">#   define OS_PRETTY_FUNCTION __PRETTY_FUNCTION__</span>
+<span class="cp">#else</span>
+<span class="cm">/* Do not warn user about OS_PRETTY_FUNCTION falling back to OS_FUNCTION.</span>
+<span class="cm">#   warning &quot;OS_PRETTY_FUNCTION is not supported, using OS_FUNCTION&quot;</span>
+<span class="cm">*/</span><span class="w"></span>
+<span class="cp">#   define OS_PRETTY_FUNCTION OS_FUNCTION</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#define ISOCPP_DDSC_RESULT_CHECK_AND_THROW(code, ...)      \</span>
+<span class="cp">    org::eclipse::cyclonedds::core::utils::check_ddsc_result_and_throw_exception(    \</span>
+<span class="cp">        static_cast&lt;dds_return_t&gt;(code),              \</span>
+<span class="cp">        __FILE__,                                     \</span>
+<span class="cp">        __LINE__,                                     \</span>
+<span class="cp">        OS_PRETTY_FUNCTION,                           \</span>
+<span class="cp">        __VA_ARGS__)                                  \</span>
+
+<span class="cp">#define ISOCPP_THROW_EXCEPTION(code, ...)             \</span>
+<span class="cp">    org::eclipse::cyclonedds::core::utils::throw_exception(    \</span>
+<span class="cp">        (code),                                       \</span>
+<span class="cp">        __FILE__,                                     \</span>
+<span class="cp">        __LINE__,                                     \</span>
+<span class="cp">        OS_PRETTY_FUNCTION,                           \</span>
+<span class="cp">        __VA_ARGS__)                                  \</span>
+
+<span class="cp">#define ISOCPP_BOOL_CHECK_AND_THROW(test, code, ...)  \</span>
+<span class="cp">    if (!(test)) {                                      \</span>
+<span class="cp">        ISOCPP_THROW_EXCEPTION(code, __VA_ARGS__);    \</span>
+<span class="cp">    }</span>
+
+
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">org</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">eclipse</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">cyclonedds</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">core</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">utils</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">error_code</span><span class="w">                       </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">unsupported_error_code</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">invalid_argument_code</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">precondition_not_met_error_code</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">out_of_resources_error_code</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">not_enabled_error_code</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">immutable_policy_error_code</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">inconsistent_policy_error_code</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">already_closed_error_code</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">timeout_error_code</span><span class="w">               </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">no_data_error_code</span><span class="w">               </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">illegal_operation_error_code</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">null_reference_error_code</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">;</span><span class="w"></span>
+
+
+
+<span class="n">OMG_DDS_API</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">report</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">reportType</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">file</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">signature</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">...);</span><span class="w"></span>
+
+<span class="n">OMG_DDS_API</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">throw_exception</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">file</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">signature</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">...);</span><span class="w"></span>
+
+<span class="n">OMG_DDS_API</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="n">check_ddsc_result_and_throw_exception</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">dds_return_t</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">file</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">signature</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">format</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">...);</span><span class="w"></span>
+
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#endif </span><span class="cm">/* CYCLONEDDS_CORE_REPORT_UTILS_HPP_ */</span><span class="cp"></span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

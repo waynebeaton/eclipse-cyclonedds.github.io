@@ -1,0 +1,13 @@
+.. _exhale_function_dds_2topic_2detail_2discovery_8hpp_1a62826d0fe35c15fd1f85a97bacc8c005:
+
+Template Function dds::topic::discover_all
+==========================================
+
+- Defined in :ref:`file_dds_topic_detail_discovery.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: dds::topic::discover_all(const dds::domain::DomainParticipant&, BinIterator)

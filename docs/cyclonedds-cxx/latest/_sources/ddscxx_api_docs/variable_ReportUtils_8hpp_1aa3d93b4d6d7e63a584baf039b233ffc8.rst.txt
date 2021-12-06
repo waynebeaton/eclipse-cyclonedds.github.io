@@ -1,0 +1,13 @@
+.. _exhale_variable_ReportUtils_8hpp_1aa3d93b4d6d7e63a584baf039b233ffc8:
+
+Variable org::eclipse::cyclonedds::core::utils::immutable_policy_error_code
+===========================================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::utils::immutable_policy_error_code

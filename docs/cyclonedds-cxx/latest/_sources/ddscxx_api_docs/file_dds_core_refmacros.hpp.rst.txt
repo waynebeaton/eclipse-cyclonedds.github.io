@@ -1,0 +1,74 @@
+
+.. _file_dds_core_refmacros.hpp:
+
+File refmacros.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core>` (``dds/core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/refmacros.hpp``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_refmacros.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/macros.hpp`` (:ref:`file_dds_core_macros.hpp`)
+
+- ``dds/core/ref_traits.hpp`` (:ref:`file_dds_core_ref_traits.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_Reference.hpp`
+
+- :ref:`file_dds_sub_AnyDataReaderListener.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_DDScObjectDelegate.hpp`
+
+- :ref:`file_org_eclipse_cyclonedds_core_ObjectDelegate.hpp`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_refmacros_8hpp_1a90649067f7ea0a8ba6bb27268019d42a`
+
+- :ref:`exhale_define_refmacros_8hpp_1a77035440da9a788fdb0a882a73b3e072`
+
+- :ref:`exhale_define_refmacros_8hpp_1abddd9cfadbe14b4fe3dab3408f14087a`
+
+- :ref:`exhale_define_refmacros_8hpp_1a0d9a9706bab2b2d4f7babd5b7d0737df`
+
+- :ref:`exhale_define_refmacros_8hpp_1ad6626c72183a78354ff845b962a83359`
+
+- :ref:`exhale_define_refmacros_8hpp_1a4fc31acfcc108a018d948c4d1196f6f3`
+
+- :ref:`exhale_define_refmacros_8hpp_1a354f801d94a385e9ae4bdc6211631daa`
+
+- :ref:`exhale_define_refmacros_8hpp_1a6c30a640330583aea8045f00221aa886`
+
+- :ref:`exhale_define_refmacros_8hpp_1aa6ea322a8b8b609f385326bd20d367f9`
+

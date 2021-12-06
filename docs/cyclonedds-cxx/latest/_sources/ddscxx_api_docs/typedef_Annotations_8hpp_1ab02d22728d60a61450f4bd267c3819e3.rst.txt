@@ -1,0 +1,13 @@
+.. _exhale_typedef_Annotations_8hpp_1ab02d22728d60a61450f4bd267c3819e3:
+
+Typedef dds::core::xtypes::BitsetAnnotation
+===========================================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotations.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: dds::core::xtypes::BitsetAnnotation

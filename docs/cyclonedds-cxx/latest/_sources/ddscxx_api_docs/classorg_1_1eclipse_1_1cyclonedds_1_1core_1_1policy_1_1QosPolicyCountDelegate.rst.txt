@@ -1,0 +1,16 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1QosPolicyCountDelegate:
+
+Class QosPolicyCountDelegate
+============================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_policy_QosPolicyCountDelegate.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::core::policy::QosPolicyCountDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File CorePolicyImpl.hpp &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Program Listing for File CorePolicyImpl.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/program_listing_file_dds_core_policy_detail_CorePolicyImpl.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-corepolicyimpl-hpp">
+<span id="program-listing-file-dds-core-policy-detail-corepolicyimpl-hpp"></span><h1>Program Listing for File CorePolicyImpl.hpp<a class="headerlink" href="#program-listing-for-file-corepolicyimpl-hpp" title="Permalink to this headline"></a></h1>
+<p>↰ <a class="reference internal" href="file_dds_core_policy_detail_CorePolicyImpl.hpp.html#file-dds-core-policy-detail-corepolicyimpl-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">dds/core/policy/detail/CorePolicyImpl.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others</span>
+<span class="cm"> *</span>
+<span class="cm"> * This program and the accompanying materials are made available under the</span>
+<span class="cm"> * terms of the Eclipse Public License v. 2.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License</span>
+<span class="cm"> * v. 1.0 which is available at</span>
+<span class="cm"> * http://www.eclipse.org/org/documents/edl-v10.php.</span>
+<span class="cm"> *</span>
+<span class="cm"> * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#ifndef CYCLONEDDS_DDS_CORE_POLICY_TCOREPOLICY_IMPL_HPP_</span>
+<span class="cp">#define CYCLONEDDS_DDS_CORE_POLICY_TCOREPOLICY_IMPL_HPP_</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * OMG PSM class declaration</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dds/core/policy/CorePolicy.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;org/eclipse/cyclonedds/core/ReportUtils.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">// Implementation</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">dds</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">core</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">policy</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="c1">//UserData</span>
+
+
+<span class="n">UserData</span><span class="o">::</span><span class="n">UserData</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">UserData</span><span class="o">::</span><span class="n">UserData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="n">UserData</span><span class="o">::</span><span class="n">UserData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_begin</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_end</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">value_begin</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">value_end</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">UserData</span><span class="o">::</span><span class="n">UserData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">UserData</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">(</span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">OCTET_ITER</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">UserData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">UserData</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">begin</span><span class="p">,</span><span class="w"> </span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">begin</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">end</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="w"> </span><span class="n">UserData</span><span class="o">::</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">UserData</span><span class="o">::</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">UserData</span><span class="o">::</span><span class="n">end</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//GroupData</span>
+
+
+<span class="n">GroupData</span><span class="o">::</span><span class="n">GroupData</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">GroupData</span><span class="o">::</span><span class="n">GroupData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">GroupData</span><span class="o">::</span><span class="n">GroupData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">GroupData</span><span class="o">::</span><span class="n">GroupData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_begin</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_end</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">value_begin</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">value_end</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">GroupData</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">(</span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">OCTET_ITER</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">GroupData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">GroupData</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">begin</span><span class="p">,</span><span class="w"> </span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">begin</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">end</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="w"> </span><span class="n">GroupData</span><span class="o">::</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">GroupData</span><span class="o">::</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">GroupData</span><span class="o">::</span><span class="n">end</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//TopicData</span>
+
+
+<span class="n">TopicData</span><span class="o">::</span><span class="n">TopicData</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">TopicData</span><span class="o">::</span><span class="n">TopicData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">TopicData</span><span class="o">::</span><span class="n">TopicData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="n">TopicData</span><span class="o">::</span><span class="n">TopicData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_begin</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">value_end</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">value_begin</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">value_end</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicData</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sequence</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">(</span><span class="n">sequence</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">OCTET_ITER</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">TopicData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TopicData</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">begin</span><span class="p">,</span><span class="w"> </span><span class="n">OCTET_ITER</span><span class="w"> </span><span class="n">end</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">begin</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">end</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">ByteSeq</span><span class="w"> </span><span class="n">TopicData</span><span class="o">::</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">TopicData</span><span class="o">::</span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="o">*</span><span class="w"> </span><span class="n">TopicData</span><span class="o">::</span><span class="n">end</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">ISOCPP_THROW_EXCEPTION</span><span class="p">(</span><span class="n">ISOCPP_ERROR</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Function not currently supported&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//EntityFactory</span>
+
+
+<span class="n">EntityFactory</span><span class="o">::</span><span class="n">EntityFactory</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">autoenable_created_entities</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">autoenable_created_entities</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">EntityFactory</span><span class="o">::</span><span class="n">EntityFactory</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityFactory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">EntityFactory</span><span class="o">&amp;</span><span class="w"> </span><span class="n">EntityFactory</span><span class="o">::</span><span class="n">autoenable_created_entities</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">autoenable_created_entities</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">auto_enable</span><span class="p">(</span><span class="n">autoenable_created_entities</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">EntityFactory</span><span class="o">::</span><span class="n">autoenable_created_entities</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">auto_enable</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">EntityFactory</span><span class="w"> </span><span class="n">EntityFactory</span><span class="o">::</span><span class="n">AutoEnable</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">EntityFactory</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">EntityFactory</span><span class="w"> </span><span class="n">EntityFactory</span><span class="o">::</span><span class="n">ManuallyEnable</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">EntityFactory</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//TransportPriority</span>
+
+
+<span class="n">TransportPriority</span><span class="o">::</span><span class="n">TransportPriority</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">priority</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">priority</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">TransportPriority</span><span class="o">::</span><span class="n">TransportPriority</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TransportPriority</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">TransportPriority</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TransportPriority</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">priority</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">(</span><span class="n">priority</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">TransportPriority</span><span class="o">::</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">value</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//TLifeSpan</span>
+
+
+<span class="n">Lifespan</span><span class="o">::</span><span class="n">Lifespan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Lifespan</span><span class="o">::</span><span class="n">Lifespan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Lifespan</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Lifespan</span><span class="o">::</span><span class="n">duration</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">duration</span><span class="p">(</span><span class="n">duration</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">Lifespan</span><span class="o">::</span><span class="n">duration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">duration</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//Deadline</span>
+
+
+<span class="n">Deadline</span><span class="o">::</span><span class="n">Deadline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">period</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">period</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Deadline</span><span class="o">::</span><span class="n">Deadline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Deadline</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Deadline</span><span class="o">::</span><span class="n">period</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">period</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">period</span><span class="p">(</span><span class="n">period</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">Deadline</span><span class="o">::</span><span class="n">period</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">period</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//LatencyBudget</span>
+
+
+<span class="n">LatencyBudget</span><span class="o">::</span><span class="n">LatencyBudget</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">LatencyBudget</span><span class="o">::</span><span class="n">LatencyBudget</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">LatencyBudget</span><span class="o">&amp;</span><span class="w"> </span><span class="n">LatencyBudget</span><span class="o">::</span><span class="n">duration</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">duration</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">duration</span><span class="p">(</span><span class="n">duration</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">LatencyBudget</span><span class="o">::</span><span class="n">duration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">duration</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//TimeBasedFilter</span>
+
+<span class="n">TimeBasedFilter</span><span class="o">::</span><span class="n">TimeBasedFilter</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">minimum_separation</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">minimum_separation</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">TimeBasedFilter</span><span class="o">::</span><span class="n">TimeBasedFilter</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">TimeBasedFilter</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">TimeBasedFilter</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TimeBasedFilter</span><span class="o">::</span><span class="n">minimum_separation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">minimum_separation</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">min_separation</span><span class="p">(</span><span class="n">minimum_separation</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">TimeBasedFilter</span><span class="o">::</span><span class="n">minimum_separation</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">min_separation</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//Partition</span>
+
+
+<span class="n">Partition</span><span class="o">::</span><span class="n">Partition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Partition</span><span class="o">::</span><span class="n">Partition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">StringSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">names</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">names</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Partition</span><span class="o">::</span><span class="n">Partition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Partition</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Partition</span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">Partition</span><span class="o">::</span><span class="n">name</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Partition</span><span class="o">&amp;</span><span class="w"></span>
+<span class="n">Partition</span><span class="o">::</span><span class="n">name</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">StringSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">names</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">name</span><span class="p">(</span><span class="n">names</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">StringSeq</span><span class="w"></span>
+<span class="n">Partition</span><span class="o">::</span><span class="n">name</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">name</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#ifdef OMG_DDS_OWNERSHIP_SUPPORT</span>
+
+<span class="c1">//Ownership</span>
+
+
+<span class="n">Ownership</span><span class="o">::</span><span class="n">Ownership</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">kind</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Ownership</span><span class="o">::</span><span class="n">Ownership</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Ownership</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Ownership</span><span class="o">::</span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">(</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">Ownership</span><span class="o">::</span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Ownership</span><span class="w"> </span><span class="n">Ownership</span><span class="o">::</span><span class="n">Exclusive</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Ownership</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">EXCLUSIVE</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Ownership</span><span class="w"> </span><span class="n">Ownership</span><span class="o">::</span><span class="n">Shared</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Ownership</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">OwnershipKind</span><span class="o">::</span><span class="n">SHARED</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//OwnershipStrength</span>
+
+<span class="n">OwnershipStrength</span><span class="o">::</span><span class="n">OwnershipStrength</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">strength</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">strength</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">OwnershipStrength</span><span class="o">::</span><span class="n">OwnershipStrength</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">OwnershipStrength</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">OwnershipStrength</span><span class="o">::</span><span class="n">value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">strength</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">OwnershipStrength</span><span class="o">&amp;</span><span class="w"> </span><span class="n">OwnershipStrength</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">strength</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">strength</span><span class="p">(</span><span class="n">strength</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// OMG_DDS_OWNERSHIP_SUPPORT</span>
+
+<span class="c1">//TWriterDataLifeCycle</span>
+
+<span class="n">WriterDataLifecycle</span><span class="o">::</span><span class="n">WriterDataLifecycle</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">autodispose_unregistered_instances</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">autodispose_unregistered_instances</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">WriterDataLifecycle</span><span class="o">::</span><span class="n">WriterDataLifecycle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="o">::</span><span class="n">autodispose_unregistered_instances</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">autodispose</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">WriterDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="o">::</span><span class="n">autodispose_unregistered_instances</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">autodispose_unregistered_instances</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">autodispose</span><span class="p">(</span><span class="n">autodispose_unregistered_instances</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">WriterDataLifecycle</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="o">::</span><span class="n">AutoDisposeUnregisteredInstances</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">WriterDataLifecycle</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="o">::</span><span class="n">ManuallyDisposeUnregisteredInstances</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">WriterDataLifecycle</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//ReaderDataLifecycle</span>
+
+<span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">ReaderDataLifecycle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">,</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">ReaderDataLifecycle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">(</span><span class="n">autopurge_nowriter_samples_delay</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ReaderDataLifecycle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">(</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ReaderDataLifecycle</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">NoAutoPurgeDisposedSamples</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ReaderDataLifecycle</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="o">::</span><span class="n">AutoPurgeDisposedSamples</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">autopurge_disposed_samples_delay</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ReaderDataLifecycle</span><span class="p">().</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">(</span><span class="n">autopurge_disposed_samples_delay</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//Durability</span>
+
+
+<span class="n">Durability</span><span class="o">::</span><span class="n">Durability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">kind</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Durability</span><span class="o">::</span><span class="n">Durability</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Durability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Durability</span><span class="o">::</span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">(</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">Durability</span><span class="o">::</span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Durability</span><span class="w"> </span><span class="n">Durability</span><span class="o">::</span><span class="n">Volatile</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Durability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">VOLATILE</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Durability</span><span class="w"> </span><span class="n">Durability</span><span class="o">::</span><span class="n">TransientLocal</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Durability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">TRANSIENT_LOCAL</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Durability</span><span class="w"> </span><span class="n">Durability</span><span class="o">::</span><span class="n">Transient</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Durability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">TRANSIENT</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Durability</span><span class="w"> </span><span class="n">Durability</span><span class="o">::</span><span class="n">Persistent</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Durability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DurabilityKind</span><span class="o">::</span><span class="n">PERSISTENT</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//Presentation</span>
+
+<span class="n">Presentation</span><span class="o">::</span><span class="n">Presentation</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">access_scope</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">access_scope</span><span class="p">,</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Presentation</span><span class="o">::</span><span class="n">Presentation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">access_scope</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">access_scope</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">access_scope</span><span class="p">(</span><span class="n">access_scope</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">access_scope</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">access_scope</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">coherent_access</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">coherent_access</span><span class="p">(</span><span class="n">coherent_access</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">coherent_access</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">coherent_access</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Presentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">ordered_access</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">ordered_access</span><span class="p">(</span><span class="n">ordered_access</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">ordered_access</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">ordered_access</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Presentation</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">GroupAccessScope</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Presentation</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">GROUP</span><span class="p">,</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Presentation</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">InstanceAccessScope</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Presentation</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">INSTANCE</span><span class="p">,</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Presentation</span><span class="w"> </span><span class="n">Presentation</span><span class="o">::</span><span class="n">TopicAccessScope</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Presentation</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">PresentationAccessScopeKind</span><span class="o">::</span><span class="n">TOPIC</span><span class="p">,</span><span class="w"> </span><span class="n">coherent_access</span><span class="p">,</span><span class="w"> </span><span class="n">ordered_access</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//Reliability</span>
+
+<span class="n">Reliability</span><span class="o">::</span><span class="n">Reliability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w">  </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">kind</span><span class="p">,</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Reliability</span><span class="o">::</span><span class="n">Reliability</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Reliability</span><span class="o">::</span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">(</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">Reliability</span><span class="o">::</span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Reliability</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Reliability</span><span class="o">::</span><span class="n">max_blocking_time</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_blocking_time</span><span class="p">(</span><span class="n">max_blocking_time</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">Reliability</span><span class="o">::</span><span class="n">max_blocking_time</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_blocking_time</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Reliability</span><span class="w"> </span><span class="n">Reliability</span><span class="o">::</span><span class="n">Reliable</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Reliability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">RELIABLE</span><span class="p">,</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Reliability</span><span class="w"> </span><span class="n">Reliability</span><span class="o">::</span><span class="n">BestEffort</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Reliability</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">ReliabilityKind</span><span class="o">::</span><span class="n">BEST_EFFORT</span><span class="p">,</span><span class="w"> </span><span class="n">max_blocking_time</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//DestinationOrder</span>
+
+
+<span class="n">DestinationOrder</span><span class="o">::</span><span class="n">DestinationOrder</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">kind</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DestinationOrder</span><span class="o">::</span><span class="n">DestinationOrder</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DestinationOrder</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="o">::</span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">(</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="o">::</span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DestinationOrder</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="o">::</span><span class="n">SourceTimestamp</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">BY_SOURCE_TIMESTAMP</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DestinationOrder</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="o">::</span><span class="n">ReceptionTimestamp</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">DestinationOrder</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DestinationOrderKind</span><span class="o">::</span><span class="n">BY_RECEPTION_TIMESTAMP</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//History</span>
+
+<span class="n">History</span><span class="o">::</span><span class="n">History</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">depth</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">kind</span><span class="p">,</span><span class="w"> </span><span class="n">depth</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">History</span><span class="o">::</span><span class="n">History</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">History</span><span class="o">::</span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="n">History</span><span class="o">::</span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">(</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">History</span><span class="o">::</span><span class="n">depth</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">depth</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">History</span><span class="o">&amp;</span><span class="w"> </span><span class="n">History</span><span class="o">::</span><span class="n">depth</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">depth</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">depth</span><span class="p">(</span><span class="n">depth</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">History</span><span class="w"> </span><span class="n">History</span><span class="o">::</span><span class="n">KeepAll</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">History</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">KEEP_ALL</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">History</span><span class="w"> </span><span class="n">History</span><span class="o">::</span><span class="n">KeepLast</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">depth</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">History</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">KEEP_LAST</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">depth</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//ResourceLimits</span>
+
+<span class="n">ResourceLimits</span><span class="o">::</span><span class="n">ResourceLimits</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">,</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">,</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w">  </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">max_samples</span><span class="p">,</span><span class="w"> </span><span class="n">max_instances</span><span class="p">,</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ResourceLimits</span><span class="o">::</span><span class="n">ResourceLimits</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">::</span><span class="n">max_samples</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples</span><span class="p">(</span><span class="n">max_samples</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">::</span><span class="n">max_samples</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">::</span><span class="n">max_instances</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_instances</span><span class="p">(</span><span class="n">max_instances</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">::</span><span class="n">max_instances</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_instances</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">ResourceLimits</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">::</span><span class="n">max_samples_per_instance</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples_per_instance</span><span class="p">(</span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">ResourceLimits</span><span class="o">::</span><span class="n">max_samples_per_instance</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples_per_instance</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">//Liveliness</span>
+
+<span class="n">Liveliness</span><span class="o">::</span><span class="n">Liveliness</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">kind</span><span class="p">,</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Liveliness</span><span class="o">::</span><span class="n">Liveliness</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">::</span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">(</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">::</span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">kind</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Liveliness</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">::</span><span class="n">lease_duration</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">lease_duration</span><span class="p">(</span><span class="n">lease_duration</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">::</span><span class="n">lease_duration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">lease_duration</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Liveliness</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">::</span><span class="n">Automatic</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Liveliness</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">AUTOMATIC</span><span class="p">,</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Liveliness</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">::</span><span class="n">ManualByParticipant</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Liveliness</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">MANUAL_BY_PARTICIPANT</span><span class="p">,</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">Liveliness</span><span class="w"> </span><span class="n">Liveliness</span><span class="o">::</span><span class="n">ManualByTopic</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Liveliness</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">LivelinessKind</span><span class="o">::</span><span class="n">MANUAL_BY_TOPIC</span><span class="p">,</span><span class="w"> </span><span class="n">lease_duration</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="cp">#ifdef OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+<span class="c1">//DurabilityService</span>
+
+
+<span class="n">DurabilityService</span><span class="o">::</span><span class="n">DurabilityService</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">service_cleanup_delay</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">history_kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">history_depth</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">service_cleanup_delay</span><span class="p">,</span><span class="w"></span>
+<span class="w">                          </span><span class="n">history_kind</span><span class="p">,</span><span class="w"></span>
+<span class="w">                          </span><span class="n">history_depth</span><span class="p">,</span><span class="w"></span>
+<span class="w">                          </span><span class="n">max_samples</span><span class="p">,</span><span class="w"></span>
+<span class="w">                          </span><span class="n">max_instances</span><span class="p">,</span><span class="w"></span>
+<span class="w">                          </span><span class="n">max_samples_per_instance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DurabilityService</span><span class="o">::</span><span class="n">DurabilityService</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">service_cleanup_delay</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="o">&amp;</span><span class="w"> </span><span class="n">service_cleanup_delay</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">service_cleanup_delay</span><span class="p">(</span><span class="n">service_cleanup_delay</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">service_cleanup_delay</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">service_cleanup_delay</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">history_kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">history_kind</span><span class="p">(</span><span class="n">kind</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">HistoryKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">history_kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">history_kind</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">history_depth</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">history_depth</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">history_depth</span><span class="p">(</span><span class="n">history_depth</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">history_depth</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">history_depth</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">max_samples</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples</span><span class="p">(</span><span class="n">max_samples</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">max_samples</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">max_instances</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_instances</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_instances</span><span class="p">(</span><span class="n">max_instances</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">max_instances</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_instances</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="n">DurabilityService</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">max_samples_per_instance</span><span class="p">(</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">max_samples_per_instance</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples_per_instance</span><span class="p">(</span><span class="n">max_samples_per_instance</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+
+<span class="kt">int32_t</span><span class="w"> </span><span class="n">DurabilityService</span><span class="o">::</span><span class="n">max_samples_per_instance</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">delegate</span><span class="p">().</span><span class="n">max_samples_per_instance</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// OMG_DDS_PERSISTENCE_SUPPORT</span>
+
+
+<span class="cp">#ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT</span>
+
+<span class="c1">//DataRepresentation</span>
+
+<span class="n">DataRepresentation</span><span class="o">::</span><span class="n">DataRepresentation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DataRepresentationIdSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+
+<span class="n">DataRepresentation</span><span class="o">::</span><span class="n">DataRepresentation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">DataRepresentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">Value</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">delegate</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="n">DataRepresentation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">DataRepresentation</span><span class="o">::</span><span class="n">value</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DataRepresentationIdSeq</span><span class="o">&amp;</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
+
+<span class="k">const</span><span class="w"> </span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">DataRepresentationIdSeq</span><span class="w"> </span><span class="nf">DataRepresentation::value</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// defined(OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT)</span>
+
+<span class="cp">#ifdef OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT</span>
+
+<span class="c1">//TypeConsistencyEnforcement</span>
+
+<span class="n">TypeConsistencyEnforcement</span><span class="o">::</span><span class="n">TypeConsistencyEnforcement</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TypeConsistencyEnforcementKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">kind</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="n">TypeConsistencyEnforcement</span><span class="o">&amp;</span><span class="w"> </span><span class="n">TypeConsistencyEnforcement</span><span class="o">::</span><span class="n">kind</span><span class="p">(</span><span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TypeConsistencyEnforcementKind</span><span class="o">::</span><span class="n">Typekind</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="n">dds</span><span class="o">::</span><span class="n">core</span><span class="o">::</span><span class="n">policy</span><span class="o">::</span><span class="n">TypeConsistencyEnforcementKind</span><span class="o">::</span><span class="n">Type</span><span class="w"> </span><span class="n">TypeConsistencyEnforcement</span><span class="o">::</span><span class="n">kind</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="cp">#endif  </span><span class="c1">// defined(OMG_DDS_EXTENSIBLE_AND_DYNAMIC_TOPIC_TYPE_SUPPORT)</span>
+
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// End of implementation</span>
+<span class="c1">// OMG PSM class declaration</span>
+
+<span class="cp">#endif </span><span class="cm">/* CYCLONEDDS_DDS_CORE_POLICY_TCOREPOLICY_IMPL_HPP_ */</span><span class="cp"></span>
+<span class="c1">// OMG PSM class declaration</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

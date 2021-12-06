@@ -1,0 +1,106 @@
+
+.. _program_listing_file_dds_core_xtypes_MemberType.hpp:
+
+Program Listing for File MemberType.hpp
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_core_xtypes_MemberType.hpp>` (``dds/core/xtypes/MemberType.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /* Copyright 2010, Object Management Group, Inc.
+   * Copyright 2010, PrismTech, Corp.
+   * Copyright 2010, Real-Time Innovations, Inc.
+   * All rights reserved.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   *     http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   */
+   #ifndef OMG_DDS_CORE_XTYPES_TMEMBER_TYPE_HPP
+   #define OMG_DDS_CORE_XTYPES_TMEMBER_TYPE_HPP
+   
+   namespace dds
+   {
+   namespace core
+   {
+   namespace xtypes
+   {
+   
+   class MemberType;
+   
+   template <typename T>
+   bool isOptional(const MemberType<T>& m);
+   
+   template <typename T>
+   bool isShared(const MemberType<T>& m);
+   
+   template <typename T>
+   bool isKey(const MemberType<T>& m);
+   
+   template <typename T>
+   bool isMustUnderstand(const MemberType<T>& m);
+   
+   template <typename T>
+   bool isBitset(const MemberType<T>& m);
+   
+   template <typename T>
+   bool hasBitbound(const MemberType<T>& m);
+   
+   template <typename T>
+   int32_t getBitbound(const MemberType<T>& m);
+   
+   template <typename T>
+   bool hasId(const MemberType<T>& m);
+   
+   template <typename T>
+   int32_t getId(const MemberType<T>& m);
+   }
+   }
+   }
+   
+   class dds::core::xtypes::MemberType : public dds::core::Reference
+   {
+   public:
+       OMG_DDS_REF_TYPE(MemberType, dds::core::Reference)
+   
+   public:
+       MemberType(const std::string& name, const dds::core::xtypes::DynamicType& type);
+   
+       MemberType(const std::string& name,
+                   const dds::core::xtypes::DynamicType& type,
+                   const Annotation& annotation
+                  );
+   
+       template <typename AnnotationIter>
+       MemberType(const std::string& name,
+                   const dds::core::xtypes::DynamicType& type,
+                   const AnnotationIter& begin,
+                   const AnnotationIter& end);
+   
+   
+       MemberType(const std::string& name,
+                   const dds::core::xtypes::DynamicType& type,
+                   const std::vector<Annotation>& annotations
+                  );
+   
+   public:
+       const std::string& name() const;
+       const dds::core::xtypes::DynamicType& type() const;
+   
+   public:
+       MemberType add_annotation(const Annotation& annotation);
+       MemberType remove_annotation(const Annotation& annotation);
+   };
+   
+   #endif /* OMG_DDS_CORE_XTYPES_TMEMBER_TYPE_HPP */

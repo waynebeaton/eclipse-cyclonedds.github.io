@@ -1,0 +1,13 @@
+.. _exhale_variable_MiscUtils_8hpp_1a46558efdae98c952934c03ebf5e17b68:
+
+Variable org::eclipse::cyclonedds::core::gpb_mutex
+==================================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_MiscUtils.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: org::eclipse::cyclonedds::core::gpb_mutex

@@ -1,0 +1,25 @@
+.. _exhale_class_classdds_1_1domain_1_1DomainParticipant:
+
+Class DomainParticipant
+=======================
+
+- Defined in :ref:`file_dds_domain_DomainParticipant.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public dds::core::Entity`` (:ref:`exhale_class_classdds_1_1core_1_1Entity`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: dds::domain::DomainParticipant
+   :members:
+   :protected-members:
+   :undoc-members:

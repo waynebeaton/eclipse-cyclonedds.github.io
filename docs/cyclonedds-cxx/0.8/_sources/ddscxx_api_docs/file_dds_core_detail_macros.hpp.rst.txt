@@ -1,0 +1,78 @@
+
+.. _file_dds_core_detail_macros.hpp:
+
+File macros.hpp
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_detail>` (``dds/core/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/detail/macros.hpp``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_detail_macros.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstring``
+
+- ``dds/core/detail/export.hpp``
+
+- ``iostream``
+
+- ``string.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_macros.hpp`
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a9c1f60c1888fa142c7915d9fb4ee7f9c`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a11ab51426edd5cda9314cccd52279cc4`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a9d10daa6a45693488d70d2302a068ad0`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a6215581cad079445b41795be6a324023`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1af785643c39d74fe35f6a90e1dc820448`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1acc1a8cee355b89214063c77eb0855152`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a5236069debdaa6113b1039410a0085f1`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a632c5ad2c05f410c56cfedb82abe2832`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a356fbf476e9b814ca7cd871cce7cb94c`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a4a6a0a1cf05e301d1ce21f91105d38be`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1a6cd20d83f0a984530a7f04eaee0972f0`
+
+- :ref:`exhale_define_detail_2macros_8hpp_1adb5088eb5abf4d96898f0e092b095454`
+

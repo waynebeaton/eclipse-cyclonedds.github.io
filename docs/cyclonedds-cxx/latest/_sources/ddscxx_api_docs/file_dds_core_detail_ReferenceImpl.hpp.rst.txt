@@ -1,0 +1,58 @@
+
+.. _file_dds_core_detail_ReferenceImpl.hpp:
+
+File ReferenceImpl.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_core_detail>` (``dds/core/detail``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/core/detail/ReferenceImpl.hpp``)
+--------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_core_detail_ReferenceImpl.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/core/Reference.hpp`` (:ref:`file_dds_core_Reference.hpp`)
+
+- ``org/eclipse/cyclonedds/core/ReportUtils.hpp`` (:ref:`file_org_eclipse_cyclonedds_core_ReportUtils.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_core_cond_detail_ConditionImpl.hpp`
+
+- :ref:`file_dds_core_detail_EntityImpl.hpp`
+
+- :ref:`file_dds_core_detail_WeakReferenceImpl.hpp`
+
+
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_ReferenceImpl_8hpp_1adeb161373599d164872384765315a761`
+
+- :ref:`exhale_function_ReferenceImpl_8hpp_1a1152144b7b814055b22a4696cb5067be`
+

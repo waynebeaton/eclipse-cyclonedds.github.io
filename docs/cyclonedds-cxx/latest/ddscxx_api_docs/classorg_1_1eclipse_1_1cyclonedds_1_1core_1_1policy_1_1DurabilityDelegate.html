@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class DurabilityDelegate &mdash; CycloneDDS-CXX 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class DurabilityDelegate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-durabilitydelegate">
+<span id="exhale-class-classorg-1-1eclipse-1-1cyclonedds-1-1core-1-1policy-1-1durabilitydelegate"></span><h1>Class DurabilityDelegate<a class="headerlink" href="#class-durabilitydelegate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp.html#file-org-eclipse-cyclonedds-core-policy-policydelegate-hpp"><span class="std std-ref">File PolicyDelegate.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateE"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4coreE" title="org::eclipse::cyclonedds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policyE" title="org::eclipse::cyclonedds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DurabilityDelegate</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate18DurabilityDelegateERK18DurabilityDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate18DurabilityDelegateERK18DurabilityDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate18DurabilityDelegateERK18DurabilityDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::DurabilityDelegate__DurabilityDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1ac57040e9c8fe5cc6c1e29a505f231de9"></span><span class="sig-name descname"><span class="n"><span class="pre">DurabilityDelegate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate18DurabilityDelegateERK18DurabilityDelegate" title="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::DurabilityDelegate"><span class="n"><span class="pre">DurabilityDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate18DurabilityDelegateEN3dds4core6policy14DurabilityKind4TypeE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate18DurabilityDelegateEN3dds4core6policy14DurabilityKind4TypeE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate18DurabilityDelegateEN3dds4core6policy14DurabilityKind4TypeE"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::DurabilityDelegate__dds::core::policy::DurabilityKind::Type"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1a96032aed94e56b5165a7153249727bb4"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DurabilityDelegate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKindE" title="dds::core::policy::DurabilityKind"><span class="n"><span class="pre">DurabilityKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKind4TypeE" title="dds::core::policy::DurabilityKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">kind</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateaSERK18DurabilityDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateaSERK18DurabilityDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateaSERK18DurabilityDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::assign-operator__DurabilityDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1a44606c7c7df475e07ceeebffb5e69180"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateE" title="org::eclipse::cyclonedds::core::policy::DurabilityDelegate"><span class="n"><span class="pre">DurabilityDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateE" title="org::eclipse::cyclonedds::core::policy::DurabilityDelegate"><span class="n"><span class="pre">DurabilityDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate4kindEN3dds4core6policy14DurabilityKind4TypeE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate4kindEN3dds4core6policy14DurabilityKind4TypeE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate4kindEN3dds4core6policy14DurabilityKind4TypeE"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::kind__dds::core::policy::DurabilityKind::Type"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1a07cb9f5d79fee1ce1b2a6749ce299d0f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kind</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKindE" title="dds::core::policy::DurabilityKind"><span class="n"><span class="pre">DurabilityKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKind4TypeE" title="dds::core::policy::DurabilityKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">kind</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate4kindEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate4kindEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate4kindEv"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::kindC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1a10e4a5b063c4b9e9bfcf099e8dc3369e"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKindE" title="dds::core::policy::DurabilityKind"><span class="n"><span class="pre">DurabilityKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKind4TypeE" title="dds::core::policy::DurabilityKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kind</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegateeqERK18DurabilityDelegate">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegateeqERK18DurabilityDelegate"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegateeqERK18DurabilityDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::eq-operator__DurabilityDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1a7b2f698caa76da54b5f285dfa5e2a73e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegateE" title="org::eclipse::cyclonedds::core::policy::DurabilityDelegate"><span class="n"><span class="pre">DurabilityDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate5checkEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate5checkEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate5checkEv"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::checkC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1a6ab375c62dee414fdd0e0efd74e44bd5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate14set_iso_policyEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::set_iso_policy__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1ab5bff11ce71e25c4feef91caebf2b87d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_iso_policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate12set_c_policyEP9dds_qos_t">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate12set_c_policyEP9dds_qos_t"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy18DurabilityDelegate12set_c_policyEP9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::set_c_policy__dds_qos_tPC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1af74c7c7c0b7eea12968769d6c549ee8b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_c_policy</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate5kind_E">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate5kind_E"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy18DurabilityDelegate5kind_E"></span><span id="org::eclipse::cyclonedds::core::policy::DurabilityDelegate::kind___dds::core::policy::DurabilityKind::Type"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1DurabilityDelegate_1a787ca7c59e8a2dfe8d84255699e7e90a"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKindE" title="dds::core::policy::DurabilityKind"><span class="n"><span class="pre">DurabilityKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy14DurabilityKind4TypeE" title="dds::core::policy::DurabilityKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kind_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

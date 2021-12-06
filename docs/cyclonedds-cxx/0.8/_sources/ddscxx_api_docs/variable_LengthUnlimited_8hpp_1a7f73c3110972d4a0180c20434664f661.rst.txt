@@ -1,0 +1,13 @@
+.. _exhale_variable_LengthUnlimited_8hpp_1a7f73c3110972d4a0180c20434664f661:
+
+Variable dds::core::LENGTH_UNLIMITED
+====================================
+
+- Defined in :ref:`file_dds_core_LengthUnlimited.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: dds::core::LENGTH_UNLIMITED

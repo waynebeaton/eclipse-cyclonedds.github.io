@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Struct dds_topic_descriptor &mdash; CycloneDDS 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Struct dds_topic_filter" href="structdds__topic__filter.html" />
+    <link rel="prev" title="Struct dds_subscription_matched_status" href="structdds__subscription__matched__status.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a> &raquo;</li>
+          <li><a href="library_root.html">Raw C API</a> &raquo;</li>
+      <li>Struct dds_topic_descriptor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/structdds__topic__descriptor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="struct-dds-topic-descriptor">
+<span id="exhale-struct-structdds-topic-descriptor"></span><h1>Struct dds_topic_descriptor<a class="headerlink" href="#struct-dds-topic-descriptor" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_ddsc_dds_public_impl.h.html#file-ddsc-dds-public-impl-h"><span class="std std-ref">File dds_public_impl.h</span></a></p></li>
+</ul>
+<section id="struct-documentation">
+<h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv420dds_topic_descriptor">
+<span id="_CPPv320dds_topic_descriptor"></span><span id="_CPPv220dds_topic_descriptor"></span><span id="dds_topic_descriptor"></span><span class="target" id="structdds__topic__descriptor"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dds_topic_descriptor</span></span></span><a class="headerlink" href="#_CPPv420dds_topic_descriptor" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor6m_sizeE">
+<span id="_CPPv3N20dds_topic_descriptor6m_sizeE"></span><span id="_CPPv2N20dds_topic_descriptor6m_sizeE"></span><span id="dds_topic_descriptor::m_size__uint32_tC"></span><span class="target" id="structdds__topic__descriptor_1a1b53bfb6e7bf398036b713adf42a8b1c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_size</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor6m_sizeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor7m_alignE">
+<span id="_CPPv3N20dds_topic_descriptor7m_alignE"></span><span id="_CPPv2N20dds_topic_descriptor7m_alignE"></span><span id="dds_topic_descriptor::m_align__uint32_tC"></span><span class="target" id="structdds__topic__descriptor_1a7d7fd2a423646c9f163c06e79fd673da"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_align</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor7m_alignE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor9m_flagsetE">
+<span id="_CPPv3N20dds_topic_descriptor9m_flagsetE"></span><span id="_CPPv2N20dds_topic_descriptor9m_flagsetE"></span><span id="dds_topic_descriptor::m_flagset__uint32_tC"></span><span class="target" id="structdds__topic__descriptor_1a9be944b45d38d56bf96d03ebbf4ffe00"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_flagset</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor9m_flagsetE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor7m_nkeysE">
+<span id="_CPPv3N20dds_topic_descriptor7m_nkeysE"></span><span id="_CPPv2N20dds_topic_descriptor7m_nkeysE"></span><span id="dds_topic_descriptor::m_nkeys__uint32_tC"></span><span class="target" id="structdds__topic__descriptor_1a7d794b60c90c6d3d7a3088ebfd298643"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_nkeys</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor7m_nkeysE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor10m_typenameE">
+<span id="_CPPv3N20dds_topic_descriptor10m_typenameE"></span><span id="_CPPv2N20dds_topic_descriptor10m_typenameE"></span><span id="dds_topic_descriptor::m_typename__cCP"></span><span class="target" id="structdds__topic__descriptor_1a7bc859ea4f81f86c6daff6874c074a24"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_typename</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor10m_typenameE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor6m_keysE">
+<span id="_CPPv3N20dds_topic_descriptor6m_keysE"></span><span id="_CPPv2N20dds_topic_descriptor6m_keysE"></span><span id="dds_topic_descriptor::m_keys__dds_key_descriptor_tCP"></span><span class="target" id="structdds__topic__descriptor_1a37f164aaa0f2523c4567abe88fb3d6fd"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_dds__public__impl_8h_1acbb3cd80a53d4f2bda852bef2e786539.html#_CPPv420dds_key_descriptor_t" title="dds_key_descriptor_t"><span class="n"><span class="pre">dds_key_descriptor_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_keys</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor6m_keysE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor6m_nopsE">
+<span id="_CPPv3N20dds_topic_descriptor6m_nopsE"></span><span id="_CPPv2N20dds_topic_descriptor6m_nopsE"></span><span id="dds_topic_descriptor::m_nops__uint32_tC"></span><span class="target" id="structdds__topic__descriptor_1a3961ce194ed6c002ddf2f192416b87d2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_nops</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor6m_nopsE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor5m_opsE">
+<span id="_CPPv3N20dds_topic_descriptor5m_opsE"></span><span id="_CPPv2N20dds_topic_descriptor5m_opsE"></span><span id="dds_topic_descriptor::m_ops__uint32_tCP"></span><span class="target" id="structdds__topic__descriptor_1a33abca7518e1bccf8c3b900dbe1403dd"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_ops</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor5m_opsE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20dds_topic_descriptor6m_metaE">
+<span id="_CPPv3N20dds_topic_descriptor6m_metaE"></span><span id="_CPPv2N20dds_topic_descriptor6m_metaE"></span><span id="dds_topic_descriptor::m_meta__cCP"></span><span class="target" id="structdds__topic__descriptor_1a1f776eb89f2239e699e768d976c280d4"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_meta</span></span></span><a class="headerlink" href="#_CPPv4N20dds_topic_descriptor6m_metaE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="structdds__subscription__matched__status.html" class="btn btn-neutral float-left" title="Struct dds_subscription_matched_status" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="structdds__topic__filter.html" class="btn btn-neutral float-right" title="Struct dds_topic_filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

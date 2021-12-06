@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds_1_1core_1_1xtypes_1_1ExtensibilityKind:
+
+Struct ExtensibilityKind
+========================
+
+- Defined in :ref:`file_dds_core_xtypes_Annotation.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds::core::xtypes::ExtensibilityKind
+   :members:
+   :protected-members:
+   :undoc-members:

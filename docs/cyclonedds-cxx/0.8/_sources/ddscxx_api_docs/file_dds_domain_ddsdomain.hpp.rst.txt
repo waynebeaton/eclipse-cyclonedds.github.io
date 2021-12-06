@@ -1,0 +1,49 @@
+
+.. _file_dds_domain_ddsdomain.hpp:
+
+File ddsdomain.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_dds_domain>` (``dds/domain``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``dds/domain/ddsdomain.hpp``)
+-----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_dds_domain_ddsdomain.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``dds/domain/DomainParticipant.hpp`` (:ref:`file_dds_domain_DomainParticipant.hpp`)
+
+- ``dds/domain/detail/ddsdomain.hpp`` (:ref:`file_dds_domain_detail_ddsdomain.hpp`)
+
+- ``dds/domain/discovery.hpp`` (:ref:`file_dds_domain_discovery.hpp`)
+
+- ``dds/domain/find.hpp`` (:ref:`file_dds_domain_find.hpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_dds_dds.hpp`
+
+
+

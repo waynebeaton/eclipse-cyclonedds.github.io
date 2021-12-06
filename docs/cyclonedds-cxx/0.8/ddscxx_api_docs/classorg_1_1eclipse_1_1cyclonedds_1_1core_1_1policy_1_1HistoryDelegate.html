@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class HistoryDelegate &mdash; CycloneDDS-CXX 0.8.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS-CXX
+          </a>
+              <div class="version">
+                0.8.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ddscxx.html">Eclipse Cyclone DDS C++ API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../idlcxx.html">Custom Containers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS-CXX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Class HistoryDelegate</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddscxx_api_docs/classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-historydelegate">
+<span id="exhale-class-classorg-1-1eclipse-1-1cyclonedds-1-1core-1-1policy-1-1historydelegate"></span><h1>Class HistoryDelegate<a class="headerlink" href="#class-historydelegate" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_org_eclipse_cyclonedds_core_policy_PolicyDelegate.hpp.html#file-org-eclipse-cyclonedds-core-policy-policydelegate-hpp"><span class="std std-ref">File PolicyDelegate.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegateE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy15HistoryDelegateE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy15HistoryDelegateE"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4coreE" title="org::eclipse::cyclonedds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policyE" title="org::eclipse::cyclonedds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">HistoryDelegate</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegate15HistoryDelegateERK15HistoryDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy15HistoryDelegate15HistoryDelegateERK15HistoryDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy15HistoryDelegate15HistoryDelegateERK15HistoryDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::HistoryDelegate__HistoryDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a1a299adeac22d93733c16e113e3b32ce"></span><span class="sig-name descname"><span class="n"><span class="pre">HistoryDelegate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegate15HistoryDelegateERK15HistoryDelegate" title="org::eclipse::cyclonedds::core::policy::HistoryDelegate::HistoryDelegate"><span class="n"><span class="pre">HistoryDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegate15HistoryDelegateEN3dds4core6policy11HistoryKind4TypeE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy15HistoryDelegate15HistoryDelegateEN3dds4core6policy11HistoryKind4TypeE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy15HistoryDelegate15HistoryDelegateEN3dds4core6policy11HistoryKind4TypeE7int32_t"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::HistoryDelegate__dds::core::policy::HistoryKind::Type.int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1afc932d3ab1baa6e0557196ed26b03972"></span><span class="sig-name descname"><span class="n"><span class="pre">HistoryDelegate</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy11HistoryKindE" title="dds::core::policy::HistoryKind"><span class="n"><span class="pre">HistoryKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy11HistoryKind4TypeE" title="dds::core::policy::HistoryKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">kind</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">depth</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegateaSERK15HistoryDelegate">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy15HistoryDelegateaSERK15HistoryDelegate"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy15HistoryDelegateaSERK15HistoryDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::assign-operator__HistoryDelegateCR"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1ac5c6890ccb3bf41364c6de4c39c4a8be"></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegateE" title="org::eclipse::cyclonedds::core::policy::HistoryDelegate"><span class="n"><span class="pre">HistoryDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegateE" title="org::eclipse::cyclonedds::core::policy::HistoryDelegate"><span class="n"><span class="pre">HistoryDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate4kindEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate4kindEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate4kindEv"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::kindC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a29c14a318438daa8ecad1238893df8b1"></span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy11HistoryKindE" title="dds::core::policy::HistoryKind"><span class="n"><span class="pre">HistoryKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy11HistoryKind4TypeE" title="dds::core::policy::HistoryKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kind</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegate4kindEN3dds4core6policy11HistoryKind4TypeE">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy15HistoryDelegate4kindEN3dds4core6policy11HistoryKind4TypeE"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy15HistoryDelegate4kindEN3dds4core6policy11HistoryKind4TypeE"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::kind__dds::core::policy::HistoryKind::Type"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a3c83c4146ce20575734327fa20e9e034"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kind</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../ddscxx.html#_CPPv43dds" title="dds"><span class="n"><span class="pre">dds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4coreE" title="dds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policyE" title="dds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy11HistoryKindE" title="dds::core::policy::HistoryKind"><span class="n"><span class="pre">HistoryKind</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3dds4core6policy11HistoryKind4TypeE" title="dds::core::policy::HistoryKind::Type"><span class="n"><span class="pre">Type</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">kind</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate5depthEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate5depthEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate5depthEv"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::depthC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a04a363ad5afcfd414d774c811a183d33"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">depth</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegate5depthE7int32_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy15HistoryDelegate5depthE7int32_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy15HistoryDelegate5depthE7int32_t"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::depth__int32_t"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1ac673ec535af39ab78b6f26e4bedba24f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">depth</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">depth</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy15HistoryDelegateeqERK15HistoryDelegate">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy15HistoryDelegateeqERK15HistoryDelegate"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy15HistoryDelegateeqERK15HistoryDelegate"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::eq-operator__HistoryDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a29c268cacddcfc3f9706bbba1625945f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegateE" title="org::eclipse::cyclonedds::core::policy::HistoryDelegate"><span class="n"><span class="pre">HistoryDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate5checkEv">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate5checkEv"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate5checkEv"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::checkC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a853314a5857779795e98c7f9eec9c7c3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate13check_againstERKN3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate13check_againstERKN3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate13check_againstERKN3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::check_against__org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegateCRC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a587d3bd9260e855ace9f31c79c0a7a7d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check_against</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ddscxx.html#_CPPv43org" title="org"><span class="n"><span class="pre">org</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipseE" title="org::eclipse"><span class="n"><span class="pre">eclipse</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cycloneddsE" title="org::eclipse::cyclonedds"><span class="n"><span class="pre">cyclonedds</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4coreE" title="org::eclipse::cyclonedds::core"><span class="n"><span class="pre">core</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policyE" title="org::eclipse::cyclonedds::core::policy"><span class="n"><span class="pre">policy</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../ddscxx.html#_CPPv4N3org7eclipse10cyclonedds4core6policy22ResourceLimitsDelegateE" title="org::eclipse::cyclonedds::core::policy::ResourceLimitsDelegate"><span class="n"><span class="pre">ResourceLimitsDelegate</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">limits</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3org7eclipse10cyclonedds4core6policy15HistoryDelegate14set_iso_policyEPK9dds_qos_t">
+<span id="_CPPv3N3org7eclipse10cyclonedds4core6policy15HistoryDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="_CPPv2N3org7eclipse10cyclonedds4core6policy15HistoryDelegate14set_iso_policyEPK9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::set_iso_policy__dds_qos_tCP"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1a3ba2dae36bb0aa921d779e1fbf084d04"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_iso_policy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate12set_c_policyEP9dds_qos_t">
+<span id="_CPPv3NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate12set_c_policyEP9dds_qos_t"></span><span id="_CPPv2NK3org7eclipse10cyclonedds4core6policy15HistoryDelegate12set_c_policyEP9dds_qos_t"></span><span id="org::eclipse::cyclonedds::core::policy::HistoryDelegate::set_c_policy__dds_qos_tPC"></span><span class="target" id="classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1policy_1_1HistoryDelegate_1ad308cebeaa849263a5a4723e8a9507a7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_c_policy</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dds_qos_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS-CXX committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+.. _exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1sub_1_1AnyDataReaderDelegate:
+
+Class AnyDataReaderDelegate
+===========================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_sub_AnyDataReaderDelegate.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public org::eclipse::cyclonedds::core::EntityDelegate`` (:ref:`exhale_class_classorg_1_1eclipse_1_1cyclonedds_1_1core_1_1EntityDelegate`)
+
+
+Derived Type
+************
+
+- ``public dds::sub::detail::DataReader< T >`` (:ref:`exhale_class_classdds_1_1sub_1_1detail_1_1DataReader`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: org::eclipse::cyclonedds::sub::AnyDataReaderDelegate
+   :members:
+   :protected-members:
+   :undoc-members:

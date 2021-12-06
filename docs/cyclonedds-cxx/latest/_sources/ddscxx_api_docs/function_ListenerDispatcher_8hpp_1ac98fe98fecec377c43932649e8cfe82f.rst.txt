@@ -1,0 +1,13 @@
+.. _exhale_function_ListenerDispatcher_8hpp_1ac98fe98fecec377c43932649e8cfe82f:
+
+Function callback_on_sample_lost
+================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_ListenerDispatcher.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: callback_on_sample_lost(dds_entity_t, dds_sample_lost_status_t, void *)

@@ -1,0 +1,16 @@
+.. _exhale_struct_structdds_1_1topic_1_1topic__type__name:
+
+Template Struct topic_type_name
+===============================
+
+- Defined in :ref:`file_dds_topic_TopicTraits.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: dds::topic::topic_type_name
+   :members:
+   :protected-members:
+   :undoc-members:

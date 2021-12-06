@@ -1,0 +1,16 @@
+.. _exhale_struct_structis__container__helper:
+
+Template Struct is_container_helper
+===================================
+
+- Defined in :ref:`file_org_eclipse_cyclonedds_core_type_helpers.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: is_container_helper
+   :members:
+   :protected-members:
+   :undoc-members:

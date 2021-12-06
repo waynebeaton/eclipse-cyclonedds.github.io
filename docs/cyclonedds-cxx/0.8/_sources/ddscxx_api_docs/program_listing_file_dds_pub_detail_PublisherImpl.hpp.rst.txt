@@ -1,0 +1,128 @@
+
+.. _program_listing_file_dds_pub_detail_PublisherImpl.hpp:
+
+Program Listing for File PublisherImpl.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_dds_pub_detail_PublisherImpl.hpp>` (``dds/pub/detail/PublisherImpl.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright(c) 2006 to 2020 ADLINK Technology Limited and others
+    *
+    * This program and the accompanying materials are made available under the
+    * terms of the Eclipse Public License v. 2.0 which is available at
+    * http://www.eclipse.org/legal/epl-2.0, or the Eclipse Distribution License
+    * v. 1.0 which is available at
+    * http://www.eclipse.org/org/documents/edl-v10.php.
+    *
+    * SPDX-License-Identifier: EPL-2.0 OR BSD-3-Clause
+    */
+   #ifndef CYCLONEDDS_DDS_PUB_TPUBLISHER_IMPL_HPP_
+   #define CYCLONEDDS_DDS_PUB_TPUBLISHER_IMPL_HPP_
+   
+   /*
+    * OMG PSM class declaration
+    */
+   #include <dds/pub/Publisher.hpp>
+   #include <org/eclipse/cyclonedds/core/ReportUtils.hpp>
+   
+   // Implementation
+   
+   namespace dds
+   {
+   namespace pub
+   {
+   
+   
+   Publisher::Publisher(const dds::domain::DomainParticipant& dp)
+       :   ::dds::core::Reference(new DELEGATE(dp,
+                                                         dp.default_publisher_qos(),
+                                                         NULL,
+                                                         dds::core::status::StatusMask::none()))
+   {
+       this->delegate()->init(this->impl_);
+   }
+   
+   
+   Publisher::Publisher(const dds::domain::DomainParticipant& dp,
+                                    const dds::pub::qos::PublisherQos& qos,
+                                    dds::pub::PublisherListener* listener,
+                                    const dds::core::status::StatusMask& mask)
+       :   ::dds::core::Reference(new DELEGATE(dp, qos, listener, mask))
+   {
+       this->delegate()->init(this->impl_);
+   }
+   
+   
+   const dds::pub::qos::PublisherQos& Publisher::qos() const
+   {
+       return this->delegate()->qos();
+   }
+   
+   
+   void Publisher::qos(const dds::pub::qos::PublisherQos& pqos)
+   {
+       this->delegate()->qos(pqos);
+   }
+   
+   
+   Publisher& Publisher::operator <<(const dds::pub::qos::PublisherQos& qos)
+   {
+       this->qos(qos);
+       return *this;
+   }
+   
+   
+   Publisher& Publisher::operator >> (dds::pub::qos::PublisherQos& qos)
+   {
+       qos = this->qos();
+       return *this;
+   }
+   
+   
+   Publisher& Publisher::default_datawriter_qos(const dds::pub::qos::DataWriterQos& dwqos)
+   {
+       this->delegate()->default_datawriter_qos(dwqos);
+       return *this;
+   }
+   
+   
+   dds::pub::qos::DataWriterQos Publisher::default_datawriter_qos() const
+   {
+       return this->delegate()->default_datawriter_qos();
+   }
+   
+   
+   void Publisher::listener(Listener* plistener, const dds::core::status::StatusMask& event_mask)
+   {
+       this->delegate()->listener(plistener, event_mask);
+   }
+   
+   
+   typename Publisher::Listener* Publisher::listener() const
+   {
+       return this->delegate()->listener();
+   }
+   
+   
+   void Publisher::wait_for_acknowledgments(const dds::core::Duration& timeout)
+   {
+       this->delegate()->wait_for_acknowledgments(timeout);
+   }
+   
+   
+   const dds::domain::DomainParticipant& Publisher::participant() const
+   {
+       return this->delegate()->participant();
+   }
+   
+   }
+   }
+   
+   // End of implementation
+   
+   #endif /* CYCLONEDDS_DDS_PUB_TPUBLISHER_IMPL_HPP_ */

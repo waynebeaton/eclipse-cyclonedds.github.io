@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Function dds_create_topic_sertype &mdash; CycloneDDS 0.9.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Function dds_create_waitset" href="function_dds_8h_1aeb4a843fb425ff99d7155a5f1af5b6d1.html" />
+    <link rel="prev" title="Function dds_create_topic_generic" href="function_dds_8h_1aac8eb8e277dbe0c33e3c628a945bd3a1.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CycloneDDS
+          </a>
+              <div class="version">
+                0.9.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/installation.html">Installing Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld.html">Building Eclipse Cyclone DDS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/helloworld_indepth.html">Hello World! in more detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/next_steps.html">What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GettingStartedGuide/uninstall.html">Uninstalling Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config.html">A guide to the configuration options of Eclipse Cyclone DDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">DDS Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shared_memory.html">Shared Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CycloneDDS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../ddsc.html">Eclipse Cyclone DDS C API Reference</a> &raquo;</li>
+          <li><a href="library_root.html">Raw C API</a> &raquo;</li>
+      <li>Function dds_create_topic_sertype</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ddsc_api_docs/function_dds_8h_1a614ac937149993f73c307ece8f639033.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="function-dds-create-topic-sertype">
+<span id="exhale-function-dds-8h-1a614ac937149993f73c307ece8f639033"></span><h1>Function dds_create_topic_sertype<a class="headerlink" href="#function-dds-create-topic-sertype" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_dds.h.html#file-dds-h"><span class="std std-ref">File dds.h</span></a></p></li>
+</ul>
+<section id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Permalink to this headline"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv424dds_create_topic_sertype12dds_entity_tPKcPP12ddsi_sertypePK9dds_qos_tPK14dds_listener_tPK10ddsi_plist">
+<span id="_CPPv324dds_create_topic_sertype12dds_entity_tPKcPP12ddsi_sertypePK9dds_qos_tPK14dds_listener_tPK10ddsi_plist"></span><span id="_CPPv224dds_create_topic_sertype12dds_entity_tPKcPP12ddsi_sertypePK9dds_qos_tPK14dds_listener_tPK10ddsi_plist"></span><span id="dds_create_topic_sertype__dds_entity_t.cCP.ddsi_sertypePP.dds_qos_tCP.dds_listener_tCP.ddsi_plistCP"></span><span class="target" id="dds_8h_1a614ac937149993f73c307ece8f639033"></span><a class="reference internal" href="typedef_dds__basic__types_8h_1aa66538468c533a9ea558b7e280677b13.html#_CPPv412dds_entity_t" title="dds_entity_t"><span class="n"><span class="pre">dds_entity_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dds_create_topic_sertype</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_dds__basic__types_8h_1aa66538468c533a9ea558b7e280677b13.html#_CPPv412dds_entity_t" title="dds_entity_t"><span class="n"><span class="pre">dds_entity_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">participant</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">ddsi_sertype</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">sertype</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_dds__public__qosdefs_8h_1a2ecc2eff9e47ee74264a1b93c65241cc.html#_CPPv49dds_qos_t" title="dds_qos_t"><span class="n"><span class="pre">dds_qos_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">qos</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_dds__public__listener_8h_1abea4a7f035d91f86e036ed764f7b3731.html#_CPPv414dds_listener_t" title="dds_listener_t"><span class="n"><span class="pre">dds_listener_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">listener</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">ddsi_plist</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">sedp_plist</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424dds_create_topic_sertype12dds_entity_tPKcPP12ddsi_sertypePK9dds_qos_tPK14dds_listener_tPK10ddsi_plist" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Creates a new topic with provided type handling. </p>
+<p>The name for the type is taken from the provided “sertype” object. Type matching is done on a combination of topic name and type name. Each successful call to dds_create_topic creates a new topic entity sharing the same QoS settings with all other topics of the same name.</p>
+<p>In case this function returns a valid handle, the ownership of the provided sertype is handed over to Cyclone. On return, the caller gets in the sertype parameter a pointer to the sertype that is actually used by the topic. This can be the provided sertype (if this sertype was not yet known in the domain), or a sertype thas was already known in the domain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>participant</strong> – <strong>[in]</strong> Participant on which to create the topic. </p></li>
+<li><p><strong>name</strong> – <strong>[in]</strong> Topic name </p></li>
+<li><p><strong>sertype</strong> – <strong>[inout]</strong> Internal description of the type . On return, the sertype parameter is set to the actual sertype that is used by the topic. </p></li>
+<li><p><strong>qos</strong> – <strong>[in]</strong> QoS to set on the new topic (can be NULL). </p></li>
+<li><p><strong>listener</strong> – <strong>[in]</strong> Any listener functions associated with the new topic (can be NULL). </p></li>
+<li><p><strong>sedp_plist</strong> – <strong>[in]</strong> Topic description to be published as part of discovery (if NULL, not published).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A valid, unique topic handle or an error code. Iff a valid handle, the domain takes ownership of provided serdata.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><strong>&gt;=0</strong> – A valid unique topic handle. </p></li>
+<li><p><strong>DDS_RETCODE_BAD_PARAMETER</strong> – Either participant, descriptor, name or qos is invalid. </p></li>
+<li><p><strong>DDS_RETCODE_BAD_PARAMETER</strong> – Either participant, descriptor, name or qos is invalid. </p></li>
+<li><p><strong>DDS_RETCODE_INCONSISTENT_POLICY</strong> – QoS mismatch between qos and an existing topic’s QoS. </p></li>
+<li><p><strong>DDS_RETCODE_PRECONDITION_NOT_MET</strong> – Mismatch between type name in sertype and pre-existing topic’s type name. </p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="function_dds_8h_1aac8eb8e277dbe0c33e3c628a945bd3a1.html" class="btn btn-neutral float-left" title="Function dds_create_topic_generic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="function_dds_8h_1aeb4a843fb425ff99d7155a5f1af5b6d1.html" class="btn btn-neutral float-right" title="Function dds_create_waitset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, CycloneDDS committers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
